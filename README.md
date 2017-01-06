@@ -1,2 +1,3 @@
 # phy487-qmsolids
-phy487-qmsolids notes compilation
+
+Class notes and problems from 'Condensed Matter Physics', taught by Prof. Stephen Julian.
