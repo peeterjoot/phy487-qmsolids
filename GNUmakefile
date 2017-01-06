@@ -1,5 +1,6 @@
 THISDIR := phy487-qmsolids
 THISBOOK := phy487
+BASEVER := e1af8ce
 
 include ../latex/make.bookvars
 
