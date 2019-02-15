@@ -1,13 +1,7 @@
 THISDIR := phy487-qmsolids
 THISBOOK := phy487
 
-export BOOKSUBVER := 1
-export BOOKMAJVER := 0
-export REVISIONNUMBER := 8
-
-#.revinfo/gitCommitDateAsMyTime.tex:\newcommand{\myTime}{April 2018}\newcommand{\myVersion}{version V0.117\xspace}
-VER := $(shell grep Version .revinfo/gitCommitDateAsMyTime.tex | sed 's/.*{//;s/.xspace.*//;')
-
+include make.revision
 include ../latex/make.bookvars
 
 #ONCEFLAGS := -justonce
@@ -20,10 +14,6 @@ FIGURES := ../figures/phy487-qmsolids
 
 SOURCE_DIRS += $(FIGURES)
 
-# also toggle redacted classicthesis-config.tex
-# FIXME: changing this flag should be a dependency of mathematica.tex 
-#REDACTED := -redacted
-
 GENERATED_SOURCES += mathematica.tex 
 
 EPS_FILES := $(wildcard $(FIGURES)/*.eps)
@@ -32,13 +22,6 @@ PDFS_FROM_EPS := $(subst eps,pdf,$(EPS_FILES))
 THISBOOK_DEPS += $(PDFS_FROM_EPS)
 
 include ../latex/make.rules
-
-dist:
-	cp $(THISBOOK).pdf $(THISBOOK).$(VER).pdf
-
-# a for annotate (releases).
-tag:
-	git tag -a $(THISBOOK).$(VER).pdf
 
 condensedMatterProblemSet1.pdf :: condensedMatterProblemSet1Problem1.tex
 condensedMatterProblemSet1.pdf :: condensedMatterProblemSet1Problem2.tex
