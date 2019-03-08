@@ -157,7 +157,7 @@ Our Lagrangian needs to model the equilibrium length of the spring.
 In the absence of any initial angular momentum, the problem previously considered is essentially one dimensional.
 
 Let's consider a physically realistic harmonic oscillator system, with coupling that is relative to an equilibrium length (the length of an uncompressed or unstretched spring for example).  That system is illustrated in \cref{fig:twoMassSpringCoupling:twoMassSpringCouplingFig2}.
-
+%
 \imageFigure{../figures/phy487-qmsolids/twoMassSpringCouplingFig2}{Linear harmonic coupling with equilibrium length}{fig:twoMassSpringCoupling:twoMassSpringCouplingFig2}{0.1}
 } % makeproblem
 
@@ -329,13 +329,12 @@ m_2 \ddot{\Br}_2 &= - K \lr{ \Br_2 - \Br_1 - a \frac{\Br_2 - \Br_1}{\Abs{\Br_2 -
 \end{dmath}
 %
 With \(\Delta \Br = \Br_2 - \Br_1\) and \(\hat{\Delta}_{21} = \lr{\Br_2 - \Br_1}/\Abs{\Br_2 - \Br_1}\), this gives
-
 \boxedEquation{eqn:twoMassHarmonic:540}{
 \mu \Delta \ddot{\Br} = - K \lr{ \Delta \Br - a \hat{\Delta}_{2 1} }.
 }
 
 In general, \(\hat{\Delta}_{2 1}\) could rotate in space (non-zero angular momentum for the system), meaning that we'd also have a directional dependence on the LHS.  A specific solution is possible if we assume that the direction is fixed, and introduce scalar displacement coordinates, relative to the center of the equilibrium position as illustrated in \cref{fig:twoMassSpringCoupling:twoMassSpringCouplingFig4}.
-
+%
 \imageFigure{../figures/phy487-qmsolids/twoMassSpringCouplingFig4}{Coupling directed along difference vector}{fig:twoMassSpringCoupling:twoMassSpringCouplingFig4}{0.2}
 %
 \begin{dmath}\label{eqn:twoMassHarmonic:560}
@@ -460,7 +459,7 @@ At the equilibrium positions, this is
 \end{dmath}
 %
 These ratios are the direction cosines, as illustrated in \cref{fig:twoMassSpringCoupling:twoMassSpringCouplingFig5}, where \(\Delta \Ba = \Abs{\Delta \Ba} \lr{\cos \theta_1, \cos\theta_2, \cos\theta_3}\).  Again employing symmetries, the second derivatives for the non-mixed coordinates are
-
+%
 \imageFigure{../figures/phy487-qmsolids/twoMassSpringCouplingFig5}{Direction cosines relative to equilibrium position difference vector}{fig:twoMassSpringCoupling:twoMassSpringCouplingFig5}{0.3}
 %
 \begin{dmath}\label{eqn:twoMassHarmonic:700}
@@ -551,7 +550,6 @@ so to second order, with displacement coordinates \(\Bu_i = \Br_i - \Ba_i\), the
 \end{dmath}
 %
 but since \(\phi(\Ba_1, \Ba_2) = 0\), we have
-
 \boxedEquation{eqn:twoMassHarmonic:760}{
 \phi(\Bu_1, \Bu_2)
 \approx
@@ -616,7 +614,6 @@ m_2 \ddot{\Bu}_2 &= -K \hat{\Delta}_{2 1} \lr{ \hat{\Delta}_{2 1} \cdot \Delta \
 \end{dmath}
 %
 or
-
 \boxedEquation{eqn:twoMassHarmonic:860}{
 \begin{aligned}
 \mu \Delta \ddot{\Bu} &= -K \hat{\Delta}_{2 1} \lr{ \hat{\Delta}_{2 1} \cdot \Delta \Bu } \\

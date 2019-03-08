@@ -67,7 +67,7 @@ Observe that \(k' - k \in [-N+1, N-1]\), and necessarily takes on just integer v
 \end{dmath}
 %
 We can visualize that range as all the points on a sine curve with the integer multiples of \(\pi\) omitted, as in \cref{fig:discreteFourierRange:discreteFourierRangeFig1}.
-
+%
 \mathImageFigure{../figures/phy487-qmsolids/discreteFourierRangeFig1}{Sine with integer multiples of \(\pi\) omitted}{fig:discreteFourierRange:discreteFourierRangeFig1}{0.2}{discreteFourierRangeFig1.nb}
 
 Clearly the denominator is always non-zero when \(k \ne k'\).   This provides us with the desired inverse transformation relationship
@@ -78,21 +78,16 @@ Clearly the denominator is always non-zero when \(k \ne k'\).   This provides us
 = N A_k'.
 \end{dmath}
 %
-\paragraph{Summary}
-
+\paragraph{Summary.}
 Now that we know the relationship between the discrete set of values \(a_n\) and this discrete transformation of those values, let's write the transform pair in a form that explicitly expresses this relationship.
-
 \boxedEquation{eqn:discreteFourierTransform:160}{
 \begin{aligned}
 a_n &= \sum_{k = 0}^{N-1} \tilde{a}_k e^{-2 \pi i k n/N } \\
 \tilde{a}_k &= \inv{N} \sum_{n = 0}^{N-1} a_n e^{2 \pi i k n/N }.
 \end{aligned}
 }
-
 We have also shown that our discrete sum of exponentials has an delta function operator nature, a fact that will likely be handy in various manipulations.
-
 \boxedEquation{eqn:discreteFourierTransform:200}{
 \sum_{n = 0}^{N-1} e^{2 \pi i (k' - k)n/N } = N \delta_{k, k'}.
 }
-
 %\EndArticle

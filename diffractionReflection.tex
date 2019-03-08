@@ -17,7 +17,7 @@
 \label{chap:diffractionReflection}
 
 We were presented with a diffraction result, that the intensity can be expressed as the Fourier transform of the aperture.  Let's review a derivation of that based on the Huygens principle.  Consider the aperture of \cref{fig:diffractionReflection:diffractionReflectionFig1}.
-
+%
 \imageFigure{../figures/phy487-qmsolids/diffractionReflectionFig1}{Diffraction aperture}{fig:diffractionReflection:diffractionReflectionFig1}{0.4}
 
 The \textAndIndex{Huygens principle} expresses the amplitude of a wave \(U(\Br)\) in terms of it's amplitude \(U_\nought\) at \(\Br = 0\) as
@@ -37,7 +37,7 @@ U(\BR') \propto U_\nought \int_{\txtA} d^2\Br
 Note that this the Huygens result is an approximation in many ways.  Fresnel later fixed up the proportionality factor and considered the angular dependence of the between the source and diffracted rays (the obliquity factor).  That corrected result is known as the \textAndIndex{Huygens-Fresnel principle}.  Kirchhoff later considered solutions to the scalar wave equations for the electromagnetic field components \(\BE\) and \(\BB\), ignoring the Maxwell coupling of these fields.  See \S 8.3.1 \citep{born1980principles}, \S A.2 \S 10.4 of \citep{hecht1998hecht}, or \S 5.2 of \citep{fowles1989introduction} for details.  See \S 9.8 \citep{jackson1975cew} for a vector diffraction treatment.
 
 Let's proceed with using \eqnref{eqn:diffractionReflection:40} to obtain our result from class.  For simplicity, first position the origin in the aperture itself as in \cref{fig:diffractionReflection:diffractionReflectionFig2}.
-
+%
 \imageFigure{../figures/phy487-qmsolids/diffractionReflectionFig2}{Diffraction aperture with origin in aperture}{fig:diffractionReflection:diffractionReflectionFig2}{0.4}
 
 Now we are set to perform a first order expansion of the vector lengths \(\Abs{\Br - \BR}\) and \(\Abs{\Br - \BR'}\).  It's sufficient to consider just one of these, expanding to first order
@@ -106,7 +106,6 @@ Finally, write
 \end{dmath}
 %
 and introduce an aperture function \(\rho(\Br)\) (we called this the \textAndIndex{scattering density}).  This aperature function is unity for any regions of the aperture that light is allowed through, and zero when light is blocked, and some value in \([0,1]\) for translucent regions of the aperture.  We can now expand the integral over the surface containing the aperture
-
 \boxedEquation{eqn:diffractionReflection:160}{
 U(\BR')
 \sim
@@ -116,5 +115,4 @@ e^{i k (R + R')}
 \rho(\Br)
 e^{-i \Br \cdot \BK}.
 }
-
 %\EndArticle

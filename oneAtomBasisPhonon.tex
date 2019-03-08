@@ -27,7 +27,7 @@
 \label{chap:oneAtomBasisPhonon}
 \makeoproblem{One atom basis phonons in 2D}{pr:oneAtomBasisPhonon:1}{2013 final exam}{
 Tackle the 2D problem of the final exam, generalizing from a square lattice to a general one atom basis in 2D.  The lattice geometry to consider is illustrated in \cref{fig:oneAtomBasisNearestNeighbours:oneAtomBasisNearestNeighboursFig1}.
-
+%
 \imageFigure{../figures/phy487-qmsolids/oneAtomBasisNearestNeighboursFig1}{Oblique one atom basis}{fig:oneAtomBasisNearestNeighbours:oneAtomBasisNearestNeighboursFig1}{0.3}
 
 Here, \(\Ba\) and \(\Bb\) are the vector differences between the equilibrium positions separating the masses along the \(K_1\) and \(K_2\) interaction directions respectively.
@@ -184,13 +184,11 @@ a^2 + d^2 + 2 a d - 4 a d + 4 b c
 \end{dmath}
 %
 so that, finally, the dispersion relation is
-
 \boxedEquation{eqn:oneAtomBasisPhonon:640}{
 \omega^2 =
 \inv{2}
 \lr{ d + a   \pm \sqrt{ (d - a)^2 + 4 b c } },
 }
-
 Our eigenvectors will be given by
 %
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:200}
@@ -214,7 +212,6 @@ b \\
 \end{dmath}
 %
 or
-
 \boxedEquation{eqn:oneAtomBasisPhonon:500}{
 \Bepsilon \propto
 \begin{bmatrix}
@@ -222,9 +219,7 @@ or
 d - a \pm \sqrt{ (d - a)^2 + 4 b c }
 \end{bmatrix}.
 }
-
 \paragraph{Square lattice}
-
 There is not too much to gain by expanding out the projection operators explicitly in general.  However, let's do this for the specific case of a square lattice (as on the exam problem).  In that case, our projection operators are
 %
 \begin{subequations}
@@ -636,7 +631,7 @@ The exam asked why the cross coupling is required for stability.  Clearly we hav
 \paragraph{Numerical computations}
 
 A Manipulate allowing for choice of the spring constants and lattice orientation, as shown in \cref{fig:oneAtomBasisPhonon:oneAtomBasisPhononFig2}, is available in \nbref{oneAtomBasisPhonon.nb}.  This interface also provides a numerical calculation of the distribution relation as shown in \cref{fig:oneAtomBasisPhonon:oneAtomBasisPhononFig3}, and provides an animation of the normal modes for any given selection of \(\Bq\) and \(\omega(\Bq)\) (not shown).
-
+%
 \mathImageFigure{../figures/phy487-qmsolids/oneAtomBasisPhononFig2}{2D Single atom basis Manipulate interface}{fig:oneAtomBasisPhonon:oneAtomBasisPhononFig2}{0.2}{oneAtomBasisLatticeDemo.nb}
 \mathImageFigure{../figures/phy487-qmsolids/oneAtomBasisPhononFig3}{Sample distribution relation for 2D single atom basis.}{fig:oneAtomBasisPhonon:oneAtomBasisPhononFig3}{0.2}{oneAtomBasisLatticeDemo.nb}
 
