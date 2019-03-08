@@ -3,7 +3,6 @@
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
 \makeoproblem{Tight Binding Band Structure of a square lattice}{condensedMatter:problemSet8:1}{2013 ps8 p1}{
-
 Consider a two-dimensional square lattice with lattice parameter \(a\),
 and thus basis vectors \((a,0)\) and
 \((0,a)\).  We will construct a
@@ -14,7 +13,6 @@ of the Schrodinger equation for the isolated atom, with eigenvalue
 \(E_s\):
 \(\hat{\calH_A}(\Br - \Br_n) \phi_s(\Br - \Br_n) = E_s\phi_s(\Br - \Br_n)\), where
 \(\Br_n\) is a lattice vector.
-
 \makesubproblem{}{condensedMatter:problemSet8:1a}
 If the tight binding integrals (defined in class) are
 \begin{eqnarray*}
@@ -39,10 +37,8 @@ Plot \(E(\Bk)\) along the following lines in
 \((0,2\pi/a)\);
   (iii) from \(\Bk = (0,0)\) to
 \((2\pi/a, 2\pi/a)\).
-
 \makesubproblem{}{condensedMatter:problemSet8:1c}
 What is the bandwidth of this tight-binding band, as a multiple of \(B\)?
-
 \makesubproblem{}{condensedMatter:problemSet8:1d}
 Plot contours of constant energy in the first Brillouin zone (i.e.\ the
 \((k_x,k_y)\) plane, using only the first Brillouin zone), for the following
@@ -61,7 +57,6 @@ Use these plots to identify which constant energy contour represents the
 ``half-filled state" (the state where, if all of the levels up to \(E = \EF\) are filled
 then there is one electron per site, or \(N\) electrons in total,
 where \(N\) is the number of atoms in the lattice).
-
 \makesubproblem{}{condensedMatter:problemSet8:1e}
 By considering how the \(A\) and
 \(B\) integrals would be affected, discuss in qualitative
@@ -82,7 +77,6 @@ with the even-parity of the \(s\)-orbitals.
 You may find it helpful, in discussing the \(B\) orbitals, to sketch the \(p_x\) orbitals
 on neighbouring atoms, to visualize how they overlap.
 } % makeproblem
-
 \makeanswer{condensedMatter:problemSet8:1}{
 \makeSubAnswer{}{condensedMatter:problemSet8:1a}
 
@@ -129,9 +123,7 @@ E(\Bk) \approx E_i - A - 2 B \lr{
 \end{dmath}
 %
 as desired.
-
 \makeSubAnswer{}{condensedMatter:problemSet8:1b}
-
 \paragraph{(i)}  Parameterize this trajectory with
 %
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:20}
@@ -197,9 +189,7 @@ E_s - A - 4 B \cos 2 \pi w.
 This, identical to (i) and (ii) in form, but with different extremums, is plotted in \cref{fig:qmSolidsPs8biii:qmSolidsPs8biiiFig3}.
 
 \mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8biiiFig3}{\(E(k)\) on \(k \in [(0,0), 2 \pi (1,1)/a]\)}{fig:qmSolidsPs8biii:qmSolidsPs8biiiFig3}{0.2}{qmSolidsPs8biiiFig3Generated.nb}
-
 \makeSubAnswer{}{condensedMatter:problemSet8:1c}
-
 \(E(\Bk)\) ranges from \(E_s - A - 2 B(1 + 1)\) to \(E_s - A - 2 B ( - 1 - 1)\).  That maximum difference is
 %
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:140}
@@ -207,7 +197,6 @@ This, identical to (i) and (ii) in form, but with different extremums, is plotte
 \end{dmath}
 %
 \makeSubAnswer{}{condensedMatter:problemSet8:1d}
-
 \paragraph{(i)  \(E = E_s - A - 2B\)} The first contour is that defined by
 %
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:240}
@@ -265,9 +254,7 @@ As a followup it would be good to:
 \mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8dFig1}{2D Contour plots of selected tight binding energy levels}{fig:qmSolidsPs8d:qmSolidsPs8dFig1}{0.3}{qmSolidsPs8dContourPlot.nb}
 
 \mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8dFig2}{Energy level curves}{fig:qmSolidsPs8d:qmSolidsPs8dFig2}{0.2}{qmSolidsPs8dContourPlot.nb}
-
 \makeSubAnswer{}{condensedMatter:problemSet8:1e}
-
 The \(2 p_x\) orbital function in Cartesian coordinates are
 %
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:340}
@@ -424,17 +411,13 @@ so that the constant surfaces are given by
 \end{dmath}
 %
 This is plotted for \(\mu \in [-1, 1]\), and \(\Abs{B_y/B_x} = 0.41\) in \cref{fig:qmSolidsPs8e:qmSolidsPs8eFig2} and \cref{fig:qmSolidsPs8e:qmSolidsPs8eFig3}.
-
 \mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8eFig2}{Sample energy contours for \(p_x\) orbital basis}{fig:qmSolidsPs8e:qmSolidsPs8eFig2}{0.4}{ps8e.nb}
-
 %\mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8eFig3f}{3D plot for \(p_x\) orbital basis}{fig:qmSolidsPs8e:qmSolidsPs8eFig3}{0.4}{ps8e.nb}
 \mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8eFig3g}{3D plot for \(p_x\) orbital basis}{fig:qmSolidsPs8e:qmSolidsPs8eFig3}{0.4}{ps8e.nb}
-
 %Certainly for the positive sign of \(B_x\) (ignoring the proportional adjustment) we have
 %
 %\Abs{B_{x_{+}}} \ge \int d^3 \Br \Abs{-v(\Br)} e^{-\alpha r\lr{ 1 + \sqrt{ 1 + \frac{\pm 2 x a + a^2}{r^2}} }} \Abs{ x^2 \pm a x}
 %\ge \int d^3 \Br \Abs{-v(\Br)} e^{-\alpha r\lr{ 1 + \sqrt{ 1 + \frac{\pm 2 x a + a^2}{r^2}} }} \Abs{ x^2 }
 %
 %For a negative potential \(v(\Br)\) this is approximately \(\Abs{B_y}\), so we have \(\Abs{B_x} > \Abs{B_y}\).
-
 }

@@ -3,14 +3,10 @@
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
 \makeoproblem{nearly free electron model}{condensedMatter:problemSet7:2}{2013 ps7 p2}{
-
 \Cref{fig:condensedMatterProblemSet7:condensedMatterProblemSet7Fig1} shows
 the free electron dispersion relation for a one-dimensional metal, in the reduced zone scheme.
-
 \imageFigure{../figures/phy487-qmsolids/condensedMatterProblemSet7Fig1}{dispersion relation for a one-dimensional metal}{fig:condensedMatterProblemSet7:condensedMatterProblemSet7Fig1}{0.3}
-
 \makesubproblem{}{condensedMatter:problemSet7:2a}
-
 For each of the branches (1), (2), (3) and (4),
 state which of the coefficients \(C_{k -G}\) are non-zero, and give the corresponding \(u_k(x)\) in the electron wave-function
 %
@@ -27,7 +23,6 @@ V(x) = V_1 cos(2\pi x/a) + V_2 cos(4 \pi x/a)
 \end{dmath}
 is introduced, what is the magnitude of the energy gap that opens up at the band
 crossings in the circled regions `a', `b' and `c'?
-
 \makesubproblem{}{condensedMatter:problemSet7:2c}
 What are the gaps at `a', `b' and `c' if
 instead the lattice potential is described by
@@ -52,12 +47,9 @@ Near point `a', investigate how the wave-function of the lower-energy branch (br
 as \(k\) moves away from \(\pi/a\). If it helps, you may start far enough away from the Brillouin
 zone boundary that \(E_{k - 2\pi/a}^\nought -E_{k}^\nought \gg \Abs{V_{2 \pi/a}}\).
 } % makeproblem
-
 \makeanswer{condensedMatter:problemSet7:2}{
 \makeSubAnswer{}{condensedMatter:problemSet7:2a}
-
 Considering each branch in turn:
-
 \begin{enumerate}
 \item On this branch, the wave function is
 \begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:80}
@@ -151,9 +143,7 @@ C_{k - 2 \pi m/a} &= 0, \qquad m \in \{0, \pm 1, -2, \pm 3, \pm 4, \cdots \}.
 \end{equation}
 %
 \end{enumerate}
-
 \makeSubAnswer{}{condensedMatter:problemSet7:2b}
-
 With \(G = 2 \pi/a\), we can write the potential of \eqnref{eqn:condensedMatterProblemSet7Problem2:40} as
 %
 \begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:240}
@@ -345,9 +335,7 @@ E_{\pm} = {E_{k + G}^\nought}.
 \end{dmath}
 %
 We find that the approximate separation at this point is zero.  Should we require a better estimate, we must retain of more of the coefficients \(C_{k - h G}\).
-
 \makeSubAnswer{}{condensedMatter:problemSet7:2c}
-
 Let's start by assuming the periodic delta function potential has a Fourier representation, and computing the associated Fourier components
 %
 \begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:500}
@@ -448,9 +436,7 @@ While I'd guess that this can be summed using the Euler-MacLaren theorem, Mathem
 \end{dmath}
 %
 This implicit function has two discrete solutions, as illustrated by representative plots in \cref{fig:ps7p2c:ps7p2cFig1}.  This could clearly be solved numerically.
-
-\mathImageFigure{../figures/phy487-qmsolids/ps7p2cFig1}{implicit function curves for delta-function-potential energy}{fig:ps7p2c:ps7p2cFig1}{0.3}{problemSet7problem2c.nb}
-
+\mathImageFigure{../figures/phy487-qmsolids/ps7p2cFig1}{Implicit function curves for delta-function-potential energy.}{fig:ps7p2c:ps7p2cFig1}{0.3}{problemSet7problem2c.nb}
 None of this helps with an estimate of the gap at the crossing points.  Considering point (a) as representative, let's make a crude approximation of \eqnref{eqn:condensedMatterProblemSet7Problem2:640} as
 %
 \begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:800}
@@ -487,9 +473,7 @@ The gap distance at this point (or the others) is thus approximately
 \boxedEquation{eqn:condensedMatterProblemSet7Problem2:780}{
 \Delta E \approx 2 \frac{V_\nought}{a}.
 }
-
 \makeSubAnswer{}{condensedMatter:problemSet7:2d}
-
 From \eqnref{eqn:condensedMatterProblemSet7Problem2:460} we see that the coefficients are related by
 %
 \begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:820}
@@ -538,11 +522,8 @@ These have respective charge densities
 \end{equation}
 %
 These are sketched in \cref{fig:ps7p2dDensityPlots:ps7p2dDensityPlotsFig2}.
-
 \imageFigure{../figures/phy487-qmsolids/ps7p2dDensityPlotsFig2}{Density plots}{fig:ps7p2dDensityPlots:ps7p2dDensityPlotsFig2}{0.3}
-
 \makeSubAnswer{}{condensedMatter:problemSet7:2e}
-
 We start with \eqnref{eqn:condensedMatterProblemSet7Problem2:340a}, for which we find
 %
 \begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:940}

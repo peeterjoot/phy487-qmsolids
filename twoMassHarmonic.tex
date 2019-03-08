@@ -22,15 +22,11 @@
 %\paragraph{Motivation}
 %
 %In lattice problems, we consider normal modes of harmonic coupled systems.  Here is a progression through a set of treatments of two harmonically coupled masses, to a lattice configuration with a number of masses all harmonically coupled.
-
 \makeproblem{Two body harmonic oscillator in 3D}{pr:twoMassHarmonic:1}{
 Solve a two mass harmonically coupled system without considering any equilibrium separation.
 } % makeproblem
-
 \makeanswer{pr:twoMassHarmonic:1}{
-
 For the system illustrated in \cref{fig:twoMassSpringCoupling:twoMassSpringCouplingFig1} the Lagrangian is
-
 \imageFigure{../figures/phy487-qmsolids/twoMassSpringCouplingFig1}{Two masses with harmonic coupling}{fig:twoMassSpringCoupling:twoMassSpringCouplingFig1}{0.2}
 %
 \begin{dmath}\label{eqn:twoMassHarmonic:20}
@@ -156,11 +152,8 @@ The final solution is
 Looking at this, it appears non-sensical.  At the very least, it is unphysical, and allows the masses to pass through each other.  This is illustrated in the animation of \nbref{harmonicOscillatorTwoMasses.cdf}
 
 Our Lagrangian needs to model the equilibrium length of the spring.
-
 }
-
 \makeproblem{1D system with non-zero equilibrium length}{pr:twoMassHarmonic:2}{
-
 In the absence of any initial angular momentum, the problem previously considered is essentially one dimensional.
 
 Let's consider a physically realistic harmonic oscillator system, with coupling that is relative to an equilibrium length (the length of an uncompressed or unstretched spring for example).  That system is illustrated in \cref{fig:twoMassSpringCoupling:twoMassSpringCouplingFig2}.
@@ -169,7 +162,6 @@ Let's consider a physically realistic harmonic oscillator system, with coupling 
 } % makeproblem
 
 \makeanswer{pr:twoMassHarmonic:2}{
-
 Adjusting for a rest length \(a = a_2 - a_1\) for the spring, the new system is described by
 %
 \begin{dmath}\label{eqn:twoMassHarmonic:22}
@@ -207,14 +199,11 @@ a +
 %
 Note that this does not model collision effects, should the initial position or velocity be sufficient to bring the masses into contact.
 } % makeanswer
-
 \makeproblem{3D system with non-zero equilibrium length}{pr:twoMassHarmonic:3}{
 Derive the equations of motion for a 3D harmonically coupled system with a non-zero equilibrium length using a Lagrange multiplier to enforce a linear constraint.
 } % makeproblem
-
 \makeanswer{pr:twoMassHarmonic:3}{
 The geometric of a 3D harmonically coupled system with a non-zero equilibrium length is sketched in \cref{fig:twoMassSpringCoupling:twoMassSpringCouplingFig3}.
-
 \imageFigure{../figures/phy487-qmsolids/twoMassSpringCouplingFig3}{Two mass harmonic coupled system}{fig:twoMassSpringCoupling:twoMassSpringCouplingFig3}{0.2}
 
 We can model the coupling spring as a line segment colinear with the difference vector, or
@@ -286,11 +275,9 @@ with the individual mass position vectors still given by \eqnref{eqn:twoMassHarm
 We get a strong hint here why we wish to work with displacement coordinates.
 %Once we do so, there's no longer any requirement to include the Lagrange multipliers that specify the physical constraint.
 } % makeanswer
-
 \makeproblem{A different formulation of the equilibrium position constraint}{pr:twoMassHarmonic:4}{
 Without the use of the somewhat forced seeming direction constraint used above, rederive the equations of motion.
 } % makeproblem
-
 \makeanswer{pr:twoMassHarmonic:4}{
 Here's a more natural way of specifying that we have an equilibrium length constraint
 %
@@ -366,11 +353,9 @@ With \(\Delta u = u_2 - u_1\), \eqnref{eqn:twoMassHarmonic:540} takes the form
 %
 We see exactly how natural displacement coordinates are for the two mass problem.  We have also avoided the awkward requirement for a Lagrange multiplier constraint in the Lagrangian model of the system.
 } % makeanswer
-
 \makeproblem{Linearized potential about equilibrium point}{pr:twoMassHarmonic:5}{
 Compute the linear expansion of a two mass potential, with masses located at \(\Br_1, \Br_2\) and equilibrium positions \(\Ba_1, \Ba_2\).
 } % makeproblem
-
 \makeanswer{pr:twoMassHarmonic:5}{
 \begin{dmath}\label{eqn:twoMassHarmonic:600}
 \phi(\Br_1, \Br_2)
@@ -647,17 +632,11 @@ Observe that on the RHS above we have a projection operator, so we could also wr
 %
 Only the portion of the displacement difference \(\Delta \Bu\) that is directed along the equilibrium line contributes to the acceleration of the displacement difference.
 } % makeanswer
-
 \makeproblem{A number of harmonically coupled masses}{pr:twoMassHarmonic:6}{
-
 Now let's consider masses at lattice points indexed by a lattice vector \(\Bn\), as illustrated in \cref{fig:twoMassSpringCoupling:twoMassSpringCouplingFig6}.
-
 \imageFigure{../figures/phy487-qmsolids/twoMassSpringCouplingFig6}{Masses harmonically coupled in a lattice}{fig:twoMassSpringCoupling:twoMassSpringCouplingFig6}{0.3}
-
 } % makeproblem
-
 \makeanswer{pr:twoMassHarmonic:6}{
-
 With a coupling constant of \(K_{\Bn \Bm}\) between lattice points indexed \(\Bn\) and \(\Bm\) (located at \(\Ba_\Bn\) and \(\Ba_\Bm\) respectively), and direction cosines for the equilibrium direction vector between those points given by
 %
 \begin{dmath}\label{eqn:twoMassHarmonic:900}
@@ -746,15 +725,12 @@ K_{\Bn \Bm}
 
 This is an intuitively pleasing result.  We have displacement and the direction of the lattice separations in the mix, but not the magnitude of the lattice separation itself.  Compare that to \eqnref{eqn:twoMassHarmonic:540} (the two mass result that did not use the Taylor expansion of the potential), where we had the lattice spacing explicitly along with the absolute coordinates (or rather the difference between them).
 } % makeanswer
-
 \makeproblem{Two atom basis, 2D diamond lattice}{pr:twoMassHarmonic:7}{
 As a concrete application of the previously calculated equilibrium harmonic oscillator result, find the equations of motion for a two atom basis diamond lattice where the horizontal length is \(a\) and vertical height is \(b\).
 } % makeproblem
-
 \makeanswer{pr:twoMassHarmonic:7}{
 %The basic interaction geometry is illustrated in \cref{fig:twoMassSpringCoupling:twoMassSpringCouplingFig7}, with
 Indexing for the primitive unit cells is illustrated in \cref{fig:twoMassSpringCoupling:twoMassSpringCouplingFig8}.
-
 %\imageFigure{../figures/phy487-qmsolids/twoMassSpringCouplingFig7}{Diamond lattice}{fig:twoMassSpringCoupling:twoMassSpringCouplingFig7}{0.3}
 \imageFigure{../figures/phy487-qmsolids/twoMassSpringCouplingFig8}{Primitive unit cells for diamond lattice}{fig:twoMassSpringCoupling:twoMassSpringCouplingFig8}{0.3}
 
