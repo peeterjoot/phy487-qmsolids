@@ -27,7 +27,7 @@
 %
 %Peeter's lecture notes from class.  May not be entirely coherent.
 %
-\section{Semiconductors}
+\section{Semiconductors.}
 \index{semiconductors}
 
 We continue with examination of the band structures of real materials.  In particular, start looking at semiconductors
@@ -42,16 +42,16 @@ We continue with examination of the band structures of real materials.  In parti
 \end{itemize}
 \makeexample{Diamond bandstructure}{example:condensedMatterLecture18:1}{
 %\cref{fig:qmSolidsL18:qmSolidsL18Fig1}.
-\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig1}{Diamond bandstructure}{fig:qmSolidsL18:qmSolidsL18Fig1}{0.2}
+\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig1}{Diamond bandstructure.}{fig:qmSolidsL18:qmSolidsL18Fig1}{0.2}
 
 The two branches are because we have two atoms per unit cell.  Those are due to antibonding and bonding conditions as in \cref{fig:qmSolidsL18:qmSolidsL18Fig2}.
 %
-\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig2}{Bonding and antibonding functions in unit cells}{fig:qmSolidsL18:qmSolidsL18Fig2}{0.1}
+\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig2}{Bonding and antibonding functions in unit cells.}{fig:qmSolidsL18:qmSolidsL18Fig2}{0.1}
 }
 \makeexample{Band structure of \ce{Ge} and \ce{Si}}{example:condensedMatterLecture18:2}{
 Also see slides and \citep{ibach2009solid} \S 7.13.
 %\cref{fig:qmSolidsL18:qmSolidsL18Fig3}.
-\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig3}{\ce{Ge}, \ce{Si} band structure}{fig:qmSolidsL18:qmSolidsL18Fig3}{0.2}
+\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig3}{\ce{Ge}, \ce{Si} band structure.}{fig:qmSolidsL18:qmSolidsL18Fig3}{0.2}
 \(\EF\) falls in a full gap, where there is no Fermi surface.  The gap is small.  Carriers can be thermally excited at room temperature.
 
 The lower energy curves correspond to bonding orbitals.  In general in materials the bonding orbitals will always be occupied, because they are energy favorable.
@@ -61,11 +61,11 @@ The lower energy curves correspond to bonding orbitals.  In general in materials
 
 For \ce{K Cl} as in \cref{fig:qmSolidsL18:qmSolidsL18Fig4}
 %
-\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig4}{\ce{K Cl} band structure}{fig:qmSolidsL18:qmSolidsL18Fig4}{0.2}
+\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig4}{\ce{K Cl} band structure.}{fig:qmSolidsL18:qmSolidsL18Fig4}{0.2}
 
 all bands near \(\EF\) are tight binding like.  There's a large gap at \(\EF\).
 }
-\section{Density of states}
+\section{Density of states.}
 \index{density of states}
 \reading \citep{ashcroft1976solid} \textchapref{8}.
 Recall
@@ -95,7 +95,7 @@ D(E) dE = \frac{2}{\lr{2\pi}^3} \int \frac{df_{\txtE}}{ \Abs{\spacegrad_\Bk E(\B
 %
 Referring to \cref{fig:qmSolidsL18:qmSolidsL18Fig5}.
 %
-\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig5}{Fermi surface for constant energy}{fig:qmSolidsL18:qmSolidsL18Fig5}{0.2}
+\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig5}{Fermi surface for constant energy.}{fig:qmSolidsL18:qmSolidsL18Fig5}{0.2}
 %
 \begin{dmath}\label{eqn:condensedMatterLecture18:80}
 d\Bk = df_{\txtE} dk_\perp
@@ -144,14 +144,14 @@ C(T) =
 
 Here we have Van Hove singularities.  Note that max/min at \(\Gamma\) do not produce a \textAndIndex{Van Hove singlularity}, because \(d f_{\txtE}\) is vanishingly small.
 %
-\section{Electrical transport}
+\section{Electrical transport.}
 \index{electrical transport}
 
 \reading \citep{ibach2009solid} \S 9.1,\citep{ashcroft1976solid} \textchapref{12}.
 
 We want to talk about how to make an electrical current flow.  Imagine that we are considering a block of material with leads on it, as in \cref{fig:qmSolidsL18:qmSolidsL18Fig6}.
 %
-\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig6}{Conducting block of metal}{fig:qmSolidsL18:qmSolidsL18Fig6}{0.1}
+\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig6}{Conducting block of metal.}{fig:qmSolidsL18:qmSolidsL18Fig6}{0.1}
 
 How do we use our Bloch description for such a volume?  A pure Bloch wave
 %
@@ -176,7 +176,7 @@ U_\Bk(\Br) e^{ i \lr{\Bk \cdot \Br - \omega t}} d\Bk'.
 This will spread as plotted in \cref{fig:qmSolidsL18:qmSolidsL18Fig7}.
 %
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig7}{Packet spreading with time}{fig:qmSolidsL18:qmSolidsL18Fig7}{0.1}
-\mathImageFigure{../figures/phy487-qmsolids/qmSolidsL18PacketSpreadingFig1}{Packet spreading with time}{fig:qmSolidsL18:qmSolidsL18Fig7}{0.3}{guassianPlotsL18L19.nb}
+\mathImageFigure{../figures/phy487-qmsolids/qmSolidsL18PacketSpreadingFig1}{Packet spreading with time.}{fig:qmSolidsL18:qmSolidsL18Fig7}{0.3}{guassianPlotsL18L19.nb}
 
 Moves with \textAndIndex{group velocity}
 \boxedEquation{eqn:condensedMatterLecture18:n}{
