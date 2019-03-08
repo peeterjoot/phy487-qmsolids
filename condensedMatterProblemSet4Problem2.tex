@@ -26,7 +26,7 @@ and \(k' = k_\nought - \delta\), to show that the dispersion relation is:
 \omega^2 = \frac{2k_\nought}{m}\left( 1 \pm \sqrt{ \cos^2\frac{qa}{2}
                + \frac{\delta^2}{k_\nought^2} \sin^2 \frac{qa}{2}} \,\, \right).
 \end{eqnarray*}
-
+%
 \makesubproblem{}{condensedMatter:problemSet4:2c}
 At \(q = 0\), plug the two solutions for \(\omega\) back into the
 coupled equations for \(u_1(q)\) and  \(u_2(q)\) to find the relative
@@ -60,7 +60,7 @@ For \(\delta = 0\), explain the form of your plot (hint: when
 \makeSubAnswer{}{condensedMatter:problemSet4:2a}
 
 In order to avoid the mental trauma of trying to figure out all the signs for the spring constant potential coefficients, we can describe the system by the Lagrangian
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:20}
 \begin{aligned}
 \LL &= \sum_{n, \alpha} \frac{m}{2} \dot{u}_{n, \alpha}^2 \\
@@ -70,16 +70,16 @@ In order to avoid the mental trauma of trying to figure out all the signs for th
 - \cdots
 \end{aligned}
 \end{dmath}
-
+%
 The force equations then follow directly from the Euler-Lagrange equations
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:40}
 0 = \ddt{} \PD{\dot{u}_{n, \alpha}}{\LL}
 - \PD{u_{n, \alpha}}{\LL}.
 \end{dmath}
-
+%
 That is
-
+%
 \begin{equation}\label{eqn:condensedMatterProblemSet4Problem2:60}
 \begin{aligned}
 0 &= m \ddot{u}_{n, 1}
@@ -100,9 +100,9 @@ u_{n, 1}
 u_{n + 1, 1}
 \end{aligned}
 \end{equation}
-
+%
 Our trial solution functions from above are
-
+%
 \begin{equation}\label{eqn:condensedMatterProblemSet4Problem2:220}
 \begin{aligned}
 u_{n - 1, 2} &= u_2 e^{ i(q a (n - 1) - \omega t) } \\
@@ -111,9 +111,9 @@ u_{n, 2} &= u_2 e^{ i(q a n - \omega t) } \\
 u_{n + 1, 1} &= u_1 e^{ i(q a (n + 1) - \omega t) },
 \end{aligned}
 \end{equation}
-
+%
 which gives us
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:300}
 \begin{aligned}
 0 &= -m \omega^2
@@ -136,7 +136,7 @@ u_1 \cancel{e^{ i(q a n - \omega t) } }
 u_1 e^{ i(q a (\cancel{n} + 1) - \cancel{\omega t}) },
 \end{aligned}
 \end{dmath}
-
+%
 or
 \begin{equation}\label{eqn:condensedMatterProblemSet4Problem2:340}
 \begin{aligned}
@@ -160,11 +160,11 @@ u_1
 u_1 e^{ i q a }.
 \end{aligned}
 \end{equation}
-
+%
 \makeSubAnswer{}{condensedMatter:problemSet4:2b}
 
 We seek \(\omega^2\) solutions to the determinant
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:380}
 \begin{aligned}
 0 &=
@@ -224,7 +224,7 @@ e^{ i q a/2 }
 }
 \end{aligned}
 \end{dmath}
-
+%
 %%%Using the trial solution
 %%%
 %%%\begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:100}
@@ -306,7 +306,7 @@ e^{ i q a/2 }
 %%%\delta^2 \sin^2 \lr{ q a /2 }
 %%%},
 %%%\end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:280}
 \omega^2 =
@@ -319,33 +319,33 @@ or
 }
 },
 \end{dmath}
-
+%
 as desired.
 
 \makeSubAnswer{}{condensedMatter:problemSet4:2c}
 
 At \(q = 0\) we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:400}
 \omega^2 = \frac{2 k_\nought }{m} \lr{ 1 \pm 1 },
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:420}
 \omega \in \{ \pm 2 \omega_\nought, 0 \},
 \end{dmath}
-
+%
 where the natural frequency for the average spring constant is
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:580}
 \omega_\nought^2 = \frac{k_\nought}{m}.
 \end{dmath}
-
+%
 \paragraph{Zero frequency case.}
 
 For the \(\omega = 0, q = 0\) case, our equations of motion
 \eqnref{eqn:condensedMatterProblemSet4Problem2:340}, now take the form
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:440}
 2 k_\nought u_1
 =
@@ -364,16 +364,16 @@ u_2
 =
 2 k_\nought u_2.
 \end{dmath}
-
+%
 Both the ``motions'' in the primitive unit cell is described by
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:620}
 \begin{aligned}
 u_{n, 1} &= u_2 \\
 u_{n, 2} &= u_2,
 \end{aligned}
 \end{dmath}
-
+%
 where \(u_2 = u_2(q)\) an arbitrary undetermined function.  This solution represents uniform translation.
 
 %  If we consider this system subject to the period boundary conditions used in the 1D chain in class, then this distribution is subject to the constraint on \(q\) of
@@ -393,13 +393,13 @@ where \(u_2 = u_2(q)\) an arbitrary undetermined function.  This solution repres
 \paragraph{Non-zero frequency case.}
 
 For the non-constant time dependent solutions, where \(\omega \ne 0, q = 0\), we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:560}
 \omega = \pm 2 \omega_\nought,
 \end{dmath}
-
+%
 so that our equations of motion \eqnref{eqn:condensedMatterProblemSet4Problem2:340}, now take the form
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:640}
 -m \omega_\nought^2 u_1
 =
@@ -412,22 +412,22 @@ u_2
 2 k_\nought
 u_2,
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:660}
 u_1 = -u_2.
 \end{dmath}
-
+%
 The equations for \(u_{n, 1}\) and \(u_{n, 2}\) are
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:600}
 \begin{aligned}
 u_{n, 1} &= -u_2 e^{ \pm 2 i \omega_\nought t } \\
 u_{n, 2} &= u_2 e^{ \pm 2 i \omega_\nought t }
 \end{aligned}
 \end{dmath}
-
+%
 where, again, \(u_2 = u_2(0)\) is the initial time displacement of the \(x_{n, 2}\) atom.  We see that when \(q = 0\), the variation \(\delta\) of the spring constants from their average value \(k_\nought\) makes no difference to the motion of the atoms.  This motion is a pairwise oscillation of the form \cref{fig:qmSolidsPs4Qzero:qmSolidsPs4QzeroFig1}.
 
 \mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs4QzeroFig1}{Pairwise oscillation}{fig:qmSolidsPs4Qzero:qmSolidsPs4QzeroFig1}{0.3}{qmSolidsPs4P2cAnimation.nb}
@@ -441,13 +441,13 @@ The frequencies \(\omega(q)\) are plotted in \cref{fig:qmSolidsPs4P2d:qmSolidsPs
 \makeSubAnswer{}{condensedMatter:problemSet4:2e}
 
 To examine both the limiting scenario and the case \(\delta/k_\nought = 0.9\), let
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:740}
 \epsilon = 1 - \lr{\frac{\delta}{k_\nought}}^2,
 \end{dmath}
-
+%
 so that
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:760}
 \omega^2
 = 2 \omega_\nought^2 \lr{ 1 \pm \sqrt{ \cos^2\frac{qa}{2} + (1 - \epsilon) \sin^2 \frac{qa}{2}} }
@@ -458,9 +458,9 @@ so that
 \omega_\nought^2 \epsilon \sin^2 \frac{qa}{2}
 \right\},
 \end{dmath}
-
+%
 where \(\omega_\nought^2 = k_\nought/m\), as above.  Taking roots and further approximations we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:780}
 \omega
 \approx
@@ -473,20 +473,20 @@ where \(\omega_\nought^2 = k_\nought/m\), as above.  Taking roots and further ap
 \omega_\nought \sqrt{\epsilon} \sin \frac{qa}{2}
 \right\},
 \end{dmath}
-
+%
 In optical \index{optical dispersion} range, we have \(\omega \approx 2 \omega_\nought\), with only small deviations from that.  As \(\delta/k_\nought\) gets small, this will become increasingly flat.  In fact, we see this close to linear even for the \(0.9\) case where we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:800}
 \omega \approx
 2 \omega_\nought \lr{ 1 - 0.024 \sin^2 \frac{qa}{2} }.
 \end{dmath}
-
+%
 In the acoustic \index{acoustic dispersion} range we have a uniformly damped sinusoid.  For this \(0.9\) case that is
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:720}
 \omega \approx 0.43 \omega_\nought \sin \frac{qa}{2}.
 \end{dmath}
-
+%
 \paragraph{Grading remark:} ``Explain physically what is going on.''  Examining the posted solution, what was being looked for was a characterization of the motion itself (i.e. what sort of specific motions of the springs is occuring, are they in phase or out of phase, ...)
 
 \makeSubAnswer{}{condensedMatter:problemSet4:2f}
@@ -499,16 +499,16 @@ The \(\delta = 0\) values are somewhat tricky to distinguish in \cref{fig:qmSoli
 \paragraph{Grading remark:} ``Only one mode'' was marked under \cref{fig:qmSolidsPs4AccousticDeltaZero:qmSolidsPs4AccousticDeltaZeroFig1}, with an X beside the figure.  Reviewing the posted solution, it appears that the correct response to this part of the problem is to observe that treating this primitive cell as one with two masses is no longer appropriate.  A correct analysis of this limit requires is that of a one atom basis, not two.
 
 To examine the nature of these curves in more detail, observe that for \(\delta = 0\) we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:820}
 \omega^2 = 2 \omega_\nought^2 \lr{ 1 \pm \cos \frac{qa}{2} },
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:840}
 \omega = \sqrt{2} \omega_\nought \sqrt{ 1 \pm \cos \frac{qa}{2} }.
 \end{dmath}
-
+%
 Noting that
 \begin{equation}\label{eqn:condensedMatterProblemSet4Problem2:860}
 \begin{aligned}
@@ -516,15 +516,15 @@ Noting that
 1 + \cos x &= 2 \cos^2 x/2,
 \end{aligned}
 \end{equation}
-
+%
 provided \(qa < \pi\) we can write the optical and acoustic ranges for \(\omega\) at \(\delta = 0\) respectively as
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:880}
 \omega \in \left\{
 2 \omega_\nought \cos \frac{qa}{4},
 2 \omega_\nought \sin \frac{qa}{4}
  \right\}.
 \end{dmath}
-
+%
 These meet at \(qa = \pi\) before switching directions (the border of the Brillouin zone).
 }

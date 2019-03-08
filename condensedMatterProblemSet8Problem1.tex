@@ -29,7 +29,7 @@ show that
 \begin{eqnarray*}
 E(\Bk) \simeq E_s - A - 2B(\cos(k_x a) + \cos(k_ya)).
 \end{eqnarray*}
-
+%
 \makesubproblem{}{condensedMatter:problemSet8:1b}
 Plot \(E(\Bk)\) along the following lines in
 \(k\)-space:
@@ -87,21 +87,21 @@ on neighbouring atoms, to visualize how they overlap.
 \makeSubAnswer{}{condensedMatter:problemSet8:1a}
 
 In class (or \citep{ibach2009solid} (\texteqnref{7.37})) we found for the tight binding energy at the lattice point at \(\Br_n\)
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:160}
 E(\Bk) \approx E_i - A - B \sum_{m = \text{nn of n}} e^{i \Bk \cdot (\Br_n - \Br_m)}.
 \end{dmath}
-
+%
 The nearest neighbor differences are illustrated in \cref{fig:qmSolidsPs8a:qmSolidsPs8aFig1}, which we see are
 
 \imageFigure{../figures/phy487-qmsolids/qmSolidsPs8aFig1}{Cubic nearest neighbor differences}{fig:qmSolidsPs8a:qmSolidsPs8aFig1}{0.2}
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:180}
 \Br_m - \Br \in \{(0, a), (0, -a), (a, 0), (-a, 0)\}.
 \end{dmath}
-
+%
 The sum of exponentials is just
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:200}
 \sum_m e^{i \Bk \cdot (\Br_n - \Br_m)}
 =
@@ -119,27 +119,27 @@ e^{ -i a k_y }
 +e^{ i a k_x }
 = 2 \cos a k_x + 2 \cos a k_y
 \end{dmath}
-
+%
 \Eqnref{eqn:condensedMatterProblemSet8Problem1:160} takes the form
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:220}
 E(\Bk) \approx E_i - A - 2 B \lr{
 \cos a k_x + \cos a k_y
 },
 \end{dmath}
-
+%
 as desired.
 
 \makeSubAnswer{}{condensedMatter:problemSet8:1b}
 
 \paragraph{(i)}  Parameterize this trajectory with
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:20}
 \Bk(u) = \frac{2 \pi}{a} u (1, 0),
 \end{dmath}
-
+%
 so the energy on this trajectory is
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:40}
 E(\Bk(u))
 =
@@ -149,19 +149,19 @@ E_s - A - 2 B \lr{
 =
 E_s - A - 2 B - 2B \cos 2 \pi u.
 \end{dmath}
-
+%
 This is plotted in \cref{fig:qmSolidsPs8bi:qmSolidsPs8biFig1}.
 
 \mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8biFig1}{\(E(k)\) on \(k \in [(0,0), 2 \pi (1,0)/a]\)}{fig:qmSolidsPs8bi:qmSolidsPs8biFig1}{0.2}{qmSolidsPs8biFig1Generated.nb}
 
 \paragraph{(ii)}  Parameterize this trajectory with
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:60}
 \Bk(v) = \frac{2 \pi}{a} v (0, 1),
 \end{dmath}
-
+%
 so the energy on this trajectory is
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:80}
 E(\Bk(v))
 =
@@ -171,19 +171,19 @@ E_s - A - 2 B \lr{
 =
 E_s - A - 2 B - 2B \cos 2 \pi v.
 \end{dmath}
-
+%
 This, identical to (i) in form, is plotted in \cref{fig:qmSolidsPs8bii:qmSolidsPs8biiFig2}.
 
 \mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8biiFig2}{\(E(k)\) on \(k \in [(0,0), 2 \pi (0,1)/a]\)}{fig:qmSolidsPs8bii:qmSolidsPs8biiFig2}{0.2}{qmSolidsPs8biiFig2Generated.nb}
 
 \paragraph{(iii)}  Parameterize this trajectory with
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:100}
 \Bk(w) = \frac{2 \pi}{a} w (1, 1),
 \end{dmath}
-
+%
 so the energy on this trajectory is
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:120}
 E(\Bk(w))
 =
@@ -193,7 +193,7 @@ E_s - A - 2 B \lr{
 =
 E_s - A - 4 B \cos 2 \pi w.
 \end{dmath}
-
+%
 This, identical to (i) and (ii) in form, but with different extremums, is plotted in \cref{fig:qmSolidsPs8biii:qmSolidsPs8biiiFig3}.
 
 \mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8biiiFig3}{\(E(k)\) on \(k \in [(0,0), 2 \pi (1,1)/a]\)}{fig:qmSolidsPs8biii:qmSolidsPs8biiiFig3}{0.2}{qmSolidsPs8biiiFig3Generated.nb}
@@ -201,43 +201,43 @@ This, identical to (i) and (ii) in form, but with different extremums, is plotte
 \makeSubAnswer{}{condensedMatter:problemSet8:1c}
 
 \(E(\Bk)\) ranges from \(E_s - A - 2 B(1 + 1)\) to \(E_s - A - 2 B ( - 1 - 1)\).  That maximum difference is
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:140}
 4 B - (-4B) = 8B.
 \end{dmath}
-
+%
 \makeSubAnswer{}{condensedMatter:problemSet8:1d}
 
 \paragraph{(i)  \(E = E_s - A - 2B\)} The first contour is that defined by
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:240}
 E = E_s - A - 2 B \lr{ \cos k_x a + \cos k_y a } =
 E_s - A - 2 B,
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:260}
 \cos k_x a + \cos k_y a = 1
 \end{dmath}
-
+%
 \paragraph{(ii) \(E = E_s - A - B\)} Next we have the contour defined by
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:280}
 \cos k_x a + \cos k_y a = \inv{2}
 \end{dmath}
-
+%
 \paragraph{(iii) \(E = E_s - A\)} This contour is defined by
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:300}
 \cos k_x a + \cos k_y a = 0
 \end{dmath}
-
+%
 \paragraph{(iv)  \(E = E_s - A + 2B\)} And the last contour defined by
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:320}
 \cos k_x a + \cos k_y a = -1
 \end{dmath}
-
+%
 These are plotted as functions of \(u = k_x a\) and
 \(v = k_y a\) in \cref{fig:qmSolidsPs8d:qmSolidsPs8dFig1}.  These are level curves of the surface plotted in \cref{fig:qmSolidsPs8d:qmSolidsPs8dFig2}.
 
@@ -269,11 +269,11 @@ As a followup it would be good to:
 \makeSubAnswer{}{condensedMatter:problemSet8:1e}
 
 The \(2 p_x\) orbital function in Cartesian coordinates are
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:340}
 \phi_{2p_x} = \inv{\sqrt{\pi}} \lr{ \frac{ Z}{2 a_\nought} }^{5/2} e^{-Z r/a_\nought} x,
 \end{dmath}
-
+%
 where \(r = \sqrt{x^2 + y^2 + z^2}\).  The overlap of these orbitals in the lattice could look something like \cref{fig:qmSolidsPs8e:qmSolidsPs8eFig1}.
 
 \imageFigure{../figures/phy487-qmsolids/qmSolidsPs8eFig1}{\(2 p_x\) overlap}{fig:qmSolidsPs8e:qmSolidsPs8eFig1}{0.15}
@@ -281,7 +281,7 @@ where \(r = \sqrt{x^2 + y^2 + z^2}\).  The overlap of these orbitals in the latt
 \paragraph{Grading remarks:} \(x \pm a\) is circled ``be careful with this.  Need to presem \textunderline{parity} of orbital'', and ``\(B_x\) is \textunderline{negative}''.
 
 Putting the origin at \(\Br_n\), writing \(\alpha = Z/a_\nought\), and \(c^2 = (Z/2 a_\nought)^5/\pi\), the \(A\) and \(B\) integrals for this basis are
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:360}
 \begin{aligned}
 A &= - c^2 \int dx dy dz e^{-2 \alpha \sqrt{ x^2 + y^2 + z^2} } v(x, y, z) x^2 \\
@@ -289,7 +289,7 @@ B_x &= - c^2 \int dx dy dz e^{-\alpha \sqrt{ (x \pm a)^2 + y^2 + z^2}} \lr{x \pm
 B_y &= - c^2 \int dx dy dz e^{-\alpha \sqrt{ x^2 + (y \pm a)^2 + z^2}} x^2 v(x, y, z) e^{ -\alpha \sqrt{x^2 + y^2 + z^2}}  \\
 \end{aligned}
 \end{dmath}
-
+%
 We can rewrite these as
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:380}
 \begin{aligned}
@@ -298,9 +298,9 @@ B_x &= - c^2 \int d^3 \Br v(\Br) e^{-\alpha \lr{ r + \sqrt{ r^2 \pm 2 x a + a^2}
 B_y &= - c^2 \int d^3 \Br v(\Br) e^{-\alpha \lr{ r + \sqrt{ r^2 \pm 2 y a + a^2} }} x^2
 \end{aligned}
 \end{dmath}
-
+%
 The energy then becomes
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:400}
 \begin{aligned}
 E(\Bk)
@@ -325,39 +325,39 @@ E_s
 &+ c^2 \int d^3 \Br v(\Br) e^{-\alpha \lr{ r + \sqrt{r^2+ 2 y a + a^2} }} x^2 e^{-i a k_y}
 \end{aligned}
 \end{dmath}
-
+%
 \paragraph{Zeroth order approximation}
 
 In the limiting case where \(v(\Br) \approx 0\) unless \(\Abs{\Br} \ll a\), this gives us
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:420}
 E(\Bk) \approx E_s - \beta(2) - 2 \beta(1) e^{- Z a/a_\nought} \lr{ \cos k_x a + \cos k_y a},
 \end{dmath}
-
+%
 where
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:440}
 \beta(n) = - c^2 \int d^3 \Br v(\Br) e^{-n Z r/a_\nought} x^2.
 \end{dmath}
-
+%
 In this limit we have the same ``bucket'' constant energy contours as found above, however for a constant surface
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:460}
 E = E_s - E_s - \beta(2) - 2 \beta(1) \mu
 \end{dmath}
-
+%
 the contours are defined by
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:480}
 \cos k_x a + \cos k_y a = \mu e^{ Z a/a_\nought}.
 \end{dmath}
-
+%
 This flattens the surface as \(Z\) increases.
 
 \paragraph{First order approximation}
 
 Allowing for an additional order of \(r/a\) in the square root expansions above, so that, for instance
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:500}
 e^{-\alpha \lr{ r + \sqrt{ r^2 - 2 x a + a^2 }} }
 \approx
@@ -367,9 +367,9 @@ e^{-\alpha (r - x)}
 e^{-a \alpha}
 e^{-\alpha r^2/{2 a^2} }.
 \end{dmath}
-
+%
 Now we see the parity effects of the \(p_x\) orbital start to manifest.  The energy to this order of approximation is
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:520}
 \begin{aligned}
 E(\Bk) &=
@@ -390,7 +390,7 @@ E_s
 %}
 \end{aligned}
 \end{dmath}
-
+%
 In the \(B_x\) integrals we have integrands including factors of the form
 \((x^2 - ax)e^{\alpha x}\) or
 \((x^2 + a x)e^{-ax}\) both of which have
@@ -400,29 +400,29 @@ In the \(B_x\) integrals we have integrands including factors of the form
 \(\Abs{B_x} \gg \Abs{B_y}\) condition for weak overlap.
 
 Given this difference in magnitude, we can roughly expect that the energy can be written as approximately
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:540}
 E(\Bk) = E_s - A
 + \Abs{B_x} \cos k_x a
 - \Abs{B_y} \cos k_y a.
 \end{dmath}
-
+%
 \paragraph{Grading remark:} Originally had \(-\Abs{B_x}\), which resulted in a squished plot instead of the one below that has a saddle.  The comment was ``negative \(B_x\) makes \((0, 0)\) a saddle point''.
 
 Consider constant energy contours
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:560}
 E(\Bk) = E_s - A - 2 \mu \sqrt{ B_x^2 + B_y^2 },
 \end{dmath}
-
+%
 so that the constant surfaces are given by
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:580}
 -\cos k_x a
 + \Abs{\frac{B_y}{B_x}} \cos k_y a =
 2 \mu \sqrt{ 1 + \frac{B_y^2}{B_x^2} }.
 \end{dmath}
-
+%
 This is plotted for \(\mu \in [-1, 1]\), and \(\Abs{B_y/B_x} = 0.41\) in \cref{fig:qmSolidsPs8e:qmSolidsPs8eFig2} and \cref{fig:qmSolidsPs8e:qmSolidsPs8eFig3}.
 
 \mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8eFig2}{Sample energy contours for \(p_x\) orbital basis}{fig:qmSolidsPs8e:qmSolidsPs8eFig2}{0.4}{ps8e.nb}

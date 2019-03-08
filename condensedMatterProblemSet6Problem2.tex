@@ -5,20 +5,20 @@
 \makeoproblem{Electronic specific heat of 1D and 2D free electron metals}{condensedMatter:problemSet6:2}{\citep{ibach2009solid} pr 6.1}{
 \makesubproblem{}{condensedMatter:problemSet6:2a}
 Calculate the density of states for a two-dimensional gas of free electrons in a so-called quantum well.  The boundary conditions for the electronic wavefunction are:
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:20}
 \psi(x, y, z) = 0, \quad \mbox{for \(\Abs{x} > a\)},
 \end{dmath}
-
+%
 where \(a\) is of atomic dimensions.
 
 \makesubproblem{}{condensedMatter:problemSet6:2b}
 Calculate the density of states for a one-dimensional gas of free electrons in a so-called quantum wire, the the boundary conditions:
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:40}
 \psi(x, y, z) = 0, \quad \mbox{for \(\Abs{x} > a\), and \(\Abs{y} > b\)},
 \end{dmath}
-
+%
 where \(a\) and \(b\) are of atomic dimensions.
 
 \makesubproblem{}{condensedMatter:problemSet6:2c}
@@ -47,13 +47,13 @@ Consider a pizza box configuration where \(L \gg a\) as in \cref{fig:qmSolidsPs6
 \imageFigure{../figures/phy487-qmsolids/qmSolidsPs6P2Fig1}{Particle in a pizza box}{fig:qmSolidsPs6P2:qmSolidsPs6P2Fig1}{0.3}
 
 Schr\"{o}dinger's equation for the particle inside the box is
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:60}
 -\frac{\Hbar^2}{2m} \spacegrad^2 \Psi + V_\nought \Psi = E \Psi.
 \end{dmath}
-
+%
 Solving by separation of variables with \(\Psi = X Y Z\), we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:80}
 \frac{X''}{X}
 +\frac{Y''}{Y}
@@ -61,9 +61,9 @@ Solving by separation of variables with \(\Psi = X Y Z\), we have
 =
 - \frac{2 m}{\Hbar^2} (E - V_\nought).
 \end{dmath}
-
+%
 Assuming independent solutions
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:100}
 \begin{aligned}
 X'' &= - k_x^2 X \\
@@ -71,32 +71,32 @@ Y'' &= - k_y^2 Y \\
 Z'' &= - k_z^2 Z,
 \end{aligned}
 \end{dmath}
-
+%
 we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:120}
 k_x^2 + k_y^2 + k_z^2 = \frac{2 m}{\Hbar^2} (E - V_\nought).
 \end{dmath}
-
+%
 We could write \(E' = E - V_\nought\), but this is equivalent to setting the ground to zero (i.e. \(V_\nought = 0\)), so let's just do that, dispensing with any primes on the energy.
 
 Our solution is
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:140}
 \Psi = A
 \sin\lr{ k_x (x - a)}
 \sin\lr{ k_y y }
 \sin\lr{ k_z z },
 \end{dmath}
-
+%
 where
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:160}
 E(\Bk) = \frac{\Hbar^2 \Bk^2}{2m},
 \end{dmath}
-
+%
 The boundary constraints are
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:180}
 \begin{aligned}
 \Psi(x = a) = \Psi(x = -a) &= 0 \\
@@ -104,9 +104,9 @@ The boundary constraints are
 \Psi(z = 2 L) = \Psi(z = 0) &= 0,
 \end{aligned}
 \end{dmath}
-
+%
 so for integers \(q, r, s\), we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:200}
 \begin{aligned}
 k_x 2 a &= q \pi \\
@@ -114,22 +114,22 @@ k_y 2 L &= r \pi \\
 k_z 2 L &= s \pi,
 \end{aligned}
 \end{dmath}
-
+%
 Normalizing the wave function gives us
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:220}
 \Psi = \inv{\sqrt{a} L}
 \sin\lr{ \frac{q \pi (x - a)}{2 a}}
 \sin\lr{ \frac{r \pi y}{2 L}}
 \sin\lr{ \frac{s \pi z}{2 L}}.
 \end{dmath}
-
+%
 The k-points in momentum space are illustrated in \cref{fig:qmSolidsPs6P2:qmSolidsPs6P2Fig2}.  However, since we are considering the particle to be in the ground state for the \(x\) direction, only the k-space points in the plane, separated by \(\pi/2L\) in each direction, will contribute to the density of states.
 
 \imageFigure{../figures/phy487-qmsolids/qmSolidsPs6P2Fig2}{K space points for pizza box wavefunction}{fig:qmSolidsPs6P2:qmSolidsPs6P2Fig2}{0.3}
 
 We evaluate the density of states in the same fashion as we did in class
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:240}
 \sum_{k_y, k_z, \mathrm{spin}}
 \rightarrow
@@ -148,25 +148,25 @@ We evaluate the density of states in the same fashion as we did in class
 =
 \frac{A}{\pi} \int k dk.
 \end{dmath}
-
+%
 To convert to an energy integral, we use
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:260}
 dE = \frac{\Hbar^2 k}{m} dk,
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:280}
 \frac{m}{\Hbar^2} dE = k dk.
 \end{dmath}
-
+%
 The density of states definition is
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:300}
 \frac{A}{\pi} \int \frac{m}{\Hbar^2} dE
 \equiv A \int D(E) dE,
 \end{dmath}
-
+%
 so the density of states is constant in 2D
 
 \boxedEquation{eqn:condensedMatterProblemSet6Problem2:320}{
@@ -180,16 +180,16 @@ We now want to consider a particle in the cigar box configuration of \cref{fig:q
 \imageFigure{../figures/phy487-qmsolids/qmSolidsPs6P2Fig3}{Particle in a cigar box}{fig:qmSolidsPs6P2:qmSolidsPs6P2Fig3}{0.15}
 
 The wave function is
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:340}
 \Psi = \inv{\sqrt{a b L}}
 \sin\lr{ \frac{q \pi (x - a)}{2 a}}
 \sin\lr{ \frac{r \pi (y - b)}{2 b}}
 \sin\lr{ \frac{s \pi z}{2 L}},
 \end{dmath}
-
+%
 and the k space points of interest are separated by \(\pi/2 L\) as before.  The density of states calculation goes
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:360}
 \sum_{k_z, \mathrm{spin}}
 \rightarrow
@@ -204,9 +204,9 @@ dk_z
 \frac{4 L}{\pi}
 \int dk_z.
 \end{dmath}
-
+%
 Converting the differential to energy space, we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:380}
 dk_z
 =
@@ -216,16 +216,16 @@ dk_z
 =
 \inv{\Hbar} \sqrt{\frac{m}{2 E}} dE.
 \end{dmath}
-
+%
 Inserting this gives us
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:400}
 L \int D(E) dE =
 \frac{4 L}{\pi}
 \int
 \inv{\Hbar} \sqrt{\frac{m}{2 E}} dE,
 \end{dmath}
-
+%
 or
 
 \boxedEquation{eqn:condensedMatterProblemSet6Problem2:420}{

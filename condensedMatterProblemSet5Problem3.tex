@@ -32,9 +32,9 @@ We first setup the 2D density of states construction as we did for 3D, also empl
 2 \pi n_y &= L_y q_y,
 \end{aligned}
 \end{dmath}
-
+%
 so that a sum over the quantum numbers \(\Bn\) can be approximated as
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:40}
 \sum_\Bn
 \approx
@@ -49,9 +49,9 @@ so that a sum over the quantum numbers \(\Bn\) can be approximated as
 =
 \int Z(\omega) d\omega
 \end{dmath}
-
+%
 This Debye model we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:60}
 \omega =
 \left\{
@@ -61,9 +61,9 @@ C_{\txtT} q & \quad \mbox{transverse acoustic}
 \end{array}
 \right.
 \end{dmath}
-
+%
 This gives
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:80}
 \int Z(\omega) d\omega
 =
@@ -115,7 +115,7 @@ d \omega
 }
 \omega d \omega,
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:160}
 Z(\omega) =
@@ -125,13 +125,13 @@ Z(\omega) =
 }
 \omega.
 \end{dmath}
-
+%
 Define the Debye frequency \(\omega_{\txtD}\) by
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:100}
 \int_0^{\omega_{\txtD}} Z(\omega) d\omega = 2 r N
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:120}
 2 r N
 =
@@ -139,22 +139,22 @@ Define the Debye frequency \(\omega_{\txtD}\) by
 =
 \frac{A}{ 2 \pi} \lr{ \inv{C_{\txtL}^2} + \frac{1}{C_{\txtT}^2} } \inv{2} \omega_{\txtD}^2,
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:140}
 \frac{A}{ 2 \pi} \lr{ \inv{C_{\txtL}^2} + \frac{1}{C_{\txtT}^2} } \omega_{\txtD}^2 = 4 r N.
 \end{dmath}
-
+%
 Inserting this Debye frequency into the density of states gives
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:180}
 Z(\omega) =
 \frac{4 r N \omega}{ \omega_{\txtD}^2 }.
 \end{dmath}
-
+%
 We can now start the \textAndIndex{specific heat} calculation
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:200}
 \cA(T)
 =
@@ -204,7 +204,7 @@ d\omega
 e^{\Hbar \omega/\kB T}
 d\omega
 \end{dmath}
-
+%
 As in class we make substitutions
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:220}
@@ -217,9 +217,9 @@ d\omega = \frac{\kB T}{\Hbar} dy
 y(\omega_{\txtD}) = \frac{\Hbar \omega_{\txtD}}{ \kB T} = \frac{\kB \Theta}{\kB T} = \frac{\Theta}{T}.
 \end{dmath}
 \end{subequations}
-
+%
 Inserting these we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:300}
 \cA(T)
 =
@@ -246,9 +246,9 @@ dy
 \lr{ e^{y} - 1 }^2
 }
 \end{dmath}
-
+%
 In the \(\kB T \ll \Hbar \omega_{\txtD} = \kB \Theta\) limit where the integrand is small, the integral limit can be approximated by extension to \(\infty\).  This produces the desired result
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet5Problem3:320}
 \cA(T) = 7.213 \frac{4 r N}{A} \kB \frac{T^2}{ \Theta^2 }.
 \end{dmath}

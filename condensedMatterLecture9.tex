@@ -31,38 +31,38 @@ We'll want to calculate the total energy stored in the lattice.  There are a num
 \item Quantization.
 
 As an example, the classic SHO problem
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:20}
 m \ddot{u} = -k u,
 \end{dmath}
-
+%
 results in a single frequency
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:40}
 \omega = \sqrt{\frac{k}{m}}.
 \end{dmath}
-
+%
 With quantization we find only discrete frequencies, as in \cref{fig:qmSolidsL9:qmSolidsL9Fig1}.
 
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig1}{Quantized SHO energy levels}{fig:qmSolidsL9:qmSolidsL9Fig1}{0.1}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:60}
 \epsilon_n = \lr{ n + \inv{2} } \Hbar \omega.
 \end{dmath}
-
+%
 For lattices we've been seeking solutions of the force equations
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:80}
 M_\alpha \ddot{u}_{n \alpha i} = - \sum_{m \beta j}
 \Phi_{n \alpha i}^{m \beta j} u_{m \beta j}.
 \end{dmath}
-
+%
 This provided us lattice frequencies \(\omega_q\), which quantize as
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:100}
 \epsilon_{q, n} = \lr{ n_q + \inv{2} } \Hbar \omega_q.
 \end{dmath}
-
+%
 Prof hoping that we are willing to this without proof since the proof is hard, and would take a couple days (see: \citep{ashcroft1976solid} appendix L.)
 
 We've apparently seen such a derivation indirectly in blackbody calculations.
@@ -70,7 +70,7 @@ We've apparently seen such a derivation indirectly in blackbody calculations.
 \item
 
 If we accept \eqnref{eqn:condensedMatterLecture9:100}, then the thermal energy is
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:120}
 U(T) = \mathLabelBox
 [
@@ -86,7 +86,7 @@ n_q
 + \inv{2}
 \Bigr) \Hbar \omega_q
 \end{dmath}
-
+%
 \item figuring out how to evaluate such a sum.
 
 \end{enumerate}
@@ -109,41 +109,41 @@ The density of states is the number of Phonon modes per unit energy.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig2}{Period boundary conditions}{fig:qmSolidsL9:qmSolidsL9Fig2}{0.15}
 
 due to periodic boundary
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:140}
 e^{i \Bq \cdot \lr { \Br_n + \BL_x } } =
 e^{i \Bq \cdot \Br_n },
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:160}
 q_x L_x = 2 \pi l,
 %\Bq \cdot \Br_n = 2 \pi l,
 \end{dmath}
-
+%
 for integer \(l\).
 
 Similarly for \(q_y\), \(q_z\) we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:180}
 \Bq = l \frac{ 2 \pi }{L_x} \xcap
 + m \frac{ 2 \pi }{L_y} \ycap
 + o \frac{ 2 \pi }{L_z} \zcap
 \end{dmath}
-
+%
 The volume per \(\Bq\) point is
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:200}
 \frac{2 \pi}{L_x}
 \frac{2 \pi}{L_y}
 \frac{2 \pi}{L_z}
 = \frac{\lr{ 2 \pi }^3 }{V}
 \end{dmath}
-
+%
 %\cref{fig:qmSolidsL9:qmSolidsL9Fig3}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig3}{constant energy surface}{fig:qmSolidsL9:qmSolidsL9Fig3}{0.15}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:220}
 \sum_\Bn
 =
@@ -162,26 +162,26 @@ dq_z
 =
 \frac{V}{(2 \pi)^3} \int d^3\Bq
 \end{dmath}
-
+%
 We group states of same \(\Hbar \omega_q\).  In \(d^3\Bq\) group same energy states
 
 %\cref{fig:qmSolidsL9:qmSolidsL9Fig4}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig4}{area element}{fig:qmSolidsL9:qmSolidsL9Fig4}{0.15}
 
 \(d f_\omega\) are constant energy area elements, so that the volume element is
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:240}
 df_\omega dq_\perp
 \end{dmath}
-
+%
 We can write
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:260}
 dq_\perp = \frac{d\omega}{\Abs{\spacegrad_\Bq \omega(\Bq) }},
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:280}
 \frac{V}{(2\pi)^3 } \int d^3\Bq
 \rightarrow
@@ -193,7 +193,7 @@ or
 =
 \int Z(\omega) d\omega
 \end{dmath}
-
+%
 where \(Z(\omega)\) is the \textAndIndex{density of states}, the number of modes per unit energy.
 
 \examhint{He'll expect us to look at a phonon diagram and see where the density of states is high or low.}
@@ -223,21 +223,21 @@ where \(Z(\omega)\) is the \textAndIndex{density of states}, the number of modes
 \index{Debye model}
 
 With a 1 atom basis (for now), we have only acoustic modes
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:300}
 \omega(\Bq) \rightarrow \omega(q)
 \end{dmath}
-
+%
 same in all directions, so that the constant energy surfaces are spheres, as in \cref{fig:qmSolidsL9:qmSolidsL9Fig9}.
 
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig9}{Debye surface}{fig:qmSolidsL9:qmSolidsL9Fig9}{0.15}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:320}
 \spacegrad_\Bq \omega(q) = \frac{d\omega}{dq} \qcap,
 \end{dmath}
-
+%
 at small \(q\), the frequency for this 1 atom basis is
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:340}
 \omega =
 \left\{
@@ -247,9 +247,9 @@ C_{\txtT} q & \quad \mbox{transverse acoustic (two of these)}
 \end{array}
 \right.
 \end{dmath}
-
+%
 This gives
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:360}
 \int Z(\omega) d\omega
 =
@@ -301,24 +301,24 @@ d \omega
 }
 \omega^2 d \omega,
 \end{dmath}
-
+%
 Here we sum over the two transverse and the single longitudinal state, and refer back to \eqnref{eqn:condensedMatterLecture9:340} introduce the \(C_{\txtL}\) and \(C_{\txtT}\) factors.
 
 Because of \(4 \pi q^2\) phase space factor, we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:420}
 Z(\omega) \propto \omega^2.
 \end{dmath}
-
+%
 \paragraph{Debye approximation}
 \index{Debye model}
 
 Define the Debye frequency \(\omega_{\txtD}\) \index{Debye frequency} by
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:380}
 \int_0^{\omega_{\txtD}} Z(\omega) d\omega = 3 r N
 \end{dmath}
-
+%
 %\cref{fig:qmSolidsL9:qmSolidsL9Fig10}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig10}{Debye approximation}{fig:qmSolidsL9:qmSolidsL9Fig10}{0.15}
 
@@ -326,7 +326,7 @@ Define the Debye frequency \(\omega_{\txtD}\) \index{Debye frequency} by
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig11}{Linear Debye approximation}{fig:qmSolidsL9:qmSolidsL9Fig11}{0.15}
 
 and pretend we can cut off in a way that applies to all \(q\).  We get
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture9:400}
 3 r N
 =
@@ -334,7 +334,7 @@ and pretend we can cut off in a way that applies to all \(q\).  We get
 =
 \frac{V}{ 2 \pi^2} \lr{ \inv{C_{\txtL}^3} + \frac{ 2}{C_{\txtT}^3} } \inv{3} \omega_{\txtD}^3,
 \end{dmath}
-
+%
 or
 
 \boxedEquation{eqn:condensedMatterLecture9:440}{

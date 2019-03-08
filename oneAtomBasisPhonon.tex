@@ -40,16 +40,16 @@ Here, \(\Ba\) and \(\Bb\) are the vector differences between the equilibrium pos
 \index{one atom basis}
 
 The equilibrium spacing for the cross coupling harmonic forces are
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:40}
 \begin{aligned}
 \Br &= (\Bb + \Ba)/2 \\
 \Bs &= (\Bb - \Ba)/2.
 \end{aligned}
 \end{dmath}
-
+%
 Based on previous calculations, we can write the equations of motion by inspection
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:20}
 \begin{aligned}
 m \ddot{\Bu}_\Bn
@@ -64,15 +64,15 @@ m \ddot{\Bu}_\Bn
 \lr{ \Bu_\Bn - \Bu_{\Bn \pm(1, -1)}}^2.
 \end{aligned}
 \end{dmath}
-
+%
 Inserting the trial solution
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:60}
 \Bu_\Bn = \inv{\sqrt{m}} \Bepsilon(\Bq) e^{i( \Br_\Bn \cdot \Bq - \omega t) },
 \end{dmath}
-
+%
 and using the matrix form for the projection operators, we have
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:80}
 \begin{aligned}
 \omega^2 \Bepsilon
@@ -106,9 +106,9 @@ and using the matrix form for the projection operators, we have
 \lr{ (\Bb - \Ba) \cdot \Bq/2 }.
 \end{aligned}
 \end{dmath}
-
+%
 This fully specifies our eigenvalue problem.  Writing
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:340}
 \begin{aligned}
@@ -128,15 +128,15 @@ A =
 \lr{ K_1 S_1 \acap \acap^\T + K_2 S_2 \bcap \bcap^\T + K_3 S_3 \rcap \rcap^\T + K_4 S_4 \scap \scap^\T},
 }
 \end{subequations}
-
+%
 we wish to solve
-
+%
 \begin{equation}\label{eqn:oneAtomBasisPhonon:120}
 A \Bepsilon = \omega^2 \Bepsilon = \lambda \Bepsilon.
 \end{equation}
-
+%
 Neglecting the specifics of the matrix at hand, consider a generic two by two matrix
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:140}
 A =
 \begin{bmatrix}
@@ -144,9 +144,9 @@ a & b \\
 c & d
 \end{bmatrix},
 \end{dmath}
-
+%
 for which the characteristic equation is
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:160}
 0 =
 \begin{vmatrix}
@@ -165,17 +165,17 @@ for which the characteristic equation is
 \lr{\frac{Tr A}{2}}^2
  + \Abs{A}.
 \end{dmath}
-
+%
 So our angular frequencies are given by
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:180}
 \omega^2 =
 \inv{2}
 \lr{ Tr A \pm \sqrt{ \left(Tr A\right)^2 - 4 \Abs{A} }}.
 \end{dmath}
-
+%
 The square root can be simplified slightly
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:480}
 \lr{Tr A}^2
 - 4 \Abs{A}
@@ -186,7 +186,7 @@ a^2 + d^2 + 2 a d - 4 a d + 4 b c
 =
 (a - d)^2 + 4 b c,
 \end{dmath}
-
+%
 so that, finally, the dispersion relation is
 
 \boxedEquation{eqn:oneAtomBasisPhonon:640}{
@@ -196,19 +196,19 @@ so that, finally, the dispersion relation is
 }
 
 Our eigenvectors will be given by
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:200}
 0 = (\lambda - a) \Bepsilon_1 - b\Bepsilon_2,
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:220}
 \Bepsilon_1 \propto \frac{b}{\lambda - a}\Bepsilon_2.
 \end{dmath}
-
+%
 So, our eigenvectors, the vectoral components of our atomic displacements, are
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:240}
 \Bepsilon \propto
 \begin{bmatrix}
@@ -216,7 +216,7 @@ b \\
 \omega^2 - a
 \end{bmatrix},
 \end{dmath}
-
+%
 or
 
 \boxedEquation{eqn:oneAtomBasisPhonon:500}{
@@ -230,7 +230,7 @@ d - a \pm \sqrt{ (d - a)^2 + 4 b c }
 \paragraph{Square lattice}
 
 There is not too much to gain by expanding out the projection operators explicitly in general.  However, let's do this for the specific case of a square lattice (as on the exam problem).  In that case, our projection operators are
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:oneAtomBasisPhonon:260}
 \acap \acap^\T
@@ -305,8 +305,8 @@ There is not too much to gain by expanding out the projection operators explicit
 \end{bmatrix}
 \end{equation}
 \end{subequations}
-
-
+%
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:360}
 \begin{aligned}
 S_1 &= \sin^2
@@ -319,10 +319,10 @@ S_4 &= \sin^2
 \lr{ (\Bb - \Ba) \cdot \Bq },
 \end{aligned}
 \end{dmath}
-
+%
 
 Our matrix is
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:460}
 A =
 \frac{2}{m}
@@ -331,9 +331,9 @@ A =
 K_3 S_3 - K_4 S_4 & 2 K_2 S_2 + K_3 S_3 + K_4 S_4
 \end{bmatrix},
 \end{dmath}
-
+%
 where, specifically, the squared sines for this geometry are
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:oneAtomBasisPhonon:380}
 S_1 = \sin^2
@@ -359,9 +359,9 @@ S_4 = \sin^2
 \lr{ a (q_y - q_x)/2}.
 \end{equation}
 \end{subequations}
-
+%
 Using \eqnref{eqn:oneAtomBasisPhonon:240}, the dispersion relation and eigenvectors are
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:520}
 \omega^2 =
@@ -376,9 +376,9 @@ K_2 S_2 - K_1 S_1 \pm \sqrt{ (K_2 S_2 - K_1 S_1)^2 + (K_3 S_3 - K_4 S_4)^2 }
 \end{bmatrix}.
 \end{dmath}
 \end{subequations}
-
+%
 This calculation is confirmed in \nbref{oneAtomBasisPhononSquareLatticeEigensystem.nb} .  Mathematica calculates an alternate form (equivalent to using a zero dot product for the second row), of
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:920}
 \Bepsilon \propto
 \begin{bmatrix}
@@ -386,13 +386,13 @@ K_1 S_1 - K_2 S_2 \pm \sqrt{ (K_2 S_2 - K_1 S_1)^2 + (K_3 S_3 - K_4 S_4)^2 } \\
 K_3 S_3 - K_4 S_4
 \end{bmatrix}.
 \end{dmath}
-
+%
 Either way, we see that \(K_3 S_3 - K_4 S_4 = 0\) leads to only horizontal or vertical motion.
 
 \paragraph{With the exam criteria}
 
 In the specific case that we had on the exam where \(K_1 = K_2\) and \(K_3 = K_4\), these are
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:560}
 \omega^2 =
@@ -409,22 +409,22 @@ K_1
 \end{bmatrix}.
 \end{dmath}
 \end{subequations}
-
+%
 For horizontal and vertical motion we need \(S_3 = S_4\), or for a \(2 \pi \times \text{integer}\) difference in the absolute values of the sine arguments
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:940}
 \pm ( a (q_x + q_y) /2 ) = a (q_y - q_y) /2 + 2 \pi n.
 \end{dmath}
-
+%
 That is, one of
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:960}
 \begin{aligned}
 q_x &= \frac{2 \pi}{a} n \\
 q_y &= \frac{2 \pi}{a} n
 \end{aligned}
 \end{dmath}
-
+%
 In the first BZ, that is one of \(q_x = 0\) or \(q_y = 0\).
 
 %We see that the cross coupling is required to have a non-zero \(x\) component.  This is likely what our Prof was after, when asking why this cross coupling is required for stability (i.e. without those spring constants we have a diagonal interaction matrix, and completely independent eigenvectors)
@@ -481,7 +481,7 @@ On the exam, where we were asked to solve for motion along the cross directions 
 %\end{equation}
 %\end{subequations}
 The rotated the lattice basis vectors are \(\Ba = a \Be_1, \Bb = a \Be_2\), and the projection matrices.  Writing \(\rcap = \Bf_1\) and \(\scap = \Bf_2\), where \(\Bf_1 = (\Be_1 + \Be_2)/\sqrt{2}, \Bf_2 = (\Be_2 - \Be_1)/\sqrt{2}\), or \(\Be_1 = (\Bf_1 - \Bf_2)/\sqrt{2}, \Be_2 = (\Bf_1 + \Bf_2)/\sqrt{2}\).  In the \(\{\Bf_1, \Bf_2\}\) basis the projection matrices are
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:oneAtomBasisPhonon:660}
 \acap \acap^\T =
@@ -532,9 +532,9 @@ The rotated the lattice basis vectors are \(\Ba = a \Be_1, \Bb = a \Be_2\), and 
 \end{bmatrix}
 \end{equation}
 \end{subequations}
-
+%
 The dot products that show up in the squared sines are
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:oneAtomBasisPhonon:740}
 \Ba \cdot \Bq
@@ -557,7 +557,7 @@ a \inv{\sqrt{2}} (\Bf_1 + \Bf_2) \cdot (\Bf_1 k_u + \Bf_2 k_v)
 (\Bb - \Ba) \cdot \Bq = \sqrt{2} a k_v
 \end{equation}
 \end{subequations}
-
+%
 So that in this basis
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:820}
 \begin{aligned}
@@ -571,9 +571,9 @@ S_4 &= \sin^2
 \lr{ \sqrt{2} a k_v }
 \end{aligned}
 \end{dmath}
-
+%
 With the rotated projection operators \eqnref{eqn:oneAtomBasisPhonon:100} takes the form
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:840}
 A =
 \frac{2}{m}
@@ -582,9 +582,9 @@ K_1 S_1 + K_2 S_2 + 2 K_3 S_3 & K_2 S_2 - K_1 S_1 \\
 K_2 S_2 - K_1 S_1 & K_1 S_1 + K_2 S_2 + 2 K_4 S_4
 \end{bmatrix}.
 \end{dmath}
-
+%
 This clearly differs from \eqnref{eqn:oneAtomBasisPhonon:460}, and results in a different expression for the eigenvectors, but the same as \eqnref{eqn:oneAtomBasisPhonon:520} for the angular frequencies.
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:880}
 \Bepsilon \propto
 \begin{bmatrix}
@@ -596,9 +596,9 @@ K_4 S_4 - K_3 S_3
 \mp \sqrt{ (K_2 S_2 - K_1 S_1)^2 + (K_3 S_3 - K_4 S_4)^2 }
 \end{bmatrix},
 \end{dmath}
-
+%
 or, equivalently
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:881}
 \Bepsilon \propto
 \begin{bmatrix}
@@ -606,9 +606,9 @@ K_4 S_4 - K_3 S_3 \mp \sqrt{ (K_2 S_2 - K_1 S_1)^2 + (K_3 S_3 - K_4 S_4)^2 } \\
 K_1 S_1 - K_2 S_2 \\
 \end{bmatrix},
 \end{dmath}
-
+%
 For the \(K_1 = K_2\) and \(K_3 = K_4\) case of the exam, this is
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:900}
 \Bepsilon \propto
 \begin{bmatrix}
@@ -617,22 +617,22 @@ K_3
 \lr{ S_4 - S_3 \mp \sqrt{ \left( \frac{K_1}{K_3} \right)^2 (S_2 - S_1)^2 + (S_3 - S_4)^2 } }
 \end{bmatrix}.
 \end{dmath}
-
+%
 Similar to the horizontal coordinate system, we see that we have motion along the diagonals when
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:980}
 \pm \frac{a}{\sqrt{2}} (k_u - k_v) = \frac{a}{\sqrt{2}} (k_u + k_v) + 2 \pi n,
 \end{dmath}
-
+%
 or one of
-
+%
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:1000}
 \begin{aligned}
 k_u &= \sqrt{2} \frac{\pi}{a} n \\
 k_v &= \sqrt{2} \frac{\pi}{a} n
 \end{aligned}
 \end{dmath}
-
+%
 \paragraph{Stability?}
 
 The exam asked why the cross coupling is required for stability.  Clearly we have more complex interaction.  The constant \(\omega\) surfaces will also be more complex.  However, I still don't have a good intuition what exactly was sought after for that part of the question.

@@ -38,24 +38,24 @@
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL24Fig1}{Electron-phonon interaction}{fig:qmSolidsL24:qmSolidsL24Fig1}{0.2}
 
 Electron-phonon interaction
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:20}
 \ket{\Bk, \uparrow} \rightarrow
 \ket{\Bk, \uparrow, 0_q}
 + \alpha_q \ket{\Bk, \uparrow, 1_q}
 \end{dmath}
-
+%
 %\cref{fig:qmSolidsL24:qmSolidsL24Fig2}.
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsL24Fig2}{No idea what this figure was about}{fig:qmSolidsL24:qmSolidsL24Fig2}{0.2}
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:40}
 \ket{\Bk', \downarrow} \rightarrow
 \ket{\Bk' -\Bq, \downarrow, 0_q}
 + \alpha_{-q} \ket{\Bk -\Bq, \downarrow, 1_q}
 \end{dmath}
-
+%
 Using perturbation theory, you set an effective interaction
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:60}
 V_{\mathrm{eff}} = \frac{
 \Abs{V_{\mathrm{e,ph}}}^2
@@ -64,18 +64,18 @@ V_{\mathrm{eff}} = \frac{
 \lr{ \calE_{\Bk+\Bq} - \calE_\Bk }^2 - \Hbar^2 \omega_\Bq^2
 }
 \end{dmath}
-
+%
 %\cref{fig:qmSolidsL24:qmSolidsL24Fig4}.
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsL24Fig4}{What was this}{fig:qmSolidsL24:qmSolidsL24Fig4}{0.2}
 %\cref{fig:qmSolidsL24:qmSolidsL24Fig5}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL24Fig5}{Limited options for paired states available}{fig:qmSolidsL24:qmSolidsL24Fig5}{0.2}
 %\cref{fig:qmSolidsL24:qmSolidsL24Fig6}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL24Fig6}{Cooper filled Fermi sphere plus two electrons}{fig:qmSolidsL24:qmSolidsL24Fig6}{0.2}
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:80}
 \ket{\Psi} = \sum_k g(\Bk) e^{ i \Bk \cdot (\Br_1 - \Br_2 ) }
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:100}
 \lr{
 -\frac{\Hbar^2}{2m} \lr{
@@ -95,9 +95,9 @@ V_{\mathrm{eff}} = \frac{
 }
 \sum_k g(\Bk) e^{ i \Bk \cdot (\Br_1 - \Br_2 ) }
 \end{dmath}
-
+%
 Operating with \(\int d\Br_1 d\Br_2 e^{-i \Bk' \cdot (\Br_1 - \Br_2) }\), we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:120}
 \int d\Br_1 d\Br_2 e^{-i \Bk' \cdot (\Br_1 - \Br_2) }
 \lr{
@@ -111,14 +111,14 @@ Operating with \(\int d\Br_1 d\Br_2 e^{-i \Bk' \cdot (\Br_1 - \Br_2) }\), we hav
 (2 \EF + \calE)
 \sum_k g(\Bk) e^{ i \Bk \cdot (\Br_1 - \Br_2 ) }
 \end{dmath}
-
+%
 This is
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:140}
 2 \bcE_{\Bk'} g(\Bk') + \sum_\Bk V_{\Bk'\Bk} g(\Bk)
 = \lr{ 2 \EF + \calE } g(\Bk'),
 \end{dmath}
-
+%
 where
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:160}
 V_{\Bk, \Bk'} =
@@ -127,9 +127,9 @@ e^{-i \Bk' \cdot (\Br_1 - \Br_2) }
 V(\Br_1, \Br_2)
 e^{i \Bk \cdot (\Br_1 - \Br_2) }.
 \end{dmath}
-
+%
 Make the approximation
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:180}
 V_{\Bk, \Bk'} =
 \left\{
@@ -139,20 +139,20 @@ V_\nought & \quad \mbox{if \(\calE_\Bk,\calE_{\Bk'}\) between \(\EF\) and \(\EF 
 \end{array}
 \right.
 \end{dmath}
-
+%
 This has solution
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:200}
 g(\Bk') = \inv{ 2 \EF + \calE - 2 \calE_{\Bk'}} \sum_\Bk V_{\Bk', \Bk} g(\Bk)
 \end{dmath}
-
+%
 Sum this over \(\Bk'\)
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:220}
 \cancel{\sum_{\Bk'} g(\Bk')} = \sum_{\Bk'}
 \frac{V_\nought}{ 2 \EF + \calE - 2 \calE_{\Bk'}} \cancel{\sum_\Bk g(\Bk)}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:240}
 1 = V_\nought \int_\EF^{\EF + \Hbar \omega_{\txtD}}
 \frac{D(E) dE}{
@@ -167,19 +167,19 @@ V_\nought D(\EF) \inv{2}
 \frac{ 2 \EF + \calE - 2 \EF}
 { 2 \EF + \calE - 2 (\EF + \Hbar \omega_{\txtD}) }
 \end{dmath}
-
+%
 Giving
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:260}
 e^{ 2/V_\nought D(\EF) } = \frac{\calE - 2 \Hbar \omega_{\txtD}}{\calE}
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:280}
 \calE = \frac{ -2 \Hbar \omega_{\txtD} }{e^{2/V_\nought D(\EF)} - 1}
 \end{dmath}
-
+%
 \boxedEquation{eqn:condensedMatterPhysicsLecture24:300}{
 \calE \approx -2 \Hbar \omega_{\txtD} e^{-2/V_\nought D(\EF)}
 }
@@ -196,7 +196,7 @@ A filled Fermi sphere at \(T = 0\) is unstable against Fermiation of Cooper pair
 Difficult to make a multiple Cooper pair state.
 
 BCS guess was:
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:320}
 \ket{0_{\mathrm{BCS}}}
 =
@@ -206,11 +206,11 @@ u_\Bk \ket{0_{\Bk \uparrow}, 0_{-\Bk \downarrow}}
 v_\Bk \ket{1_{\Bk \uparrow}, 1_{-\Bk \downarrow}}
 }
 \end{dmath}
-
+%
 At every: states are either empty (prob \(u_\Bk^2\)) or filled (prob \(v_\Bk^2\)) in pairs.
 
 The energy
-
+%
 \begin{dmath}\label{eqn:condensedMatterPhysicsLecture24:340}
 W
 = \sum_\Bk 2 \calE_\Bk v_\Bk^2
@@ -227,5 +227,5 @@ v_{\Bk}
 Need a superposition of occupied and unoccupied
 }
 \end{dmath}
-
+%
 %\EndArticle

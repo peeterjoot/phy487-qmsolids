@@ -27,21 +27,21 @@ Instead of assuming a solution, let's see how far we can get attacking this prob
 \section{Matrix methods}
 
 Suppose that we have a set of \(N\) masses constrained to a circle interacting with harmonic potentials.  The Lagrangian for such a system (using modulo \(N\) indexing) is
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:60}
 \LL = \inv{2} \sum_{k = 0}^{2} m_k \dot{u}_k^2
 - \inv{2} \sum_{k = 0}^2 \kappa_k \lr{ u_{k+1} - u_k }^2.
 \end{dmath}
-
+%
 The force equations follow directly from the Euler-Lagrange equations
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:40}
 0 = \ddt{} \PD{\dot{u}_{n, \alpha}}{\LL}
 - \PD{u_{n, \alpha}}{\LL}.
 \end{dmath}
-
+%
 For the simple three particle system depicted above, this is
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:80}
 \begin{aligned}
 \LL &=
@@ -54,7 +54,7 @@ For the simple three particle system depicted above, this is
 - \inv{2} \kappa_2 \lr{ u_0 - u_2 }^2,
 \end{aligned}
 \end{dmath}
-
+%
 with equations of motion
 \begin{dmath}\label{eqn:threeSpringLoop:100}
 \begin{aligned}
@@ -63,9 +63,9 @@ with equations of motion
 0 &= m_2 \ddot{u}_2 + \kappa_2 \lr{ u_2 - u_0 } + \kappa_1 \lr{ u_2 - u_1 },
 \end{aligned}
 \end{dmath}
-
+%
 Let's partially non-dimensionalize this.  First introduce average mass \(\overbar{m}\) and spring constants \(\overbar{\kappa}\), and rearrange slightly
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:120}
 \begin{aligned}
 \frac{\overbar{m}}{\overbar{k}} \ddot{u}_0 &= -\frac{\kappa_0 \overbar{m}}{\overbar{k} m_0} \lr{ u_0 - u_1 } - \frac{\kappa_2 \overbar{m}}{\overbar{k} m_0} \lr{ u_0 - u_2 } \\
@@ -73,9 +73,9 @@ Let's partially non-dimensionalize this.  First introduce average mass \(\overba
 \frac{\overbar{m}}{\overbar{k}} \ddot{u}_2 &= -\frac{\kappa_2 \overbar{m}}{\overbar{k} m_2} \lr{ u_2 - u_0 } - \frac{\kappa_1 \overbar{m}}{\overbar{k} m_2} \lr{ u_2 - u_1 }.
 \end{aligned}
 \end{dmath}
-
+%
 With
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:threeSpringLoop:140}
 \tau = \sqrt{\frac{\overbar{k}}{\overbar{m}}} t = \Omega t
@@ -103,15 +103,15 @@ B =
 \end{bmatrix}.
 \end{dmath}
 \end{subequations}
-
+%
 Our system takes the form
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:200}
 \frac{d^2 \Bu}{d\tau^2} = B \Bu.
 \end{dmath}
-
+%
 We can at least theoretically solve this in a simple fashion if we first convert it to a first order system.  We can do that by augmenting our vector of displacements with their first derivatives
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:220}
 \Bw =
 \begin{bmatrix}
@@ -119,7 +119,7 @@ We can at least theoretically solve this in a simple fashion if we first convert
 \frac{d \Bu}{d\tau}
 \end{bmatrix},
 \end{dmath}
-
+%
 So that
 \begin{equation}\label{eqn:threeSpringLoop:240}
 \frac{d \Bw}{d\tau} =
@@ -130,15 +130,15 @@ B & 0
 \Bw
 = A \Bw.
 \end{equation}
-
+%
 Now the solution is conceptually trivial
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:260}
 \Bw = e^{A \tau} \Bw_\nought.
 \end{dmath}
-
+%
 We are however, faced with the task of exponentiating the matrix \(A\).  All the powers of this matrix \(A\) will be required, but they turn out to be easy to calculate
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:threeSpringLoop:280}
 {\begin{bmatrix}
@@ -201,7 +201,7 @@ B^2 & 0 \\
 \end{bmatrix},
 \end{equation}
 \end{subequations}
-
+%
 allowing us to write out the matrix exponential
 \begin{dmath}\label{eqn:threeSpringLoop:340}
 e^{A \tau} =
@@ -217,11 +217,11 @@ B^k & 0 \\
 B^{k+1} & 0
 \end{bmatrix}.
 \end{dmath}
-
+%
 \paragraph{Case I: No zero eigenvalues}
 
 Provided that \(B\) has no zero eigenvalues, we could factor this as
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:360}
 \begin{bmatrix}
 0 & B^k \\
@@ -237,9 +237,9 @@ B^{k + 1/2} & 0 \\
 0 & B^{k + 1/2}
 \end{bmatrix},
 \end{dmath}
-
+%
 This initially leads us to believe the following, but we'll find out that the three springs interaction matrix \(B\) does have a zero eigenvalue, and we'll have to be more careful.  If there were any such interaction matrices that did not have such a zero we could simply write
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:380}
 \begin{aligned}
 e^{A \tau}
@@ -277,7 +277,7 @@ B^{1/2} & 0
 \end{bmatrix}.
 \end{aligned}
 \end{dmath}
-
+%
 This is
 \begin{dmath}\label{eqn:threeSpringLoop:400}
 e^{A \tau}
@@ -287,9 +287,9 @@ e^{A \tau}
 \sqrt{B} \sinh \sqrt{B} \tau & \cosh \sqrt{B} \tau
 \end{bmatrix}.
 \end{dmath}
-
+%
 The solution, written out is
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:420}
 \begin{bmatrix}
 \Bu \\
@@ -305,7 +305,7 @@ The solution, written out is
 \Bu_\nought'
 \end{bmatrix},
 \end{dmath}
-
+%
 so that
 
 \boxedEquation{eqn:threeSpringLoop:440}{
@@ -316,20 +316,20 @@ As a check differentiation twice shows that this is in fact the general solution
 \begin{dmath}\label{eqn:threeSpringLoop:460}
 \Bu' = \sqrt{B} \sinh \sqrt{B} \tau \Bu_\nought + \cosh \sqrt{B} \tau \Bu_\nought',
 \end{dmath}
-
+%
 and
 \begin{dmath}\label{eqn:threeSpringLoop:480}
 \Bu'' = B \cosh \sqrt{B} \tau \Bu_\nought + \sqrt{B} \sinh \sqrt{B} \tau \Bu_\nought'
 = B \lr{ \cosh \sqrt{B} \tau \Bu_\nought + \inv{\sqrt{B}} \sinh \sqrt{B} \tau \Bu_\nought' }
 = B \Bu.
 \end{dmath}
-
+%
 Observe that this solution is a general solution to second order constant coefficient linear systems of the form we have in \eqnref{eqn:threeSpringLoop:120}.  However, to make it meaningful we do have the additional computational task of performing an eigensystem decomposition of the matrix \(B\).  We expect negative eigenvalues that will give us oscillatory solutions (ie: the matrix square roots will have imaginary eigenvalues).
 
 \makeexample{An example diagonalization to try things out}{example:threeSpringLoop:1}{
 
 Let's do that diagonalization for the simplest of the three springs system as an example, with \(\kappa_j = \overbar{k}\) and \(m_j = \overbar{m}\), so that we have
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:500}
 B =
 \begin{bmatrix}
@@ -338,10 +338,10 @@ B =
 1 & 1 & -2
 \end{bmatrix}.
 \end{dmath}
-
+%
 % From \nbref{periodicComplexExponentialPV.nb} (using Eigensystem and manual Gram-Schmidt on the degenerate eigenvectors) we find that a
 A orthonormal eigensystem for \(B\) is
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:520}
 \left\{
 \Be_{-3, 1},
@@ -370,9 +370,9 @@ A orthonormal eigensystem for \(B\) is
 \end{bmatrix}
 \right\}.
 \end{dmath}
-
+%
 With
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:540}
 \begin{aligned}
 U &=
@@ -390,15 +390,15 @@ D &=
 \end{bmatrix}
 \end{aligned}
 \end{dmath}
-
+%
 We have
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:560}
 B = U D U^\T,
 \end{dmath}
-
+%
 We also find that \(B\) and its root are intimately related in a surprising way
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:580}
 \sqrt{B} =
 \sqrt{3} i
@@ -412,44 +412,44 @@ U^\T
 =
 \inv{\sqrt{3} i} B.
 \end{dmath}
-
+%
 We also see, unfortunately that \(B\) has a zero eigenvalue, so we can't compute \(1/\sqrt{B}\).  We'll have to back and up and start again differently.
 }
 
 \paragraph{Case II: allowing for zero eigenvalues}
 
 Now that we realize we have to deal with zero eigenvalues, a different approach suggests itself.  Instead of reducing our system using a Hamiltonian transformation to a first order system, let's utilize that diagonalization directly.  Our system is
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:600}
 \Bu'' = B \Bu = U D U^{-1} \Bu,
 \end{dmath}
-
+%
 where \(D = [ \lambda_i \delta_{ij} ]\) and
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:620}
 \lr{ U^{-1} \Bu}'' = D \lr{ U^{-1} \Bu}.
 \end{dmath}
-
+%
 Let
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:720}
 \Bz = U^{-1} \Bu,
 \end{dmath}
-
+%
 so that our system is just
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:700}
 \Bz'' = D \Bz,
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:640}
 z_i'' = \lambda_i z_i.
 \end{dmath}
-
+%
 This is \(N\) equations, each decoupled and solvable by inspection.  Suppose we group the eigenvalues into sets \(\{ \lambda_n < 0, \lambda_p > 0, \lambda_z = 0 \}\).  Our solution is then
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:660}
 \Bz
 =
@@ -472,9 +472,9 @@ b_p \sinh \sqrt{\lambda_p} \tau
 a_z + b_z \tau
 } \Be_z.
 \end{dmath}
-
+%
 Transforming back to lattice coordinates using \(\Bu = U \Bz\), we have
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:740}
 \Bu
 =
@@ -497,11 +497,11 @@ U \Be_p
 a_z + b_z \tau
 } U \Be_z.
 \end{dmath}
-
+%
 We see that the zero eigenvalues integration terms have no contribution to the lattice coordinates, since \(U \Be_z = \lambda_z \Be_z = 0\), for all \(\lambda_z = 0\).
 
 If \(U = [ \Be_i ]\) are a set of not necessarily orthonormal eigenvectors for \(B\), then the vectors \(\Bf_i\), where \(\Be_i \cdot \Bf_j = \delta_{ij}\) are the reciprocal frame vectors.  These can be extracted from \(U^{-1} = [ \Bf_i ]^\T\) (i.e., the rows of \(U^{-1}\)).  Taking dot products between \(\Bf_i\) with \(\Bu(0) = \Bu_\nought\) and \(\Bu'(0) = \Bu'_\nought\), provides us with the unknown coefficients \(a_n, b_n\)
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:680}
 \Bu(\tau)
 =
@@ -524,7 +524,7 @@ If \(U = [ \Be_i ]\) are a set of not necessarily orthonormal eigenvectors for \
 }
 \Be_p.
 \end{dmath}
-
+%
 Supposing that we constrain ourself to looking at just the oscillatory solutions (i.e. the lattice does not shake itself to pieces), then we have
 
 \boxedEquation{eqn:threeSpringLoop:680b}{
@@ -549,7 +549,7 @@ Eigenvectors for eigenvalues that were degenerate have been explicitly enumerate
 \makeexample{Our example interaction revisited}{example:threeSpringLoop:2}{
 
 Recall that we had an orthonormal basis for the \(\lambda = -3\) eigensubspace for the interaction example of \eqnref{eqn:threeSpringLoop:500} again, so \(\Be_{-3,i} = \Bf_{-3, i}\).  We can sum \(\Be_{-3,1} \Be_{-3, 1}^\T + \Be_{-3,2} \Be_{-3, 2}^\T\) to find
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:760}
 \Bu(\tau)
 =
@@ -567,14 +567,14 @@ Recall that we had an orthonormal basis for the \(\lambda = -3\) eigensubspace f
 \sin \sqrt{3} \tau
 }.
 \end{dmath}
-
+%
 The leading matrix is an orthonormal projector of the initial conditions onto the eigen subspace for \(\lambda_n = -3\).  Observe that this is proportional to \(B\) itself, scaled by the square of the non-zero eigenvalue of \(\sqrt{B}\).  From this we can confirm by inspection that this is a solution to \(\Bu'' = B \Bu\), as desired.
 }
 
 \section{Fourier transform methods}
 
 Let's now try another item from our usual toolbox on these sorts of second order systems, the Fourier transform.  For a one variable function of time let's write the transform pair as
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:threeSpringLoop:780}
 x(t) = \int_{-\infty}^{\infty} \tilde{x}(\omega) e^{-i \omega t} d\omega
@@ -583,17 +583,17 @@ x(t) = \int_{-\infty}^{\infty} \tilde{x}(\omega) e^{-i \omega t} d\omega
 \tilde{x}(\omega) = \inv{2\pi} \int_{-\infty}^{\infty} x(t) e^{i \omega t} dt
 \end{dmath}
 \end{subequations}
-
+%
 \paragraph{One mass harmonic oscillator}
 
 The simplest second order system is that of the harmonic oscillator
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:820}
 0 = \ddot{x}(t) + \omega_\nought^2 x.
 \end{dmath}
-
+%
 Application of the transform gives
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:840}
 0
 = \lr{ \frac{d^2}{dt^2} + \omega_\nought^2 }
@@ -604,9 +604,9 @@ Application of the transform gives
 \tilde{x}(\omega)
 e^{-i \omega t} d\omega.
 \end{dmath}
-
+%
 We clearly have a constraint that is a function of frequency, but one that has to hold for all time.  Let's transform this constraint to the frequency domain to consider that constraint independent of time.
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1040}
 0
 =
@@ -635,7 +635,7 @@ d\omega'
 \lr{ -{\omega}^2 + \omega_\nought^2 }
 \tilde{x}(\omega).
 \end{dmath}
-
+%
 How do we make sense of this?
 %It appears that we require a constraint
 %
@@ -643,7 +643,7 @@ How do we make sense of this?
 %0 = \lr{ -\omega^2 + \omega_\nought^2 } \tilde{x}(\omega).
 %\end{dmath}
 Since \(\omega\) is an integration variable, we can't just mandate that it equals the constant driving frequency \(\pm \omega_\nought\).  It's clear that we require a constraint on the transform \(\tilde{x}(\omega)\) as well.  As a trial solution, imagine that
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:880}
 \tilde{x}(\omega) =
 \left\{
@@ -653,9 +653,9 @@ Since \(\omega\) is an integration variable, we can't just mandate that it equal
 \end{array}
 \right.
 \end{dmath}
-
+%
 This gives us
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:900}
 0 =
 \tilde{x}_\nought
@@ -665,23 +665,23 @@ This gives us
 \lr{ \omega^2 - \omega_\nought^2 }
 e^{-i \omega t} d\omega.
 \end{dmath}
-
+%
 Now it is clear that we can satisfy our constraint only if the interval \([\pm \omega_\nought -\omega_{\mathrm{cutoff}}, \pm \omega_\nought + \omega_{\mathrm{cutoff}}]\) is made infinitesimal.  Specifically, we require both a \(\omega^2 = \omega_\nought^2\) constraint and that the transform \(\tilde{x}(\omega)\) have a delta function nature.  That is
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:920}
 \tilde{x}(\omega) =
 A \delta(\omega - \omega_\nought)
 + B \delta(\omega + \omega_\nought).
 \end{dmath}
-
+%
 Substitution back into our transform gives
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:940}
 x(t)
 = A e^{-i \omega_\nought t}
 + B e^{i \omega_\nought t}.
 \end{dmath}
-
+%
 We can verify quickly that this satisfies our harmonic equation \(\ddot{x} = -\omega_\nought x\).
 
 \paragraph{Two mass harmonic oscillator}
@@ -691,7 +691,7 @@ Having applied the transform technique to the very simplest second order system,
 %F1
 %
 Our system is described by
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:960}
 \LL =
 \inv{2} m_1 \dot{u}_1^2
@@ -700,15 +700,15 @@ Our system is described by
 -
 \inv{2} \kappa \lr{ u_2 - u_1 }^2,
 \end{dmath}
-
+%
 and the pair of Euler-Lagrange equations
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:980}
 0 = \frac{d}{dt}
 \PD{\dot{u}_i}{\LL}
 - \PD{u_i}{\LL}.
 \end{dmath}
-
+%
 The equations of motion are
 \begin{dmath}\label{eqn:threeSpringLoop:1000}
 \begin{aligned}
@@ -716,18 +716,18 @@ The equations of motion are
 0 &= m_2 \ddot{u}_2 + \kappa \lr{ u_2 - u_1 }
 \end{aligned}
 \end{dmath}
-
+%
 Let
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1020}
 \begin{aligned}
 u_1(t) &= \int_{-\infty}^\infty \tilde{u}_1(\omega) e^{-i \omega t} d\omega \\
 u_2(t) &= \int_{-\infty}^\infty \tilde{u}_2(\omega) e^{-i \omega t} d\omega.
 \end{aligned}
 \end{dmath}
-
+%
 Insertion of these transform pairs into our equations of motion produces a pair of simultaneous integral equations to solve
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1060}
 \begin{aligned}
 0 &=
@@ -750,9 +750,9 @@ e^{-i \omega t} d\omega \\
 e^{-i \omega t} d\omega.
 \end{aligned}
 \end{dmath}
-
+%
 As with the single spring case, we can decouple these equations with an inverse transformation operation \(\int e^{i \omega' t}/2\pi\), which gives us (after dropping primes)
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1080}
 0
 =
@@ -767,9 +767,9 @@ As with the single spring case, we can decouple these equations with an inverse 
 \tilde{u}_2(\omega)
 \end{bmatrix}.
 \end{dmath}
-
+%
 Taking determinants gives us the constraint on the frequency
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1100}
 0 =
 \lr{ -m_1 \omega^2 + \kappa}
@@ -786,7 +786,7 @@ m_1 m_2 \omega^2
 -\kappa (m_1 + m_2)
 }.
 \end{dmath}
-
+%
 Introducing a reduced mass
 \begin{dmath}\label{eqn:threeSpringLoop:1140}
 \inv{\mu} =
@@ -794,9 +794,9 @@ Introducing a reduced mass
 +
 \frac{1}{m_2},
 \end{dmath}
-
+%
 the pair of solutions are
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1120}
 \begin{aligned}
 \omega^2 &= 0 \\
@@ -814,9 +814,9 @@ the pair of solutions are
 \equiv \omega_\nought^2.
 \end{aligned}
 \end{dmath}
-
+%
 As with the single mass oscillator, we require the functions \(\tilde{u}{\omega}\) to also be expressed as delta functions.  The frequency constraint and that delta function requirement together can be expressed, for \(j \in \{0, 1\}\) as
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1160}
 \tilde{u}_j(\omega)
 =
@@ -824,9 +824,9 @@ As with the single mass oscillator, we require the functions \(\tilde{u}{\omega}
 + A_{j0} \delta( \omega )
 + A_{j-} \delta( \omega + \omega_\nought ).
 \end{dmath}
-
+%
 With a transformation back to time domain, we have functions of the form
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1180}
 \begin{aligned}
 u_1(t)
@@ -841,9 +841,9 @@ u_2(t)
 + B_{j-} e^{ i \omega_\nought t }.
 \end{aligned}
 \end{dmath}
-
+%
 Back insertion of these into the equations of motion, we have
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1200}
 \begin{aligned}
 0 &=
@@ -872,9 +872,9 @@ Back insertion of these into the equations of motion, we have
 }
 \end{aligned}
 \end{dmath}
-
+%
 Equality requires identity for all powers of \(e^{i \omega_\nought t}\), or
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1220}
 \begin{aligned}
 0 &= B_{j0} - A_{j0} \\
@@ -884,9 +884,9 @@ Equality requires identity for all powers of \(e^{i \omega_\nought t}\), or
 0 &= -m_2 \omega_\nought^2 B_{j-} + \kappa \lr{ B_{j-} - A_{j-} },
 \end{aligned}
 \end{dmath}
-
+%
 or \(B_{j0} = A_{j0}\) and
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1240}
 0 =
 \begin{bmatrix}
@@ -902,9 +902,9 @@ B_{j+} \\
 B_{j-}
 \end{bmatrix}.
 \end{dmath}
-
+%
 Observe that
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1260}
 \kappa - m_1 \omega_\nought^2
 =
@@ -913,9 +913,9 @@ Observe that
 \kappa \lr{ 1 - 1 - \frac{m_1}{m_2} }
 = -\kappa \frac{m_1}{m_2},
 \end{dmath}
-
+%
 (with a similar alternate result).  We can rewrite \eqnref{eqn:threeSpringLoop:1240} as
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1280}
 0 =
 -\kappa
@@ -932,7 +932,7 @@ B_{j+} \\
 B_{j-}
 \end{bmatrix}.
 \end{dmath}
-
+%
 It's clear that there's two pairs of linear dependencies here, so the determinant is zero as expected.  We can read off the remaining relations.  Our undetermined coefficients are given by
 \begin{dmath}\label{eqn:threeSpringLoop:1300}
 \begin{aligned}
@@ -941,7 +941,7 @@ m_1 A_{j+} &= -m_2 B_{j+} \\
 m_1 A_{j-} &= -m_2 B_{j-}
 \end{aligned}
 \end{dmath}
-
+%
 \boxedEquation{eqn:threeSpringLoop:1320}{
 \begin{aligned}
 u_1(t)
@@ -960,14 +960,14 @@ u_2(t)
 Observe that the constant term is not really of interest, since it represents a constant displacement of both atoms (just a change of coordinates).
 
 \paragraph{Check:}
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1340}
 u_1(t) - u_2(t)
 =
 + (m_1 + m_2)b e^{ -i \omega_\nought t }
 + (m_1 + m_2)c e^{ i \omega_\nought t },
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1360}
 m_1 \ddot{u}_1(t) + \kappa (u_1(t) - u_2(t) )
 =
@@ -1000,21 +1000,21 @@ b e^{ -i \omega_\nought t }
 }
 = 0.
 \end{dmath}
-
+%
 \section{Reflection}
 
 We've seen that we can solve any of these constant coefficient systems exactly using matrix methods, however, these will not be practical for large systems unless we have methods to solve for all the non-zero eigenvalues and their corresponding eigenvectors.  With the Fourier transform methods we find that our solutions in the frequency domain is of the form
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1380}
 \tilde{u}_j(\omega) = \sum a_{kj} \delta( \omega - \omega_{kj} ),
 \end{dmath}
-
+%
 or in the time domain
-
+%
 \begin{dmath}\label{eqn:threeSpringLoop:1400}
 u(t) = \sum a_{kj} e^{ - i \omega_{kj} t }.
 \end{dmath}
-
+%
 We assumed exactly this form of solution in class.  The trial solution that we used in class factored out a phase shift from \(a_{kj}\) of the form of \(e^{ i q x_n }\), but that doesn't change the underling form of that assumed solution.  We have however found a good justification for the trial solution we utilized.
 
 %\EndArticle

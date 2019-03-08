@@ -80,7 +80,7 @@ all bands near \(\EF\) are tight binding like.  There's a large gap at \(\EF\).
 \reading \citep{ashcroft1976solid} \textchapref{8}.
 
 Recall
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture18:20}
 \sum_{k, \sigma = \pm 1/2} \rightarrow
 \mathLabelBox{2}{spin}
@@ -89,30 +89,30 @@ Recall
 \rightarrow
 V \int D(E) dE.
 \end{dmath}
-
+%
 For the free electron model we found
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture18:40}
 D(E) = \text{density of states per unit volume}
 =
 \inv{2 \pi^2} \lr{ \frac{2m}{\Hbar} }^{3/2} \sqrt{E},
 \end{dmath}
-
+%
 and in general
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture18:60}
 D(E) dE = \frac{2}{\lr{2\pi}^3} \int \frac{df_{\txtE}}{ \Abs{\spacegrad_\Bk E(\Bk)}} dE.
 \end{dmath}
-
+%
 Referring to \cref{fig:qmSolidsL18:qmSolidsL18Fig5}.
 
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig5}{Fermi surface for constant energy}{fig:qmSolidsL18:qmSolidsL18Fig5}{0.2}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture18:80}
 d\Bk = df_{\txtE} dk_\perp
 = df_{\txtE} \frac{dE}{\Abs{\spacegrad_\Bk E(\Bk)}}.
 \end{dmath}
-
+%
 Some observations:
 
 \begin{itemize}
@@ -124,7 +124,7 @@ Flat bands due to \(1/\Abs{\spacegrad_\Bk E(\Bk)}\) will have a high density of 
 \paragraph{d-metals}
 
 High density of states in the d-orbitals, and small elsewhere.  Recall
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture18:100}
 C(T) =
 \mathLabelBox
@@ -142,14 +142,14 @@ C(T) =
 }
 {phonons}.
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture18:120}
 \begin{aligned}
 \gamma_{\ce{Cu}} &\sim 0.69 \Unitfrac{mJ}{mole\, K^2} \\
 \gamma_{\ce{Fe}} &\sim 4.98 \Unitfrac{mJ}{mole\, K^2}
 \end{aligned}
 \end{dmath}
-
+%
 \paragraph{Germanium}
 \index{Germanium}
 
@@ -165,25 +165,25 @@ We want to talk about how to make an electrical current flow.  Imagine that we a
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig6}{Conducting block of metal}{fig:qmSolidsL18:qmSolidsL18Fig6}{0.1}
 
 How do we use our Bloch description for such a volume?  A pure Bloch wave
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture18:140}
 \Psi_\Bk = U_\Bk(\Br) e^{i \Bk \cdot \Br },
 \end{dmath}
-
+%
 is uniformly spread out over the sample
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture18:160}
 \Abs{ \inv{\sqrt{V}} e^{i \Bk \cdot \Br}}^2 = \inv{V}.
 \end{dmath}
-
+%
 Such a plane wave cannot transport charge.  Introduce a wave packet
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture18:180}
 \Psi_\Bk(\Br, t) \sim \int_{\Abs{\Bk'} < \Delta}
 \mathLabelBox{a_{\Bk'}}{example: a Gaussian, centered on \(\Bk\)}
 U_\Bk(\Br) e^{ i \lr{\Bk \cdot \Br - \omega t}} d\Bk'
 \end{dmath}
-
+%
 This will spread as plotted in \cref{fig:qmSolidsL18:qmSolidsL18Fig7}.
 
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig7}{Packet spreading with time}{fig:qmSolidsL18:qmSolidsL18Fig7}{0.1}

@@ -6,14 +6,14 @@
 
 The \(2s\) and \(2p\) orbitals of a hydrogenic atom (i.e.\ one electron, nuclear
   charge \(Ze\)) are:
-
+%
 \begin{eqnarray*}
 \phi_{2s}(\rho)   &=& {\cal N}\,{\rm e}^{-\rho}(1  - \rho) \\
 \phi_{2p_z}(\rho) &=& {\cal N}\,{\rm e}^{-\rho}\rho\cos\theta \\
 \phi_{2p_x}(\rho) &=& {\cal N}\,{\rm e}^{-\rho}\rho\sin\theta \, \cos\phi \\
 \phi_{2p_y}(\rho) &=& {\cal N}\,{\rm e}^{-\rho}\rho\sin\theta \, \sin\phi
 \end{eqnarray*}
-
+%
 where \(\rho = Zr/2a_\circ\),
 \(a_\circ\) is the Bohr radius, \(r\) is the radial distance from
 the nucleus, and \(\theta\) and \(\phi\) are the polar and azimuthal
@@ -26,7 +26,7 @@ Four \(sp^2\) hybrid orbitals are constructed from these orbitals as follows:
 \psi_3  &=& \frac{1}{\sqrt{3}} \phi_{2s} - \frac{1}{\sqrt{6}} \phi_{2p_x} - \frac{1}{\sqrt{2}} \phi_{2p_y} \\
 \psi_4  &=& \phi_{2p_z}
 \end{eqnarray*}
-
+%
 \makesubproblem{Orthonormality.}{condensedMatter:problemSet1:2a}
 Assuming
   that the \(\phi_{2s}\) and \(\phi_{2p}\) orbitals are orthogonal and normalized (i.e.\
@@ -77,7 +77,7 @@ Verification of orthonormality of the \(2s\) and \(2p\) orbital basis functions 
 \nbcite{qmSolidsPs1P2.nb}{easily computed in software.}
 
 For the superposition orthonormality, let's rewrite the \(sp^2\) hybrid wave functions as
-
+%
 \begin{eqnarray*}
 \psi_1  &=& \inv{\sqrt{6}} \lr{
 \sqrt{2} \phi_{2s} + 2 \phi_{2p_x}
@@ -94,9 +94,9 @@ For the superposition orthonormality, let's rewrite the \(sp^2\) hybrid wave fun
 } \\
 \psi_4  &=& \phi_{2p_z}.
 \end{eqnarray*}
-
+%
 Now, let's verify the normalization of these wave functions
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterProblemSet1Problem2:20}
 \begin{aligned}
@@ -116,7 +116,7 @@ Now, let's verify the normalization of these wave functions
 &= 1
 \end{aligned}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet1Problem2:40}
 \begin{aligned}
 \braket{\psi_2}{\psi_2}
@@ -135,7 +135,7 @@ Now, let's verify the normalization of these wave functions
 &= 1
 \end{aligned}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet1Problem2:60}
 \begin{aligned}
 \braket{\psi_3}{\psi_3}
@@ -154,7 +154,7 @@ Now, let's verify the normalization of these wave functions
 &= 1
 \end{aligned}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet1Problem2:80}
 \begin{aligned}
 \braket{\psi_4}{\psi_4}
@@ -164,9 +164,9 @@ Now, let's verify the normalization of these wave functions
 \end{aligned}
 \end{dmath}
 \end{subequations}
-
+%
 That verifies that these hybrid orbitals are all normalized.  Checking all the inner products pairwise zeros will complete the verification of orthonormality.  It's clear that \(\psi_4\) is normal to all others since only \(\psi_4\) has a \(\phi_{2 p_z}\) component.  For the rest we have
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterProblemSet1Problem2:100}
 \braket{\psi_1}{\psi_2}
@@ -186,7 +186,7 @@ That verifies that these hybrid orbitals are all normalized.  Checking all the i
 }
 = 0
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet1Problem2:120}
 \braket{\psi_1}{\psi_3}
 =
@@ -205,7 +205,7 @@ That verifies that these hybrid orbitals are all normalized.  Checking all the i
 }
 = 0
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet1Problem2:140}
 \braket{\psi_2}{\psi_3}
 =
@@ -225,11 +225,11 @@ That verifies that these hybrid orbitals are all normalized.  Checking all the i
 = 0.
 \end{dmath}
 \end{subequations}
-
+%
 \makeSubAnswer{}{condensedMatter:problemSet1:2b}
 
 The probability density for \(\psi_1\) has the form
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet1Problem2:160}
 \Abs{\psi_1}^2 = \inv{3}
 \lr{
@@ -254,9 +254,9 @@ The probability density for \(\psi_1\) has the form
 + 2 \sqrt{2} \rho (1 - \rho) \sin\theta \cos\phi
 }.
 \end{dmath}
-
+%
 Integrating this to find the fraction of the probability density along each radial ray, we find
-
+%
 \begin{dmath}\label{eqn:condensedMatterProblemSet1Problem2:180}
 \frac{{\cal N}^2}{3}
 \int_0^\infty
@@ -289,7 +289,7 @@ e^{-x} \lr
 \text{const} + \inv{2} 4! \sin^2 \theta \cos^2 \phi + \sqrt{2} \sin\theta \cos\phi\lr{ 3! - \frac{4!}{2} }
 }.
 \end{dmath}
-
+%
 Setting \(\theta\) and \(\phi\) partials equal to zero respectively we have
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterProblemSet1Problem2:200}
@@ -299,7 +299,7 @@ Setting \(\theta\) and \(\phi\) partials equal to zero respectively we have
 -12 \times 2 \sin^2\theta \cos\phi \sin\phi + \sqrt{ 2 } \sin\theta \sin\phi ( -6 ) = 0,
 \end{dmath}
 \end{subequations}
-
+%
 or
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterProblemSet1Problem2:240}
@@ -309,7 +309,7 @@ or
 \lr{ 4 \sin\theta\cos \phi - \sqrt{2} } \sin\theta \sin\phi = 0.
 \end{dmath}
 \end{subequations}
-
+%
 Neglecting the first common factor, some experimentation yields the solution \(\mathLabelBox{\phi = \pi/2}{Grading remark: Marked wrong.  Review this.}, \theta \in \{0, \pi\}\).  The probability density is maximized along the \(z,y\) plane pointing towards either of the poles.
 
 \makeSubAnswer{}{condensedMatter:problemSet1:2c}

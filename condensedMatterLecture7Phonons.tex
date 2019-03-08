@@ -20,36 +20,36 @@ With equilibrium positions \(x_j\), and displacement distances from equilibrium 
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL7Fig5}{Equilibrium and displacement positions}{fig:qmSolidsL7Phonons:qmSolidsL7Fig5}{0.15}
 
 Our force balance is
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture7Phonons:180}
 m \uddot_j = K \lr{ u_{j + 1} - u_j } + K \lr{ u_{j - 1} - u_j}
 \end{dmath}
-
+%
 We have \(10^{23}\) coupled equations.
 
 The periodicity requirement imposes a constraint on
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture7Phonons:220}
 e^{i q( x_j + N a) },
 \end{dmath}
-
+%
 so that
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture7Phonons:240}
 q \mathLabelBox{N a}{\(L\)} = 2 \pi n,
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:condensedMatterLecture7Phonons:260}
 q = \frac{2 \pi n}{L}.
 \end{dmath}
-
+%
 In class we used trial solutions of the form
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture7Phonons:200}
 u_j = \inv{\sqrt{m}} \sum_q u_q e^{i \lr{ q x_j - \omega_q t} }.
 \end{dmath}
-
+%
 \paragraph{Constraint on frequency}
 
 %Plugging this in and working through a rough Fourier argument provides a constraint on \(\omega\), but we can get to that constraint more easily by first considering one component of that solution in isolation.  This
@@ -57,11 +57,11 @@ u_j = \inv{\sqrt{m}} \sum_q u_q e^{i \lr{ q x_j - \omega_q t} }.
 In class we plugged \eqnref{eqn:condensedMatterLecture7Phonons:200} into  \eqnref{eqn:condensedMatterLecture7Phonons:180} and after some rushed arithmetic we arrived at a constraint on the frequency.
 
 Because that was rushed I had a bit of trouble following, but thought I had the general idea.  I found a simpler treatment in \citep{kdasgupta:ph409} which used single frequency trial solution
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture7Phonons:280}
 u_n = \epsilon e^{i q n a - \omega t}.
 \end{dmath}
-
+%
 Our derivatives are
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterLecture7Phonons:300}
@@ -71,9 +71,9 @@ Our derivatives are
 \ddot{u}_n = - \omega^2 \epsilon e^{i q n a - \omega t},
 \end{dmath}
 \end{subequations}
-
+%
 and insertion back into \eqnref{eqn:condensedMatterLecture7Phonons:180} gives
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture7Phonons:340}
 0
 = \epsilon e^{-i\omega t}
@@ -96,7 +96,7 @@ e^{i q n a}
 \frac{m}{K} \omega^2 + - 4 \sin^2 \lr{ \frac{ q a}{2} }
 }.
 \end{dmath}
-
+%
 Requiring equality means that we must have
 
 \boxedEquation{eqn:condensedMatterLecture7Phonons:360}{
@@ -106,16 +106,16 @@ Requiring equality means that we must have
 \paragraph{With superposition of frequency components}
 
 Putting an index on \(\epsilon\) and \(\omega\), and expressing \(q\) explicitly we have a slightly more general trial solution
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture7Phonons:380}
 u_n = \sum_s \epsilon_s
 e^{i \lr{
 \frac{ 2 \pi s n}{N} - \omega_s t
 } },
 \end{dmath}
-
+%
 where \(s\) is an integer.  Plugging this into our EOM we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture7Phonons:400}
 0
 = \sum_s \epsilon_s e^{-i \omega_s t }
@@ -178,9 +178,9 @@ e^{i
 }
 }.
 \end{dmath}
-
+%
 From this, we see that if
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture7Phonons:420}
 \frac{m}{K}\omega_s^2 =
 4 \sin^2
@@ -188,7 +188,7 @@ From this, we see that if
 \frac{ \pi s}{N}
 },
 \end{dmath}
-
+%
 then our equation is solved.  This is just the frequency constraint of \eqnref{eqn:condensedMatterLecture7Phonons:360}.
 
 \paragraph{Q:} In class, the equality above that resulted from us applying the trial solution was operated on by \(\sum_{q'} e^{-i q' n a}\) to decouple the equations.  If the frequency constraint was what was desired, why did we even apply that operator?

@@ -49,13 +49,13 @@ Consider a closed system and reservoir \(r\), as in \cref{fig:qmSolidsL12:qmSoli
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsL12Fig2}{Fermi energy in the energy distribution range}{fig:qmSolidsL12:qmSolidsL12Fig2}{0.2}
 
 The probability of eigenstate \(\epsilon\) with \(n\) particles
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:20}
 P(\epsilon, n) \propto g_r(U - \epsilon, N - n),
 \end{dmath}
-
+%
 where \(g_r\) is the number of ``microstates of the reservoir when it has energy \(U - \epsilon\), and \(N - n\) particles.  We have
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:40}
 g_r(U - \epsilon, N - n)
 =
@@ -67,15 +67,15 @@ e^{ \ln g_r(U - \epsilon, N - n) }
 - n \PDc{N}{\ln g_r}{U}
 }.
 \end{dmath}
-
+%
 Introducing the Boltzmann \textAndIndex{entropy}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:60}
 S_r = \kB \ln g_r,
 \end{dmath}
-
+%
 we have (approximately)
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:80}
 P(\epsilon, n) \propto
 \exp\lr{
@@ -84,9 +84,9 @@ P(\epsilon, n) \propto
 - \frac{n}{\kB} \PDc{N}{S_r}{U}
 }.
 \end{dmath}
-
+%
 Recall the thermodynamic relationship, which we simplify immediately, by restricting ourselves volume (and constant pressure) constraint
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:100}
 dU_r
 = T dS_r - \cancel{p dV_r} + \mu dN_r,
@@ -98,9 +98,9 @@ dU_r
 %dS_r
 + \mu dN_r.
 \end{dmath}
-
+%
 Taking wedge products \index{wedge product}, and noting that \(dx \wedge dx = 0\), we can construct a pair of 2-forms from this
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterLecture12:360}
 \cancel{dU_r \wedge dU_r}
@@ -121,9 +121,9 @@ dU_r \wedge dN_r
 + \mu \cancel{dN_r \wedge dN_r}.
 \end{dmath}
 \end{subequations}
-
+%
 Since \(dy \wedge dx = - dx \wedge dy\), we can read off the factors of the 2-forms
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterLecture12:120}
 \PDc{U_r}{S_r}{P,V} = \inv{T}
@@ -132,22 +132,22 @@ Since \(dy \wedge dx = - dx \wedge dy\), we can read off the factors of the 2-fo
 \PDc{N}{S_r}{P,V} = -\frac{\mu}{T}.
 \end{dmath}
 \end{subequations}
-
+%
 Insertion into our probability density gives us
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:160}
 P(\epsilon, n) \propto e^{-(\epsilon - \mu n)/\kB T}.
 \end{dmath}
-
+%
 This is the \underlineAndIndex{Boltzmann-Gibbs distribution}.  Normalizing we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:180}
 P(\epsilon, n) =
 \frac{e^{-(\epsilon - \mu n)/\kB T}}{
 \sum_n \sum_{\epsilon(n)} e^{-(\epsilon - \mu n)/\kB T}
 }.
 \end{dmath}
-
+%
 This method is deemed old fashioned because it relies on being able to calculate the eigenstates of the system.  Imagine the impossibility of this for, say, a room full of air.
 
 It seems that we are labeling the system as having an energy eigenstate since we imagine that it can be characterized as having a single energy level.
@@ -159,7 +159,7 @@ Select one energy level \((*)\), \cref{fig:qmSolidsL12:qmSolidsL12Fig5}, as the 
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL12Fig5}{Selected energy level for system}{fig:qmSolidsL12:qmSolidsL12Fig5}{0.15}
 
 Note that \(n_i \in \{0, 1\}\) due to the Pauli exclusion principle, and \(\epsilon \in \{0, \epsilon_i\}\).
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterLecture12:200}
 P(\epsilon = 0, n = 0) = \inv{ 1 + e^{-(\epsilon_i - \mu)}}
@@ -169,14 +169,14 @@ P(\epsilon_i, n = 1) = \frac{ e^{-(\epsilon_i - \mu)/\kB T }
 }{ 1 + e^{-(\epsilon_i - \mu)} }
 \end{dmath}
 \end{subequations}
-
+%
 Average occupancy
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:240}
 \expectation{n_i} = \frac{ 0 \times 1 + 1 \times e^{-(\epsilon_i - \mu)/ \kB T } }
 { 1 + e^{-(\epsilon_i - \mu)/\kB T} },
 \end{dmath}
-
+%
 or
 
 \boxedEquation{eqn:condensedMatterLecture12:260}{
@@ -189,27 +189,27 @@ This is the \underlineAndIndex{Fermi-Dirac distribution}, as sketched roughly in
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL12Fig6}{Fermi Dirac distribution}{fig:qmSolidsL12:qmSolidsL12Fig6}{0.2}
 
 This solved a big mystery, since the equipartition theorem says
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:280}
 U = \frac{3}{2} \kB T \times
 \mathLabelBox
 {n}
 {electron density},
 \end{dmath}
-
+%
 so that
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:300}
 \CV = \PD{T}{U} \sim 10^{28} \frac{\text{electrons}}{m^3} \times \frac{3}{2} \kB,
 \end{dmath}
-
+%
 however the value of \(\CV\) that was measured is \(1/100\) times too small.  Because of the Pauli exclusion principle, most electrons are trapped far below \(\EF\), and can't accept thermal energy.
 
 \section{Heat capacity of free electrons}
 \index{specific heat}
 
 Estimate
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:320}
 U(T) - U(0)
 \sim
@@ -223,22 +223,22 @@ U(T) - U(0)
 { \kB T}
 {thermal energy per thermally excited electron}
 \end{dmath}
-
+%
 %F7
 %\cref{fig:qmSolidsL12:qmSolidsL12Fig7}.
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsL12Fig7}{7: CAPTION}{fig:qmSolidsL12:qmSolidsL12Fig7}{0.2}
 
 Plugging in the density of states from \eqnref{eqn:condensedMatterLecture11:340}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:340}
 C(T)
 = \frac{dU}{dT}
 \sim 2 \kB^2 D(\EF) T
 \sim 2 \kB^2 \frac{1}{2 \pi^2} \lr{ \frac{2m}{\Hbar^2} }^{3/2} \sqrt{\EF} T
 \end{dmath}
-
+%
 From \eqnref{eqn:condensedMatterLecture11:380b} we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture12:400}
 \sqrt{\EF}
 = \frac{\EF^{3/2}}{\EF}
@@ -250,7 +250,7 @@ From \eqnref{eqn:condensedMatterLecture11:380b} we have
 3 \pi^2 n
 \lr{\frac{ \Hbar^2}{2m}}^{3/2},
 \end{dmath}
-
+%
 so that
 \begin{dmath}\label{eqn:condensedMatterLecture12:420}
 C(T)
@@ -267,7 +267,7 @@ T
 {\frac{ \kB T}{ \EF }}
 {reduction from classical values}
 \end{dmath}
-
+%
 %\cref{fig:qmSolidsL12:qmSolidsL12Fig8}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL12Fig8}{Specific heat}{fig:qmSolidsL12:qmSolidsL12Fig8}{0.2}
 

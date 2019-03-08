@@ -38,7 +38,7 @@ The incident beam makes electrons vibrate at frequency \(\omega_\nought\), and r
 The diffraction pattern is the constructive interference of the re-radiated x-rays (or neutrons)
 
 At \(P\), primary beam has amplitude
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:20}
 A_p(\Br, t) =
 A_\nought
@@ -47,31 +47,31 @@ k_\nought
 \cdot
 \lr{ \BR + \Br} - \omega_\nought t}  }
 \end{dmath}
-
+%
 Here \(A_\nought\) is constant everywhere and \(k_\nought = 2 \pi/\lambda_\nought\).
 
 Scattered wave at \(P\) has amplitude
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:120}
 \rho(\Br) A_p(\Br, t)
 \end{dmath}
-
+%
 where
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:40}
 \rho(\Br) = \text{``scattering density''}.
 \end{dmath}
-
+%
 For neutrons we've got interactions with the nuclei, and things get messier, but for x-rays
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:60}
 \rho(\Br) \sim \text{electron density}.
 \end{dmath}
-
+%
 This density is largest near the nucleus, at least for large Z (heavy) atoms like \ce{La}, and \ce{Ac}.  Large Z atoms are easier to see.
 
 Amplitude at \(B\), due to \(\Br\)
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:80}
 A_B(\Br) = A_p(\Br) \rho(\Br)
 \frac{
@@ -97,19 +97,19 @@ e^{
   \Abs{\BR'}
 }
 \end{dmath}
-
+%
 time independent part of \(\rho(\Br)\) => secondary beam has frequency \(\omega_\nought\), or
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:100}
 \Abs{\Bk} = \Abs{\Bk_\nought} = \frac{\omega_\nought}{c}
 \end{dmath}
-
+%
 This is the \underlineAndIndex{elastic scattering}.  We ignore inelastic scattering.
 
 The vector \(\BR'\) determines the direction of \(\Bk\).
 
 If \(R' \gg r\), \(\Bk\) is close to the same for all \(\Br\).  Then \eqnref{eqn:condensedMatterLecture5:80} is approximately
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:140}
 A_B(\Br) \approx
 \mathLabelBox
@@ -130,9 +130,9 @@ A_B(\Br) \approx
 }
 {dependent of \(\Br\)}
 \end{dmath}
-
+%
 Total amplitude at \(B\)
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:160}
 A_B \propto e^{-i \omega_\nought t } \int \rho(\Br) e^{ i
 \mathLabelBox
@@ -146,9 +146,9 @@ A_B \propto e^{-i \omega_\nought t } \int \rho(\Br) e^{ i
 \cdot \Br }
 d\Br
 \end{dmath}
-
+%
 So that the intensity is
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:180}
 I_\BB \propto \Abs{A_B}^2 \propto
 \Abs{
@@ -156,7 +156,7 @@ I_\BB \propto \Abs{A_B}^2 \propto
 d\Br
 }^2
 \end{dmath}
-
+%
 This is the Fourier transform of the scattering density.
 
 \section{Reciprocal lattice}
@@ -168,58 +168,58 @@ This is the Fourier transform of the scattering density.
 - 1D crystal.  Illustrated in \cref{fig:qmSolidsL5:qmSolidsL5Fig3}.
 
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL5Fig3}{1D crystal diffraction electron density}{fig:qmSolidsL5:qmSolidsL5Fig3}{0.3}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:200}
 \rho(x) = \sum_n p_n e^{ i n 2 \pi x/a }
 \end{dmath}
-
+%
 Show that
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:220}
 \rho(x + m a) = \rho(x)
 \end{dmath}
-
+%
 - 3D lattice
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:240}
 \rho(\Br) = \sum_\BG \rho_\BG e^{ i \BG \cdot \Br }
 \end{dmath}
-
+%
 With
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:260}
 \Br_n =
 n_1 \Ba_1 +
 n_2 \Ba_2 +
 n_3 \Ba_3,
 \end{dmath}
-
+%
 find the \(\BG\)'s, such that
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:280}
 \rho(\Br + \Br_n) = \rho(\Br).
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:300}
 e^{ i \BG \cdot \Br_n } = 1,
 \end{dmath}
-
+%
 or
 \begin{dmath}\label{eqn:condensedMatterLecture5:320}
 \BG \cdot \Br_n = 2 \pi m,
 \end{dmath}
-
+%
 where \(m\) is an integer.
 
 Try
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:340}
 \BG =
 h \Bg_1 +
 k \Bg_2 +
 l \Bg_3,
 \end{dmath}
-
+%
 where \(h, k, l\) are integers.
 
 The \(\BG\)'s are wave vectors of waves with the periodicity of the lattice.
@@ -238,7 +238,7 @@ FIXME: Our prof used the following to illustrate (which I did a brute force cut 
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL5Fig4}{2d periodic lattice}{fig:qmSolidsL5:qmSolidsL5Fig4}{0.2}
 
 Wave 1 :
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:condensedMatterLecture5:360}
 \Bg_1 \cdot \Ba_1 = g_1 a_1 \cos\theta_1 = 2 \pi
@@ -247,9 +247,9 @@ Wave 1 :
 \Bg_1 \cdot \Ba_2 = 0
 \end{equation}
 \end{subequations}
-
+%
 Wave 2 : \(\Bg_2 \cdot \Ba_1 = 0, \)
-
+%
 \begin{subequations}
 \begin{equation}\label{eqn:condensedMatterLecture5:400}
 \Bg_2 \cdot \Ba_1 = 0
@@ -259,9 +259,9 @@ Wave 2 : \(\Bg_2 \cdot \Ba_1 = 0, \)
 = g_2 a_2 \cos\theta_2 = 2 \pi
 \end{equation}
 \end{subequations}
-
+%
 We can read off relations between the wavelengths from these
-
+%
 \begin{equation}\label{eqn:condensedMatterLecture5:480}
 \begin{aligned}
 \lambda_1 &= a_1 \cos \theta_1 \\
@@ -271,13 +271,13 @@ We can read off relations between the wavelengths from these
 }
 
 We introduce \underlineAndIndex{reciprocal vectors} defined by
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture5:440}
 \Bg_i \cdot \Ba_j = 2 \pi \delta_{ij}
 \end{dmath}
-
+%
 The general formula in 3D is
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterLecture5:460}
 \Bg_1 = 2 \pi
@@ -298,7 +298,7 @@ The general formula in 3D is
 { \Ba_3 \cdot \lr{ \Ba_1 \cross \Ba_2} }
 \end{dmath}
 \end{subequations}
-
+%
 The numerator cross product ensures that \(\Bg_1\) is perpendicular to \(\Ba_2\) and \(\Ba_3\).  The one in the denominator ``cancels'' the \(\Ba_2 \cross \Ba_3\) in the numerator.
 
 

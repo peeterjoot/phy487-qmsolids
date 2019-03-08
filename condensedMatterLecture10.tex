@@ -33,32 +33,32 @@
 We talk about branches of the (LA, TA, ...) of the dispersion \(\omega(\Bq)\) at discrete \(\Bq's\).
 
 The thermal occupancy is given by the \textAndIndex{Boltzman distribution}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:20}
 P_n =
 \frac
 { e^{-E_n/\kB T} }
 { \sum_{n = 0}^\infty e^{-E_n/\kB T} },
 \end{dmath}
-
+%
 where the denominator
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:40}
 Z = \sum_{n = 0}^\infty e^{-E_n/\kB T},
 \end{dmath}
-
+%
 is a normalization sum so that
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:60}
 \sum_{n = 0}^\infty P_n = 1.
 \end{dmath}
-
+%
 For the harmonic oscillator, we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:80}
 E_n = \lr{ n + \inv{2} } \Hbar \omega,
 \end{dmath}
-
+%
 so that
 \begin{dmath}\label{eqn:condensedMatterLecture10:100}
 Z
@@ -71,9 +71,9 @@ Z
 { e^{ - \inv{2} \Hbar \omega / \kB T } }
 { 1 - e^{ - \Hbar \omega / \kB T } }.
 \end{dmath}
-
+%
 The average thermal energy
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:120}
 \calE(\omega_q T)
 = \expectation{ E_n }
@@ -102,7 +102,7 @@ The average thermal energy
 \lr{ -e^{ - \Hbar \omega / \kB T } }
 \lr{ -\Hbar \omega},
 \end{dmath}
-
+%
 or
 
 \boxedEquation{eqn:condensedMatterLecture10:140}{
@@ -115,14 +115,14 @@ e^{ \Hbar \omega / \kB T } - 1}
 }
 
 Here
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:440}
 \inv{
 e^{ \Hbar \omega / \kB T } - 1} = \expectation{n}_T,
 \end{dmath}
-
+%
 the \textAndIndex{Bose distribution}.  In the \(\kB T \gg \Hbar \omega\) we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:160}
 \calE(\omega_q T)
 \approx
@@ -137,17 +137,17 @@ the \textAndIndex{Bose distribution}.  In the \(\kB T \gg \Hbar \omega\) we have
 }{small}
 + \kB T
 \end{dmath}
-
+%
 Our \(\Hbar\) is ``gone''.  This is the classical limit.  This is called the equipartition where we have \(\inv{2} \kB T\) of kinetic energy and \(\inv{2} \kB T\) of potential energy.
 
 On the other hand in the \(\kB T \ll \Hbar \omega\) we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:180}
 \calE(\omega_q T)
 \approx
 \frac{\Hbar \omega}{2} + \Hbar \omega e^{-\Hbar \omega/\kB T}.
 \end{dmath}
-
+%
 These limits are plotted in \cref{fig:qmSolidsL10:qmSolidsL10Fig1}, and \cref{fig:qmSolidsL10:qmSolidsL10Fig2}.
 
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL10Fig1}{Average energy vs temperature}{fig:qmSolidsL10:qmSolidsL10Fig1}{0.3}
@@ -166,17 +166,17 @@ Define \(\CV(T)\) or \(\CP(T)\) \index{specific heat} as the change in the energ
 \item
 \(\CP(T)\), is a measure at constant pressure (easy to measure).
 \end{itemize}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:200}
 \CV(T) = \PDc{T}{U}{V}
 \end{dmath}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:220}
 U(T) = \sum_q \calE(\omega_q, T) = \inv{V} \int_0^\infty Z(\omega) \calE(\omega_q, T) d\omega.
 \end{dmath}
-
+%
 In the Debye model we found in \eqnref{eqn:condensedMatterLecture9:360} and \eqnref{eqn:condensedMatterLecture9:440} that
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterLecture10:460}
 Z(\omega) d\omega
@@ -191,9 +191,9 @@ Z(\omega) d\omega
 \frac{V}{ 2 \pi^2} \lr{ \inv{C_{\txtL}^3} + \frac{ 2}{C_{\txtT}^3} } \omega_{\txtD}^3 = 9 r N.
 \end{dmath}
 \end{subequations}
-
+%
 so the specific heat for the Debye model is
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:240}
 \CV(T)
 =
@@ -222,9 +222,9 @@ e^{\Hbar \omega/\kB T} - 1
 }
 d\omega.
 \end{dmath}
-
+%
 where \(r\) is the number of atoms in the unit cell.  In the limit \(\kB T \gg \Hbar \omega_{\txtD}\), we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:480}
 \CV(T)
 =
@@ -251,17 +251,17 @@ where \(r\) is the number of atoms in the unit cell.  In the limit \(\kB T \gg \
 =
 \kB \,\mbox{per degree of freedom},
 \end{dmath}
-
+%
 so that
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:260}
 U \sim \kB T \,\mbox{per degree of freedom}.
 \end{dmath}
-
+%
 This is called the \underlineAndIndex{Dulong-Petit law}.
 
 \paragraph{More generally.}
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:280}
 \CV(T) =
 \lr{
@@ -288,7 +288,7 @@ d\omega
 e^{\Hbar \omega/\kB T} \lr{ -\frac{\Hbar \omega}{\kB T^2} }
 d\omega.
 \end{dmath}
-
+%
 Make substitutions
 \begin{subequations}
 \begin{dmath}\label{eqn:condensedMatterLecture10:300}
@@ -301,17 +301,17 @@ d\omega = \frac{\kB T}{\Hbar} dy
 \mathLabelBox{\kB \Theta}{Debye temp} = \Hbar \omega_{\txtD}
 \end{dmath}
 \end{subequations}
-
+%
 \index{Debye temperature}
 
 The integral limit is
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:520}
 y(\omega_{\txtD}) = \frac{\Hbar \omega_{\txtD}}{ \kB T} = \frac{\kB \Theta}{\kB T} = \frac{\Theta}{T},
 \end{dmath}
-
+%
 so the specific heat is
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:360}
 \CV(T)
 =
@@ -345,19 +345,19 @@ e^{y}
 \frac{y^4 e^y}{ \lr{ e^y - 1}^2 }
 dy
 \end{dmath}
-
+%
 This is an exact result for the Debye model.
 
 In the \(T \rightarrow 0\) limit where \(\Theta/T\) is large, and when \(y\) is large
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:380}
 \frac{y^4 e^y}{\lr{e^y - 1}^2} \sim y^4 e^{-y} \rightarrow 0.
 \end{dmath}
-
+%
 Modes are \textunderline{frozen out}.
 
 In the \(T \ll \Hbar \omega_{\txtD}/\kB\) limit, we have
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:400}
 \CV(T)
 =
@@ -372,7 +372,7 @@ In the \(T \ll \Hbar \omega_{\txtD}/\kB\) limit, we have
 \frac{ 3 r N }{V}
 \frac{4 \pi^2 \kB }{5} \frac{T^3}{\Theta^3}
 \end{dmath}
-
+%
 The \(T^3\) dependence here is \textunderline{very important}.  This comes from
 
 \begin{itemize}
@@ -387,14 +387,14 @@ number of thermally occupied modes \(\propto\) \(T^3\)
 
 With \(\omega \propto q\), the volume of of thermally occupied \(q\) space \(\propto T^3\) and the energy of a thermally occupied mode \(= T\), we have
 averaged energy of these modes propto
-
+%
 \begin{dmath}\label{eqn:condensedMatterLecture10:420}
 \begin{aligned}
 U(T) &\sim T^4 \\
 C(T) &= T^3.
 \end{aligned}
 \end{dmath}
-
+%
 %\EndArticle
 %\EndNoBibArticle
 

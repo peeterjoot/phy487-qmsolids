@@ -21,17 +21,17 @@
 
 \makeoproblem{Anharmonic 1D oscillator}{pr:anharmonicOsc:1}{\citep{harald2003solid} pr 5.5}{
 How that the equation of motion for an \textAndIndex{anharmonic oscillator}
-
+%
 \begin{dmath}\label{eqn:anharmonicOsc:20}
 M \ddot{u} + f u - \inv{2} g u^2 = 0,
 \end{dmath}
-
+%
 is solved by an approximate solution involving multiples of the harmonic frequency \(\omega_\nought^2 = f/M\):
-
+%
 \begin{dmath}\label{eqn:anharmonicOsc:40}
 u =  \sum_{n = 1}^\infty a_n e^{i n \omega_\nought t} .
 \end{dmath}
-
+%
 Discuss the result in relation to phonon decay.  What is the analogy to electrical circuits and to signal transmission in nonlinear media?
 
 } % makeoproblem
@@ -39,13 +39,13 @@ Discuss the result in relation to phonon decay.  What is the analogy to electric
 \makeanswer{pr:anharmonicOsc:1}{
 
 Let's write our differential equation as
-
+%
 \begin{dmath}\label{eqn:anharmonicOsc:60}
 \ddot{u} + \omega_\nought^2 u - h u^2 = 0,
 \end{dmath}
-
+%
 where \(g/2M = h\).  Now consider a product of the form \(u^2\)
-
+%
 \begin{dmath}\label{eqn:anharmonicOsc:80}
 \begin{aligned}
 &\lr{
@@ -75,9 +75,9 @@ a_1^2 e^{2 i x} + a_2^2 e^{4 i x} + a_3^2 e^{6 i x} + \cdots
 2 \sum_{1 \le n < m < \infty} a_n a_m e^{(n + m) i x}.
 \end{aligned}
 \end{dmath}
-
+%
 Now we are set to take derivatives
-
+%
 \begin{dmath}\label{eqn:anharmonicOsc:100}
 \begin{aligned}
 0
@@ -96,9 +96,9 @@ h \sum_{n = 1}^\infty a_n^2 e^{2 n i \omega_\nought t}
 &+ \cdots
 \end{aligned}
 \end{dmath}
-
+%
 Setting \(a_1 = 1\) we can proceed to calculate all the constants \(a_n\).
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:anharmonicOsc:120}
 a_2 =
@@ -117,21 +117,21 @@ a_4
  -\frac{h^3 }{ 135 \omega_\nought^6 }.
 \end{dmath}
 \end{subequations}
-
+%
 Observe that each of these has powers of
-
+%
 \begin{dmath}\label{eqn:anharmonicOsc:180}
 \frac{h}{\omega_\nought^2} = \frac{g}{2 M \omega_\nought^2 } = \frac{g}{2 f}.
 \end{dmath}
-
+%
 The magnitude of the anharmonic perturbation ``spring constant'' \(g/2\) compared to the actual spring constant \(f\) is assumed to be small.  This means that the magnitude of each progressive term in the series is smaller than the previous.
 
 This is enough to verify that the solution can be expressed in a series formed from powers of the harmonic frequency phasor.  Looking at a specific example, with \(m = f = 1\), and \(g = 0.5\), we have
-
+%
 \begin{dmath}\label{eqn:anharmonicOsc:200}
 u(t) = e^{i t}-0.0833333 e^{2 i t}+0.00520833 e^{3 i t}-0.000115741 e^{4 i t}.
 \end{dmath}
-
+%
 The Real part of this is plotted in \cref{fig:anharmonicOsc:anharmonicOscFig1} along with separate plots of the first two terms.
 
 \mathImageFigure{../figures/phy487-qmsolids/anharmonicOscFig1}{Anharmonic sum and two components}{fig:anharmonicOsc:anharmonicOscFig1}{0.3}{anharmonicOscillator.nb}
