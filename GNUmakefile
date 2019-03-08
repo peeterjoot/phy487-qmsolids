@@ -1,6 +1,11 @@
 THISDIR := phy487-qmsolids
 THISBOOK := phy487
 
+BIBLIOGRAPHY_PATH := classicthesis_mine
+HAVE_OWN_CONTENTS := 1
+MY_CLASSICTHESIS_FRONTBACK_FILES += ../latex/classicthesis_mine/FrontBackmatter/Index.tex
+MY_CLASSICTHESIS_FRONTBACK_FILES += ../latex/classicthesis_mine/FrontBackmatter/ContentsAndFigures.tex
+
 include make.revision
 include ../latex/make.bookvars
 
@@ -46,3 +51,7 @@ condensedMatterLecture7PhononsQ.pdf :: condensedMatterLecture7Phonons.tex
 
 condensedMatterLecture6q.pdf :: $(PDF_DEPS)
 condensedMatterLecture6q.pdf :: condensedMatterLecture6.tex
+
+clean ::
+	#git checkout FrontBackmatter/Titlepage.tex
+	git checkout $(THISBOOK).tex
