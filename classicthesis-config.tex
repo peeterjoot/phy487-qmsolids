@@ -39,6 +39,23 @@
 \newcommand{\hmmax}{0}
 
 % ********************************************************************
+
+%\AtBeginDocument{%
+%\let\latextableofcontents\tableofcontents
+%
+%\renewcommand{\tableofcontents}{%
+%  \addtocontents{toc}{\protect\setcounter{tocdepth}{-2}}
+%  \latextableofcontents%
+%  \addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+%}
+%}
+
+% https://tex.stackexchange.com/a/348976/15
+\BeforeTOCHead[toc]{\cleardoublepage\pdfbookmark{\contentsname}{toc}}
+\BeforeTOCHead[lof]{\cleardoublepage\pdfbookmark{\listfigurename}{lof}}
+%\BeforeTOCHead[lot]{\cleardoublepage\pdfbookmark{\listtablename}{lot}}
+
+% ********************************************************************
 % Triggers for this config
 % ********************************************************************
 \usepackage{ifthen}
