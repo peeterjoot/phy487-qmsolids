@@ -25,7 +25,7 @@
 %
 %\chapter{One atom basis phonons in 2D}
 \label{chap:oneAtomBasisPhonon}
-\makeoproblem{One atom basis phonons in 2D}{pr:oneAtomBasisPhonon:1}{2013 final exam}{
+\makeoproblem{One atom basis phonons in 2D.}{pr:oneAtomBasisPhonon:1}{2013 final exam}{
 Tackle the 2D problem of the final exam, generalizing from a square lattice to a general one atom basis in 2D.  The lattice geometry to consider is illustrated in \cref{fig:oneAtomBasisNearestNeighbours:oneAtomBasisNearestNeighboursFig1}.
 %
 \imageFigure{../figures/phy487-qmsolids/oneAtomBasisNearestNeighboursFig1}{Oblique one atom basis.}{fig:oneAtomBasisNearestNeighbours:oneAtomBasisNearestNeighboursFig1}{0.3}
@@ -355,9 +355,13 @@ Using \eqnref{eqn:oneAtomBasisPhonon:240}, the dispersion relation and eigenvect
 %
 \begin{subequations}
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:520}
-\omega^2 =
+\begin{aligned}
+\omega^2 &=
 \frac{2}{m}
-\lr{ \sum_i K_i S_i \pm \sqrt{ (K_2 S_2 - K_1 S_1)^2 + (K_3 S_3 - K_4 S_4)^2 } }
+\Biglr{ 
+   \sum_i K_i S_i \\
+   &\qquad     \pm \sqrt{ (K_2 S_2 - K_1 S_1)^2 + (K_3 S_3 - K_4 S_4)^2 } 
+}
 \end{dmath}
 \begin{dmath}\label{eqn:oneAtomBasisPhonon:540}
 \Bepsilon \propto
@@ -365,18 +369,19 @@ Using \eqnref{eqn:oneAtomBasisPhonon:240}, the dispersion relation and eigenvect
 K_3 S_3 - K_4 S_4 \\
 K_2 S_2 - K_1 S_1 \pm \sqrt{ (K_2 S_2 - K_1 S_1)^2 + (K_3 S_3 - K_4 S_4)^2 }
 \end{bmatrix}.
+\end{aligned}
 \end{dmath}
 \end{subequations}
 %
 This calculation is confirmed in \nbref{oneAtomBasisPhononSquareLatticeEigensystem.nb} .  Mathematica calculates an alternate form (equivalent to using a zero dot product for the second row), of
 %
-\begin{dmath}\label{eqn:oneAtomBasisPhonon:920}
+\begin{equation}\label{eqn:oneAtomBasisPhonon:920}
 \Bepsilon \propto
 \begin{bmatrix}
 K_1 S_1 - K_2 S_2 \pm \sqrt{ (K_2 S_2 - K_1 S_1)^2 + (K_3 S_3 - K_4 S_4)^2 } \\
 K_3 S_3 - K_4 S_4
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 Either way, we see that \(K_3 S_3 - K_4 S_4 = 0\) leads to only horizontal or vertical motion.
 %
@@ -634,7 +639,6 @@ A Manipulate allowing for choice of the spring constants and lattice orientation
 %
 \mathImageFigure{../figures/phy487-qmsolids/oneAtomBasisPhononFig2}{2D Single atom basis Manipulate interface.}{fig:oneAtomBasisPhonon:oneAtomBasisPhononFig2}{0.2}{oneAtomBasisLatticeDemo.nb}
 \mathImageFigure{../figures/phy487-qmsolids/oneAtomBasisPhononFig3}{Sample distribution relation for 2D single atom basis.}{fig:oneAtomBasisPhonon:oneAtomBasisPhononFig3}{0.2}{oneAtomBasisLatticeDemo.nb}
-
 } % makeanswer
 
 %\EndArticle

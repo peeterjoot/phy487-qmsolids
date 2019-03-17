@@ -25,7 +25,7 @@
 %\generatetitle{Quadratic Debye}
 %\chapter{Quadratic Deybe}
 \label{chap:quadraticDebye}
-\makeoproblem{Quadratic Debye phonons}{pr:quadraticDebye:1}{2013 midterm pr B2}{
+\makeoproblem{Quadratic Debye phonons.}{pr:quadraticDebye:1}{2013 midterm pr B2}{
 \index{Deybe model}
 Assume a quadratic dispersion relation for the longitudinal and transverse modes
 %
@@ -122,26 +122,28 @@ Z(\omega) =
 for a specific heat of
 %
 \begin{dmath}\label{eqn:quadraticDebye:150}
+\begin{aligned}
 \CV
-= \frac{d}{d T} \inv{V} \int_0^\infty \frac{9 r N}{ 2 \omega_{\txtD}^{3/2} } \omega^{1/2} \frac{\Hbar \omega}{ e^{\Hbar \omega/ \kB T } - 1} d\omega
-=
+&= \frac{d}{d T} \inv{V} \int_0^\infty \frac{9 r N}{ 2 \omega_{\txtD}^{3/2} } \omega^{1/2} \frac{\Hbar \omega}{ e^{\Hbar \omega/ \kB T } - 1} d\omega \\
+&=
 \frac{9 r N}{ 2 V \omega_{\txtD}^{3/2} }
 \int_0^\infty
 d\omega \omega^{1/2}
 \frac{d}{d T}
-\frac{\Hbar \omega}{ e^{\Hbar \omega/ \kB T } - 1}
-=
+\frac{\Hbar \omega}{ e^{\Hbar \omega/ \kB T } - 1} \\
+&=
 \frac{9 r N}{ 2 V \omega_{\txtD}^{3/2} }
 \int_0^\infty
 d\omega \omega^{1/2}
 \frac{-\Hbar \omega}{
 \lr{e^{\Hbar \omega/ \kB T } - 1}^2
 }  e^{\Hbar \omega/\kB T} \Hbar \omega/\kB
-\lr{-\inv{T^2}}
-=
+\lr{-\inv{T^2}} \\
+&=
 \frac{9 r N \kB }{ 2 V \omega_{\txtD}^{3/2} }
 \lr{ \frac{ \kB T}{\Hbar} }
-^{3/2}
+^{3/2} \\
+&\qquad
 \int_0^\infty
 d \frac{\Hbar \omega}{\kB T}
 \lr{\frac{\Hbar \omega}{\kB T}}
@@ -149,18 +151,19 @@ d \frac{\Hbar \omega}{\kB T}
 \frac{1}{
 \lr{e^{\Hbar \omega/ \kB T } - 1}^2
 }  e^{\Hbar \omega/\kB T}
-\lr{ \frac{\Hbar \omega}{\kB T} }^2
-=
+\lr{ \frac{\Hbar \omega}{\kB T} }^2 \\
+&=
 \frac{9 r N \kB }{ 2 V \omega_{\txtD}^{3/2} }
 \lr{ \frac{ \kB T}{\Hbar} }
 ^{3/2}
 \int_0^\infty dy \frac{y^{5/2} e^y }{
 \lr{e^y - 1}^2
- }
-=
+ } \\
+&=
 \frac{9 r N \kB }{ 2 V }
 \lr{ \frac{ T}{\Theta} }
 ^{3/2} \calI.
+\end{aligned}
 \end{dmath}
 } % makeanswer
 

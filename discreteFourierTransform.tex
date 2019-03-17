@@ -33,14 +33,16 @@ A_k' \propto \sum_{n = 0}^{N-1} a_n e^{2 \pi i k' n/N }.
 Direct substitution should show if such a transform pair is valid, and determine the proportionality constant.  Let's try this
 %
 \begin{dmath}\label{eqn:discreteFourierTransform:60}
+\begin{aligned}
 \sum_{n = 0}^{N-1} a_n e^{2 \pi i k' n/N }
-=
+&=
 \sum_{n = 0}^{N-1} e^{2 \pi i k' n/N }
-\sum_{k = 0}^{N-1} A_k e^{-2 \pi i k n/N }
-=
+\sum_{k = 0}^{N-1} A_k e^{-2 \pi i k n/N } \\
+&=
 \sum_{k = 0}^{N-1}
 A_k
 \sum_{n = 0}^{N-1} e^{2 \pi i (k' - k)n/N }.
+\end{aligned}
 \end{dmath}
 %
 Observe that the interior sum is just \(N\) when \(k' = k\).  Let's sum this for the values \(k \ne k'\), writing

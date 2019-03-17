@@ -22,7 +22,7 @@
 %\paragraph{Motivation}
 %
 %In lattice problems, we consider normal modes of harmonic coupled systems.  Here is a progression through a set of treatments of two harmonically coupled masses, to a lattice configuration with a number of masses all harmonically coupled.
-\makeproblem{Two body harmonic oscillator in 3D}{pr:twoMassHarmonic:1}{
+\makeproblem{Two body harmonic oscillator in 3D.}{pr:twoMassHarmonic:1}{
 Solve a two mass harmonically coupled system without considering any equilibrium separation.
 } % makeproblem
 \makeanswer{pr:twoMassHarmonic:1}{
@@ -153,7 +153,7 @@ Looking at this, it appears non-sensical.  At the very least, it is unphysical, 
 
 Our Lagrangian needs to model the equilibrium length of the spring.
 }
-\makeproblem{1D system with non-zero equilibrium length}{pr:twoMassHarmonic:2}{
+\makeproblem{1D, non-zero equilibrium length.}{pr:twoMassHarmonic:2}{
 In the absence of any initial angular momentum, the problem previously considered is essentially one dimensional.
 
 Let's consider a physically realistic harmonic oscillator system, with coupling that is relative to an equilibrium length (the length of an uncompressed or unstretched spring for example).  That system is illustrated in \cref{fig:twoMassSpringCoupling:twoMassSpringCouplingFig2}.
@@ -199,7 +199,7 @@ a +
 %
 Note that this does not model collision effects, should the initial position or velocity be sufficient to bring the masses into contact.
 } % makeanswer
-\makeproblem{3D system with non-zero equilibrium length}{pr:twoMassHarmonic:3}{
+\makeproblem{3D non-zero equilibrium length.}{pr:twoMassHarmonic:3}{
 Derive the equations of motion for a 3D harmonically coupled system with a non-zero equilibrium length using a Lagrange multiplier to enforce a linear constraint.
 } % makeproblem
 \makeanswer{pr:twoMassHarmonic:3}{
@@ -209,11 +209,13 @@ The geometric of a 3D harmonically coupled system with a non-zero equilibrium le
 We can model the coupling spring as a line segment colinear with the difference vector, or
 %
 \begin{dmath}\label{eqn:twoMassHarmonic:21}
-\LL =
-\inv{2} m_1 \lr{ \dot{\Br}_1 }^2
-+\inv{2} m_2 \lr{ \dot{\Br}_2 }^2
-- \frac{K}{2} \lr{ \Delta \Br - \Ba }^2
-+ \lambda \lr{ \Delta \Br - \lr{\acap \cdot \Delta \Br} \acap }^2.
+\begin{aligned}
+\LL &=
+   \inv{2} m_1 \lr{ \dot{\Br}_1 }^2
+ + \inv{2} m_2 \lr{ \dot{\Br}_2 }^2
+ - \frac{K}{2} \lr{ \Delta \Br - \Ba }^2 \\
+&+ \lambda \lr{ \Delta \Br - \lr{\acap \cdot \Delta \Br} \acap }^2.
+\end{aligned}
 \end{dmath}
 %
 A Lagrange multiplier \(\lambda\) is used to enforce a requirement that the difference vector \(\Delta \Br\) is colinear with \(\Ba\) (i.e. zero component perpendicular to the projection along \(\acap\).)
@@ -263,11 +265,13 @@ Taking differences this is
 By inspection the solution for the difference is
 %
 \begin{dmath}\label{eqn:twoMassHarmonic:420}
-\Delta \Br(t) =
+\begin{aligned}
+\Delta \Br(t) &=
 \Ba
 +
-\lr{ \Delta \Br_\nought - \Ba } \cos\lr{ \omega(t - t_\nought) }
-+ \frac{\Delta \Bv_\nought}{\omega} \sin\lr{ \omega(t - t_\nought) }.
+\lr{ \Delta \Br_\nought - \Ba } \cos\lr{ \omega(t - t_\nought) } \\
+&+ \frac{\Delta \Bv_\nought}{\omega} \sin\lr{ \omega(t - t_\nought) }.
+\end{aligned}
 \end{dmath}
 %
 with the individual mass position vectors still given by \eqnref{eqn:twoMassHarmonic:240}.
@@ -275,7 +279,7 @@ with the individual mass position vectors still given by \eqnref{eqn:twoMassHarm
 We get a strong hint here why we wish to work with displacement coordinates.
 %Once we do so, there's no longer any requirement to include the Lagrange multipliers that specify the physical constraint.
 } % makeanswer
-\makeproblem{A different formulation of the equilibrium position constraint}{pr:twoMassHarmonic:4}{
+\makeproblem{Equilibrium position constraint.}{pr:twoMassHarmonic:4}{
 Without the use of the somewhat forced seeming direction constraint used above, rederive the equations of motion.
 } % makeproblem
 \makeanswer{pr:twoMassHarmonic:4}{
@@ -352,7 +356,7 @@ With \(\Delta u = u_2 - u_1\), \eqnref{eqn:twoMassHarmonic:540} takes the form
 %
 We see exactly how natural displacement coordinates are for the two mass problem.  We have also avoided the awkward requirement for a Lagrange multiplier constraint in the Lagrangian model of the system.
 } % makeanswer
-\makeproblem{Linearized potential about equilibrium point}{pr:twoMassHarmonic:5}{
+\makeproblem{Potential about equilibrium point.}{pr:twoMassHarmonic:5}{
 Compute the linear expansion of a two mass potential, with masses located at \(\Br_1, \Br_2\) and equilibrium positions \(\Ba_1, \Ba_2\).
 } % makeproblem
 \makeanswer{pr:twoMassHarmonic:5}{
@@ -537,16 +541,18 @@ At the equilibrium positions, this is
 so to second order, with displacement coordinates \(\Bu_i = \Br_i - \Ba_i\), the potential is
 %
 \begin{dmath}\label{eqn:twoMassHarmonic:740}
-\phi(\Bu_1, \Bu_2)
-\approx
-\phi(\Ba_1, \Ba_2)
-+
+\begin{aligned}
+&\phi(\Bu_1, \Bu_2) 
+\approx 
+\phi(\Ba_1, \Ba_2) \\
+&\qquad +
 \frac{K}{2} \sum_{i j} \cos\theta_i \cos\theta_j \lr{
   u_{1j} u_{1i}
 - u_{2j} u_{1i}
 - u_{1j} u_{2i}
 + u_{2j} u_{2i}
 },
+\end{aligned}
 \end{dmath}
 %
 but since \(\phi(\Ba_1, \Ba_2) = 0\), we have
@@ -563,13 +569,15 @@ As a check observe that if \(\Delta \Ba\) is directed along \(\Be_1\), we have t
 The complete Lagrangian is, to second order about the equilibrium positions,
 %
 \begin{dmath}\label{eqn:twoMassHarmonic:780}
-\LL =
-\sum_j \frac{m_i}{2} \dot{u}_{ij}^2
--
+\begin{aligned}
+\LL &=
+\sum_j \frac{m_i}{2} \dot{u}_{ij}^2 \\
+&\qquad -
 \frac{K}{2} \sum_{i j}
 \cos\theta_i \cos\theta_j
 \lr{ u_{2 i} - u_{1 i} }
 \lr{ u_{2 j} - u_{1 j} }.
+\end{aligned}
 \end{dmath}
 %
 Evaluating the Euler-Lagrange equations for \(m_2\) we have
@@ -629,7 +637,7 @@ Observe that on the RHS above we have a projection operator, so we could also wr
 %
 Only the portion of the displacement difference \(\Delta \Bu\) that is directed along the equilibrium line contributes to the acceleration of the displacement difference.
 } % makeanswer
-\makeproblem{A number of harmonically coupled masses}{pr:twoMassHarmonic:6}{
+\makeproblem{Harmonically coupled masses.}{pr:twoMassHarmonic:6}{
 Now let's consider masses at lattice points indexed by a lattice vector \(\Bn\), as illustrated in \cref{fig:twoMassSpringCoupling:twoMassSpringCouplingFig6}.
 \imageFigure{../figures/phy487-qmsolids/twoMassSpringCouplingFig6}{Masses harmonically coupled in a lattice.}{fig:twoMassSpringCoupling:twoMassSpringCouplingFig6}{0.3}
 } % makeproblem
@@ -722,7 +730,7 @@ K_{\Bn \Bm}
 
 This is an intuitively pleasing result.  We have displacement and the direction of the lattice separations in the mix, but not the magnitude of the lattice separation itself.  Compare that to \eqnref{eqn:twoMassHarmonic:540} (the two mass result that did not use the Taylor expansion of the potential), where we had the lattice spacing explicitly along with the absolute coordinates (or rather the difference between them).
 } % makeanswer
-\makeproblem{Two atom basis, 2D diamond lattice}{pr:twoMassHarmonic:7}{
+\makeproblem{Two atom basis, 2D diamond lattice.}{pr:twoMassHarmonic:7}{
 As a concrete application of the previously calculated equilibrium harmonic oscillator result, find the equations of motion for a two atom basis diamond lattice where the horizontal length is \(a\) and vertical height is \(b\).
 } % makeproblem
 \makeanswer{pr:twoMassHarmonic:7}{
@@ -765,8 +773,8 @@ m_1 \ddot{\Bu}_{\Bn, 1}
 \Proj_\xcap
 \lr{
 \Bu_{\Bn, 1} - \Bu_{\Bn - (0,1), 2}
-}
-- K_1
+} \\
+&\quad - K_1
 \Proj_\xcap
 \lr{
 \Bu_{\Bn, 1} - \Bu_{\Bn - (1,0), 2}
@@ -776,8 +784,8 @@ m_1 \ddot{\Bu}_{\Bn, 1}
 \Proj_\ycap
 \lr{
 \Bu_{\Bn, 1} - \Bu_{\Bn, 2}
-}
-- K_2
+} \\
+&\quad - K_2
 \Proj_\ycap
 \lr{
 \Bu_{\Bn, 1} - \Bu_{\Bn - (1,1), 2}
@@ -788,8 +796,8 @@ m_1 \ddot{\Bu}_{\Bn, 1}
 \Proj_\rcap
 \lr{
 \Bu_{\Bn, 1} - \Bu_{\Bn \pm (1,0), 1}
-}
-- K_4
+} \\
+&\quad - K_4
 \sum_\pm
 \Proj_\scap
 \lr{
@@ -804,8 +812,8 @@ m_2 \ddot{\Bu}_{\Bn, 2} &=
 \Proj_\xcap
 \lr{
 \Bu_{\Bn, 2} - \Bu_{\Bn + (1,0), 1}
-}
-- K_1
+} \\
+&\quad - K_1
 \Proj_\xcap
 \lr{
 \Bu_{\Bn, 2} - \Bu_{\Bn + (0,1), 1}
@@ -815,8 +823,8 @@ m_2 \ddot{\Bu}_{\Bn, 2} &=
 \Proj_\ycap
 \lr{
 \Bu_{\Bn, 2} - \Bu_{\Bn, 1}
-}
-- K_2
+} \\
+&\quad - K_2
 \Proj_\ycap
 \lr{
 \Bu_{\Bn, 2} - \Bu_{\Bn + (1,1), 1}
@@ -827,13 +835,13 @@ m_2 \ddot{\Bu}_{\Bn, 2} &=
 \Proj_\rcap
 \lr{
 \Bu_{\Bn, 2} - \Bu_{\Bn \pm (1,0), 2}
-}
-- K_4
+} \\
+&\quad - K_4
 \sum_\pm
 \Proj_\scap
 \lr{
 \Bu_{\Bn, 2} - \Bu_{\Bn \pm (0,1), 2}
-}
+}.
 \end{aligned}
 \end{dmath}
 \end{subequations}
@@ -850,6 +858,7 @@ K_1
 \lr{
 \frac{\Bepsilon_1}{\sqrt{m_1}} - \frac{\Bepsilon_2}{\sqrt{m_2}} e^{ - i \Bs \cdot \Bq }
 }
+\\ &\quad
 + K_1
 \Proj_\xcap
 \lr{
@@ -861,6 +870,7 @@ K_1
 \lr{
 \frac{\Bepsilon_1}{\sqrt{m_1}} - \frac{\Bepsilon_2}{\sqrt{m_2}}
 }
+\\ &\quad
 + K_2
 \Proj_\ycap
 \lr{
@@ -873,6 +883,7 @@ K_1
 \lr{
 1 - e^{ \pm i \Br \cdot \Bq }
 }
+\\ &\quad
 + K_4
 \lr{ \Proj_\scap \frac{\Bepsilon_1}{\sqrt{m_1}} }
 \sum_\pm
@@ -890,6 +901,7 @@ K_1
 \lr{
 \frac{\Bepsilon_2}{\sqrt{m_2}} - \frac{\Bepsilon_1}{\sqrt{m_1}} e^{ + i \Br \cdot \Bq }
 }
+\\ &\quad
 + K_1
 \Proj_\xcap
 \lr{
@@ -901,6 +913,7 @@ K_1
 \lr{
 \frac{\Bepsilon_2}{\sqrt{m_2}} - \frac{\Bepsilon_1}{\sqrt{m_1}}
 }
+\\ &\quad
 + K_2
 \Proj_\ycap
 \lr{
@@ -913,6 +926,7 @@ K_1
 \lr{
 1 - e^{ \pm i \Br \cdot \Bq }
 }
+\\ &\quad
 + K_4
 \lr{ \Proj_\scap \frac{\Bepsilon_2}{\sqrt{m_2}} }
 \sum_\pm

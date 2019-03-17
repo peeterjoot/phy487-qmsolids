@@ -34,12 +34,13 @@ We introduce the \underlineAndIndex{Madelung constant} \(A\) for the potential e
 \begin{dmath}\label{eqn:condensedMatterLecture3:20}
 \Phi_{tot} = \sum_i \phi_i = \inv{2} \sum_{i \ne j} \phi_{ij}
 = \inv{2}
-\mathLabelBox
-[
-   labelstyle={xshift=-2cm},
-   linestyle={out=270,in=90, latex-}
-]
-{N}{number of ions in solid}
+%%\mathLabelBox
+%%[
+%%   labelstyle={xshift=-2cm},
+%%   linestyle={out=270,in=90, latex-}
+%%]
+%%{N}{number of ions in solid}
+N
 \Bigl(
 -\frac{e^2}{4 \pi \epsilon_\nought r}
 \mathLabelBox
@@ -52,10 +53,11 @@ We introduce the \underlineAndIndex{Madelung constant} \(A\) for the potential e
 }{A}
 + \frac{B}{r^n}
 \sum_{i \ne j} \inv{p_{ij}^n}
-\Bigr).
+\Bigr),
 \end{dmath}
 %
-Note that \(r\) is the nn separation (center to center), and \(r_{ij} = p_{ij} r\), as illustrated in \cref{fig:qmSolidsL3:qmSolidsL3Fig1}.
+where \( N \) is the number of ions in the solid,
+\(r\) is the nn separation (center to center), and \(r_{ij} = p_{ij} r\), as illustrated in \cref{fig:qmSolidsL3:qmSolidsL3Fig1}.
 %
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL3Fig1}{Madelung separation.}{fig:qmSolidsL3:qmSolidsL3Fig1}{0.1}
 
@@ -89,19 +91,17 @@ We now focus on the regions of the periodic table illustrated in \cref{fig:qmSol
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL3Fig3}{Metallic bonding regions in the periodic table.}{fig:qmSolidsL3:qmSolidsL3Fig3}{0.2}
 
 Curiously, the name is somewhat misleading.  Just because something is a metal doesn't mean it is metallic bonded.
-
 \begin{itemize}
-\item s-orbitals from \(2s\) to \(5s\)
-\item p-orbitals from \(n = 4, 5, 6, 7\)
+\item s-orbitals from \(2s\) to \(5s\),
+\item p-orbitals from \(n = 4, 5, 6, 7\).
 \end{itemize}
-
 These are big orbitals that extend beyond the nn, as illustrated in \cref{fig:qmSolidsL3:qmSolidsL3Fig4}.
 %
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL3Fig4}{Extensive wave function.}{fig:qmSolidsL3:qmSolidsL3Fig4}{0.2}
 
 Weakly bound electrons overlap many nearby potential wells.  This lowers the Coulomb energy.  This is like a non-directional covalent bond.  This non-directionality results in malleability.
 
-Pure metallic bonds are weak.  Melting points are correspondingly low, where for column 1 elements we have \(T_m = \mbox{room temperature to \(200^\circ\) C}\).
+Pure metallic bonds are weak.  Melting points are correspondingly low, where for column 1 elements \(T_m\) ranges from room temperature to \(200^\circ\) C.
 %
 \section{Transition metals.}
 \index{transition metals}

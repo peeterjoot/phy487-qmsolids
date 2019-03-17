@@ -1,62 +1,37 @@
 - margin overflow:
 
-   page 11. number of ions in solid
-        13. room temperature
-        19. (1.11c)
-        23. The Madelung constant
-        25. Essay about bonding, structure
-        41. fig 2.18 crystal diffraction electron -- too big.
-        42. Figure 2.19: reciprocal projection. -- transparency seems off.
-        53. Example 2.4: Treating bcc lattice as simple cubic and 2
-        60. Exercise 2.2 Lattice vectors, primitive vs. conventional
-        61. Exercise 2.3 Geometrical construction of the reciprocal
-        68. Exercise 2.5 Ewald construction for a two-dimensional
-        78. (3.15)
-        83. Exercise 3.1 one-dimensional chain with two spring constants -- figure also too big.
+   page 
+       114. (3.161-3)
+       151. (5.25)
+       161. (5.57)
+       169. (5.90)
+       180. Table 6.1: Bloch’s theorem spelled -- redo like GAe.  -- also too wide.
+       183. (6.33)
+       201. (6.76-77)
+       206. (6.110)
+       216. (6.143)
+       217. (6.148)
+       226. (6.178)
+
+verify
         85. (3.40, 3.42)
-        92. (3.69)
         96. (3.85)
         97. (3.90)
-        97. Exercise 3.6 A different formulation of the equilibrium
        101. (3.106)
        103. (3.115)
        104. (3.121-123)
        112. (3.152)
-       114. (3.161-3)
-       132. Exercise 4.2 Systematic trends in the Debye
-       133. Figure 4.15-18: Debye temperature vs atomic number -- too big.
-       142. (4.79)
-       151. (5.25)
-       157. Figure 5.19: Fermi-Dirac distribution -- too big and y-axis label too big.
-       157. Figure 5.19: Fermi-Dirac distribution -- too big and y-axis label too big.
-       161. (5.57)
-       162. Figure 5.27: -- too big and y-axis label too big.
-       163. Figure 5.28: Screened vs unscreened Coulomb -- Can't read labels
-            Exercise 5.1 Fermi wave-vector, energy
-       166. Exercise 5.2 Electronic specific
-       169. (5.90)
+       112. (3.153)
        175. (5.115) -- alignment looks bad.
-       180. Table 6.1: Bloch’s theorem spelled -- redo like GAe.  -- also too wide.
-       183. (6.33)
-       186. Figure 6.10: Tight binding -- too small.
-       192. volume of k space
-            chapter six: 6.4 three dimensional band structures -- all headings too wide.
-       194. Figure 6.23: Center edge contour -- too big.
-       201. (6.76-77)
-       206. (6.110)
-       208. Exercise 6.2 Tight Binding Band Structure
-       213. Figure 6.33-34: too small.
-       216. (6.143)
-       217. (6.148)
-       218. Exercise 6.3 Two and three-dimensional
-       222. Exercise 6.4 Analytic calculations of density
-       226. (6.178)
-       234. Figure 7.7: Packet spreading with
-       253. Exercise 9.1 Temperature dependent
-       272. (B.3)
-       275. chapter title too big
-       289. chapter title too big
-       
+      83. fig 3.15 
+
+Figures:
+        42. Figure 2.19: reciprocal projection. -- transparency seems off.
+
+re-work labels in mathematica.
+       157. Figure 5.19: Fermi-Dirac distribution -- y-axis label too big.
+       162. Figure 5.27: -- y-axis label too big.
+       163. Figure 5.28: Screened vs unscreened Coulomb -- Can't read labels
 
 - deybeTemperatureTable.nb
 - ps10plots.nb

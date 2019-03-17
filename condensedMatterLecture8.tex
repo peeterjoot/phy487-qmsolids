@@ -83,21 +83,22 @@ for the displacement of the \(\alpha\)th atom in the nth unit cell, in the ith (
 The total potential energy can be written
 %
 \begin{dmath}\label{eqn:condensedMatterLecture8:400}
-\Phi(
-\mathLabelBox{r_{n \alpha i}}{equilibrium position}
- +
-\mathLabelBox
-[
-   labelstyle={below of=m\themathLableNode, below of=m\themathLableNode}
-]
-{u_{n \alpha i}}{displacement}
-) =
+\Phi( r_{n \alpha i} + u_{n \alpha i} )
+%%\Phi( 
+%%\mathLabelBox{r_{n \alpha i}}{equilibrium position}
+%% +
+%%\mathLabelBox
+%%[
+%%   labelstyle={below of=m\themathLableNode, below of=m\themathLableNode}
+%%]
+%%{u_{n \alpha i}}{displacement}
+%%) 
+=
 \Phi(r_{n \alpha i}) + \inv{2} \sum_{{n \alpha i}, {m \beta j}}
 \mathLabelBox{\frac{\partial^2 \Phi}{\partial r_{n \alpha i} \partial {m \beta j}} }{\(\Phi^{m \beta j}_{n \alpha i}\)}
 u_{n \alpha i} u_{m \beta j},
 \end{dmath}
-%
-or
+where \( r_{n \alpha i} \) is the equilibrium position and \( u_{n \alpha i} \) is the displacement.  This can be written as
 %
 \begin{dmath}\label{eqn:condensedMatterLecture8:400a}
 \Phi( r_{n \alpha i} + u_{n \alpha i} ) =

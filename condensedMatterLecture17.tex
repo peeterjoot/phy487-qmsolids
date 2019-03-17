@@ -26,20 +26,17 @@
 %
 %Peeter's lecture notes from class.  May not be entirely coherent.
 %
-\section{Three dimensional band structures, Fermi surfaces of real metals.}
+\section{3D band structures, Fermi surfaces of real metals.}
 \index{band structure}
 \index{Fermi surface}
-
 \reading \citep{ibach2009solid} \S 7.4
-
 Consider a nearly free electron metal, and a hypothetical simple cubic system as in \cref{fig:qmSolidsLecture17:qmSolidsLecture17Fig1}.
 %
 \imageFigure{../figures/phy487-qmsolids/qmSolidsLecture17Fig1}{Simple cubic Brillouin zone.}{fig:qmSolidsLecture17:qmSolidsLecture17Fig1}{0.2}
-
 %\cref{fig:qmSolidsLecture17:qmSolidsLecture17Fig2}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsLecture17Fig2}{Two frequency distributions.}{fig:qmSolidsLecture17:qmSolidsLecture17Fig2}{0.3}
 %\cref{fig:qmSolidsLecture17:qmSolidsLecture17Fig3}.
-\imageFigure{../figures/phy487-qmsolids/qmSolidsLecture17Fig3}{Center edge contour distribution.}{fig:qmSolidsLecture17:qmSolidsLecture17Fig3}{0.3}
+\imageFigure{../figures/phy487-qmsolids/qmSolidsLecture17Fig3}{Center edge contour distribution.}{fig:qmSolidsLecture17:qmSolidsLecture17Fig3}{0.2}
 
 We can ask some questions
 
@@ -56,16 +53,18 @@ Is tight-binding-like \textunderline{fully occupied}.
 
 \(2 \times 1 s\) electrons per atom.
 
-In 1 band
+In 1 band \(\ifrac{ (2 \pi)^3}{a^3}\) is the volume of k-space, and we have
 %
 \begin{dmath}\label{eqn:condensedMatterLecture17:20}
-\mathLabelBox
-[
-   labelstyle={xshift=-2cm},
-   linestyle={out=270,in=90, latex-}
-]
-{\frac{ \cancel{(2 \pi)^3}}{a^3} }{
-volume of k space }
+%%\mathLabelBox
+%%[
+%%   labelstyle={xshift=-2cm},
+%%   linestyle={out=270,in=90, latex-}
+%%]
+%%{
+\frac{ \cancel{(2 \pi)^3}}{a^3} 
+%%}{
+%%volume of k space }
 \times
 \mathLabelBox
 [
@@ -77,15 +76,14 @@ volume of k space }
    labelstyle={xshift=2cm},
    linestyle={out=270,in=90, latex-}
 ]
-{\frac{ V}{ \cancel{(2 \pi)^3} }}{density of k points}.
+{\frac{ V}{ \cancel{(2 \pi)^3} }}{density of k points},
 \end{dmath}
 %
 %\cref{fig:qmSolidsLecture17:qmSolidsLecture17Fig4}.
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsLecture17Fig4}{4: CAPTION}{fig:qmSolidsLecture17:qmSolidsLecture17Fig4}{0.3}
 %\cref{fig:qmSolidsLecture17:qmSolidsLecture17Fig5}.
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsLecture17Fig5}{5: CAPTION}{fig:qmSolidsLecture17:qmSolidsLecture17Fig5}{0.3}
-
-This gives
+for
 %
 \begin{dmath}\label{eqn:condensedMatterLecture17:40}
 2 \frac{V}{a^3} = 2 N,

@@ -2,9 +2,9 @@
 % Copyright © 2016 Peeter Joot.  All Rights Reserved.
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
-\makeoproblem{one-dimensional chain with two spring constants}{condensedMatter:problemSet4:2}{2013 ps4 p2}{
+\makeoproblem{1D chain, two spring constants.}{condensedMatter:problemSet4:2}{2013 ps4 p2}{
 Consider the one-dimensional chain of \cref{fig:two_springs:two_springsFig1} in which all masses have the same value, \(m\), but the spring constant alternates between \(k\) and \(k'\), as shown below.  The equilibrium length of the springs is the same, and equal to \(a/2\), where \(a\) is the lattice spacing.
-\imageFigure{../figures/phy487-qmsolids/two_springsFig1}{Two springs chain.}{fig:two_springs:two_springsFig1}{0.1}
+\imageFigure{../figures/phy487-qmsolids/two_springsFig1}{Two springs chain.}{fig:two_springs:two_springsFig1}{0.05}
 %
 %\includegraphics[width=12cm]{./figures/two_springs.pdf}
 \makesubproblem{}{condensedMatter:problemSet4:2a}
@@ -107,7 +107,8 @@ which gives us
 %
 \begin{dmath}\label{eqn:condensedMatterProblemSet4Problem2:300}
 \begin{aligned}
-0 &= -m \omega^2
+0 
+&= -m \omega^2
 u_1 \cancel{e^{ i(q a n - \omega t) } } \\
 &\quad +
 ( k + k')
@@ -115,7 +116,7 @@ u_1 \cancel{e^{ i(q a n - \omega t) } }
 - k
 u_2 \cancel{e^{ i(q a n - \omega t) } }
 - k'
-u_2 e^{ i(q a (\cancel{n} - 1) - \cancel{\omega t}) }
+u_2 e^{ i(q a (\cancel{n} - 1) - \cancel{\omega t}) } \\
 0 &= -\omega^2 m
 u_2 \cancel{e^{ i(q a n - \omega t) } } \\
 &\quad +
@@ -188,15 +189,16 @@ e^{ i q a/2 }
 + (k_\nought - \delta)
 e^{ -i q a/2 }
 }
-e^{ -i q a/2 }
+e^{ -i q a/2 } \times \\
+&\qquad
 e^{ i q a/2 }
 \lr{
   (k_\nought + \delta) e^{ -i q a/2 }
 + (k_\nought - \delta) e^{ i q a/2 }
 } \\
 &=
-(-m \omega^2 + 2 k_\nought )^2
--
+(-m \omega^2 + 2 k_\nought )^2 \\
+&\quad -
 \lr{
   2 k_\nought \cos (qa/2)
 + 2i \delta \sin (qa/2)
