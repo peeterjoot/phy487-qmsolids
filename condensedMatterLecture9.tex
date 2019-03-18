@@ -26,52 +26,48 @@
 \section{lattice energy.}
 %
 We'll want to calculate the total energy stored in the lattice.  There are a number of steps to this problem
-
 \begin{enumerate}
 \item Quantization.
-
 As an example, the classic SHO problem
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:20}
+\begin{equation}\label{eqn:condensedMatterLecture9:20}
 m \ddot{u} = -k u,
-\end{dmath}
+\end{equation}
 %
 results in a single frequency
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:40}
+\begin{equation}\label{eqn:condensedMatterLecture9:40}
 \omega = \sqrt{\frac{k}{m}}.
-\end{dmath}
+\end{equation}
 %
 With quantization we find only discrete frequencies, as in \cref{fig:qmSolidsL9:qmSolidsL9Fig1}.
 %
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig1}{Quantized SHO energy levels.}{fig:qmSolidsL9:qmSolidsL9Fig1}{0.1}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:60}
+\begin{equation}\label{eqn:condensedMatterLecture9:60}
 \epsilon_n = \lr{ n + \inv{2} } \Hbar \omega.
-\end{dmath}
+\end{equation}
 %
 For lattices we've been seeking solutions of the force equations
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:80}
+\begin{equation}\label{eqn:condensedMatterLecture9:80}
 M_\alpha \ddot{u}_{n \alpha i} = - \sum_{m \beta j}
 \Phi_{n \alpha i}^{m \beta j} u_{m \beta j}.
-\end{dmath}
+\end{equation}
 %
 This provided us lattice frequencies \(\omega_q\), which quantize as
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:100}
+\begin{equation}\label{eqn:condensedMatterLecture9:100}
 \epsilon_{q, n} = \lr{ n_q + \inv{2} } \Hbar \omega_q.
-\end{dmath}
+\end{equation}
 %
 Prof hoping that we are willing to this without proof since the proof is hard, and would take a couple days (see: \citep{ashcroft1976solid} appendix L.)
 
 We've apparently seen such a derivation indirectly in blackbody calculations.
-
 \item
-
 If we accept \eqnref{eqn:condensedMatterLecture9:100}, then the thermal energy is
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:120}
+\begin{equation}\label{eqn:condensedMatterLecture9:120}
 U(T) = \mathLabelBox
 [
    labelstyle={below of=m\themathLableNode, below of=m\themathLableNode}
@@ -85,10 +81,9 @@ n_q
 {average thermal occupancy}
 + \inv{2}
 \Bigr) \Hbar \omega_q.
-\end{dmath}
+\end{equation}
 %
 \item figuring out how to evaluate such a sum.
-
 \end{enumerate}
 %
 \section{Density of states.}
@@ -198,7 +193,7 @@ where \(Z(\omega)\) is the \textAndIndex{density of states}, the number of modes
 
 \examhint{He'll expect us to look at a phonon diagram and see where the density of states is high or low.}
 
-\makeexample{1D diatomic chain}{example:condensedMatterLecture9:1}{
+\makeexample{1D diatomic chain.}{example:condensedMatterLecture9:1}{
 %\cref{fig:qmSolidsL9:qmSolidsL9Fig5}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig5}{frequency distribution and density of states for diatomic chain.}{fig:qmSolidsL9:qmSolidsL9Fig5}{0.15}
 
@@ -206,7 +201,7 @@ where \(Z(\omega)\) is the \textAndIndex{density of states}, the number of modes
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig6}{density of states.}{fig:qmSolidsL9:qmSolidsL9Fig6}{0.15}
 }
 
-\makeexample{3D solid}{example:condensedMatterLecture9:2}{
+\makeexample{3D solid.}{example:condensedMatterLecture9:2}{
 %\cref{fig:qmSolidsL9:qmSolidsL9Fig7}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig7}{3D solid frequency distribution and density of states.}{fig:qmSolidsL9:qmSolidsL9Fig7}{0.15}
 %\cref{fig:qmSolidsL9:qmSolidsL9Fig8}.

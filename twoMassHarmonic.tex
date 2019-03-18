@@ -360,17 +360,19 @@ We see exactly how natural displacement coordinates are for the two mass problem
 Compute the linear expansion of a two mass potential, with masses located at \(\Br_1, \Br_2\) and equilibrium positions \(\Ba_1, \Ba_2\).
 } % makeproblem
 \makeanswer{pr:twoMassHarmonic:5}{
-\begin{dmath}\label{eqn:twoMassHarmonic:600}
+\begin{equation}\label{eqn:twoMassHarmonic:600}
+\begin{aligned}
 \phi(\Br_1, \Br_2)
-=
-\frac{K}{2} \lr{ \Abs{\Br_2 - \Br_1} - \Abs{\Ba_2 - \Ba_1} }^2
-=
+&=
+\frac{K}{2} \lr{ \Abs{\Br_2 - \Br_1} - \Abs{\Ba_2 - \Ba_1} }^2 \\
+&=
 \frac{K}{2} \lr{
 \lr{\Br_2 - \Br_1}^2
 - 2 \Abs{\Ba_2 - \Ba_1} \Abs{\Br_2 - \Br_1}
 + \lr{\Ba_2 - \Ba_1}^2
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With \(\Delta \Ba = \Ba_2 - \Ba_1\), and \(\Br_k = \sum_i \Be_i r_{ki}\), this has first derivatives
 %

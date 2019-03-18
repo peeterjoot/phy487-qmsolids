@@ -1,11 +1,15 @@
+- 
+   159  5.48 -- mathlabelbox still looks off
+
 - margin overflow:
 
-   page 
-       183. Table 6.1: Bloch’s theorem spelled.
-         -- how to make the first column narrower, so that the others have more space?
+   pg 183. Table 6.1: Bloch’s theorem spelled.
+        -- how to make the first column narrower, so that the others have more space?
 
 Figures:
         42. Figure 2.19: reciprocal projection. -- transparency seems off.
+        230 Figure 6.45: Effective mass for 3D cubic system.
+           axis labels too strong.
 
 re-work labels in mathematica.
        157. Figure 5.19: Fermi-Dirac distribution -- y-axis label too big.
