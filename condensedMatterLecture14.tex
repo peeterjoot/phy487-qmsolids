@@ -236,17 +236,25 @@ Solutions outside the first Brillouin zone are redundant.  This is called the \t
 
 In \cref{qmSolidsL14:tab:1} this is written out explicitly for a couple values.
 
-\captionedTable{Bloch's theorem spelled out}{qmSolidsL14:tab:1}{
-    \begin{tabular}{|lllll|}
-    \hline
+\begin{tablelabelbox}[tabularx={X|X|X|X|X}]
+{Bloch's theorem spelled out}
+{label=qmSolidsL14:tab:1}
+%\captionedTable{Bloch's theorem spelled out}{qmSolidsL14:tab:1}{
+%    \begin{tabular}{|lllll|}
+%    \hline
       & \(\Psi_\Bk(x)\)                          & \(U_\Bk(x)\)                           & \(E(\Bk)\)                              & \(C_\Bk's\) \\
     \hline
     1 & \(\inv{\sqrt{L}} e^{i k x}\)             & \(\inv{\sqrt{L}}\)                     & \(\frac{\Hbar^2 k^2}{2m}\)              & \(C_k = 1 ; C_{k - \BG} = 0, \BG = 0\) \\
-    2 & \(\inv{\sqrt{L}} e^{i (k - 2 \pi/a)k x}\)             & \(\frac{e^{-2 \pi x/a}}{\sqrt{L}}\)                     & \(\frac{\Hbar^2 (k - 2 \pi/a)^2}{2m}\)              & \(C_{k - 2 \pi/a} = 1 ; \text{all others zero}\) \\
-    3 & \(\inv{\sqrt{L}} e^{i (k + 2 \pi/a)k x}\)             & \(\frac{e^{2 \pi x/a}}{\sqrt{L}}\)                     & \(\frac{\Hbar^2 (k + 2 \pi/a)^2}{2m}\)              & \(C_{k + 2 \pi/a} = 1 ; \text{all others zero}\) \\
-    \hline
-    \end{tabular}
-}
+    2 & \(\inv{\sqrt{L}} e^{i (k - 2 \pi/a)k x}\)             & \(\frac{e^{-2 \pi x/a}}{\sqrt{L}}\)                     & \(\frac{\Hbar^2 (k - 2 \pi/a)^2}{2m}\)              & \(C_{k - 2 \pi/a} = 1 
+%; \text{all others zero}
+\) \\
+    3 & \(\inv{\sqrt{L}} e^{i (k + 2 \pi/a)k x}\)             & \(\frac{e^{2 \pi x/a}}{\sqrt{L}}\)                     & \(\frac{\Hbar^2 (k + 2 \pi/a)^2}{2m}\)              & \(C_{k + 2 \pi/a} = 1 
+%; \text{all others zero}
+\) \\
+\hline
+%    \end{tabular}
+%}
+\end{tablelabelbox}
 
 \newpage
 
