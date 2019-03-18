@@ -214,13 +214,13 @@ If you see a \(C \sim T^3\) (cubic) relationship you can realize that we are dea
 %
 Each thermally excited electron has thermal energy \(\kB T\), so
 %
-\begin{dmath}\label{eqn:condensedMatterLecture13:320}
+\begin{equation}\label{eqn:condensedMatterLecture13:320}
 \begin{aligned}
 U(T) &\sim T^2 \\
 \implies \\
 C(T) &\propto T
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 If you see a \(C \sim T\) (linear) relationship you can realize that we are dealing with a Fermionic system.
 
@@ -257,52 +257,67 @@ Split the charge density as
 %
 \begin{dmath}\label{eqn:condensedMatterLecture13:360}
 \rho(\Br) =
-%\cancel{
-   \mathLabelBox
-   [
-      labelstyle={xshift=-2cm},
-      linestyle={out=270,in=90, latex-}
-   ]
-   {
    \overbar{\rho}_{\mathrm{el}}
-   }
-   {average electron density}
-   +
-   \mathLabelBox
-   [
-      labelstyle={below of=m\themathLableNode, below of=m\themathLableNode}
-   ]
-   {
-   \overbar{\rho}_{\mathrm{ion}}
-   }
-   {
-   positive background
-   }
-%}
 +
-\mathLabelBox
-[
-   labelstyle={xshift=2cm},
-   linestyle={out=270,in=90, latex-}
-]
-{
+   \overbar{\rho}_{\mathrm{ion}}
++
 \delta \rho_{\mathrm{el}}
-}
-{
-perturbation to Q
-}.
+,
 \end{dmath}
+where \(
+   \overbar{\rho}_{\mathrm{el}} \) is the average electron density, 
+\(
+   \overbar{\rho}_{\mathrm{ion}} \) is the positive background, and \(
+\delta \rho_{\mathrm{el}} \) is the perturbation to \( Q\).
+%%\begin{dmath}\label{eqn:condensedMatterLecture13:360}
+%%\rho(\Br) =
+%%%\cancel{
+%%   \mathLabelBox
+%%   [
+%%      labelstyle={xshift=-2cm},
+%%      linestyle={out=270,in=90, latex-}
+%%   ]
+%%   {
+%%   \overbar{\rho}_{\mathrm{el}}
+%%   }
+%%   {average electron density}
+%%   +
+%%   \mathLabelBox
+%%   [
+%%      labelstyle={below of=m\themathLableNode, below of=m\themathLableNode}
+%%   ]
+%%   {
+%%   \overbar{\rho}_{\mathrm{ion}}
+%%   }
+%%   {
+%%   positive background
+%%   }
+%%%}
+%%+
+%%\mathLabelBox
+%%[
+%%   labelstyle={xshift=2cm},
+%%   linestyle={out=270,in=90, latex-}
+%%]
+%%{
+%%\delta \rho_{\mathrm{el}}
+%%}
+%%{
+%%perturbation to Q
+%%}.
+%%\end{dmath}
 %
 The first two terms cancel giving
 %
-\begin{dmath}\label{eqn:condensedMatterLecture13:380}
+\begin{equation}\label{eqn:condensedMatterLecture13:380}
+\begin{aligned}
 \rho_{\mathrm{el}}
-= -e
+&= -e
 \int dE D(E)
 \inv{ e^{(E
 - \mu - e \phi(\Br)
-)/\kB T} + 1}
-\approx
+)/\kB T} + 1} \\
+&\approx
 -e
 \int dE D(E)
 \lr{
@@ -311,7 +326,8 @@ The first two terms cancel giving
 \evalbar{\PD{E}{f} }{E = E - \mu}
 + \cdots
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Here \(\mu + e \phi(\Br)\) is the chemical potential shifted at \(\Br\) by \(e \phi(\Br)\).  Note that as \(T \rightarrow 0\), we have
 %

@@ -1,12 +1,7 @@
 - margin overflow:
 
    page 
-       114. (3.161-3)
-       151. (5.25)
-       161. (5.57)
-       169. (5.90)
        180. Table 6.1: Bloch’s theorem spelled -- redo like GAe.  -- also too wide.
-       183. (6.33)
        201. (6.76-77)
        206. (6.110)
        216. (6.143)
@@ -14,6 +9,7 @@
        226. (6.178)
 
 verify
+        83. fig 3.15 
         85. (3.40, 3.42)
         96. (3.85)
         97. (3.90)
@@ -22,8 +18,13 @@ verify
        104. (3.121-123)
        112. (3.152)
        112. (3.153)
+       114. (3.161-3)
+       152. (5.23)
+       153. (5.25)
+       161. (5.57)
+       169. (5.90)
        175. (5.115) -- alignment looks bad.
-      83. fig 3.15 
+       183. (6.33)
 
 Figures:
         42. Figure 2.19: reciprocal projection. -- transparency seems off.

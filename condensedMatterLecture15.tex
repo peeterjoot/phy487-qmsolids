@@ -66,12 +66,12 @@ e^{i \Bk \cdot \Br}.
 %
 What is \(C_{\Bk - \BG}\) on branch \(\Psi_\Bk\)?
 %
-\begin{dmath}\label{eqn:condensedMatterLecture15:80}
+\begin{equation}\label{eqn:condensedMatterLecture15:80}
 \lr{ \frac{\Hbar^2 \lr{\Bk -\BG}^2}{2m} - E(\Bk -\BG) }
 C_{\Bk - \BG}
 +
 \sum_{\BG'} V_{\BG'} C_{\Bk - \BG - \BG'} = 0.
-\end{dmath}
+\end{equation}
 %
 Let \(\BG'' = \BG + \BG'\), and recall that \(E(\Bk - \BG) = E(\Bk)\), giving
 %
@@ -183,8 +183,10 @@ With solution
 %
 With \(E_k^\nought = \Hbar^2 k^2/2m\), and \(E_{k - 2 \pi/a}^\nought = \Hbar^2 (k - 2\pi/a)^2/2m\), we complete the square to find
 %
-\begin{dmath}\label{eqn:condensedMatterLecture15example2cKs:261}
-0 =
+\begin{equation}\label{eqn:condensedMatterLecture15example2cKs:261}
+\begin{aligned}
+0 
+&=
 \lr{
 {E_k^\nought}
 -E
@@ -195,37 +197,40 @@ With \(E_k^\nought = \Hbar^2 k^2/2m\), and \(E_{k - 2 \pi/a}^\nought = \Hbar^2 (
 }
 -
 V_{2\pi/a}
-V_{-2\pi/a}
-=
+V_{-2\pi/a} \\
+&=
 E^2 - E \lr{ {E_k^\nought} + {E_{k - 2 \pi/a}^\nought} }
 + {E_k^\nought} {E_{k - 2 \pi/a}^\nought}
 -
 V_{2\pi/a}
-V_{-2\pi/a}
-=
-\lr{ E - \frac{ {E_k^\nought} + {E_{k - 2 \pi/a}^\nought} }{2} }^2
-- \lr{ \frac{ {E_k^\nought} + {E_{k - 2 \pi/a}^\nought} }{2} }^2
-+ {E_k^\nought} {E_{k - 2 \pi/a}^\nought}
+V_{-2\pi/a} \\
+&=
+\lr{ E - \frac{ {E_k^\nought} + {E_{k - 2 \pi/a}^\nought} }{2} }^2 \\
+&\quad- \lr{ \frac{ {E_k^\nought} + {E_{k - 2 \pi/a}^\nought} }{2} }^2
+&\quad+ {E_k^\nought} {E_{k - 2 \pi/a}^\nought}
 -
 V_{2\pi/a}
-V_{-2\pi/a}
-=
-\lr{ E - \frac{ {E_k^\nought} + {E_{k - 2 \pi/a}^\nought} }{2} }^2
+V_{-2\pi/a} \\
+&=
+\lr{ E - \frac{ {E_k^\nought} + {E_{k - 2 \pi/a}^\nought} }{2} }^2 \\
+&\quad
 - \inv{4}
 \lr{
 {E_k^\nought}^2 + {E_{k - 2 \pi/a}^\nought}^2 + 2 {E_k^\nought} {E_{k - 2 \pi/a}^\nought} - 4 {E_k^\nought} {E_{k - 2 \pi/a}^\nought}
-}
+} \\
+&\quad
 -
 V_{2\pi/a}
-V_{-2\pi/a}
-=
+V_{-2\pi/a} \\
+&=
 \lr{ E - \frac{ {E_k^\nought} + {E_{k - 2 \pi/a}^\nought} }{2} }^2
 -
 \lr{ \frac{{E_k^\nought} - {E_{k - 2 \pi/a}^\nought} }{2} }^2
 -
 V_{2\pi/a}
 V_{-2\pi/a},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %

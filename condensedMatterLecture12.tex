@@ -54,17 +54,19 @@ P(\epsilon, n) \propto g_r(U - \epsilon, N - n),
 %
 where \(g_r\) is the number of ``microstates of the reservoir when it has energy \(U - \epsilon\), and \(N - n\) particles.  We have
 %
-\begin{dmath}\label{eqn:condensedMatterLecture12:40}
-g_r(U - \epsilon, N - n)
+\begin{equation}\label{eqn:condensedMatterLecture12:40}
+\begin{aligned}
+g_r&(U - \epsilon, N - n)
 =
-e^{ \ln g_r(U - \epsilon, N - n) }
-\approx
+e^{ \ln g_r(U - \epsilon, N - n) } \\
+&\approx
 \exp\lr{
 \ln g_r(U, N)
 - \epsilon \PDc{U}{\ln g_r}{N}
 - n \PDc{N}{\ln g_r}{U}
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Introducing the Boltzmann \textAndIndex{entropy}
 %
@@ -74,14 +76,14 @@ S_r = \kB \ln g_r,
 %
 we have (approximately)
 %
-\begin{dmath}\label{eqn:condensedMatterLecture12:80}
+\begin{equation}\label{eqn:condensedMatterLecture12:80}
 P(\epsilon, n) \propto
 \exp\lr{
 \ln g_r(U, N)
 - \frac{\epsilon}{\kB} \PDc{U}{S_r}{N}
 - \frac{n}{\kB} \PDc{N}{S_r}{U}
 }.
-\end{dmath}
+\end{equation}
 %
 Recall the thermodynamic relationship, which we simplify immediately, by restricting ourselves volume (and constant pressure) constraint
 %
