@@ -288,20 +288,20 @@ B_y &= - c^2 \int d^3 \Br v(\Br) e^{-\alpha \lr{ r + \sqrt{ r^2 \pm 2 y a + a^2}
 %
 The energy then becomes
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:400}
+\begin{equation}\label{eqn:condensedMatterProblemSet8Problem1:400}
 \begin{aligned}
 E(\Bk)
 &=
 E_s - A
 - B_{x_{+}} e^{ i (-a, 0) \cdot (k_x, k_y) }
-- B_{x_{-}} e^{ i (a, 0) \cdot (k_x, k_y) }
-- B_{y_{+}} e^{ i (0, -a) \cdot (k_x, k_y) }
+- B_{x_{-}} e^{ i (a, 0) \cdot (k_x, k_y) } \\
+&\quad - B_{y_{+}} e^{ i (0, -a) \cdot (k_x, k_y) }
 - B_{y_{-}} e^{ i (0, a) \cdot (k_x, k_y) } \\
 &=
 E_s - A
 - B_{x_{+}} e^{ -i a k_x }
-- B_{x_{-}} e^{ i a k_x }
-- B_{y_{+}} e^{ -i a k_y }
+- B_{x_{-}} e^{ i a k_x } \\
+&\quad - B_{y_{+}} e^{ -i a k_y }
 - B_{y_{-}} e^{ i a k_y } \\
 &=
 E_s
@@ -311,7 +311,7 @@ E_s
 &+ c^2 \int d^3 \Br v(\Br) e^{-\alpha \lr{ r + \sqrt{r^2 - 2 y a + a^2} }} x^2 e^{i a k_y} \\
 &+ c^2 \int d^3 \Br v(\Br) e^{-\alpha \lr{ r + \sqrt{r^2+ 2 y a + a^2} }} x^2 e^{-i a k_y}
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 \paragraph{Zeroth order approximation}
 %
@@ -345,15 +345,17 @@ This flattens the surface as \(Z\) increases.
 %
 Allowing for an additional order of \(r/a\) in the square root expansions above, so that, for instance
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:500}
+\begin{equation}\label{eqn:condensedMatterProblemSet8Problem1:500}
+\begin{aligned}
 e^{-\alpha \lr{ r + \sqrt{ r^2 - 2 x a + a^2 }} }
-\approx
-\exp\lr{-\alpha \lr{ r + a \lr{ 1 + \inv{2} \frac{ r^2 - 2 x a}{a^2} } } }
-=
+&\approx
+\exp\lr{-\alpha \lr{ r + a \lr{ 1 + \inv{2} \frac{ r^2 - 2 x a}{a^2} } } } \\
+&=
 e^{-\alpha (r - x)}
 e^{-a \alpha}
 e^{-\alpha r^2/{2 a^2} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Now we see the parity effects of the \(p_x\) orbital start to manifest.  The energy to this order of approximation is
 %

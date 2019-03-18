@@ -52,11 +52,11 @@ zone boundary that \(E_{k - 2\pi/a}^\nought -E_{k}^\nought \gg \Abs{V_{2 \pi/a}}
 Considering each branch in turn:
 \begin{enumerate}
 \item On this branch, the wave function is
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:80}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:80}
 \psi_k(x) =
 \inv{\sqrt{a}}
 e^{i k x},
-\end{dmath}
+\end{equation}
 %
 so
 %
@@ -169,12 +169,15 @@ V_{2 G} &= V_{-2 G} = \frac{V_2}{2}.
 %
 The coefficients \(C_k\) would follow from a solution of
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:280}
-0 =
-\lr{ \frac{\Hbar^2}{2m} \lr{k - n G}^2 - E } C_{k - n G}
-+ V_G \lr{ C_{ k - (1 + n) G } + C_{ k + (1 - n) G } }
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:280}
+\begin{aligned}
+0 
+&=
+\lr{ \frac{\Hbar^2}{2m} \lr{k - n G}^2 - E } C_{k - n G} \\
+&\quad + V_G \lr{ C_{ k - (1 + n) G } + C_{ k + (1 - n) G } }
 + V_{2G} \lr{ C_{ k - (2 + n) G } + C_{ k + (2 - n)G } }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Written out in full this includes
 %
@@ -218,7 +221,7 @@ Dropping \(C_{k - 4 G}, C_{k - 3 G}, C_{k + 3 G}, C_{k + 4G}\), this is
 %\end{vmatrix}.
 %\end{dmath}
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:440}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:440}
 0 =
 \begin{bmatrix}
                   {E_{k -2 G}^\nought} - E & V_G         & V_{2G}   & 0                & 0            \\
@@ -234,10 +237,10 @@ C_{k} \\
 C_{k + G} \\
 C_{k + 2 G}
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:320}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:320}
 0 =
 \begin{vmatrix}
                   {E_{k -2 G}^\nought} - E & V_G         & V_{2G}   & 0                & 0            \\
@@ -246,7 +249,7 @@ or
                   0            & V_{2G}      & V_{G}       & {E_{k + G }^\nought} - E & V_G           \\
                   0            & 0           & V_{2G}      & V_{G}       & {E_{k + 2 G }^\nought} - E \\
 \end{vmatrix}
-\end{dmath}
+\end{equation}
 %
 \paragraph{At point (a)} we
 can get a rough idea of the separation by further dropping \(C_{k - G}, C_{k + G}, C_{k + 2G}\) terms, so that the system to solve is
@@ -531,7 +534,7 @@ E_{\pm} =
 %
 so that the wave function coefficients are given by
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:960}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:960}
 C_{k - G}
 \inv{2}
 \lr{
@@ -539,7 +542,7 @@ C_{k - G}
 }
 =
 - C_{k } \frac{V_1}{2}.
-\end{dmath}
+\end{equation}
 %
 This gives
 %
@@ -579,7 +582,7 @@ e^{i k x}
 %
 To make this less cumbersome, let's write
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1040}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1040}
 \epsilon_\pm(k) =
 \lr{
 \frac{\Hbar^2 G \lr{ G - 2 k} }{2m}
@@ -587,7 +590,7 @@ To make this less cumbersome, let's write
 \lr{ \frac{\Hbar^2 G \lr{ G - 2 k} }{2m} }^2
 + V_1^2 }
 }.
-\end{dmath}
+\end{equation}
 %
 Writing out \(G = 2 \pi/a\) explicitly, the (still unnormalized) wave functions are
 %
