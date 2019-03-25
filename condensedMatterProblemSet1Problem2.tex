@@ -34,6 +34,14 @@ Assuming
 Find the \(\phi\) and \(\theta\) values for which the
    probability density of the \(\psi_1\) hybrid
    orbital is maximized (i.e.\ find the direction in which this orbital is pointing).
+
+% Had kdp file processing error (binary search isolated this to chapter I).  try commenting this out
+% (here and below)
+% 
+\ifthenelse{\boolean{print-version}}
+{
+}
+{
 \makesubproblem{Contour plots.}{condensedMatter:problemSet1:2c}
 Using whatever plotting package you wish (e.g. gnuplot, Matlab, or using the
   `contour' or `contourf' functions in SciPy; and please see me
@@ -63,8 +71,9 @@ Bonus (for fun, will not be marked):
     orbitals.  etc.  If you don't feel like doing this yourself, a bit of hacking around on the
     internet will turn up many nice examples, but it's also nice to see how easy it is to do
     it yourself.
-
+}
 } % makeproblem
+
 \makeanswer{condensedMatter:problemSet1:2}{
 \makeSubAnswer{}{condensedMatter:problemSet1:2a}
 Verification of orthonormality of the \(2s\) and \(2p\) orbital basis functions is
@@ -314,6 +323,10 @@ or
 \end{subequations}
 %
 Neglecting the first common factor, some experimentation yields the solution \(\mathLabelBox{\phi = \pi/2}{Grading remark: Marked wrong.  Review this.}, \theta \in \{0, \pi\}\).  The probability density is maximized along the \(z,y\) plane pointing towards either of the poles.
+\ifthenelse{\boolean{print-version}}
+{
+}
+{
 \makeSubAnswer{}{condensedMatter:problemSet1:2c}
 %%\cref{fig:qmSolidsPs1P2bPsi1:qmSolidsPs1P2bPsi1Fig1}.
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsPs1P2bPsi1Fig1}{\(\Abs{\psi_1}^2\) in \(x-y\) plane}{fig:qmSolidsPs1P2bPsi1:qmSolidsPs1P2bPsi1Fig1}{0.3}
@@ -359,4 +372,5 @@ Neglecting the first common factor, some experimentation yields the solution \(\
 
 %\cref{fig:qmSolidsPs1P2d:qmSolidsPs1P2dFig3}.
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsPs1P2dFig3}{Probability density in \(x-y\) plane for \(\psi_1\) superposition with shifted and reversed self}{fig:qmSolidsPs1P2d:qmSolidsPs1P2dFig3}{0.3}
+}
 }

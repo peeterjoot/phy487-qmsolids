@@ -49,19 +49,26 @@ Note that \(\rho(\Br)\) is large close to each nucleus.  Using the change of var
 \begin{dmath}\label{eqn:condensedMatterLecture7:60}
 \rho_{h k l} \sim \inv{V_{\mathrm{cell}}} \sum_\alpha
 e^{i \BG_{h k l} \cdot \Br_\alpha}
-\mathLabelBox
-[
-   labelstyle={xshift=2cm},
-   linestyle={out=270,in=90, latex-}
-]
-{
+%\mathLabelBox
+%[
+%   labelstyle={xshift=2cm},
+%   linestyle={out=270,in=90, latex-}
+%]
+%{
 \int \rho_\alpha(\Br')
-e^{-i \BG_{h k l} \cdot \Br} d\Br'
-}
-{\(f_\alpha\), the \textAndIndex{atomic scattering factor} (tabulated)}.
+e^{-i \BG_{h k l} \cdot \Br} d\Br',
 \end{dmath}
-%
-Here the index \(\alpha\) is used to sum over all atoms in a primitive unit cell.  In terms of the scattering factor, this is
+where the 
+index \(\alpha\) is used to sum over all atoms in a primitive unit cell.  
+The integral portion is 
+the atomic scattering factor (which can be tabulated), and is designated
+\begin{dmath}\label{eqn:condensedMatterLecture7:180}
+f_\alpha = 
+\int \rho_\alpha(\Br')
+e^{-i \BG_{h k l} \cdot \Br} d\Br'.
+\end{dmath}
+In terms of the scattering factor, \cref{eqn:condensedMatterLecture7:60} is
+%}
 %
 \begin{dmath}\label{eqn:condensedMatterLecture7:80}
 \rho_{h k l} \sim \inv{V_{\mathrm{cell}}}
