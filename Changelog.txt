@@ -1,0 +1,8 @@
+phy487.V0.1.9.pdf
+
+- Remove blanks before and after equations.  Some may be appropriate but most are not.
+- Add punctuation (periods, commas) in equations, figures, chapter, section, problems, ...
+- Switch to 6x9 format for Kindle Direct Publishing.
+- Fix pdfbookmarks for contents and list of figures (so that they don't show up under the preface.)
+- Handle equations that were spilled out of printable regions.
+- Narrow the Block's table (still not ideal, but better).

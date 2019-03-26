@@ -1,3 +1,7 @@
+- for kdp version disabled the plots in chapter 1 from problem 2.  that disable is hard coded -- now reverted.
+
+   Can I fix up the figures so they aren't so large/complicated, and include in print version?
+
 - 
    159  5.48 -- mathlabelbox still looks off
 
