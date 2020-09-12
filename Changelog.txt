@@ -1,3 +1,11 @@
+phy487.V0.1.10-XX.pdf
+
+- update email address
+- Add spellcheck rules and run a spellcheck pass.
+- switch to classicthesis_mine/backmatter2.tex
+- Fix hyphenation in listing.
+- remove dup sequential words.
+
 phy487.V0.1.9.pdf
 
 - Remove blanks before and after equations.  Some may be appropriate but most are not.

@@ -5,6 +5,7 @@ BIBLIOGRAPHY_PATH := classicthesis_mine
 HAVE_OWN_CONTENTS := 1
 MY_CLASSICTHESIS_FRONTBACK_FILES += ../latex/classicthesis_mine/FrontBackmatter/Index.tex
 MY_CLASSICTHESIS_FRONTBACK_FILES += ../latex/classicthesis_mine/FrontBackmatter/ContentsAndFigures.tex
+BOOKTEMPLATE := ../latex/classicthesis_mine/ClassicThesis2.tex
 
 include make.revision
 include ../latex/make.bookvars
@@ -20,13 +21,23 @@ FIGURES := ../figures/phy487-qmsolids
 SOURCE_DIRS += $(FIGURES)
 
 GENERATED_SOURCES += mathematica.tex 
+GENERATED_SOURCES += backmatter.tex
 
 EPS_FILES := $(wildcard $(FIGURES)/*.eps)
 PDFS_FROM_EPS := $(subst eps,pdf,$(EPS_FILES))
 
 THISBOOK_DEPS += $(PDFS_FROM_EPS)
 
+DO_SPELL_CHECK := $(shell cat spellcheckem.txt)
+
 include ../latex/make.rules
+
+.PHONY: spellcheck
+spellcheck: $(patsubst %.tex,%.sp,$(filter-out $(DONT_SPELL_CHECK),$(DO_SPELL_CHECK)))
+
+%.sp : %.tex
+	spellcheck $^
+	touch $@
 
 condensedMatterProblemSet1.pdf :: condensedMatterProblemSet1Problem1.tex
 condensedMatterProblemSet1.pdf :: condensedMatterProblemSet1Problem2.tex
@@ -52,6 +63,6 @@ condensedMatterLecture7PhononsQ.pdf :: condensedMatterLecture7Phonons.tex
 condensedMatterLecture6q.pdf :: $(PDF_DEPS)
 condensedMatterLecture6q.pdf :: condensedMatterLecture6.tex
 
-clean ::
-	#git checkout FrontBackmatter/Titlepage.tex
-	git checkout $(THISBOOK).tex
+backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
+	rm -f $@
+	ln -s ../latex/classicthesis_mine/backmatter2.tex backmatter.tex
