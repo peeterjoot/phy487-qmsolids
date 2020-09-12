@@ -5,6 +5,7 @@ phy487.V0.1.10-XX.pdf
 - switch to classicthesis_mine/backmatter2.tex
 - Fix hyphenation in listing.
 - remove dup sequential words.
+- purge dmath+aligned.
 
 phy487.V0.1.9.pdf
 

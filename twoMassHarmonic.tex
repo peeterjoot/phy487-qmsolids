@@ -45,21 +45,21 @@ We wish to solve the equations of motion
 %
 Noting that \(\spacegrad_\Bx \Ba \cdot \Bx = \Ba\), the coupled system to solve is
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:60}
+\begin{equation}\label{eqn:twoMassHarmonic:60}
 \begin{aligned}
 m_1 \ddot{\Br}_1 &= - K \lr{ \Br_1 - \Br_2 } \\
 m_2 \ddot{\Br}_2 &= - K \lr{ \Br_2 - \Br_1 }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 These can be decoupled using differences and sums
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:80}
+\begin{equation}\label{eqn:twoMassHarmonic:80}
 \begin{aligned}
 m_1 \lr{ m_2 \ddot{\Br}_2 } - m_2 \lr{ m_1 \ddot{\Br}_1 } &= - (m_1 + m_2) K \lr{ \Br_2 - \Br_1 } \\
 m_1 \ddot{\Br}_1 + m_2 \ddot{\Br}_2 &= 0
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 The second is the equation for the acceleration of the center of mass \(\BR_{\mathrm{CM}}(t)\).  That center of mass relation is directly integrable.  With \(M = m_1 + m_2\), that is
 %
@@ -136,7 +136,7 @@ M \BR_{\mathrm{CM}}(t)
 %
 The final solution is
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:240}
+\begin{equation}\label{eqn:twoMassHarmonic:240}
 \begin{aligned}
 \Br_1(t) &=
 -\frac{\mu}{m_1}
@@ -147,7 +147,7 @@ The final solution is
 \Delta \Br(t)
 + \BR_{\mathrm{CM}}(t)
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 Looking at this, it appears non-sensical.  At the very least, it is unphysical, and allows the masses to pass through each other.  This is illustrated in the animation of \nbref{harmonicOscillatorTwoMasses.cdf}
 
@@ -173,12 +173,12 @@ Adjusting for a rest length \(a = a_2 - a_1\) for the spring, the new system is 
 %
 Now our equations of motion are
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:61}
+\begin{equation}\label{eqn:twoMassHarmonic:61}
 \begin{aligned}
 m_1 \ddot{x}_1 &= - K \lr{ x_1 - x_2 + a } \\
 m_2 \ddot{x}_2 &= - K \lr{ x_2 - x_1 - a }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 With \(u = x_2 - x_1 - a\), this is
 %
@@ -208,7 +208,7 @@ The geometric of a 3D harmonically coupled system with a non-zero equilibrium le
 
 We can model the coupling spring as a line segment colinear with the difference vector, or
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:21}
+\begin{equation}\label{eqn:twoMassHarmonic:21}
 \begin{aligned}
 \LL &=
    \inv{2} m_1 \lr{ \dot{\Br}_1 }^2
@@ -216,7 +216,7 @@ We can model the coupling spring as a line segment colinear with the difference 
  - \frac{K}{2} \lr{ \Delta \Br - \Ba }^2 \\
 &\quad+ \lambda \lr{ \Delta \Br - \lr{\acap \cdot \Delta \Br} \acap }^2.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 A Lagrange multiplier \(\lambda\) is used to enforce a requirement that the difference vector \(\Delta \Br\) is colinear with \(\Ba\) (i.e. zero component perpendicular to the projection along \(\acap\).)
 
@@ -249,12 +249,12 @@ m_2 \ddot{\Br}_2 = - K \lr{ \Delta \Br - \Ba } + 2 \lr{ \Delta \Br - \lr{ \acap 
 %
 \Eqnref{eqn:twoMassHarmonic:360} indicates that the norm of the rejection is zero, so that rejection is also zero \(\Delta \Br - \lr{ \acap \cdot \Delta \Br } \acap = 0\).  This kills off the \(\lambda\) terms, leaving just
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:380}
+\begin{equation}\label{eqn:twoMassHarmonic:380}
 \begin{aligned}
 m_1 \ddot{\Br}_1 &= K \lr{ \Delta \Br - \Ba } \\
 m_2 \ddot{\Br}_2 &= - K \lr{ \Delta \Br - \Ba }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 Taking differences this is
 %
@@ -264,7 +264,7 @@ Taking differences this is
 %
 By inspection the solution for the difference is
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:420}
+\begin{equation}\label{eqn:twoMassHarmonic:420}
 \begin{aligned}
 \Delta \Br(t) &=
 \Ba
@@ -272,7 +272,7 @@ By inspection the solution for the difference is
 \lr{ \Delta \Br_\nought - \Ba } \cos\lr{ \omega(t - t_\nought) } \\
 &\quad + \frac{\Delta \Bv_\nought}{\omega} \sin\lr{ \omega(t - t_\nought) }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 with the individual mass position vectors still given by \eqnref{eqn:twoMassHarmonic:240}.
 
@@ -325,12 +325,12 @@ so that
 %
 This gives us
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:520}
+\begin{equation}\label{eqn:twoMassHarmonic:520}
 \begin{aligned}
 m_1 \ddot{\Br}_1 &= - K \lr{ \Br_1 - \Br_2 - a \frac{\Br_1 - \Br_2}{\Abs{\Br_2 - \Br_1}} } \\
 m_2 \ddot{\Br}_2 &= - K \lr{ \Br_2 - \Br_1 - a \frac{\Br_2 - \Br_1}{\Abs{\Br_2 - \Br_1}} }
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 With \(\Delta \Br = \Br_2 - \Br_1\) and \(\hat{\Delta}_{21} = \lr{\Br_2 - \Br_1}/\Abs{\Br_2 - \Br_1}\), this gives
 \boxedEquation{eqn:twoMassHarmonic:540}{
@@ -341,12 +341,12 @@ In general, \(\hat{\Delta}_{2 1}\) could rotate in space (non-zero angular momen
 %
 \imageFigure{../figures/phy487-qmsolids/twoMassSpringCouplingFig4}{Coupling directed along difference vector.}{fig:twoMassSpringCoupling:twoMassSpringCouplingFig4}{0.2}
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:560}
+\begin{equation}\label{eqn:twoMassHarmonic:560}
 \begin{aligned}
 \Br_1 &= \lr{ -\frac{a}{2} + u_1 } \hat{\Delta}_{2 1} \\
 \Br_2 &= \lr{ \frac{a}{2} + u_2 } \hat{\Delta}_{2 1}.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 With \(\Delta u = u_2 - u_1\), \eqnref{eqn:twoMassHarmonic:540} takes the form
 %
@@ -387,7 +387,7 @@ K \lr{
 %
 Regrouping and noting the \(\Br_2, \Br_1\) swapping symmetry, these first derivatives are
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:640}
+\begin{equation}\label{eqn:twoMassHarmonic:640}
 \begin{aligned}
 \PD{r_{1i}}{\phi}
 &=
@@ -410,7 +410,7 @@ r_{2i} - r_{1i}
 \frac{ \Abs{\Ba_2 - \Ba_1} }{ \Abs{\Br_2 - \Br_1} }
 }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 At the equilibrium positions \(\Ba_1, \Ba_2\), the first order derivatives are all zero for this potential, a property used in the equilibrium potential expansion discussions of \citep{ibach2009solid} and \citep{ashcroft1976solid}.  Proceeding to calculate the second derivatives
 %
@@ -468,7 +468,7 @@ These ratios are the direction cosines, as illustrated in \cref{fig:twoMassSprin
 %
 \imageFigure{../figures/phy487-qmsolids/twoMassSpringCouplingFig5}{Direction cosines relative to equilibrium position difference vector.}{fig:twoMassSpringCoupling:twoMassSpringCouplingFig5}{0.3}
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:700}
+\begin{equation}\label{eqn:twoMassHarmonic:700}
 \begin{aligned}
 \evalbar{
 \PD{r_{1j}}{}
@@ -483,7 +483,7 @@ K \cos\theta_i \cos\theta_j \\
 &=
 K \cos\theta_i \cos\theta_j.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 For the mixed derivatives
 %
@@ -542,7 +542,7 @@ At the equilibrium positions, this is
 %
 so to second order, with displacement coordinates \(\Bu_i = \Br_i - \Ba_i\), the potential is
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:740}
+\begin{equation}\label{eqn:twoMassHarmonic:740}
 \begin{aligned}
 &\phi(\Bu_1, \Bu_2) 
 \approx 
@@ -555,7 +555,7 @@ so to second order, with displacement coordinates \(\Bu_i = \Br_i - \Ba_i\), the
 + u_{2j} u_{2i}
 },
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 but since \(\phi(\Ba_1, \Ba_2) = 0\), we have
 \boxedEquation{eqn:twoMassHarmonic:760}{
@@ -570,7 +570,7 @@ As a check observe that if \(\Delta \Ba\) is directed along \(\Be_1\), we have t
 
 The complete Lagrangian is, to second order about the equilibrium positions,
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:780}
+\begin{equation}\label{eqn:twoMassHarmonic:780}
 \begin{aligned}
 \LL &=
 \sum_j \frac{m_i}{2} \dot{u}_{ij}^2 \\
@@ -580,7 +580,7 @@ The complete Lagrangian is, to second order about the equilibrium positions,
 \lr{ u_{2 i} - u_{1 i} }
 \lr{ u_{2 j} - u_{1 j} }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 Evaluating the Euler-Lagrange equations for \(m_2\) we have
 %
@@ -616,12 +616,12 @@ u_{2 j} - u_{1 j}
 \end{dmath}
 %
 The vector form of the Euler-Lagrange equations \(d/dt(\PDi{\dot{\Bu}_i}{\LL}) = \PDi{\Bu_i}{\LL}\), is by inspection
-\begin{dmath}\label{eqn:twoMassHarmonic:840}
+\begin{equation}\label{eqn:twoMassHarmonic:840}
 \begin{aligned}
 m_1 \ddot{\Bu}_1 &= K \hat{\Delta}_{2 1} \lr{ \hat{\Delta}_{2 1} \cdot \Delta \Bu } \\
 m_2 \ddot{\Bu}_2 &= -K \hat{\Delta}_{2 1} \lr{ \hat{\Delta}_{2 1} \cdot \Delta \Bu },
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 or
 \boxedEquation{eqn:twoMassHarmonic:860}{
@@ -745,7 +745,7 @@ Indexing for the primitive unit cells is illustrated in \cref{fig:twoMassSpringC
 
 Let's write
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:1020}
+\begin{equation}\label{eqn:twoMassHarmonic:1020}
 \begin{aligned}
 %\Br &= (a, b) \\
 %\Bs &= (-a, b) \\
@@ -758,7 +758,7 @@ Let's write
 \Bn &= (n_1, n_2) \\
 \Br_\Bn &= n_1 \Br + n_2 \Bs,
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 For mass \(m_\alpha, \alpha \in \{1, 2\}\) assume a trial solution of the form
 %
@@ -769,7 +769,7 @@ For mass \(m_\alpha, \alpha \in \{1, 2\}\) assume a trial solution of the form
 The equations of motion for the two particles are
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:twoMassHarmonic:1140}
+\begin{equation}\label{eqn:twoMassHarmonic:1140}
 \begin{aligned}
 m_1 \ddot{\Bu}_{\Bn, 1}
 &=
@@ -808,8 +808,8 @@ m_1 \ddot{\Bu}_{\Bn, 1}
 \Bu_{\Bn, 1} - \Bu_{\Bn \pm (0,1), 1}
 }
 \end{aligned}
-\end{dmath}
-\begin{dmath}\label{eqn:twoMassHarmonic:1160}
+\end{equation}
+\begin{equation}\label{eqn:twoMassHarmonic:1160}
 \begin{aligned}
 m_2 \ddot{\Bu}_{\Bn, 2} &=
 - K_1
@@ -847,13 +847,13 @@ m_2 \ddot{\Bu}_{\Bn, 2} &=
 \Bu_{\Bn, 2} - \Bu_{\Bn \pm (0,1), 2}
 }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 Insertion of the trial solution gives
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:twoMassHarmonic:1180}
+\begin{equation}\label{eqn:twoMassHarmonic:1180}
 \begin{aligned}
  \omega^2 \sqrt{m_1} \Bepsilon_1
 &=
@@ -895,8 +895,8 @@ K_1
 1 - e^{ \pm i \Bs \cdot \Bq }
 }
 \end{aligned}
-\end{dmath}
-\begin{dmath}\label{eqn:twoMassHarmonic:1200}
+\end{equation}
+\begin{equation}\label{eqn:twoMassHarmonic:1200}
 \begin{aligned}
 \omega^2 \sqrt{m_2} \Bepsilon_2
 &=
@@ -938,7 +938,7 @@ K_1
 1 - e^{ \pm i \Bs \cdot \Bq }
 }
 \end{aligned}
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 Regrouping, and using the matrix form \(\Proj_\ucap = \ucap \ucap^\T\) for the projection operators, this is
@@ -975,7 +975,7 @@ K_1 \xcap \xcap^T
 }
 \frac{\Bepsilon_2}{\sqrt{ m_1 m_2 }}
 \end{dmath}
-%\begin{dmath}\label{eqn:twoMassHarmonic:1240}
+%\begin{equation}\label{eqn:twoMassHarmonic:1240}
 %\begin{aligned}
 %\omega^2 \Bepsilon_2
 %&=
@@ -1014,7 +1014,7 @@ K_1 \xcap \xcap^T
 %1 - e^{ \pm i \Bs \cdot \Bq }
 %}
 %\end{aligned}.
-%\end{dmath}
+%\end{equation}
 \begin{dmath}\label{eqn:twoMassHarmonic:1260}
 \lr{
 \omega^2 - \frac{2}{m_2}
@@ -1266,12 +1266,12 @@ For the \(\rcap\) and \(\scap\) projection operators, we can use half angle form
 %
 After some manipulation, and the following helper functions
 %
-\begin{dmath}\label{eqn:twoMassHarmonic:1380}
+\begin{equation}\label{eqn:twoMassHarmonic:1380}
 \begin{aligned}
 \alpha_\pm &= K_3 \sin^2 (\Br \cdot \Bq/2) \pm K_4 \sin^2 (\Bs \cdot \Bq/2) \\
 \beta_\pm &= K_1 \cos\lr{ (\Br - \Bs) \cdot \Bq/2 } \pm K_2 \cos\lr{ (\Br + \Bs) \cdot \Bq/2 },
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 the block matrices of \eqnref{eqn:twoMassHarmonic:1280a} take the form
 %

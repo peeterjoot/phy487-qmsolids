@@ -42,7 +42,7 @@ The force equations follow directly from the Euler-Lagrange equations
 %
 For the simple three particle system depicted above, this is
 %
-\begin{dmath}\label{eqn:threeSpringLoop:80}
+\begin{equation}\label{eqn:threeSpringLoop:80}
 \begin{aligned}
 \LL &=
 \inv{2} m_0 \dot{u}_0^2
@@ -53,26 +53,26 @@ For the simple three particle system depicted above, this is
 - \inv{2} \kappa_1 \lr{ u_2 - u_1 }^2
 - \inv{2} \kappa_2 \lr{ u_0 - u_2 }^2,
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 with equations of motion
-\begin{dmath}\label{eqn:threeSpringLoop:100}
+\begin{equation}\label{eqn:threeSpringLoop:100}
 \begin{aligned}
 0 &= m_0 \ddot{u}_0 + \kappa_0 \lr{ u_0 - u_1 } + \kappa_2 \lr{ u_0 - u_2 } \\
 0 &= m_1 \ddot{u}_1 + \kappa_1 \lr{ u_1 - u_2 } + \kappa_0 \lr{ u_1 - u_0 } \\
 0 &= m_2 \ddot{u}_2 + \kappa_2 \lr{ u_2 - u_0 } + \kappa_1 \lr{ u_2 - u_1 },
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 Let's partially non-dimensionalize this.  First introduce average mass \(\overbar{m}\) and spring constants \(\overbar{\kappa}\), and rearrange slightly
 %
-\begin{dmath}\label{eqn:threeSpringLoop:120}
+\begin{equation}\label{eqn:threeSpringLoop:120}
 \begin{aligned}
 \frac{\overbar{m}}{\overbar{k}} \ddot{u}_0 &= -\frac{\kappa_0 \overbar{m}}{\overbar{k} m_0} \lr{ u_0 - u_1 } - \frac{\kappa_2 \overbar{m}}{\overbar{k} m_0} \lr{ u_0 - u_2 } \\
 \frac{\overbar{m}}{\overbar{k}} \ddot{u}_1 &= -\frac{\kappa_1 \overbar{m}}{\overbar{k} m_1} \lr{ u_1 - u_2 } - \frac{\kappa_0 \overbar{m}}{\overbar{k} m_1} \lr{ u_1 - u_0 } \\
 \frac{\overbar{m}}{\overbar{k}} \ddot{u}_2 &= -\frac{\kappa_2 \overbar{m}}{\overbar{k} m_2} \lr{ u_2 - u_0 } - \frac{\kappa_1 \overbar{m}}{\overbar{k} m_2} \lr{ u_2 - u_1 }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 With
 %
@@ -240,7 +240,7 @@ B^{k + 1/2} & 0 \\
 %
 This initially leads us to believe the following, but we'll find out that the three springs interaction matrix \(B\) does have a zero eigenvalue, and we'll have to be more careful.  If there were any such interaction matrices that did not have such a zero we could simply write
 %
-\begin{dmath}\label{eqn:threeSpringLoop:380}
+\begin{equation}\label{eqn:threeSpringLoop:380}
 \begin{aligned}
 e^{A \tau}
 &=
@@ -276,7 +276,7 @@ B^{1/2} & 0
 0 & \sqrt{B} \tau
 \end{bmatrix}.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 This is
 \begin{dmath}\label{eqn:threeSpringLoop:400}
@@ -370,7 +370,7 @@ A orthonormal eigensystem for \(B\) is
 %
 With
 %
-\begin{dmath}\label{eqn:threeSpringLoop:540}
+\begin{equation}\label{eqn:threeSpringLoop:540}
 \begin{aligned}
 U &=
 \inv{\sqrt{6}}
@@ -386,7 +386,7 @@ D &=
 0 & 0  & 0 \\
 \end{bmatrix}
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 We have
 %
@@ -704,25 +704,25 @@ and the pair of Euler-Lagrange equations
 \end{dmath}
 %
 The equations of motion are
-\begin{dmath}\label{eqn:threeSpringLoop:1000}
+\begin{equation}\label{eqn:threeSpringLoop:1000}
 \begin{aligned}
 0 &= m_1 \ddot{u}_1 + \kappa \lr{ u_1 - u_2 } \\
-0 &= m_2 \ddot{u}_2 + \kappa \lr{ u_2 - u_1 }
+0 &= m_2 \ddot{u}_2 + \kappa \lr{ u_2 - u_1 }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 Let
 %
-\begin{dmath}\label{eqn:threeSpringLoop:1020}
+\begin{equation}\label{eqn:threeSpringLoop:1020}
 \begin{aligned}
 u_1(t) &= \int_{-\infty}^\infty \tilde{u}_1(\omega) e^{-i \omega t} d\omega \\
 u_2(t) &= \int_{-\infty}^\infty \tilde{u}_2(\omega) e^{-i \omega t} d\omega.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 Insertion of these transform pairs into our equations of motion produces a pair of simultaneous integral equations to solve
 %
-\begin{dmath}\label{eqn:threeSpringLoop:1060}
+\begin{equation}\label{eqn:threeSpringLoop:1060}
 \begin{aligned}
 0 &=
 \int_{-\infty}^\infty
@@ -743,7 +743,7 @@ e^{-i \omega t} d\omega \\
 }
 e^{-i \omega t} d\omega.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 As with the single spring case, we can decouple these equations with an inverse transformation operation \(\int e^{i \omega' t}/2\pi\), which gives us (after dropping primes)
 %
@@ -791,7 +791,7 @@ Introducing a reduced mass
 %
 the pair of solutions are
 %
-\begin{dmath}\label{eqn:threeSpringLoop:1120}
+\begin{equation}\label{eqn:threeSpringLoop:1120}
 \begin{aligned}
 \omega^2 &= 0 \\
 \omega^2 &
@@ -807,7 +807,7 @@ the pair of solutions are
 \frac{\kappa}{\mu}
 \equiv \omega_\nought^2.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 As with the single mass oscillator, we require the functions \(\tilde{u}{\omega}\) to also be expressed as delta functions.  The frequency constraint and that delta function requirement together can be expressed, for \(j \in \{0, 1\}\) as
 %
@@ -821,7 +821,7 @@ As with the single mass oscillator, we require the functions \(\tilde{u}{\omega}
 %
 With a transformation back to time domain, we have functions of the form
 %
-\begin{dmath}\label{eqn:threeSpringLoop:1180}
+\begin{equation}\label{eqn:threeSpringLoop:1180}
 \begin{aligned}
 u_1(t)
 &=
@@ -834,11 +834,11 @@ u_2(t)
 + B_{j0}
 + B_{j-} e^{ i \omega_\nought t }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 Back insertion of these into the equations of motion, we have
 %
-\begin{dmath}\label{eqn:threeSpringLoop:1200}
+\begin{equation}\label{eqn:threeSpringLoop:1200}
 \begin{aligned}
 0 &=
 -m_1 \omega_\nought^2
@@ -865,11 +865,11 @@ Back insertion of these into the equations of motion, we have
 + B_{j0} - A_{j0}
 }
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 Equality requires identity for all powers of \(e^{i \omega_\nought t}\), or
 %
-\begin{dmath}\label{eqn:threeSpringLoop:1220}
+\begin{equation}\label{eqn:threeSpringLoop:1220}
 \begin{aligned}
 0 &= B_{j0} - A_{j0} \\
 0 &= -m_1 \omega_\nought^2 A_{j+} + \kappa \lr{ A_{j+} - B_{j+} } \\
@@ -877,7 +877,7 @@ Equality requires identity for all powers of \(e^{i \omega_\nought t}\), or
 0 &= -m_2 \omega_\nought^2 B_{j+} + \kappa \lr{ B_{j+} - A_{j+} } \\
 0 &= -m_2 \omega_\nought^2 B_{j-} + \kappa \lr{ B_{j-} - A_{j-} },
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 or \(B_{j0} = A_{j0}\) and
 %
@@ -928,13 +928,13 @@ B_{j-}
 \end{dmath}
 %
 It's clear that there's two pairs of linear dependencies here, so the determinant is zero as expected.  We can read off the remaining relations.  Our undetermined coefficients are given by
-\begin{dmath}\label{eqn:threeSpringLoop:1300}
+\begin{equation}\label{eqn:threeSpringLoop:1300}
 \begin{aligned}
 B_{j0} &= A_{j0} \\
 m_1 A_{j+} &= -m_2 B_{j+} \\
 m_1 A_{j-} &= -m_2 B_{j-}
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 \boxedEquation{eqn:threeSpringLoop:1320}{
 \begin{aligned}

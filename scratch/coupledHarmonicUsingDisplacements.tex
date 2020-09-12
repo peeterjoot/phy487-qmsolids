@@ -66,36 +66,28 @@ Dropping the constant \(\expectation{\Br_1 - \Br_2}^2\) term the displacement co
 - \frac{K}{2} \lr{ \Bu_1 - \Bu_2 }^2
 - K \lr{ \Bu_1 - \Bu_2 } \cdot \expectation{\Br_1 - \Br_2}.
 \end{dmath}
-
 To evaluate the Euler-Lagrange equations
-
 \begin{dmath}\label{eqn:coupledHarmonicUsingDisplacements:60}
 \ddt{} \spacegrad_{\dot{\Bu}_i} \LL' =
 \spacegrad_{\Bu_i} \LL',
 \end{dmath}
-
 we note that \(\spacegrad_\Bx \Ba \cdot \Bx = \Ba\), yielding the coupled system
-
-\begin{dmath}\label{eqn:coupledHarmonicUsingDisplacements:80}
+\begin{equation}\label{eqn:coupledHarmonicUsingDisplacements:80}
 \begin{aligned}
 m \ddot{\Bu}_1 &= - K \lr{ \Bu_1 - \Bu_2 } - K \expectation{\Br_1 - \Br_2} \\
 m \ddot{\Bu}_2 &= - K \lr{ \Bu_2 - \Bu_1 } - K \expectation{\Br_2 - \Br_1}.
 \end{aligned}
-\end{dmath}
-
+\end{equation}
 The use of displacement coordinates have complicated the problem, rather than simplifying it, since we could have arrived at this result directly from \eqnref{eqn:coupledHarmonicUsingDisplacements:20}.
 
 With the intent to continue working in displacement coordinates, observe that we can rewrite \eqnref{eqn:coupledHarmonicUsingDisplacements:80} as
-
-\begin{dmath}\label{eqn:coupledHarmonicUsingDisplacements:80}
+\begin{equation}\label{eqn:coupledHarmonicUsingDisplacements:80}
 \begin{aligned}
 m \ddot{\Br}_1 &= - K \lr{ \Br_1 - \Br_2 } \\
 m \ddot{\Br}_2 &= - K \lr{ \Br_2 - \Br_1 }.
 \end{aligned}
-\end{dmath}
-
+\end{equation}
 Returning to the displacement system, we can solve by taking the difference of the equations
-
 \begin{dmath}\label{eqn:coupledHarmonicUsingDisplacements:100}
 \frac{d^2}{dt^2}
 \lr{ \Bu_1 - \Bu_2 }
@@ -103,16 +95,14 @@ Returning to the displacement system, we can solve by taking the difference of t
 \end{dmath}
 
 With no external forces acting on the system, the direction of the displacement distance will not change over time, so this is really a one dimensional system of the form
-
-\begin{dmath}\label{eqn:coupledHarmonicUsingDisplacements:120}
+\begin{equation}\label{eqn:coupledHarmonicUsingDisplacements:120}
 \begin{aligned}
 \ddot{u} &= - \Omega^2 u - \Omega^2 a \\
 \Omega &= \frac{2 K}{m}.
 \end{aligned}
-\end{dmath}
+\end{equation}
 
 We can solve for \(u + a\), noting that \(d^2(u + a)/dt^2 = \ddot{u}\), so
-
 \begin{dmath}\label{eqn:coupledHarmonicUsingDisplacements:140}
 u(t) + a = \lr{ u_\nought + a } \cos\lr{ \Omega (t - t_\nought) },
 \end{dmath}
@@ -155,23 +145,18 @@ Calculation of the time average \(\expectation{f(t)} = \inv{T} \int_0^T f(t) dt\
 \end{dmath}
 
 a result that did not jive with my intuition.  I was somewhat loose with the use of average position \(\expectation{\Br_i}\) when defining the displacement coordinates, and assumed along the way that the average operation was linear in the following ways
-
-\begin{dmath}\label{eqn:coupledHarmonicUsingDisplacements:300}
+\begin{equation}\label{eqn:coupledHarmonicUsingDisplacements:300}
 \begin{aligned}
 \expectation{\Ba - \Bb} &= -\expectation{\Bb - \Ba} \\
-\expectation{\Ba} - \expectation{\Bb} &= \expectation{\Ba} - \expectation{\Bb}
+\expectation{\Ba} - \expectation{\Bb} &= \expectation{\Ba} - \expectation{\Bb}.
 \end{aligned}
-\end{dmath}
-
+\end{equation}
 While the time average of the separation is zero, the mean square average separation is not
-
 \begin{dmath}\label{eqn:coupledHarmonicUsingDisplacements:260}
 \expectation{ \Abs{\Br_1(t) - \Br_2(t)}^2 } = \inv{2}
 \Abs{\Br_1(t_0) - \Br_2(t_0)}^2.
 \end{dmath}
-
 I.e. the RMS absolute difference in position of the two masses is \(1/\sqrt{2}\) of the maximum absolute amplitude.  This quantity won't vanish due to the oscillatory nature of the vectors, and probably better describes the average geometric separation of the masses.
-
 \paragraph{FIXME:}
 Solve for \(\Bu_i\) (and thus \(\Br_i\)) separately.
 } % makeanswer
