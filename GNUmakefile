@@ -12,6 +12,15 @@ include ../latex/make.bookvars
 
 #ONCEFLAGS := -justonce
 
+# uncomment-in for kdp version (no mathematica notebooks in appendix.)
+PRINT_VERSION := 1
+
+ifdef PRINT_VERSION
+DISTEXTRA := kdp
+else
+PARAMS += --no-print
+endif
+
 SOURCE_DIRS += appendix
 # FIXME:
 # 1) including this incorrectly adds figures/*pdf to the ./.gitignore file
@@ -62,6 +71,9 @@ condensedMatterLecture7PhononsQ.pdf :: condensedMatterLecture7Phonons.tex
 
 condensedMatterLecture6q.pdf :: $(PDF_DEPS)
 condensedMatterLecture6q.pdf :: condensedMatterLecture6.tex
+
+parameters.sty : ../latex/bin/mkparams
+	../latex/bin/mkparams $(PARAMS) > $@
 
 backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
 	rm -f $@

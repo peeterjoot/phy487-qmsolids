@@ -38,9 +38,7 @@ Find the \(\phi\) and \(\theta\) values for which the
 % Had kdp file processing error (binary search isolated this to chapter I).  try commenting this out
 % (here and below)
 % 
-\ifthenelse{\boolean{print-version}}
-{
-}
+\iftoggle{print-version}{}
 {
 \makesubproblem{Contour plots.}{condensedMatter:problemSet1:2c}
 Using whatever plotting package you wish (e.g. gnuplot, Matlab, or using the
@@ -323,9 +321,7 @@ or
 \end{subequations}
 %
 Neglecting the first common factor, some experimentation yields the solution \(\mathLabelBox{\phi = \pi/2}{Grading remark: Marked wrong.  Review this.}, \theta \in \{0, \pi\}\).  The probability density is maximized along the \(z,y\) plane pointing towards either of the poles.
-\ifthenelse{\boolean{print-version}}
-{
-}
+\iftoggle{print-version}{}
 {
 \makeSubAnswer{}{condensedMatter:problemSet1:2c}
 %%\cref{fig:qmSolidsPs1P2bPsi1:qmSolidsPs1P2bPsi1Fig1}.
