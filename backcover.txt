@@ -1,4 +1,4 @@
-This book contains my lecture notes for the Winter 2013, University of Toronto Condensed Matter Physics course (PHY487H1F), taught by Prof.\ Stephen Julian.
+This book contains my lecture notes for the Winter 2013, University of Toronto Condensed Matter Physics course (PHY487H1F), taught by Prof. Stephen Julian.
 
 Official course description:
 
