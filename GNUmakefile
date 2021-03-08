@@ -72,9 +72,6 @@ condensedMatterLecture7PhononsQ.pdf :: condensedMatterLecture7Phonons.tex
 condensedMatterLecture6q.pdf :: $(PDF_DEPS)
 condensedMatterLecture6q.pdf :: condensedMatterLecture6.tex
 
-parameters.sty : ../latex/bin/mkparams
-	../latex/bin/mkparams $(PARAMS) > $@
-
 backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
 	rm -f $@
 	ln -s ../latex/classicthesis_mine/backmatter2.tex backmatter.tex
