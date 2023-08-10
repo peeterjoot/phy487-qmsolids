@@ -96,22 +96,22 @@ h \sum_{n = 1}^\infty a_n^2 e^{2 n i \omega_\nought t}
 Setting \(a_1 = 1\) we can proceed to calculate all the constants \(a_n\).
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:anharmonicOsc:120}
-a_2 =
--\frac{h}{3 \omega_\nought^2 }
-\end{dmath}
-\begin{dmath}\label{eqn:anharmonicOsc:140}
-a_3 =
-\frac{h^2}{12 \omega_\nought^4 }
-\end{dmath}
-\begin{dmath}\label{eqn:anharmonicOsc:160}
+\begin{equation}\label{eqn:anharmonicOsc:120}
+a_2 = -\frac{h}{3 \omega_\nought^2 }
+\end{equation}
+\begin{equation}\label{eqn:anharmonicOsc:140}
+a_3 = \frac{h^2}{12 \omega_\nought^4 }
+\end{equation}
+\begin{equation}\label{eqn:anharmonicOsc:160}
+\begin{aligned}
 a_4
-=
+&=
  -\frac{h }{ 15 \omega_\nought^2 }
-\lr{-\frac{h}{3 \omega_\nought^2 } }^2
-=
+\lr{-\frac{h}{3 \omega_\nought^2 } }^2 \\
+&=
  -\frac{h^3 }{ 135 \omega_\nought^6 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 \end{subequations}
 %
 Observe that each of these has powers of
@@ -124,10 +124,10 @@ The magnitude of the anharmonic perturbation ``spring constant'' \(g/2\) compare
 
 This is enough to verify that the solution can be expressed in a series formed from powers of the harmonic frequency phasor.  Looking at a specific example, with \(m = f = 1\), and \(g = 0.5\), we have
 %
-\begin{dmath}\label{eqn:anharmonicOsc:200}
+\begin{equation}\label{eqn:anharmonicOsc:200}
 %u(t) = e^{i t}-0.0833333 e^{2 i t}+0.00520833 e^{3 i t}-0.000115741 e^{4 i t}.
 u(t) = e^{i t}-0.0833 e^{2 i t}+0.00521 e^{3 i t}-0.000116 e^{4 i t}.
-\end{dmath}
+\end{equation}
 %
 The Real part of this is plotted in \cref{fig:anharmonicOsc:anharmonicOscFig1} along with separate plots of the first two terms.
 \mathImageFigure{../figures/phy487-qmsolids/anharmonicOscFig1}{Anharmonic sum and two components.}{fig:anharmonicOsc:anharmonicOscFig1}{0.3}{anharmonicOscillator.nb}
