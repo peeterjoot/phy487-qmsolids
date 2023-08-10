@@ -77,9 +77,11 @@ We can visualize that range as all the points on a sine curve with the integer m
 Clearly the denominator is always non-zero when \(k \ne k'\).   This provides us with the desired inverse transformation relationship
 %
 \begin{equation}\label{eqn:discreteFourierTransform:140}
+\begin{aligned}
 \sum_{n = 0}^{N-1} a_n e^{2 \pi i k' n/N }
 &= N \sum_{k' = 0}^{N-1} A_k' \delta_{k, k'}
 \\ &= N A_k'.
+\end{aligned}
 \end{equation}
 %
 \paragraph{Summary.}
