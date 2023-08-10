@@ -17,39 +17,39 @@
 
 We've been using the fact that a periodic function
 %
-\begin{dmath}\label{eqn:fourierReciprocal:20}
+\begin{equation}\label{eqn:fourierReciprocal:20}
 V(\Br) = V(\Br + \Br_n),
-\end{dmath}
+\end{equation}
 %
 where
 %
-\begin{dmath}\label{eqn:fourierReciprocal:40}
+\begin{equation}\label{eqn:fourierReciprocal:40}
 \Br_n = a_1 \Ba_1 + a_2 \Ba_2 + a_3 \Ba_3,
-\end{dmath}
+\end{equation}
 %
 has a Fourier representation
 %
-\begin{dmath}\label{eqn:fourierReciprocal:60}
+\begin{equation}\label{eqn:fourierReciprocal:60}
 V(\Br) = \sum_\BG V_\BG e^{ i \BG \cdot \Br }.
-\end{dmath}
+\end{equation}
 %
 Here \(\BG\) is a vector in reciprocal space, say
 %
-\begin{dmath}\label{eqn:fourierReciprocal:80}
+\begin{equation}\label{eqn:fourierReciprocal:80}
 \BG_{rst} = r \Bg_1 + s \Bg_2 + t \Bg_3,
-\end{dmath}
+\end{equation}
 %
 where
 %
-\begin{dmath}\label{eqn:fourierReciprocal:100}
+\begin{equation}\label{eqn:fourierReciprocal:100}
 \Bg_i \cdot \Ba_j = 2 \pi \delta_{ij}.
-\end{dmath}
+\end{equation}
 %
 Now let's express the explicit form for the Fourier coefficient \(V_\BG\) so that we can compute the Fourier representation for some periodic potentials for some numerical experimentation.  In particular, let's think about what it meant to integrate over a unit cell.  Suppose we have a parameterization of the points in the unit cell
 %
-\begin{dmath}\label{eqn:fourierReciprocal:120}
+\begin{equation}\label{eqn:fourierReciprocal:120}
 \Br = u \Ba_1 + v \Ba_2 + w \Ba_3,
-\end{dmath}
+\end{equation}
 %
 as sketched in \cref{fig:fourierReciprocalUnitCell:fourierReciprocalUnitCellFig1}.  Here \(u, v, w \in [0, 1]\).  We can compute the values of \(u, v, w\) for any vector \(\Br\) in the cell by reciprocal projection
 %
@@ -144,9 +144,9 @@ and when \(r \ne r'\)
 %
 This is just zero since \(r - r'\) is an integer, so we have
 %
-\begin{dmath}\label{eqn:fourierReciprocal:280}
+\begin{equation}\label{eqn:fourierReciprocal:280}
 \int_0^1 du e^{ 2 \pi i (r - r') u } = \delta_{r, r'}.
-\end{dmath}
+\end{equation}
 %
 This gives us
 %

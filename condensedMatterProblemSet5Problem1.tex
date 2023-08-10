@@ -16,28 +16,28 @@ asymptotes.
 \makeanswer{condensedMatter:problemSet5:1}{
 For the 2D and 3D (\(d = 2,3\)) density of states we'd consider solutions for \(Z(\omega)\) of
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet5Problem1:20}
+\begin{equation}\label{eqn:condensedMatterProblemSet5Problem1:20}
 \int Z(\omega) d\omega = \lr{\frac{L}{2\pi}}^d \int \frac{d \Bf_\omega}{\Abs{\spacegrad_\Bq \omega(q)} } d\omega.
-\end{dmath}
+\end{equation}
 %
 Should we wish to extend this down to \(d = 1\) we'd have to figure out how to interpret \(d\Bf_\omega\).  In 2D and 3D that was a surface area element, a factor of the differential form \(d^d \Bq = d\Bf_\omega d\omega_\perp\).  In 3D we had \(\int d\Bf_\omega = 4 \pi q^2 = d/dq( 4 \pi q^3/3)\), and for 2D \(\int d\Bf_\omega = 2 \pi q = d/dq( \pi q^2 )\).
 
 Those 3D and 2D ``volumes'' (differentiated to obtain the ``area'' when \(q\) of the surface for \(q\) held constant) can be obtained by these respective integrals
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:condensedMatterProblemSet5Problem1:40}
+\begin{equation}\label{eqn:condensedMatterProblemSet5Problem1:40}
 \int_{x^2 + y^2 + z^2 \le q^2} dx dy dz = \frac{4}{3} \pi q^3
-\end{dmath}
-\begin{dmath}\label{eqn:condensedMatterProblemSet5Problem1:60}
+\end{equation}
+\begin{equation}\label{eqn:condensedMatterProblemSet5Problem1:60}
 \int_{x^2 + y^2 \le q^2} dx dy  = \pi q^2.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 We can generalize this down to a single dimension by considering
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet5Problem1:80}
+\begin{equation}\label{eqn:condensedMatterProblemSet5Problem1:80}
 \int_{x^2 \le q^2} dx = 2 q.
-\end{dmath}
+\end{equation}
 %
 for which we could conceivably consider the area of this 1D surface to be the constant \(2\).  However, does this even make sense, since writing \(dq = df_\omega dq_\perp\) would split our 1-form into the product of two 1-forms, which isn't a sensible operation?  Let's step back and consider the density of states definition from scratch.
 %
@@ -55,21 +55,21 @@ We wish to sum over all the integer values \(n\), subject to a period constraint
 %
 From this we find for one dimension
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet5Problem1:120}
+\begin{equation}\label{eqn:condensedMatterProblemSet5Problem1:120}
 Z(\omega) = \frac{L}{2 \pi} \frac{dq}{d\omega}.
-\end{dmath}
+\end{equation}
 %
 Now we are ready to start.  For the 1D chain we had
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet5Problem1:140}
+\begin{equation}\label{eqn:condensedMatterProblemSet5Problem1:140}
 \sqrt{\frac{M}{K}} \omega(q) = 2 \sin \lr{ \frac{ q a}{2} },
-\end{dmath}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet5Problem1:160}
+\begin{equation}\label{eqn:condensedMatterProblemSet5Problem1:160}
 \sqrt{\frac{M}{K}} = a \cos \lr{ \frac{ q a}{2} } \frac{dq}{d\omega},
-\end{dmath}
+\end{equation}
 %
 or
 %

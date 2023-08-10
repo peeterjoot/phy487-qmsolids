@@ -278,9 +278,9 @@ At the boundary where \({E_{k }^\nought} = {E_{k -G}^\nought}\), this is
 %
 or
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:360}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:360}
 E_{\pm} = {E_{k }^\nought} \pm V_G = E \pm \frac{V_1}{2}.
-\end{dmath}
+\end{equation}
 %
 The (approximate) separation between the energy curves at that point is
 \boxedEquation{eqn:condensedMatterProblemSet7Problem2:380}{
@@ -305,9 +305,9 @@ C_{k + G}
 %
 Taking the determinant and noting that at the intersection \({E_{k - G}^\nought} = {E_{k +G}^\nought}\), this has solution
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:480}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:480}
 E_{\pm} = {E_{k -G}^\nought} \pm V_{2G} = E \pm \frac{V_2}{2}.
-\end{dmath}
+\end{equation}
 %
 This time the approximate separation between the energy curves at that point is
 \boxedEquation{eqn:condensedMatterProblemSet7Problem2:1280}{
@@ -329,9 +329,9 @@ C_{k + G}
 %
 with approximate solution
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1220}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1220}
 E_{\pm} = {E_{k + G}^\nought}.
-\end{dmath}
+\end{equation}
 %
 We find that the approximate separation at this point is zero.  Should we require a better estimate, we must retain of more of the coefficients \(C_{k - h G}\).
 \makeSubAnswer{}{condensedMatter:problemSet7:2c}
@@ -379,29 +379,29 @@ V_\nought
 %
 Only one of the delta functions in the \(\sum_n\) falls in \([-1/2, 1/2]\), so this integral is just \(V_\nought/a\), leaving
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:580}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:580}
 V(x) = \frac{V_\nought}{a} \sum_h e^{i G_h x}.
-\end{dmath}
+\end{equation}
 %
 Schr\"{o}dinger's equation for this potential is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:600}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:600}
 0 = \sum_{k'} \lr{ \hkSq{\lr{k'}} - E } C_{k'} e^{i k' x} + \frac{V_\nought}{a} \sum_G e^{i G x} C_{k'} e^{i k' x},
-\end{dmath}
+\end{equation}
 %
 Operating with \(\int dx e^{-i k x}\) gives
 % -k + k' + G = 0
 % k' = k - G
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:620}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:620}
 0 = \lr{ \hkSq{k} - E } C_{k} + \frac{V_\nought}{a} \sum_G C_{k - G}.
-\end{dmath}
+\end{equation}
 %
 Noting that
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:640}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:640}
 0 = \lr{ \frac{V_\nought}{a} + \hkSq{k} - E } C_{k} + \frac{V_\nought}{a} \sum_{G \ne k} C_{k - G},
-\end{dmath}
+\end{equation}
 %
 we could put this in matrix form, but that's not too helpful since the matrix is infinite dimensional.  It's possible to find an implicit relation for \(E(k)\) by summing \(C_k\), since
 %
@@ -421,9 +421,9 @@ and
 %
 or
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:700}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:700}
 \frac{a}{V_\nought} = \sum_k \inv{ E - \hkSq{k} }.
-\end{dmath}
+\end{equation}
 %
 While I'd guess that this can be summed using the Euler-MacLaren theorem, Mathematica says this is
 %
@@ -488,9 +488,9 @@ so our wave functions \(\psi = \sum_k C_k e^{i k x}\) are
 %
 However, \(V_{2G} = V_2/2\), and \(E_{k - G}^\nought - E_{\pm} = \pm V_2/2\), so we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:860}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:860}
 \psi_{\pm} \propto e^{i (k + G) x} \mp e^{i (k - G) x}.
-\end{dmath}
+\end{equation}
 %
 Normalizing and putting in Bloch form, these are
 %
@@ -642,9 +642,9 @@ We are interested in the lower energy branch \(\rho_{k, -}\) where
 %
 Observe that the kinetic energy difference terms are zero at the Brillouin boundary (\(k = \pi/a\)).  At a distance approaching that boundary, say
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1120}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1120}
 k = \frac{\pi}{a}( 1 - \alpha ),
-\end{dmath}
+\end{equation}
 %
 we have
 \begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1240}
@@ -682,9 +682,9 @@ This approaches zero in real space near the atomic lattice positions.
 
 On the other extreme, far enough from the boundary that
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1160}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1160}
 \frac{h^2 \lr{ 1 - \frac{k a}{\pi}} }{2m a^2} \gg V_1^2,
-\end{dmath}
+\end{equation}
 %
 we have
 %

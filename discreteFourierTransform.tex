@@ -20,15 +20,15 @@ For decoupling trial solutions of lattice vibrations we have what appears to be 
 
 Let's start given a periodic signal of the following form
 %
-\begin{dmath}\label{eqn:discreteFourierTransform:20}
+\begin{equation}\label{eqn:discreteFourierTransform:20}
 a_n = \sum_{k = 0}^{N-1} A_k e^{-2 \pi i k n/N },
-\end{dmath}
+\end{equation}
 %
 and assume that there's an inversion formula of the form
 %
-\begin{dmath}\label{eqn:discreteFourierTransform:40}
+\begin{equation}\label{eqn:discreteFourierTransform:40}
 A_k' \propto \sum_{n = 0}^{N-1} a_n e^{2 \pi i k' n/N }.
-\end{dmath}
+\end{equation}
 %
 Direct substitution should show if such a transform pair is valid, and determine the proportionality constant.  Let's try this
 %
@@ -47,9 +47,9 @@ A_k
 %
 Observe that the interior sum is just \(N\) when \(k' = k\).  Let's sum this for the values \(k \ne k'\), writing
 %
-\begin{dmath}\label{eqn:discreteFourierTransform:80}
+\begin{equation}\label{eqn:discreteFourierTransform:80}
 S_N(k'-k) = \sum_{n = 0}^{N-1} e^{2 \pi i (k' - k)n/N }.
-\end{dmath}
+\end{equation}
 %
 With \(a = \exp( 2 \pi i (k' - k)/N)\) we have
 %
@@ -64,9 +64,9 @@ S_N(k'-k)
 %
 Observe that \(k' - k \in [-N+1, N-1]\), and necessarily takes on just integer values.  We have terms of the form \(\sin \pi m\), for integer \(m\) in the numerator, always zero.  In the denominator, the sine argument is in the range
 %
-\begin{dmath}\label{eqn:discreteFourierTransform:120}
+\begin{equation}\label{eqn:discreteFourierTransform:120}
 [ \pi \lr{ -1 + \inv{N} }, \pi \lr{ 1 - \inv{N} }],
-\end{dmath}
+\end{equation}
 %
 We can visualize that range as all the points on a sine curve with the integer multiples of \(\pi\) omitted, as in \cref{fig:discreteFourierRange:discreteFourierRangeFig1}.
 %

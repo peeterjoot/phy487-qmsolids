@@ -106,9 +106,9 @@ B =
 %
 Our system takes the form
 %
-\begin{dmath}\label{eqn:threeSpringLoop:200}
+\begin{equation}\label{eqn:threeSpringLoop:200}
 \frac{d^2 \Bu}{d\tau^2} = B \Bu.
-\end{dmath}
+\end{equation}
 %
 We can at least theoretically solve this in a simple fashion if we first convert it to a first order system.  We can do that by augmenting our vector of displacements with their first derivatives
 %
@@ -133,9 +133,9 @@ B & 0
 %
 Now the solution is conceptually trivial
 %
-\begin{dmath}\label{eqn:threeSpringLoop:260}
+\begin{equation}\label{eqn:threeSpringLoop:260}
 \Bw = e^{A \tau} \Bw_\nought.
-\end{dmath}
+\end{equation}
 %
 We are however, faced with the task of exponentiating the matrix \(A\).  All the powers of this matrix \(A\) will be required, but they turn out to be easy to calculate
 %
@@ -312,9 +312,9 @@ so that
 }
 
 As a check differentiation twice shows that this is in fact the general solution, since we have
-\begin{dmath}\label{eqn:threeSpringLoop:460}
+\begin{equation}\label{eqn:threeSpringLoop:460}
 \Bu' = \sqrt{B} \sinh \sqrt{B} \tau \Bu_\nought + \cosh \sqrt{B} \tau \Bu_\nought',
-\end{dmath}
+\end{equation}
 %
 and
 \begin{dmath}\label{eqn:threeSpringLoop:480}
@@ -390,9 +390,9 @@ D &=
 %
 We have
 %
-\begin{dmath}\label{eqn:threeSpringLoop:560}
+\begin{equation}\label{eqn:threeSpringLoop:560}
 B = U D U^\T,
-\end{dmath}
+\end{equation}
 %
 We also find that \(B\) and its root are intimately related in a surprising way
 %
@@ -417,33 +417,33 @@ We also see, unfortunately that \(B\) has a zero eigenvalue, so we can't compute
 %
 Now that we realize we have to deal with zero eigenvalues, a different approach suggests itself.  Instead of reducing our system using a Hamiltonian transformation to a first order system, let's utilize that diagonalization directly.  Our system is
 %
-\begin{dmath}\label{eqn:threeSpringLoop:600}
+\begin{equation}\label{eqn:threeSpringLoop:600}
 \Bu'' = B \Bu = U D U^{-1} \Bu,
-\end{dmath}
+\end{equation}
 %
 where \(D = [ \lambda_i \delta_{ij} ]\) and
 %
-\begin{dmath}\label{eqn:threeSpringLoop:620}
+\begin{equation}\label{eqn:threeSpringLoop:620}
 \lr{ U^{-1} \Bu}'' = D \lr{ U^{-1} \Bu}.
-\end{dmath}
+\end{equation}
 %
 Let
 %
-\begin{dmath}\label{eqn:threeSpringLoop:720}
+\begin{equation}\label{eqn:threeSpringLoop:720}
 \Bz = U^{-1} \Bu,
-\end{dmath}
+\end{equation}
 %
 so that our system is just
 %
-\begin{dmath}\label{eqn:threeSpringLoop:700}
+\begin{equation}\label{eqn:threeSpringLoop:700}
 \Bz'' = D \Bz,
-\end{dmath}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:threeSpringLoop:640}
+\begin{equation}\label{eqn:threeSpringLoop:640}
 z_i'' = \lambda_i z_i.
-\end{dmath}
+\end{equation}
 %
 This is \(N\) equations, each decoupled and solvable by inspection.  Suppose we group the eigenvalues into sets \(\{ \lambda_n < 0, \lambda_p > 0, \lambda_z = 0 \}\).  Our solution is then
 %
@@ -570,21 +570,21 @@ The leading matrix is an orthonormal projector of the initial conditions onto th
 Let's now try another item from our usual toolbox on these sorts of second order systems, the Fourier transform.  For a one variable function of time let's write the transform pair as
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:threeSpringLoop:780}
+\begin{equation}\label{eqn:threeSpringLoop:780}
 x(t) = \int_{-\infty}^{\infty} \tilde{x}(\omega) e^{-i \omega t} d\omega
-\end{dmath}
-\begin{dmath}\label{eqn:threeSpringLoop:800}
+\end{equation}
+\begin{equation}\label{eqn:threeSpringLoop:800}
 \tilde{x}(\omega) = \inv{2\pi} \int_{-\infty}^{\infty} x(t) e^{i \omega t} dt.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 \paragraph{One mass harmonic oscillator}
 %
 The simplest second order system is that of the harmonic oscillator
 %
-\begin{dmath}\label{eqn:threeSpringLoop:820}
+\begin{equation}\label{eqn:threeSpringLoop:820}
 0 = \ddot{x}(t) + \omega_\nought^2 x.
-\end{dmath}
+\end{equation}
 %
 Application of the transform gives
 %
@@ -633,9 +633,9 @@ d\omega'
 How do we make sense of this?
 %It appears that we require a constraint
 %
-%\begin{dmath}\label{eqn:threeSpringLoop:860}
+%\begin{equation}\label{eqn:threeSpringLoop:860}
 %0 = \lr{ -\omega^2 + \omega_\nought^2 } \tilde{x}(\omega)..
-%\end{dmath}
+%\end{equation}
 Since \(\omega\) is an integration variable, we can't just mandate that it equals the constant driving frequency \(\pm \omega_\nought\).  It's clear that we require a constraint on the transform \(\tilde{x}(\omega)\) as well.  As a trial solution, imagine that
 %
 \begin{dmath}\label{eqn:threeSpringLoop:880}
@@ -999,15 +999,15 @@ b e^{ -i \omega_\nought t }
 %
 We've seen that we can solve any of these constant coefficient systems exactly using matrix methods, however, these will not be practical for large systems unless we have methods to solve for all the non-zero eigenvalues and their corresponding eigenvectors.  With the Fourier transform methods we find that our solutions in the frequency domain is of the form
 %
-\begin{dmath}\label{eqn:threeSpringLoop:1380}
+\begin{equation}\label{eqn:threeSpringLoop:1380}
 \tilde{u}_j(\omega) = \sum a_{kj} \delta( \omega - \omega_{kj} ),
-\end{dmath}
+\end{equation}
 %
 or in the time domain
 %
-\begin{dmath}\label{eqn:threeSpringLoop:1400}
+\begin{equation}\label{eqn:threeSpringLoop:1400}
 u(t) = \sum a_{kj} e^{ - i \omega_{kj} t }.
-\end{dmath}
+\end{equation}
 %
 We assumed exactly this form of solution in class.  The trial solution that we used in class factored out a phase shift from \(a_{kj}\) of the form of \(e^{ i q x_n }\), but that doesn't change the underling form of that assumed solution.  We have however found a good justification for the trial solution we utilized.
 
