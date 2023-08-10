@@ -96,9 +96,10 @@ The nearest neighbor differences are illustrated in \cref{fig:qmSolidsPs8a:qmSol
 %
 The sum of exponentials is just
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:200}
+\begin{equation}\label{eqn:condensedMatterProblemSet8Problem1:200}
+\begin{aligned}
 \sum_m e^{i \Bk \cdot (\Br_n - \Br_m)}
-=
+&=
 e^{ i (k_x, k_y) \cdot (0, -a) }
 +
 e^{ i (k_x, k_y) \cdot (0, a) }
@@ -106,21 +107,22 @@ e^{ i (k_x, k_y) \cdot (0, a) }
 e^{ i (k_x, k_y) \cdot (a, 0) }
 +
 e^{ i (k_x, k_y) \cdot (-a, 0) }
-=
+\\ &=
 e^{ -i a k_y }
 +e^{ i a k_y }
 +e^{ -i a k_x }
 +e^{ i a k_x }
-= 2 \cos a k_x + 2 \cos a k_y.
-\end{dmath}
+\\ &= 2 \cos a k_x + 2 \cos a k_y.
+\end{aligned}
+\end{equation}
 %
 \Eqnref{eqn:condensedMatterProblemSet8Problem1:160} takes the form
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:220}
+\begin{equation}\label{eqn:condensedMatterProblemSet8Problem1:220}
 E(\Bk) \approx E_i - A - 2 B \lr{
 \cos a k_x + \cos a k_y
 },
-\end{dmath}
+\end{equation}
 %
 as desired.
 \makeSubAnswer{}{condensedMatter:problemSet8:1b}
@@ -132,15 +134,17 @@ as desired.
 %
 so the energy on this trajectory is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:40}
+\begin{equation}\label{eqn:condensedMatterProblemSet8Problem1:40}
+\begin{aligned}
 E(\Bk(u))
-=
+&=
 E_s - A - 2 B \lr{
 \cos 2 \pi u + 1
 }
-=
+\\ &=
 E_s - A - 2 B - 2B \cos 2 \pi u.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is plotted in \cref{fig:qmSolidsPs8bi:qmSolidsPs8biFig1}.
 %
@@ -154,15 +158,17 @@ This is plotted in \cref{fig:qmSolidsPs8bi:qmSolidsPs8biFig1}.
 %
 so the energy on this trajectory is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:80}
+\begin{equation}\label{eqn:condensedMatterProblemSet8Problem1:80}
+\begin{aligned}
 E(\Bk(v))
-=
+&=
 E_s - A - 2 B \lr{
 1 + \cos 2 \pi v
 }
-=
+\\ &=
 E_s - A - 2 B - 2B \cos 2 \pi v.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This, identical to (i) in form, is plotted in \cref{fig:qmSolidsPs8bii:qmSolidsPs8biiFig2}.
 %
@@ -176,15 +182,17 @@ This, identical to (i) in form, is plotted in \cref{fig:qmSolidsPs8bii:qmSolidsP
 %
 so the energy on this trajectory is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:120}
+\begin{equation}\label{eqn:condensedMatterProblemSet8Problem1:120}
+\begin{aligned}
 E(\Bk(w))
-=
+&=
 E_s - A - 2 B \lr{
 2 \cos 2 \pi w
 }
-=
+\\ &=
 E_s - A - 4 B \cos 2 \pi w.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This, identical to (i) and (ii) in form, but with different extremums, is plotted in \cref{fig:qmSolidsPs8biii:qmSolidsPs8biiiFig3}.
 %
@@ -390,11 +398,11 @@ In the \(B_x\) integrals we have integrands including factors of the form
 
 Given this difference in magnitude, we can roughly expect that the energy can be written as approximately
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:540}
+\begin{equation}\label{eqn:condensedMatterProblemSet8Problem1:540}
 E(\Bk) = E_s - A
 + \Abs{B_x} \cos k_x a
 - \Abs{B_y} \cos k_y a.
-\end{dmath}
+\end{equation}
 %
 \paragraph{Grading remark:} Originally had \(-\Abs{B_x}\), which resulted in a squished plot instead of the one below that has a saddle.  The comment was ``negative \(B_x\) makes \((0, 0)\) a saddle point''.
 %
@@ -406,11 +414,11 @@ E(\Bk) = E_s - A - 2 \mu \sqrt{ B_x^2 + B_y^2 },
 %
 so that the constant surfaces are given by
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet8Problem1:580}
+\begin{equation}\label{eqn:condensedMatterProblemSet8Problem1:580}
 -\cos k_x a
 + \Abs{\frac{B_y}{B_x}} \cos k_y a =
 2 \mu \sqrt{ 1 + \frac{B_y^2}{B_x^2} }.
-\end{dmath}
+\end{equation}
 %
 This is plotted for \(\mu \in [-1, 1]\), and \(\Abs{B_y/B_x} = 0.41\) in \cref{fig:qmSolidsPs8e:qmSolidsPs8eFig2} and \cref{fig:qmSolidsPs8e:qmSolidsPs8eFig3}.
 \mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8eFig2}{Sample energy contours for \(p_x\) orbital basis.}{fig:qmSolidsPs8e:qmSolidsPs8eFig2}{0.4}{ps8e.nb}

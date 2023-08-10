@@ -71,16 +71,18 @@ C_{k - 2 \pi m/a} &= 0, \qquad m \in \{\pm 1, \pm 2, \cdots \}.
 \end{equation}
 %
 \item On this branch, the wave function is
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:100}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:100}
+\begin{aligned}
 \psi_k(x)
-= \inv{\sqrt{a}}
+&= \inv{\sqrt{a}}
 e^{i \lr{k - 2 \pi/a} x}
-=
+\\ &=
 \lr{
 \inv{\sqrt{a}} e^{-i \frac{2 \pi}{a} x}
 }
 e^{i k x},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 %
@@ -95,16 +97,18 @@ C_{k - 2 \pi m/a} &= 0, \qquad m \in \{0, -1, \pm 2, \pm 3, \cdots \}.
 \end{equation}
 %
 \item On this branch, the wave function is
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:400}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:400}
+\begin{aligned}
 \psi_k(x)
-= \inv{\sqrt{a}}
+&= \inv{\sqrt{a}}
 e^{i \lr{k + 2 \pi/a} x}
-=
+\\ &=
 \lr{
 \inv{\sqrt{a}} e^{-i \frac{-2 \pi}{a} x}
 }
 e^{i k x},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 %
@@ -119,16 +123,18 @@ C_{k - 2 \pi m/a} &= 0, \qquad m \in \{0, 1, \pm 2, \pm 3, \cdots \}.
 \end{equation}
 %
 \item On this branch, the wave function is
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:200}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:200}
+\begin{aligned}
 \psi_k(x)
-= \inv{\sqrt{a}}
+&= \inv{\sqrt{a}}
 e^{i \lr{k - 4 \pi/a} x}
-=
+\\ &=
 \lr{
 \inv{\sqrt{a}} e^{-i \frac{4 \pi}{a} x}
 }
 e^{i k x},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 %
@@ -146,7 +152,7 @@ C_{k - 2 \pi m/a} &= 0, \qquad m \in \{0, \pm 1, -2, \pm 3, \pm 4, \cdots \}.
 \makeSubAnswer{}{condensedMatter:problemSet7:2b}
 With \(G = 2 \pi/a\), we can write the potential of \eqnref{eqn:condensedMatterProblemSet7Problem2:40} as
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:240}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:240}
 V(x) =
 \frac{V_1}{2} \lr{
 e^{ i G x }
@@ -157,7 +163,7 @@ e^{ i G x }
 e^{ 2 i G x }
 + e^{ -2 i G x }
 }.
-\end{dmath}
+\end{equation}
 %
 That is
 \begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:260}
@@ -254,7 +260,7 @@ or
 \paragraph{At point (a)} we
 can get a rough idea of the separation by further dropping \(C_{k - G}, C_{k + G}, C_{k + 2G}\) terms, so that the system to solve is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:340a}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:340a}
 0 =
 \begin{bmatrix}
                                  {E_{k -G}^\nought} - E & V_G      \\
@@ -264,17 +270,17 @@ can get a rough idea of the separation by further dropping \(C_{k - G}, C_{k + G
 C_{k - G} \\
 C_{k }
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 At the boundary where \({E_{k }^\nought} = {E_{k -G}^\nought}\), this is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:340}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:340}
 0 =
 \begin{vmatrix}
                                  {E_{k}^\nought} - E & V_G      \\
                                  V_{G}       & {E_{k }^\nought} - E
 \end{vmatrix},
-\end{dmath}
+\end{equation}
 %
 or
 %
@@ -290,7 +296,7 @@ The (approximate) separation between the energy curves at that point is
 }
 \paragraph{At point (b)} dropping all but the \(C_{k - G}, C_{k + G}\) terms gives us
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:460}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:460}
 0 =
 \begin{bmatrix}
                                  {E_{k -G}^\nought} - E & V_{2G}      \\
@@ -301,7 +307,7 @@ C_{k - G} \\
 C_{k + G}
 \end{bmatrix}
 .
-\end{dmath}
+\end{equation}
 %
 Taking the determinant and noting that at the intersection \({E_{k - G}^\nought} = {E_{k +G}^\nought}\), this has solution
 %
@@ -315,7 +321,7 @@ This time the approximate separation between the energy curves at that point is
 }
 \paragraph{Finally, at point (c)} we have \({E_{k - 2 G}^\nought} = {E_{k + G}^\nought}\).  Our system \eqnref{eqn:condensedMatterProblemSet7Problem2:440} can be approximated by
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1200}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1200}
 0 =
 \begin{bmatrix}
                   {E_{k -2 G}^\nought} - E & 0 \\
@@ -325,7 +331,7 @@ This time the approximate separation between the energy curves at that point is
 C_{k - 2 G} \\
 C_{k + G}
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 with approximate solution
 %
@@ -366,16 +372,18 @@ e^{-i G h a u } \\
 %
 Integrating the LHS gives us
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:560}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:560}
+\begin{aligned}
 C_{G_{h}}
-=
+&=
 \int_{-1/2}^{1/2} du V( u a ) e^{i h G a u}
-=
+\\ &=
 V_\nought
 \int_{-1/2}^{1/2} du
 \sum_n
 \delta( (u - n) a ) e^{2 \pi i h u}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Only one of the delta functions in the \(\sum_n\) falls in \([-1/2, 1/2]\), so this integral is just \(V_\nought/a\), leaving
 %
@@ -405,19 +413,19 @@ Noting that
 %
 we could put this in matrix form, but that's not too helpful since the matrix is infinite dimensional.  It's possible to find an implicit relation for \(E(k)\) by summing \(C_k\), since
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:660}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:660}
 C_k
 =
 \frac{V_\nought}{a} \sum_G C_{k - G} \inv{ E - \hkSq{k} },
-\end{dmath}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:680}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:680}
 \cancel{\sum_k C_k }
 =
 \frac{V_\nought}{a} \cancel{\sum_G C_{k - G}} \sum_k \inv{ E - \hkSq{k} },
-\end{dmath}
+\end{equation}
 %
 or
 %
@@ -427,18 +435,18 @@ or
 %
 While I'd guess that this can be summed using the Euler-MacLaren theorem, Mathematica says this is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:720}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:720}
 \sqrt{E} =
 \frac{V_\nought}{a}
 \frac{2 \pi  m}{ \Hbar^2 }
 \cot \lr{2 \pi m \frac{\sqrt{E}}{\Hbar^2} }.
-\end{dmath}
+\end{equation}
 %
 This implicit function has two discrete solutions, as illustrated by representative plots in \cref{fig:ps7p2c:ps7p2cFig1}.  This could clearly be solved numerically.
 \mathImageFigure{../figures/phy487-qmsolids/ps7p2cFig1}{Implicit function curves for delta-function-potential energy.}{fig:ps7p2c:ps7p2cFig1}{0.3}{problemSet7problem2c.nb}
 None of this helps with an estimate of the gap at the crossing points.  Considering point (a) as representative, let's make a crude approximation of \eqnref{eqn:condensedMatterProblemSet7Problem2:640} as
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:800}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:800}
 0 \approx
 \begin{bmatrix}
 \frac{V_\nought}{a} + \hkSq{\lr{k - G}} - E & \frac{V_\nought}{a} \\
@@ -448,24 +456,24 @@ None of this helps with an estimate of the gap at the crossing points.  Consider
 C_{k - G} \\
 C_{k}
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 At the crossing (a) where \(E_{k}^\nought = E_{k - G}^\nought\) we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:740}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:740}
 0 \approx
 \begin{vmatrix}
 \frac{V_\nought}{a} + {E_{k}^\nought} - E & \frac{V_\nought}{a} \\
 \frac{V_\nought}{a} & \frac{V_\nought}{a} + {E_{k}^\nought} - E
 \end{vmatrix},
-\end{dmath}
+\end{equation}
 %
 or
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:760}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:760}
 E_\pm \approx
 {E_{k}^\nought} - \frac{V_\nought}{a}
 \pm \Abs{ \frac{V_\nought}{a} }.
-\end{dmath}
+\end{equation}
 %
 The gap distance at this point (or the others) is thus approximately
 \boxedEquation{eqn:condensedMatterProblemSet7Problem2:780}{
@@ -524,13 +532,13 @@ These are sketched in \cref{fig:ps7p2dDensityPlots:ps7p2dDensityPlotsFig2}.
 \makeSubAnswer{}{condensedMatter:problemSet7:2e}
 We start with \eqnref{eqn:condensedMatterProblemSet7Problem2:340a}, for which we find
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:940}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:940}
 E_{\pm} =
 \inv{2}
 \lr{
 {E_{k -G}^\nought} + {E_{k }^\nought} \pm \sqrt{ \lr{ {E_{k }^\nought} - {E_{k -G}^\nought} }^2 + V_1^2 }
 },
-\end{dmath}
+\end{equation}
 %
 so that the wave function coefficients are given by
 %
@@ -546,23 +554,25 @@ C_{k - G}
 %
 This gives
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:980}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:980}
 \psi_{k,\pm}(x)
 \propto -V_1 e^{i (k - G) x} +
 \lr{
 {E_{k -G}^\nought} - {E_{k }^\nought} \mp \sqrt{ \lr{ {E_{k }^\nought} - {E_{k -G}^\nought} }^2 + V_1^2 }
 } e^{i k x}.
-\end{dmath}
+\end{equation}
 %
 The kinetic energy difference is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1000}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1000}
+\begin{aligned}
 E_{k -G}^\nought - E_{k }^\nought
-= \hkSq{\lr{k- G}}
+&= \hkSq{\lr{k- G}}
 - \hkSq{k}
-=
+\\ &=
 \frac{\Hbar^2 \lr{ G^2 - 2 k G} }{2m},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so we have
 %
@@ -594,7 +604,7 @@ To make this less cumbersome, let's write
 %
 Writing out \(G = 2 \pi/a\) explicitly, the (still unnormalized) wave functions are
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1060}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1060}
 \psi_{k,\pm}(x)
 =
 \lr{
@@ -605,11 +615,11 @@ e^{i \pi x/a}
 }
 e^{-i \pi x/a}
 e^{i k x},
-\end{dmath}
+\end{equation}
 %
 and the densities are proportional to
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1080}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1080}
 \rho_{k,\pm}(x)
 =
 \Abs{
@@ -618,27 +628,29 @@ e^{-i \pi x/a} +
 \epsilon_\pm(k)
 e^{i \pi x/a}
 }^2.
-\end{dmath}
+\end{equation}
 %
 We are interested in the lower energy branch \(\rho_{k, -}\) where
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1100}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1100}
+\begin{aligned}
 \epsilon_{-}(k)
-=
+&=
 \lr{
 \frac{\Hbar^2 G \lr{ G - 2 k} }{2m}
 + \sqrt{
 \lr{ \frac{\Hbar^2 G \lr{ G - 2 k} }{2m} }^2
 + V_1^2 }
 }
-=
+\\ &=
 \lr{
 \frac{h^2 \lr{ 1 - \frac{k a}{\pi}} }{2m a^2}
 + \sqrt{
 \lr{ \frac{h^2 \lr{ 1 - \frac{k a}{\pi}} }{2m a^2} }^2
 + V_1^2 }
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Observe that the kinetic energy difference terms are zero at the Brillouin boundary (\(k = \pi/a\)).  At a distance approaching that boundary, say
 %
@@ -647,9 +659,10 @@ k = \frac{\pi}{a}( 1 - \alpha ),
 \end{equation}
 %
 we have
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1240}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1240}
+\begin{aligned}
 \epsilon_{-}(k)
-=
+&=
 \frac{h^2 \alpha}{2m a^2}
 + \sqrt{
 \lr{ \frac{h^2 \alpha}{2m a^2} }^2
@@ -659,24 +672,27 @@ we have
 + V_1
 +
 \inv{2} \lr{ \frac{h^2 \alpha}{2 m a^2} }^2
-=
+\\ &=
 V_1 + O(\alpha).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Thus near the boundary we have a (without normalization) nearly sine density
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1140}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1140}
+\begin{aligned}
 \rho_{k,-}(x)
-=
+&=
 \Abs{
 2 i V_1 \sin(\pi x/a)
 +
 O(\alpha)
 e^{i \pi x/a}
 }^2
-\approx
+\\ &\approx
 V_1^2 \sin^2 (\pi x/ a).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This approaches zero in real space near the atomic lattice positions.
 
@@ -688,26 +704,28 @@ On the other extreme, far enough from the boundary that
 %
 we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1180}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1180}
 \epsilon_{-}(k)
 \approx
 \frac{h^2 \lr{1 - \frac{k a}{2}}}{m a^2},
-\end{dmath}
+\end{equation}
 %
 and our (unnormalized) density is nearly constant
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem2:1260}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem2:1260}
+\begin{aligned}
 \rho_{k,\pm}(x)
-\approx
+&\approx
 \Abs{
 -V_1
 e^{-i \pi x/a} +
 \frac{h^2 \lr{1 - \frac{k a}{2}}}{m a^2}
 e^{i \pi x/a}
 }^2
-\approx
+\\ &\approx
 \frac{h^2 \lr{1 - \frac{k a}{2}}}{m a^2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Some of these curves are plotted in \cref{fig:ps7p2e:ps7p2eFig1} for various relative values of \({E_{k -2\pi/2}^\nought} - {E_{k }^\nought}, V_1\), where the most peaked is near the \(k = \pi/a\) boundary, and the flattest, near the origin.
 %

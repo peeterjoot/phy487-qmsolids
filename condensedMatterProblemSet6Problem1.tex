@@ -50,36 +50,40 @@ n_K = \rho_K / m_K = n_e (\mbox{with presumption of one free electron per atom})
 %
 This gives
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet6Problem1:40}
+\begin{equation}\label{eqn:condensedMatterProblemSet6Problem1:40}
 \begin{array}{l l l}
 \kF &= \lr{ 3 \pi^2 n_e }^{1/3} &= 7.32068 \times 10^7 \Unitinv{cm} \\
 \EF &= \Hbar^2 \kF^2/(2 m_e) &= 3.27421 \times 10^{-12} \Unit{ergs} \\
 \TF &= \EF/\kB &= 23709 \Unit{K}
 \end{array}
-\end{dmath}
+\end{equation}
 %
 \paragraph{Grading remark:} The grader didn't like my use of ergs as a unit, and said I should use either \(\Unit{eV}\) or \(\Unit{J}\).  Asking Prof Julian, if SI now dominates, he confirms that this was a pretty old school thing to do ``Yes, it's a long time since I have seen an erg.''  We both recall the horror of taking introductory electromagnetism with the CGS Berkeley physics series while our Professors used SI.
 \makeSubAnswer{}{condensedMatter:problemSet6:1b}
 Looking at the graph, we see that the units are different from what we have been using.  The dimensions of specific heat \([ \CV ] = \frac{[ U ]}{ \Theta }\) are those of energy density per unit temperature, or energy per unit volume per unit temperature.  The graph provides the specific heat per mole, not per unit volume, so we have to convert by multiplying by the volume per mole \(\NA/n\) where \(\NA\) is Avogadro's number and \(n\) is the number density.
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet6Problem1:100}
+\begin{equation}\label{eqn:condensedMatterProblemSet6Problem1:100}
+\begin{aligned}
 C
-= \CV \frac{\NA}{n}
-= \frac{\pi^2}{2} \frac{ \kB n T}{\TF} \frac{\NA}{n}
-= \frac{\pi^2}{2} \frac{ \kB \NA }{\TF} T.
-\end{dmath}
+&= \CV \frac{\NA}{n}
+\\ &= \frac{\pi^2}{2} \frac{ \kB n T}{\TF} \frac{\NA}{n}
+\\ &= \frac{\pi^2}{2} \frac{ \kB \NA }{\TF} T.
+\end{aligned}
+\end{equation}
 %
 Our graphed relation is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet6Problem1:120}
+\begin{equation}\label{eqn:condensedMatterProblemSet6Problem1:120}
+\begin{aligned}
 \frac{C}{T}
-=
+&=
 \gamma + \beta T^2
-\approx
+\\ &\approx
 \lr{
 2.08 + \frac{0.85}{0.3} T^2}
  \Unitfrac{mJ}{mole\, deg^2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With \(\NA = 6.022 \times 10^{23}\), plugging in the numbers yields
 %
@@ -99,13 +103,13 @@ With \(\NA = 6.022 \times 10^{23}\), plugging in the numbers yields
 %
 The ratio of theoretical to experimental is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet6Problem1:160}
+\begin{equation}\label{eqn:condensedMatterProblemSet6Problem1:160}
 \frac{\TF}{
 {\TF}_{\text{experimental} }
 }
 =
 1.20163.
-\end{dmath}
+\end{equation}
 %
 The numerical calculations for this problem can also be found in \nbref{problemSet6Problem1.nb}
 %

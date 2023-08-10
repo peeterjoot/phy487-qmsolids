@@ -48,13 +48,13 @@ Schr\"{o}dinger's equation for the particle inside the box is
 %
 Solving by separation of variables with \(\Psi = X Y Z\), we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:80}
+\begin{equation}\label{eqn:condensedMatterProblemSet6Problem2:80}
 \frac{X''}{X}
 +\frac{Y''}{Y}
 +\frac{Z''}{Z}
 =
 - \frac{2 m}{\Hbar^2} (E - V_\nought).
-\end{dmath}
+\end{equation}
 %
 Assuming independent solutions
 %
@@ -76,12 +76,12 @@ We could write \(E' = E - V_\nought\), but this is equivalent to setting the gro
 
 Our solution is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:140}
+\begin{equation}\label{eqn:condensedMatterProblemSet6Problem2:140}
 \Psi = A
 \sin\lr{ k_x (x - a)}
 \sin\lr{ k_y y }
 \sin\lr{ k_z z },
-\end{dmath}
+\end{equation}
 %
 where
 %
@@ -111,12 +111,12 @@ k_z 2 L &= s \pi,
 %
 Normalizing the wave function gives us
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:220}
+\begin{equation}\label{eqn:condensedMatterProblemSet6Problem2:220}
 \Psi = \inv{\sqrt{a} L}
 \sin\lr{ \frac{q \pi (x - a)}{2 a}}
 \sin\lr{ \frac{r \pi y}{2 L}}
 \sin\lr{ \frac{s \pi z}{2 L}}.
-\end{dmath}
+\end{equation}
 %
 The k-points in momentum space are illustrated in \cref{fig:qmSolidsPs6P2:qmSolidsPs6P2Fig2}.  However, since we are considering the particle to be in the ground state for the \(x\) direction, only the k-space points in the plane, separated by \(\pi/2L\) in each direction, will contribute to the density of states.
 %
@@ -124,12 +124,13 @@ The k-points in momentum space are illustrated in \cref{fig:qmSolidsPs6P2:qmSoli
 
 We evaluate the density of states in the same fashion as we did in class
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:240}
+\begin{equation}\label{eqn:condensedMatterProblemSet6Problem2:240}
+\begin{aligned}
 \sum_{k_y, k_z, \mathrm{spin}}
-\rightarrow
+&\rightarrow
 \sum_{\mathrm{spin}}
 \int \frac{d^2 \Bk}{ \lr{\pi/2L}^2 }
-=
+\\ &=
 \mathLabelBox
 [
    labelstyle={below of=m\themathLableNode, below of=m\themathLableNode}
@@ -139,9 +140,10 @@ We evaluate the density of states in the same fashion as we did in class
 \int
 \mathLabelBox{\inv{4}}{1 quadrant}
 2 \pi k dk
-=
+\\ &=
 \frac{A}{\pi} \int k dk.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 To convert to an energy integral, we use
 %
@@ -179,41 +181,45 @@ The wave function is
 %
 and the k space points of interest are separated by \(\pi/2 L\) as before.  The density of states calculation goes
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:360}
+\begin{equation}\label{eqn:condensedMatterProblemSet6Problem2:360}
+\begin{aligned}
 \sum_{k_z, \mathrm{spin}}
-\rightarrow
+&\rightarrow
 \sum_{\mathrm{spin}}
 \int \frac{dk_z }{ \pi/2L }
-=
+\\ &=
 2
 \frac{2 L}{\pi}
 \int
 dk_z
-=
+\\ &=
 \frac{4 L}{\pi}
 \int dk_z.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Converting the differential to energy space, we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:380}
+\begin{equation}\label{eqn:condensedMatterProblemSet6Problem2:380}
+\begin{aligned}
 dk_z
-=
+&=
 \frac{m}{\Hbar^2} \frac{dE}{k_z}
-=
+\\ &=
 \frac{m}{\Hbar^2} \frac{dE}{\sqrt{ 2 m E}/\Hbar}
-=
+\\ &=
 \inv{\Hbar} \sqrt{\frac{m}{2 E}} dE.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Inserting this gives us
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet6Problem2:400}
+\begin{equation}\label{eqn:condensedMatterProblemSet6Problem2:400}
 L \int D(E) dE =
 \frac{4 L}{\pi}
 \int
 \inv{\Hbar} \sqrt{\frac{m}{2 E}} dE,
-\end{dmath}
+\end{equation}
 %
 or
 \boxedEquation{eqn:condensedMatterProblemSet6Problem2:420}{

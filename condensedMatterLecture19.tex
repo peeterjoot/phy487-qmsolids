@@ -68,10 +68,11 @@ An important quantity is the \textAndIndex{Fermi velocity}
 %
 Linearizing \(E(\Bk)\) around \(\Bk_{\txtF}\)
 %
-\begin{dmath}\label{eqn:condensedMatterLecture19:120}
+\begin{equation}\label{eqn:condensedMatterLecture19:120}
+\begin{aligned}
 E(\Bk)
-= E(\Bk_{\txtF}) + \delta k_\perp \lr{ \frac{dE}{d k_\perp} }.
-\equiv E(\Bk_{\txtF}) + \delta k_\perp
+&= E(\Bk_{\txtF}) + \delta k_\perp \lr{ \frac{dE}{d k_\perp} }.
+\\ &\equiv E(\Bk_{\txtF}) + \delta k_\perp
 \mathLabelBox
 {
 \frac{\Hbar \Bk_{\txtF}}{m^\conj}
@@ -79,7 +80,8 @@ E(\Bk)
 {
 \(\Bp_{\txtF}\)
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Here \(m^\conj\) is the \textAndIndex{effective mass}.  Keep in mind that the Fermi surface is often not spherical as in \cref{fig:qmSolidsL19:qmSolidsL19Fig2}, and \cref{fig:qmSolidsL19:qmSolidsL19Fig3}.
 %
@@ -104,20 +106,22 @@ Wave vector of wave package advances steadily, as in \cref{fig:qmSolidsL19:qmSol
 
 The time rate of change of the velocity is
 %
-\begin{dmath}\label{eqn:condensedMatterLecture19:180}
+\begin{equation}\label{eqn:condensedMatterLecture19:180}
+\begin{aligned}
 \vdot_i
-= \inv{\Hbar} \ddt{} \lr{ \spacegrad_\Bk E(\Bk)}_i
-= \inv{\Hbar} \sum_j \frac{\partial^2 E}{\partial k_i \partial k_j} \dot{k}_j
-= \sum_j \lr{ \inv{m^\conj}}_{i j} \lr{ -e \calE_j }.
-\end{dmath}
+&= \inv{\Hbar} \ddt{} \lr{ \spacegrad_\Bk E(\Bk)}_i
+\\ &= \inv{\Hbar} \sum_j \frac{\partial^2 E}{\partial k_i \partial k_j} \dot{k}_j
+\\ &= \sum_j \lr{ \inv{m^\conj}}_{i j} \lr{ -e \calE_j }.
+\end{aligned}
+\end{equation}
 %
 This time we call
 %
-\begin{dmath}\label{eqn:condensedMatterLecture19:200}
+\begin{equation}\label{eqn:condensedMatterLecture19:200}
 \lr{ \inv{m^\conj} }_{i j}
 = \inv{\Hbar^2}
 \frac{\partial^2 E}{\partial k_i \partial k_j}.
-\end{dmath}
+\end{equation}
 %
 the \textAndIndex{effective mass tensor}, which represents ``resistance'' to applied force.  For example in \cref{fig:qmSolidsL19:qmSolidsL19Fig5}.
 %
@@ -141,14 +145,16 @@ Some interesting conditions for the effective mass tensor are
 
 We've been considering a single electron.  What about a metal?
 %
-\begin{dmath}\label{eqn:condensedMatterLecture19:220}
+\begin{equation}\label{eqn:condensedMatterLecture19:220}
+\begin{aligned}
 \Bj
-= -\frac{e}{V} \sum_\Bk \Bv(\Bk)
-= - e\frac{2}{(2 \pi)^3} \int d\Bk v(\Bk)
-= - e\frac{2}{8 \pi^3} \int d\Bk
+&= -\frac{e}{V} \sum_\Bk \Bv(\Bk)
+\\ &= - e\frac{2}{(2 \pi)^3} \int d\Bk v(\Bk)
+\\ &= - e\frac{2}{8 \pi^3} \int d\Bk
 f(E(\Bk), \bcE)
 \spacegrad_\Bk E(\Bk).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Here \(f(E(\Bk, \bcE)\) is the electron distribution in presence of field \(\bcE\).
 %

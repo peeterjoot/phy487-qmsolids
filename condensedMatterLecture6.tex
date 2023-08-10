@@ -29,7 +29,7 @@
 
 Constructive interference is diffraction peaks (spots).  In general the intensity is
 %
-\begin{dmath}\label{eqn:condensedMatterLecture6:20}
+\begin{equation}\label{eqn:condensedMatterLecture6:20}
 I(\BK)
 =
 \frac{\Abs{A_\nought}^2}{{R'}^2}
@@ -37,11 +37,11 @@ I(\BK)
 \int \rho(\Br) e^{-i \BK \cdot \Br}
 d\Br
 }^2,
-\end{dmath}
+\end{equation}
 %
 so that after a periodic decomposition we have
 %
-\begin{dmath}\label{eqn:condensedMatterLecture6:40}
+\begin{equation}\label{eqn:condensedMatterLecture6:40}
 I(\BK)
 =
 \frac{\Abs{A_\nought}^2}{{R'}^2}
@@ -51,7 +51,7 @@ I(\BK)
 e^{i (\BG - \BK) \cdot \Br}
 d\Br
 }^2.
-\end{dmath}
+\end{equation}
 %
 When
 %
@@ -78,7 +78,7 @@ This is effectively a \(\delta_{\BK, \BG}\) condition, defining the \underlineAn
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL6Fig2}{Diffraction.}{fig:qmSolidsL6:qmSolidsL6Fig2}{0.2}
 In particular
 %
-\begin{dmath}\label{eqn:condensedMatterLecture6:40b}
+\begin{equation}\label{eqn:condensedMatterLecture6:40b}
 I(\BK = \BG)
 =
 \frac{\Abs{A_\nought}^2}{{R'}^2}
@@ -86,7 +86,7 @@ I(\BK = \BG)
 \rho_\BG
 }^2
 V^2,
-\end{dmath}
+\end{equation}
 %
 where \(V\) is the scattering volume.  This is discussed further in \citep{ibach2009solid} \S 3.3.
 %
@@ -154,12 +154,12 @@ As another example, consider an fcc configuration, as in \cref{fig:qmSolidsL6:qm
 %}
 We use
 %
-\begin{dmath}\label{eqn:condensedMatterLecture6:180}
+\begin{equation}\label{eqn:condensedMatterLecture6:180}
 \BG_{hkl} =
 j \Bg_1 +
 k \Bg_2 +
 l \Bg_3,
-\end{dmath}
+\end{equation}
 %
 with this perpendicular to a plane that we can identify as the \((h, k, l)\) plane.
 \makeexample{Miller index demonstration.}{example:condensedMatterLecture6:3}{
@@ -169,35 +169,39 @@ Here we illustrate two pairs of arbitrary planes each passing through two lattic
 %\cref{fig:qmSolidsL6:qmSolidsL6Fig6}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL6Fig6}{Miller index demonstration.}{fig:qmSolidsL6:qmSolidsL6Fig6}{0.2}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture6:200}
+\begin{equation}\label{eqn:condensedMatterLecture6:200}
+\begin{aligned}
 \lr{ 1 \times \Ba_1, \inv{2} \times \Ba_2, - \Ba_3 }
-\implies
+&\implies
 \lr{
 \frac{p}{1},
 \frac{p}{\inv{2}},
 -\frac{p}{1}
 }
-\implies
+\\ &\implies
 \lr{
 1, 2, -1
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 To find the perpendicular, define 2 non-parallel vectors in a plane: \(\Ba_1 - \Ba_2/2\), \(-\Ba_3 - \Ba_2/2\).
 
 Perpendicular vector is
 %
-\begin{dmath}\label{eqn:condensedMatterLecture6:220}
+\begin{equation}\label{eqn:condensedMatterLecture6:220}
+\begin{aligned}
 %\perp
-\propto
+&\propto
 (\Ba_1 - \Ba_2/2) \cross (-\Ba_3 - \Ba_2/2)
-=
+\\ &=
 \inv{2} \Ba_2 \cross \Ba_3
 +\Ba_3 \cross \Ba_1
 - \inv{2} \Ba_1 \cross \Ba_2
-\propto
+\\ &\propto
 \Bg_1 + 2 \Bg_2 - \Bg_3 = \BG_{1, 2, -1}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 }
 A more general treatment can be found in \citep{ibach2009solid} \S 3.4.  That section of the text introduces a variety of indices that are worth enumerating
@@ -216,44 +220,46 @@ The text uses \((m, n, o) = (1, 2, 2)\) as an example.  It is redrawn here with 
 %
 We can factor \(\BG_{h k l}\) as the cross products of two vectors in the plane
 %
-\begin{dmath}\label{eqn:condensedMatterLecture6:300}
+\begin{equation}\label{eqn:condensedMatterLecture6:300}
+\begin{aligned}
 \frac{2 \pi p}{ m n o \Ba_1 \cdot (\Ba_2 \cross \Ba_3) }
 \lr{ m \Ba_1 - n \Ba_2 }
 \cross \lr{ n \Ba_2 - o \Ba_3 }
-=
+&=
 \frac{2 \pi p}{ m n o \Ba_1 \cdot (\Ba_2 \cross \Ba_3) }
 \lr{
 m n \Ba_1 \cross \Ba_2
 + n o \Ba_2 \cross \Ba_3
 + o m \Ba_3 \cross \Ba_1
 }
-=
+\\ &=
 \frac{2 \pi p}{ \Ba_1 \cdot (\Ba_2 \cross \Ba_3) }
 \lr{
 \inv{o} \Ba_1 \cross \Ba_2
 + \inv{m} \Ba_2 \cross \Ba_3
 + \inv{n} \Ba_3 \cross \Ba_1
 }
-=
+\\ &=
 \frac{2 \pi p}{ \Ba_1 \cdot (\Ba_2 \cross \Ba_3) }
 \lr{
 h' \Ba_2 \cross \Ba_3
 + k' \Ba_3 \cross \Ba_1
 l' \Ba_1 \cross \Ba_2
 }
-=
+\\ &=
 \frac{2 \pi}{ \Ba_1 \cdot (\Ba_2 \cross \Ba_3) }
 \lr{
 h \Ba_2 \cross \Ba_3
 + k \Ba_3 \cross \Ba_1
 + l \Ba_1 \cross \Ba_2
 }
-=
+\\ &=
 h \Bg_1
 +k \Bg_2
 +l \Bg_3
-= \BG_{h k l}.
-\end{dmath}
+\\ &= \BG_{h k l}.
+\end{aligned}
+\end{equation}
 %
 Observe that this geometrical identification shows that the \(h k l\) indices of \(\BG_{h k l}\) are the reciprocal lattice indices in momentum (dual) space, not the original \(m n o\) indices of the position space lattice.
 %
@@ -265,22 +271,22 @@ Looking back to \cref{fig:qmSolidsL6:qmSolidsL6Fig9} we see that the distance be
 The text calls the distance from the origin to the first lattice plane
 %If \(d_{hkl}\) is the distance between planes, then
 %
-\begin{dmath}\label{eqn:condensedMatterLecture6:240a}
+\begin{equation}\label{eqn:condensedMatterLecture6:240a}
+\begin{aligned}
 d'_{hkl}
-=
-m \Ba_1 \cdot \Gcap_{h k l}
-=
-m \Ba_1 \cdot \frac{\BG_{h k l}}{ G_{h k l}}
-= m \frac{ 2 \pi h }{ G_{h k l} }
-= \frac{ 2 \pi p }{ G_{h k l} }.
-\end{dmath}
+&= m \Ba_1 \cdot \Gcap_{h k l}
+\\ &= m \Ba_1 \cdot \frac{\BG_{h k l}}{ G_{h k l}}
+\\ &= m \frac{ 2 \pi h }{ G_{h k l} }
+\\ &= \frac{ 2 \pi p }{ G_{h k l} }.
+\end{aligned}
+\end{equation}
 %
 and then scales this as
-\begin{dmath}\label{eqn:condensedMatterLecture6:240}
+\begin{equation}\label{eqn:condensedMatterLecture6:240}
 d_{hkl} =
 \frac{d'_{hkl}}{p} =
 \frac{2 \pi}{ G_{hkl} },
-\end{dmath}
+\end{equation}
 %
 calling this the distance to the ``nearest'' lattice plane.  It initially seemed to me that \(d'_{hkl}\) ought to be described as the distance to the nearest lattice plane, since the distance from the origin appeared like it was the separation of the two closest planes.  A classmate James explained what I had failed to understand.  The entire lattice that the sample primitive lattice cell would generate is not just replicated for integer multiples of \(2 \Ba_1\), but all the multiples of \(\Ba_1\) (there are many possible lattice planes and we have to allow for all integer multiples \(\Br_n = m \Ba_1 + n \Ba_2 + o \Ba_3\)).   This is illustrated in \cref{fig:qmSolidsL6:qmSolidsL6Fig10}.
 %

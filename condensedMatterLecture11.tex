@@ -70,7 +70,7 @@ solve for 1 electron
 %
 where
 %
-\begin{dmath}\label{eqn:condensedMatterLecture11:40}
+\begin{equation}\label{eqn:condensedMatterLecture11:40}
 V(\Br) =
 \left\{
 \begin{array}{l l}
@@ -78,11 +78,11 @@ V_\nought & \quad \mbox{inside cube} \\
 \infty & \quad \mbox{outside}
 \end{array}
 \right.
-\end{dmath}
+\end{equation}
 %
 This implies a boundary condition \(\Psi(\Br) = 0\) outside of the box.  Using separation of variables
 %
-\begin{dmath}\label{eqn:condensedMatterLecture11:60}
+\begin{equation}\label{eqn:condensedMatterLecture11:60}
 -\frac{\Hbar^2}{2 m} \lr{
 \PDSq{x}{}
 +\PDSq{y}{}
@@ -96,19 +96,19 @@ This implies a boundary condition \(\Psi(\Br) = 0\) outside of the box.  Using s
 \Psi_x(x)
 \Psi_y(y)
 \Psi_z(z),
-\end{dmath}
+\end{equation}
 %
 i.e. \(\Psi(\Br)\) is separable.
 
 This is a set of equations of the form
 %
-\begin{dmath}\label{eqn:condensedMatterLecture11:80}
+\begin{equation}\label{eqn:condensedMatterLecture11:80}
 -\frac{\Hbar^2}{2 m}
 \PDSq{x}{\Psi_x(x)}
 =
 E_x
 \Psi_x(x),
-\end{dmath}
+\end{equation}
 %
 where
 %
@@ -130,23 +130,25 @@ k_x = \frac{ n_x \pi}{L}.
 %
 In 3D this is
 %
-\begin{dmath}\label{eqn:condensedMatterLecture11:160}
+\begin{equation}\label{eqn:condensedMatterLecture11:160}
 \Psi(\Br) =
 \lr{\frac{2}{L}}^{3/2}
 \sin( k_x x )
 \sin( k_y y )
 \sin( k_z z ),
-\end{dmath}
+\end{equation}
 %
 where
-\begin{dmath}\label{eqn:condensedMatterLecture11:180}
+\begin{equation}\label{eqn:condensedMatterLecture11:180}
+\begin{aligned}
 E(\Bk)
-= \frac{\Hbar}{2m} \lr{
+&= \frac{\Hbar}{2m} \lr{
 k_x^2
 +k_y^2
 +k_z^2 }
-= \frac{\Hbar \Bk^2}{2m}.
-\end{dmath}
+\\ &= \frac{\Hbar \Bk^2}{2m}.
+\end{aligned}
+\end{equation}
 %
 This is a parabolic dispersion, sketched in \cref{fig:qmSolidsL11:qmSolidsL11Fig7}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL11Fig7}{Parabolic energy dispersion.}{fig:qmSolidsL11:qmSolidsL11Fig7}{0.15}
@@ -173,12 +175,13 @@ here we switch notations and use \(V\) for volume, and not \(V\) as potential.
 \index{density of states}
 As with the phonon, properties are calculated via k space sums using the density of states.
 %
-\begin{dmath}\label{eqn:condensedMatterLecture11:240}
+\begin{equation}\label{eqn:condensedMatterLecture11:240}
+\begin{aligned}
 \sum_{k_x, k_y, k_z, \mathrm{spin}}
-\rightarrow
+&\rightarrow
 \sum_{\mathrm{spin}}
 \int \frac{d^3 \Bk}{ \lr{\pi/L}^3 }
-=
+\\ &=
 \mathLabelBox
 [
    labelstyle={below of=m\themathLableNode, below of=m\themathLableNode}
@@ -188,9 +191,10 @@ As with the phonon, properties are calculated via k space sums using the density
 \int
 \mathLabelBox{\inv{8}}{1 octant}
 4 \pi k^2 dk
-=
+\\ &=
 \frac{V}{\pi^2} \int k^2 dk,
-\end{dmath}
+\end{aligned}
+\end{equation}
 where \( \rightarrow \) represents a quasi continuous approximation.
 %
 Now turn this into \(\int dE\) as with phonons, using
@@ -206,20 +210,24 @@ dE = \frac{\Hbar^2 k}{m} dk.
 %
 This gives
 %
-\begin{dmath}\label{eqn:condensedMatterLecture11:300}
-k^2 dk =
+\begin{equation}\label{eqn:condensedMatterLecture11:300}
+\begin{aligned}
+k^2 dk &=
 \sqrt{\frac{ 2 m E}{\Hbar^2}} \frac{m}{\Hbar^2} dE
-=
+\\ &=
 \inv{2} \lr{ \frac{2m}{\Hbar^2} }^{3/2} \sqrt{E} dE,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so that
-\begin{dmath}\label{eqn:condensedMatterLecture11:320}
+\begin{equation}\label{eqn:condensedMatterLecture11:320}
+\begin{aligned}
 \sum_{k_x, k_y, k_z, \mathrm{spin}}
-\rightarrow
+&\rightarrow
 \frac{V}{2 \pi^2} \lr{ \frac{2m}{\Hbar^2} }^{3/2} \int \sqrt{E} dE.
-\equiv V \int D(E) dE.
-\end{dmath}
+\\ &\equiv V \int D(E) dE.
+\end{aligned}
+\end{equation}
 %
 The \textAndIndex{density of states} per volume
 %
@@ -276,10 +284,12 @@ This is typically of the order \(10^{10} m^{-1} = \angstrom^{-1}\).
 
 For reference, we get for \(\EF\)
 %
-\begin{dmath}\label{eqn:condensedMatterLecture11:380b}
+\begin{equation}\label{eqn:condensedMatterLecture11:380b}
+\begin{aligned}
 \EF
-= \frac{ \Hbar^2 \kF^2 }{2m}
-= \frac{ \Hbar^2}{2m} \lr{ 3 \pi^2 n}^{2/3}.
-\end{dmath}
+&= \frac{ \Hbar^2 \kF^2 }{2m}
+\\ &= \frac{ \Hbar^2}{2m} \lr{ 3 \pi^2 n}^{2/3}.
+\end{aligned}
+\end{equation}
 %
 %\EndArticle

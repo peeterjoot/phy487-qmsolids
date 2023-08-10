@@ -40,9 +40,10 @@ where \(\kappa^2 = e^2 D(\EF)/\epsilon_\nought\).
 \makeSubAnswer{}{condensedMatter:problemSet7:1a}
 With \(\tau = \kB T\), the derivative is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem1:40}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem1:40}
+\begin{aligned}
 \PD{E}{f}
-=
+&=
 -\inv{\tau} \frac
 {
 e^{(E - \mu)/\tau}
@@ -53,7 +54,7 @@ e^{(E - \mu)/\tau}
 + 1
 }^2
 }
-=
+\\ &=
 -\inv{\tau} \frac
 {
 1
@@ -62,13 +63,15 @@ e^{(E - \mu)/\tau}
 \lr{ e^{(E - \mu)/\tau} + 1 }
 \lr{ e^{-(E - \mu)/\tau} + 1 }
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Consider this first for \(E > \mu\), where in the limit \(\tau \rightarrow 0\) we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem1:60}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem1:60}
+\begin{aligned}
 \PD{E}{f}
-\approx
+&\approx
 -\inv{\tau} \frac
 {
 1
@@ -76,7 +79,7 @@ Consider this first for \(E > \mu\), where in the limit \(\tau \rightarrow 0\) w
 {
 \lr{ e^{(E - \mu)/\tau} + 1 }
 }
-=
+\\ &=
 -\inv{
 2 \tau
 +
@@ -89,15 +92,17 @@ Consider this first for \(E > \mu\), where in the limit \(\tau \rightarrow 0\) w
 (E - \mu)^3/\tau^2
 + \cdots
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 As \(\tau \rightarrow 0\), the denominator is dominated by the ever increasing powers of \(1/\tau\), and thus goes to zero.
 
 Similarly for \(E < \mu\) and \(\tau \rightarrow 0\) we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem1:80}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem1:80}
+\begin{aligned}
 \PD{E}{f}
-\approx
+&\approx
 -\inv{\tau} \frac
 {
 1
@@ -105,7 +110,7 @@ Similarly for \(E < \mu\) and \(\tau \rightarrow 0\) we have
 {
 \lr{ e^{(\mu - E)/\tau} + 1 }
 }
-=
+\\ &=
 -\inv{
 2 \tau
 +
@@ -118,24 +123,26 @@ Similarly for \(E < \mu\) and \(\tau \rightarrow 0\) we have
 (\mu - E)^3/\tau^2
 + \cdots
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This has the same form as \eqnref{eqn:condensedMatterProblemSet7Problem1:60}, so clearly also approaches zero as \(\tau \rightarrow 0\).
 
 For the \(E = \mu\) condition we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem1:100}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem1:100}
 \PD{E}{f} = -\inv{4 \tau}
 %\xrightarrow[\tau \rightarrow 0]{}
 \xrightarrow{\tau \rightarrow 0}
 -\infty.
-\end{dmath}
+\end{equation}
 %
 Now consider the integral of the derivative, taking some care in the neighborhood \(\Abs{E - \mu} < \epsilon\).  We have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem1:120}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem1:120}
+\begin{aligned}
 -\int_{-\infty}^\infty dE \PD{E}{f}
-=
+&=
 \int_{-\infty}^\infty \frac{dE}{\tau}
 \frac
 {
@@ -147,7 +154,7 @@ e^{(E - \mu)/\tau}
 + 1
 }^2
 }
-=
+\\ &=
 \int_{-\infty}^{\mu - \epsilon} \frac{dE}{\tau}
 \frac
 {
@@ -183,7 +190,8 @@ e^{(E - \mu)/\tau}
 + 1
 }^2
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With \(x = (E - \mu)/\tau\) and \(dx = dE/\tau\), we have
 %
@@ -293,18 +301,19 @@ or
 %
 Fourier transforming, assuming the potential has only an \(x\) dependence \(U = U(x)\), we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem1:220}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem1:220}
+\begin{aligned}
 \int dx
 e^{i k x}
 \frac{d^2 U(x)}{dx^2}
-=
+&=
 -\frac{\delta \rho_\nought}{\epsilon_\nought}
 \int dx e^{i k x}
 \cos(q x)
 +
 \kappa^2
 \int dx e^{i k x} U(x)
-=
+\\ &=
 -\frac{\delta \rho_\nought}{\epsilon_\nought}
 \inv{2} \int dx
 \lr{
@@ -313,7 +322,7 @@ e^{i (k + q) x}
 }
 +
 \kappa^2 \tilde{U}(k)
-=
+\\ &=
 -\frac{\pi \delta \rho_\nought}{\epsilon_\nought}
 \lr{
 \delta(k + q)
@@ -321,11 +330,12 @@ e^{i (k + q) x}
 }
 +
 \kappa^2 \tilde{U}(k).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Integrating the LHS twice by parts, and rearranging, this is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem1:240}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem1:240}
 \tilde{U}(k) =
 -\frac{\pi \delta \rho_\nought}{\epsilon_\nought
 \lr{k^2 + \kappa^2}
@@ -334,14 +344,15 @@ Integrating the LHS twice by parts, and rearranging, this is
 \delta(k + q)
 +\delta(k - q)
 }.
-\end{dmath}
+\end{equation}
 %
 A final inverse transform yields the real space potential
-\begin{dmath}\label{eqn:condensedMatterProblemSet7Problem1:260}
+\begin{equation}\label{eqn:condensedMatterProblemSet7Problem1:260}
+\begin{aligned}
 U(x)
-=
+&=
 \inv{2 \pi} \int dk e^{-i k x} \tilde{U}(k)
-=
+\\ &=
 -\frac{\delta \rho_\nought}{2 \epsilon_\nought}
 \lr{
 \frac
@@ -360,9 +371,10 @@ e^{-i k q}
 \lr{(-q)^2 + \kappa^2}
 }
 }
-=
+\\ &=
 -\frac{\delta \rho_\nought \cos(q x)}{\epsilon_\nought \lr{ q^2 + \kappa^2} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Referring back to \eqnref{eqn:condensedMatterProblemSet7Problem1:280}, the induced electron density is
 \boxedEquation{eqn:condensedMatterProblemSet7Problem1:300}{

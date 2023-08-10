@@ -39,14 +39,14 @@ The diffraction pattern is the constructive interference of the re-radiated x-ra
 
 At \(P\), primary beam has amplitude
 %
-\begin{dmath}\label{eqn:condensedMatterLecture5:20}
+\begin{equation}\label{eqn:condensedMatterLecture5:20}
 A_p(\Br, t) =
 A_\nought
 \exp\lr{ i \lr{
 k_\nought
 \cdot
 \lr{ \BR + \Br} - \omega_\nought t}  }.
-\end{dmath}
+\end{equation}
 %
 Here \(A_\nought\) is constant everywhere and \(k_\nought = 2 \pi/\lambda_\nought\).
 
@@ -72,8 +72,9 @@ This density is largest near the nucleus, at least for large Z (heavy) atoms lik
 
 Amplitude at \(B\), due to \(\Br\)
 %
-\begin{dmath}\label{eqn:condensedMatterLecture5:80}
-A_B(\Br) = A_p(\Br) \rho(\Br)
+\begin{equation}\label{eqn:condensedMatterLecture5:80}
+\begin{aligned}
+A_B(\Br) &= A_p(\Br) \rho(\Br)
 \frac{
 e^{
 i \Bk \cdot
@@ -85,7 +86,7 @@ i \Bk \cdot
 \BR' - \Br
 }
 }
-\approx
+\\ &\approx
 A_p(\Br, t) \rho(\Br)
 \frac{
 e^{
@@ -96,7 +97,8 @@ e^{
 {
   \Abs{\BR'}
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 time independent part of \(\rho(\Br)\) => secondary beam has frequency \(\omega_\nought\), or
 %
@@ -110,7 +112,7 @@ The vector \(\BR'\) determines the direction of \(\Bk\).
 
 If \(R' \gg r\), \(\Bk\) is close to the same for all \(\Br\).  Then \eqnref{eqn:condensedMatterLecture5:80} is approximately
 %
-\begin{dmath}\label{eqn:condensedMatterLecture5:140}
+\begin{equation}\label{eqn:condensedMatterLecture5:140}
 A_B(\Br) \approx
 \mathLabelBox
 [
@@ -129,11 +131,11 @@ A_B(\Br) \approx
 \rho(\Br) e^{ i \lr{ \Bk_\nought - \Bk} \cdot \Br } e^{-i \omega_\nought t}
 }
 {dependent of \(\Br\)}.
-\end{dmath}
+\end{equation}
 %
 Total amplitude at \(B\)
 %
-\begin{dmath}\label{eqn:condensedMatterLecture5:160}
+\begin{equation}\label{eqn:condensedMatterLecture5:160}
 A_B \propto e^{-i \omega_\nought t } \int \rho(\Br) e^{ i
 \mathLabelBox
 %[
@@ -145,17 +147,17 @@ A_B \propto e^{-i \omega_\nought t } \int \rho(\Br) e^{ i
 { \(\equiv - \BK\)}
 \cdot \Br }
 d\Br.
-\end{dmath}
+\end{equation}
 %
 So that the intensity is
 %
-\begin{dmath}\label{eqn:condensedMatterLecture5:180}
+\begin{equation}\label{eqn:condensedMatterLecture5:180}
 I_\BB \propto \Abs{A_B}^2 \propto
 \Abs{
 \int \rho(\Br) e^{-i \BK \cdot \Br}
 d\Br
 }^2.
-\end{dmath}
+\end{equation}
 %
 This is the Fourier transform of the scattering density.
 %
@@ -187,12 +189,12 @@ Show that
 %
 With
 %
-\begin{dmath}\label{eqn:condensedMatterLecture5:260}
+\begin{equation}\label{eqn:condensedMatterLecture5:260}
 \Br_n =
 n_1 \Ba_1 +
 n_2 \Ba_2 +
 n_3 \Ba_3,
-\end{dmath}
+\end{equation}
 %
 find the \(\BG\)'s, such that
 %
@@ -213,12 +215,12 @@ where \(m\) is an integer.
 
 Try
 %
-\begin{dmath}\label{eqn:condensedMatterLecture5:340}
+\begin{equation}\label{eqn:condensedMatterLecture5:340}
 \BG =
 h \Bg_1 +
 k \Bg_2 +
 l \Bg_3,
-\end{dmath}
+\end{equation}
 %
 where \(h, k, l\) are integers.
 
@@ -276,24 +278,24 @@ We introduce \underlineAndIndex{reciprocal vectors} defined by
 The general formula in 3D is
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:condensedMatterLecture5:460}
+\begin{equation}\label{eqn:condensedMatterLecture5:460}
 \Bg_1 = 2 \pi
 \frac
 { \Ba_2 \cross \Ba_3 }
 { \Ba_1 \cdot \lr{ \Ba_2 \cross \Ba_3} }
-\end{dmath}
-\begin{dmath}\label{eqn:condensedMatterLecture5:460b}
+\end{equation}
+\begin{equation}\label{eqn:condensedMatterLecture5:460b}
 \Bg_2 = 2 \pi
 \frac
 { \Ba_3 \cross \Ba_2 }
 { \Ba_2 \cdot \lr{ \Ba_3 \cross \Ba_1} }
-\end{dmath}
-\begin{dmath}\label{eqn:condensedMatterLecture5:460c}
+\end{equation}
+\begin{equation}\label{eqn:condensedMatterLecture5:460c}
 \Bg_3 = 2 \pi
 \frac
 { \Ba_1 \cross \Ba_3 }
 { \Ba_3 \cdot \lr{ \Ba_1 \cross \Ba_2} }.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 The numerator cross product ensures that \(\Bg_1\) is perpendicular to \(\Ba_2\) and \(\Ba_3\).  The one in the denominator ``cancels'' the \(\Ba_2 \cross \Ba_3\) in the numerator.

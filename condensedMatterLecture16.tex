@@ -47,12 +47,14 @@ where
 %
 The one electron Hamiltonian
 %
-\begin{dmath}\label{eqn:condensedMatterLecture16:60}
+\begin{equation}\label{eqn:condensedMatterLecture16:60}
+\begin{aligned}
 \hat{H}
-= -\frac{\Hbar}{2m} \spacegrad^2 + \sum_{n'} V_A(\Br - \Br_n')
-= -\frac{\Hbar}{2m} \spacegrad^2 + V_A(\Br - \Br_n) + \sum_{n' \ne n} V_A(\Br - \Br_n')
-= \hat{H}_A(\Br - \Br_n) + v(\Br - \Br_n).
-\end{dmath}
+&= -\frac{\Hbar}{2m} \spacegrad^2 + \sum_{n'} V_A(\Br - \Br_n')
+\\ &= -\frac{\Hbar}{2m} \spacegrad^2 + V_A(\Br - \Br_n) + \sum_{n' \ne n} V_A(\Br - \Br_n')
+\\ &= \hat{H}_A(\Br - \Br_n) + v(\Br - \Br_n).
+\end{aligned}
+\end{equation}
 %
 To get an idea what \(v(\Br - \Br_n)\) might look like, consider \(v(x) = -1/\Abs{x}\), with \(\Br_n = 10 n \xcap\).  The potential looks like \cref{fig:tightBindingInverseRadialPotential:tightBindingInverseRadialPotentialFig1}, with the periodic extension in \cref{fig:tightBindingInverseRadialPotentialPeriodic:tightBindingInverseRadialPotentialPeriodicFig2}, and finally, \(v(\Br - \Br_0)\) in \cref{fig:tightBindingInverseRadialPotentialPeriodicOneMissing:tightBindingInverseRadialPotentialPeriodicOneMissingFig3}.  In the last figure we see the omission of the infinite negative peak at the origin, allowing the trailing contributions from neighboring sites to add up to a value greater than the peak values at the other sites.
 %
@@ -62,11 +64,13 @@ To get an idea what \(v(\Br - \Br_n)\) might look like, consider \(v(x) = -1/\Ab
 
 Look for a solution that is a Linear Combination of Atomic Orbitals (LCAO).
 %
-\begin{dmath}\label{eqn:condensedMatterLecture16:80}
+\begin{equation}\label{eqn:condensedMatterLecture16:80}
+\begin{aligned}
 \Psi_\Bk(\Br) \sim \Phi_\Bk(\Br)
-= \sum_n a_n \phi_i(\Br - \Br_n)
-= \sum_n e^{i \Bk \cdot \Br_n} \phi_i(\Br - \Br_n),
-\end{dmath}
+&= \sum_n a_n \phi_i(\Br - \Br_n)
+\\ &= \sum_n e^{i \Bk \cdot \Br_n} \phi_i(\Br - \Br_n),
+\end{aligned}
+\end{equation}
 %
 so by Bloch's theorem
 %
@@ -80,20 +84,22 @@ implies
 \Phi_\Bk(\Br +\Br_m) = \Phi_\Bk(\Br) e^{i \Bk \cdot \Br_m},
 \end{equation}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture16:140}
+\begin{equation}\label{eqn:condensedMatterLecture16:140}
+\begin{aligned}
 \Phi_\Bk(\Br +\Br_m)
-=
+&=
 \sum_n
 e^{i \Bk \cdot \Br_n}
 \phi_i( \Br + \Br_m - \Br_n)
-=
+\\ &=
 e^{i \Bk \cdot \Br_m}
 \sum_n
 e^{i \Bk \cdot (\Br_n - \Br_m)}
 \phi_i( \Br + (\Br_n - \Br_m)).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture16:160}
+\begin{equation}\label{eqn:condensedMatterLecture16:160}
 \Phi_{\Bk + \BG} = \sum_n e^{i \Bk \cdot \Br_n}
 \mathLabelBox
 {
@@ -102,13 +108,13 @@ e^{i \BG \cdot \Br_n}
 {\(1\)}
 \phi_i(\Br - \Br_n)
 = \Phi_\Bk(\Br).
-\end{dmath}
+\end{equation}
 %
 \paragraph{Normalization}
 %
 Calculate
 %
-\begin{dmath}\label{eqn:condensedMatterLecture16:340}
+\begin{equation}\label{eqn:condensedMatterLecture16:340}
 E(\Bk) =
 \frac{
 	\bra{
@@ -118,30 +124,33 @@ E(\Bk) =
 {
 	\braket{\Phi_\Bk}{\Phi_\Bk}
 }.
-\end{dmath}
+\end{equation}
 %
 With
 %
-\begin{dmath}\label{eqn:condensedMatterLecture16:180}
+\begin{equation}\label{eqn:condensedMatterLecture16:180}
+\begin{aligned}
 \braket{\Phi_\Bk}{\Phi_\Bk}
- =
+&=
 \sum_{n, m} e^{i \Bk \cdot (\Br_n - \Br_m)}
 \times
 \int d\Br
 \phi_i^\conj( \Br - \Br_m)
 \phi_i( \Br - \Br_n)
-=
+\\ &=
 \left\{
 \begin{array}{l l}
 1 & \quad \mbox{if \(m = n\)} \\
 0 & \quad \mbox{otherwise}
 \end{array}
 \right.
-\approx N.
-\end{dmath}
+\\ &\approx N.
+\end{aligned}
+\end{equation}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture16:200}
-E(\Bk) \approx \inv{N}
+\begin{equation}\label{eqn:condensedMatterLecture16:200}
+\begin{aligned}
+E(\Bk) &\approx \inv{N}
 \sum_{n, m} e^{i \Bk \cdot (\Br_n - \Br_m)}
 \int d\Br
 \phi_i^\conj( \Br - \Br_m)
@@ -149,7 +158,7 @@ E(\Bk) \approx \inv{N}
 \mathLabelBox{\hat{H}_A(\Br - \Br_n) + v(\Br - \Br_n)}{exact}
 )
 \phi_i( \Br - \Br_n)
-\approx
+\\ &\approx
 \sum_{n, m} e^{i \Bk \cdot (\Br_n - \Br_m)}
 \int d\Br
 \phi_i^\conj( \Br - \Br_m)
@@ -158,7 +167,8 @@ E_i
 + v(\Br - \Br_n)
 }
 \phi_i( \Br - \Br_n).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 In the integral we have from \(\hat{H}_A\), a value of \(E_i\) if \(m = n\)f, and zero otherwise.  For the \(v\) contribution to the integral, we have
 
@@ -186,12 +196,12 @@ v(\Br - \Br_n)
 %
 So
 %
-\begin{dmath}\label{eqn:condensedMatterLecture16:240}
+\begin{equation}\label{eqn:condensedMatterLecture16:240}
 E(\Bk) \approx \inv{N}
 \lr{
 \sum_n E_i - \sum_n A - \sum_{n, m} e^{i \Bk \cdot (\Br_n - \Br_m)} B
 },
-\end{dmath}
+\end{equation}
 %
 or
 %
@@ -209,23 +219,23 @@ For 1D we have
 %
 which implies the nearest neighbor sum is
 %
-\begin{dmath}\label{eqn:condensedMatterLecture16:300}
+\begin{equation}\label{eqn:condensedMatterLecture16:300}
 \sum_{nn} \lr{
 e^{i k a}
 +e^{-i k a}
 }
 = 2 \cos k a.
-\end{dmath}
+\end{equation}
 %
 So
 %
-\begin{dmath}\label{eqn:condensedMatterLecture16:320}
+\begin{equation}\label{eqn:condensedMatterLecture16:320}
 E(k) \approx E_i - A -
 \mathLabelBox
 {2 B \cos k a
 }
 {The hopping term}.
-\end{dmath}
+\end{equation}
 %
 %\cref{fig:qmSolidsL16:qmSolidsL16Fig2}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL16Fig2}{Tight binding 1D example.}{fig:qmSolidsL16:qmSolidsL16Fig2}{0.15}

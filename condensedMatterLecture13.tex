@@ -72,9 +72,10 @@ In \cref{fig:fermiDiracLevelCurves:fermiDiracLevelCurvesFig2}, are plots of the 
 
 Calculating that derivative explicitly, we have
 %
-\begin{dmath}\label{eqn:condensedMatterLecture13:140}
+\begin{equation}\label{eqn:condensedMatterLecture13:140}
+\begin{aligned}
 \PD{T}{f(E, T)}
-=
+&=
 -
 \frac{
 e^{(E - \mu)/\kB T}
@@ -83,7 +84,7 @@ e^{(E - \mu)/\kB T}
 (e^{(E - \mu)/\kB T} + 1)^2
 }
 \frac{E - \mu}{\kB} \frac{-1}{T^2}
-=
+\\ &=
 \frac{
 e^{(E - \mu)/\kB T}
 }
@@ -91,7 +92,8 @@ e^{(E - \mu)/\kB T}
 (e^{(E - \mu)/\kB T} + 1)^2
 }
 \frac{E - \mu}{\kB T^2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is plotted in \cref{fig:fermiDiracLevelCurvesAndDerivatives:fermiDiracLevelCurvesAndDerivativesFig3}.
 %
@@ -163,8 +165,9 @@ To proceed with the integration, let
 x = \frac{E - \EF}{\kB T}.
 \end{equation}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture13:260}
-C(T) \approx
+\begin{equation}\label{eqn:condensedMatterLecture13:260}
+\begin{aligned}
+C(T) &\approx
 D(\EF)
 \int_{-\infty}^\infty
 \mathLabelBox
@@ -180,7 +183,7 @@ D(\EF)
 }
 \frac{x^2 \cancel{\kB^2} \cancel{T^2}}{\cancel{\kB} \cancel{T^2}}
 \frac{e^x}{e^x + 1)^2}
-=
+\\ &=
 D(\EF)
 \kB^2 T
 \mathLabelBox
@@ -196,7 +199,8 @@ dx \frac{x^2 e^x}{(e^x + 1)^2}
 {
 \(\pi^2/3\)
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We have finally
 \boxedEquation{eqn:condensedMatterLecture13:280}{
@@ -255,7 +259,7 @@ Put a fixed point charge \(Q\) at \(\Br = 0\), and an electric potential \(\phi(
 %
 Split the charge density as
 %
-\begin{dmath}\label{eqn:condensedMatterLecture13:360}
+\begin{equation}\label{eqn:condensedMatterLecture13:360}
 \rho(\Br) =
    \overbar{\rho}_{\mathrm{el}}
 +
@@ -263,7 +267,7 @@ Split the charge density as
 +
 \delta \rho_{\mathrm{el}}
 ,
-\end{dmath}
+\end{equation}
 where \(
    \overbar{\rho}_{\mathrm{el}} \) is the average electron density, 
 \(
@@ -331,13 +335,12 @@ The first two terms cancel giving
 %
 Here \(\mu + e \phi(\Br)\) is the chemical potential shifted at \(\Br\) by \(e \phi(\Br)\).  Note that as \(T \rightarrow 0\), we have
 %
-\begin{dmath}\label{eqn:condensedMatterLecture13:400}
-\int_
-{\EF - \Delta}
+\begin{equation}\label{eqn:condensedMatterLecture13:400}
+\int_{\EF - \Delta}
 ^{\EF + \Delta}
 dE \PD{E}{f}
 = -1,
-\end{dmath}
+\end{equation}
 %
 where the width of \(\PDi{E}{f} \rightarrow 0\).  This is very much like a delta function \cref{fig:fermiDiracLevelCurvesAndEnergyDerivatives:fermiDiracLevelCurvesAndEnergyDerivativesFig4}
 %as sketched in \cref{fig:qmSolidsL13:qmSolidsL13Fig8}
@@ -346,15 +349,17 @@ where the width of \(\PDi{E}{f} \rightarrow 0\).  This is very much like a delta
 \mathImageFigure{../figures/phy487-qmsolids/fermiDiracLevelCurvesAndEnergyDerivativesFig4}{Delta function like region.}{fig:fermiDiracLevelCurvesAndEnergyDerivatives:fermiDiracLevelCurvesAndEnergyDerivativesFig4}{0.2}{fermiDiracPlot.nb}
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsL13Fig8}{Delta function like region}{fig:qmSolidsL13:qmSolidsL13Fig8}{0.2}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture13:420}
+\begin{equation}\label{eqn:condensedMatterLecture13:420}
+\begin{aligned}
 \rho_{\mathrm{el}}
-\approx
+&\approx
 \overbar{\rho}_{\mathrm{el}}
 - e^2 \phi(\Br) \int dE D(E) \delta(E - \EF)
-\approx
+\\ &\approx
 \overbar{\rho}_{\mathrm{el}}
 - e^2 \delta \phi(\Br) D(\EF).
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Recall that the spherical form of the Laplacian of a function with only radial dependence is
 %
@@ -392,12 +397,12 @@ The functional form of the screened and unscreened potentials are plotted in \cr
 %\cref{fig:qmSolidsL13:qmSolidsL13Fig9}.
 %\imageFigure{../figures/phy487-qmsolids/qmSolidsL13Fig9}{Screened vs unscreened Coulomb potential}{fig:qmSolidsL13:qmSolidsL13Fig9}{0.2}
 \makeexample{Copper.}{example:condensedMatterLecture13:1}{
-\begin{dmath}\label{eqn:condensedMatterLecture13:520}
+\begin{equation}\label{eqn:condensedMatterLecture13:520}
 r_{\mathrm{TF} }
 \sim
 0.5
 \angstrom.
-\end{dmath}
+\end{equation}
 }
 
 Reading: \S 6.5, especially Mott transition.

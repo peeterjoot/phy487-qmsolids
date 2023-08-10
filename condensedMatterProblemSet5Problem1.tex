@@ -45,13 +45,15 @@ for which we could conceivably consider the area of this 1D surface to be the co
 %
 We wish to sum over all the integer values \(n\), subject to a period constraint \(2 \pi n = q L\), and employ an integral approximation to this sum.
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet5Problem1:100}
+\begin{equation}\label{eqn:condensedMatterProblemSet5Problem1:100}
+\begin{aligned}
 \sum_n
 \sim \int dn
-= \frac{L}{2 \pi} \int dq
-= \frac{L}{2 \pi} \int \frac{dq}{d\omega} d\omega
-\equiv \int Z(\omega) d\omega.
-\end{dmath}
+&= \frac{L}{2 \pi} \int dq
+\\ &= \frac{L}{2 \pi} \int \frac{dq}{d\omega} d\omega
+\\ &\equiv \int Z(\omega) d\omega.
+\end{aligned}
+\end{equation}
 %
 From this we find for one dimension
 %
@@ -73,21 +75,23 @@ so
 %
 or
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet5Problem1:180}
+\begin{equation}\label{eqn:condensedMatterProblemSet5Problem1:180}
+\begin{aligned}
 Z(\omega)
-= \frac{L}{2 \pi}
+&= \frac{L}{2 \pi}
 \frac{\sqrt{\frac{M}{K}}}{a \cos \lr{ \frac{ q a}{2} }}
-=
+\\ &=
 \sqrt{\frac{M}{K}} \frac{L}{2 \pi a}
 \inv{ \cos \lr{ \frac{ q a}{2} }}
-=
+\\ &=
 \sqrt{\frac{M}{K}} \frac{L}{2 \pi a}
 \inv{ \cos \sin^{-1} \lr{
 \inv{2} \sqrt{\frac{M}{K}} \omega } }
-=
+\\ &=
 \inv{2} \sqrt{\frac{M}{K}} \frac{L}{\pi a}
 \inv{ \sqrt{1 - \inv{4} \frac{M}{K} \omega^2 } }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With \(L = N a\), this is
 \boxedEquation{eqn:condensedMatterProblemSet5Problem1:200}{
@@ -98,29 +102,33 @@ Z(\omega)
 }
 This has a minimum at \(\omega = 0\), and in that neighborhood is approximately parabolic function
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet5Problem1:220}
+\begin{equation}\label{eqn:condensedMatterProblemSet5Problem1:220}
+\begin{aligned}
 Z(\omega \approx 0)
-=
+&=
 \inv{2} \sqrt{\frac{M}{K}} \frac{N}{\pi}
 \lr{ 1 - \lr{ - \inv{2}} \inv{4} \frac{M}{K} \omega^2 }
-=
+\\ &=
 \inv{2} \sqrt{\frac{M}{K}} \frac{N}{\pi}
 \lr{ 1 + \inv{8} \frac{M}{K} \omega^2 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 As \(\omega \rightarrow \pm \sqrt{4 K/M}\), the density of states approaches vertical asymptotes \(Z(\omega) \rightarrow \infty\).  Observe that these extremes are the edges of the Brillouin zone where \(q a/2 = \pm \pi/2\).  For \(Z(\omega)\) to be useful for probability calculations, we expect that the integral over this first Brillouin zone will be finite, despite these infinite asymptotes.  Let's verify this
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet5Problem1:240}
+\begin{equation}\label{eqn:condensedMatterProblemSet5Problem1:240}
+\begin{aligned}
 \int_{-\sqrt{4K/M}}^{\sqrt{4K/M}} Z(\omega) d\omega
-=
+&=
 \inv{2} \sqrt{\frac{M}{K}} \frac{N}{\pi}
 \int_{-1}^1
 \sqrt{ \frac{4 K}{M} }
 dx
 \inv{ \sqrt{1 - x^2 } }
-= \frac{N}{\pi} \pi
-= N.
-\end{dmath}
+\\ &= \frac{N}{\pi} \pi
+\\ &= N.
+\end{aligned}
+\end{equation}
 %
 Good, the area under the curve is finite as expected.  This curve is sketched in \cref{fig:1dSpringLatticeDensityOfStates:1dSpringLatticeDensityOfStatesFig1}.
 %

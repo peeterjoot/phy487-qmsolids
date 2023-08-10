@@ -70,22 +70,27 @@ all bands near \(\EF\) are tight binding like.  There's a large gap at \(\EF\).
 \reading \citep{ashcroft1976solid} \textchapref{8}.
 Recall
 %
-\begin{dmath}\label{eqn:condensedMatterLecture18:20}
-\sum_{k, \sigma = \pm 1/2} \rightarrow
+\begin{equation}\label{eqn:condensedMatterLecture18:20}
+\begin{aligned}
+\sum_{k, \sigma = \pm 1/2}
+&\rightarrow
 \mathLabelBox{2}{spin}
 \inv{ \lr{ 2\pi/L}^3 }
 \int d\Bk
-\rightarrow
+\\ &\rightarrow
 V \int D(E) dE.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 For the free electron model we found
 %
-\begin{dmath}\label{eqn:condensedMatterLecture18:40}
-D(E) = \text{density of states per unit volume}
-=
+\begin{equation}\label{eqn:condensedMatterLecture18:40}
+\begin{aligned}
+D(E) &= \text{density of states per unit volume}
+\\ &=
 \inv{2 \pi^2} \lr{ \frac{2m}{\Hbar} }^{3/2} \sqrt{E},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 and in general
 %
@@ -97,10 +102,12 @@ Referring to \cref{fig:qmSolidsL18:qmSolidsL18Fig5}.
 %
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL18Fig5}{Fermi surface for constant energy.}{fig:qmSolidsL18:qmSolidsL18Fig5}{0.2}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture18:80}
-d\Bk = df_{\txtE} dk_\perp
-= df_{\txtE} \frac{dE}{\Abs{\spacegrad_\Bk E(\Bk)}}.
-\end{dmath}
+\begin{equation}\label{eqn:condensedMatterLecture18:80}
+\begin{aligned}
+d\Bk &= df_{\txtE} dk_\perp
+\\ &= df_{\txtE} \frac{dE}{\Abs{\spacegrad_\Bk E(\Bk)}}.
+\end{aligned}
+\end{equation}
 %
 Some observations:
 
@@ -114,7 +121,7 @@ Flat bands due to \(1/\Abs{\spacegrad_\Bk E(\Bk)}\) will have a high density of 
 %
 High density of states in the d-orbitals, and small elsewhere.  Recall
 %
-\begin{dmath}\label{eqn:condensedMatterLecture18:100}
+\begin{equation}\label{eqn:condensedMatterLecture18:100}
 C(T) =
 \mathLabelBox
 {
@@ -130,7 +137,7 @@ C(T) =
 \beta T^3
 }
 {phonons}.
-\end{dmath}
+\end{equation}
 %
 \begin{equation}\label{eqn:condensedMatterLecture18:120}
 \begin{aligned}
@@ -167,11 +174,11 @@ is uniformly spread out over the sample
 %
 Such a plane wave cannot transport charge.  Introduce a wave packet
 %
-\begin{dmath}\label{eqn:condensedMatterLecture18:180}
+\begin{equation}\label{eqn:condensedMatterLecture18:180}
 \Psi_\Bk(\Br, t) \sim \int_{\Abs{\Bk'} < \Delta}
 \mathLabelBox{a_{\Bk'}}{example: a Gaussian, centered on \(\Bk\)}
 U_\Bk(\Br) e^{ i \lr{\Bk \cdot \Br - \omega t}} d\Bk'.
-\end{dmath}
+\end{equation}
 %
 This will spread as plotted in \cref{fig:qmSolidsL18:qmSolidsL18Fig7}.
 %

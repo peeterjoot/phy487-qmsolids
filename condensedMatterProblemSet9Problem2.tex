@@ -43,31 +43,37 @@ It's helpful to recall the geometry of the energy distribution in k-space.  This
 %\mathImageFigure{../figures/phy487-qmsolids/qmSolidsPs8dFig2}{Energy level curves}{fig:qmSolidsPs8d:qmSolidsPs8dFig2}{0.2}{qmSolidsPs8dContourPlot.nb}
 At the bottom of the distribution, to second order, we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:20}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:20}
+\begin{aligned}
 E(\Bk)
-\approx E_s - A - 2B \lr{
+&\approx E_s - A - 2B \lr{
 1 - \inv{2} \lr{ k_x a }^2
 + 1 - \inv{2} \lr{ k_y a }^2
 }
-= E_s - A - 4 B + B a^2 \lr{ k_x^2 + k_y^2 }.
-\end{dmath}
+\\ &= E_s - A - 4 B + B a^2 \lr{ k_x^2 + k_y^2 }.
+\end{aligned}
+\end{equation}
 %
 For the gradient we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:40}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:40}
+\begin{aligned}
 \spacegrad_\Bk E(\Bk)
-= B a^2 \spacegrad \lr{ k_x^2 + k_y^2 }
-= B a^2 \lr{ 2 k_x, 2 k_y }
-= 2 B a^2 \Bk.
-\end{dmath}
+&= B a^2 \spacegrad \lr{ k_x^2 + k_y^2 }
+\\ &= B a^2 \lr{ 2 k_x, 2 k_y }
+\\ &= 2 B a^2 \Bk.
+\end{aligned}
+\end{equation}
 %
 With cylindrical coordinates, we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:60}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:60}
+\begin{aligned}
 d \Bk
-= k d\phi_k dk
-= k d\phi_k \frac{dE}{\Abs{\spacegrad_\Bk E}},
-\end{dmath}
+&= k d\phi_k dk
+\\ &= k d\phi_k \frac{dE}{\Abs{\spacegrad_\Bk E}},
+\end{aligned}
+\end{equation}
 %
 So that the density of states is given by
 %
@@ -87,9 +93,10 @@ D(E) = \frac{1}{2 \pi B a^2}.
 
 For the top of the energy levels, we can also expand to second order in \(k_x, k_y\), at the points \(k_x,k_y = \pm \pi/a\).  With \(k\) for one of \(k_x\), or \(k_y\) we have at the corner \(k = \pm \pi/a\)
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:120}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:120}
+\begin{aligned}
 \cos k a
-=
+&=
 \inv{0!}
 \evalbar{\cos k a}{ k = \pm \pi/a }
 +\inv{1!}
@@ -98,55 +105,58 @@ For the top of the energy levels, we can also expand to second order in \(k_x, k
 +\inv{2!}
 \evalbar{\cos' k a}{ k = \pm \pi/a } \lr{ k \mp \pi/a }^2
 + \cdots
-\approx
+\\ &\approx
 \cos \lr{ \pm \pi }
 -a \sin \lr{ \pm \pi } \lr{ k \mp \pi/a }
 -a^2 \cos \lr{ \pm \pi } \lr{ k \mp \pi/a }^2
-=
+\\ &=
 -1 + \inv{2} \lr{ k a \mp \pi }^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 So, at the corner \(\Bk = \pm (1,1) \pi/a\) the energy is approximately
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:140}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:140}
 E(\Bk) =
 E_s - A + 4 B - B
 \lr{
 \lr{ k_x a \mp \pi}^2
 + \lr{ k_y a \mp \pi}^2
 },
-\end{dmath}
+\end{equation}
 %
 with gradient
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:180}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:180}
+\begin{aligned}
 \spacegrad_\Bk E(\Bk)
-=
+&=
 - 2 B a
 \lr{
 k_x a \mp \pi,
 + k_y a \mp \pi
 }
-=
+\\ &=
 - 2 B a^2
 \lr{
 k_x \mp \pi/a,
 + k_y \mp \pi/a
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 At the corners \(\Bk = \pm(1, -1) \pi/a\) we have approximately
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:160}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:160}
 E(\Bk) =
 E_s - A + 4 B - B
 \lr{
 \lr{ k_x a \mp \pi}^2
 + \lr{ k_y a \pm \pi}^2
 },
-\end{dmath}
+\end{equation}
 %
 which have gradients
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:200}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:200}
 \spacegrad_\Bk E(\Bk)
 %=
 %- 2 B a
@@ -160,7 +170,7 @@ which have gradients
 k_x \mp \pi/a,
 + k_y \pm \pi/a
 }.
-\end{dmath}
+\end{equation}
 %
 Consider the \(\Bk = -(1,1)\pi/a\) corner, and make the change of variables
 %
@@ -173,27 +183,29 @@ k_y + \pi/a &= k \sin\phi_k.
 %
 We see that we have to only consider this portion of the k-space area, quadrupling the integral, so that the density of states is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:240}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:240}
 D(E) dE = 2 \times
 4
 \inv{(2 \pi)^2} \int_{\phi_k = 0}^{\pi/2} k d\phi_k \frac{dE}{\Abs{-2 B a^2 k}}.
-\end{dmath}
+\end{equation}
 %
 This is identical to \eqnref{eqn:condensedMatterProblemSet9Problem2:100}, the constant value for the density of states found for the bottom of the band, provided we expand the energy only to second order in \(k_x, k_y\).
 \makeSubAnswer{}{condensedMatter:problemSet9:2b}
 At the bottom of the band, again approximating the energy to second order in \(k_x, k_y, k_z\), we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:360}
-E(\Bk) \approx
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:360}
+\begin{aligned}
+E(\Bk) &\approx
 E_s - A - 2 B \lr{
 3
 - \inv{2} k_x^2 a^2
 - \inv{2} k_y^2 a^2
 - \inv{2} k_z^2 a^2
 }
-=
+\\ &=
 E_s - A - 6 B + B a^2 \lr{ k_x^2 + k_y^2 + k_z^2 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The energy gradient is
 %
@@ -205,14 +217,16 @@ The energy gradient is
 %
 Our density of states at the bottom of the band is thus
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:400}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:400}
+\begin{aligned}
 D(E)
-= 2 \times \inv{8 \pi^3 } \evalbar{\frac{ 4 \pi k^2 }{ 2 B a^2 k}}{k = k(E)}
-= \inv{2 \pi^2 B a^2}
+&= 2 \times \inv{8 \pi^3 } \evalbar{\frac{ 4 \pi k^2 }{ 2 B a^2 k}}{k = k(E)}
+\\ &= \inv{2 \pi^2 B a^2}
 \lr{ \frac{ E - E_s + A + 6 B }{B a^2 } }^{1/2}
-=
+\\ &=
 \inv{ 2 \pi^2 B^{3/2} a^3 } \sqrt{ E - E_s + A + 6 B }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \boxedEquation{eqn:condensedMatterProblemSet9Problem2:500}{
 D(E)
@@ -224,38 +238,42 @@ where \(E_b = E_s - A - 6 B\).
 
 For the calculation at the top of the band, we can expand the cosines around the corner coordinates.  Considering just the \(\Bk = -(1,1,1) \pi/a\) octet, and multiplying by 8 for the total density of states we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:420}
-E(\Bk) \approx
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:420}
+\begin{aligned}
+E(\Bk) &\approx
 E_s - A - 2 B \lr{
 -3
 + \inv{2} \lr{ k_x a + \pi}^2
 + \inv{2} \lr{ k_y a + \pi}^2
 + \inv{2} \lr{ k_z a + \pi}^2
 }
-=
+\\ &=
 E_s - A + 6 B - B \lr{
 \lr{ k_x a + \pi}^2
 + \lr{ k_y a + \pi}^2
 + \lr{ k_z a + \pi}^2 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The gradient at this point is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:440}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:440}
+\begin{aligned}
 \spacegrad_\Bk E(\Bk)
-=
+&=
 - B a^2 \spacegrad_\Bk \lr{
 \lr{ k_x + \pi/a}^2
 + \lr{ k_y + \pi/a}^2
 + \lr{ k_z + \pi/a}^2
 }
-=
+\\ &=
 - 2 B a^2 \lr{
 k_x + \pi/a,
 k_y + \pi/a,
 k_z + \pi/a
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Now introduce spherical coordinates with the origin at this point
 %
@@ -292,12 +310,14 @@ where \(E_t = E_s - A + 6 B\).  The constant of proportionality is the same we f
 \makeSubAnswer{}{condensedMatter:problemSet9:2c}
 The expectation value of the velocity operator is given by
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet9Problem2:260}
+\begin{equation}\label{eqn:condensedMatterProblemSet9Problem2:260}
+\begin{aligned}
 \Bv_g
-= \inv{\Hbar} \spacegrad_\Bk E
-= \frac{-2 B }{\Hbar} \spacegrad_\Bk \lr{ \cos k_x a + \cos k_y a + \cos k_z a}
-= \frac{2 B a}{\Hbar} \lr{ \sin k_x a, \sin k_y a, \sin k_z a}.
-\end{dmath}
+&= \inv{\Hbar} \spacegrad_\Bk E
+\\ &= \frac{-2 B }{\Hbar} \spacegrad_\Bk \lr{ \cos k_x a + \cos k_y a + \cos k_z a}
+\\ &= \frac{2 B a}{\Hbar} \lr{ \sin k_x a, \sin k_y a, \sin k_z a}.
+\end{aligned}
+\end{equation}
 %
 Along the \(k_x\) direction we have
 %

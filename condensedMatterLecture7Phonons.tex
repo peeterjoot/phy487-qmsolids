@@ -74,28 +74,30 @@ Our derivatives are
 %
 and insertion back into \eqnref{eqn:condensedMatterLecture7Phonons:180} gives
 %
-\begin{dmath}\label{eqn:condensedMatterLecture7Phonons:340}
+\begin{equation}\label{eqn:condensedMatterLecture7Phonons:340}
+\begin{aligned}
 0
-= \epsilon e^{-i\omega t}
+&= \epsilon e^{-i\omega t}
 \lr{
 \frac{m}{K} \omega^2 e^{i q n a} + e^{i q(n + 1) a} - 2 e^{i q n a} + e^{i q (n-1) a}
 }
-= \epsilon e^{-i\omega t}
+\\ &= \epsilon e^{-i\omega t}
 e^{i q n a}
 \lr{
 \frac{m}{K} \omega^2 + e^{i q a} - 2 + e^{-i q a}
 }
-= \epsilon e^{-i\omega t}
+\\ &= \epsilon e^{-i\omega t}
 e^{i q n a}
 \lr{
 \frac{m}{K} \omega^2 + -2 + 2 \cos q a
 }
-= \epsilon e^{-i\omega t}
+\\ &= \epsilon e^{-i\omega t}
 e^{i q n a}
 \lr{
 \frac{m}{K} \omega^2 + - 4 \sin^2 \lr{ \frac{ q a}{2} }
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Requiring equality means that we must have
 \boxedEquation{eqn:condensedMatterLecture7Phonons:360}{
@@ -104,18 +106,19 @@ Requiring equality means that we must have
 \paragraph{With superposition of frequency components}
 Putting an index on \(\epsilon\) and \(\omega\), and expressing \(q\) explicitly we have a slightly more general trial solution
 %
-\begin{dmath}\label{eqn:condensedMatterLecture7Phonons:380}
+\begin{equation}\label{eqn:condensedMatterLecture7Phonons:380}
 u_n = \sum_s \epsilon_s
 e^{i \lr{
 \frac{ 2 \pi s n}{N} - \omega_s t
 } },
-\end{dmath}
+\end{equation}
 %
 where \(s\) is an integer.  Plugging this into our EOM we have
 %
-\begin{dmath}\label{eqn:condensedMatterLecture7Phonons:400}
+\begin{equation}\label{eqn:condensedMatterLecture7Phonons:400}
+\begin{aligned}
 0
-= \sum_s \epsilon_s e^{-i \omega_s t }
+&= \sum_s \epsilon_s e^{-i \omega_s t }
 \lr{
 \frac{m}{K}\omega_s^2
 e^{i
@@ -134,7 +137,7 @@ e^{i
 \frac{ 2 \pi s (n-1)}{N}
 }
 }
-= \sum_s \epsilon_s e^{-i \omega_s t }
+\\ &= \sum_s \epsilon_s e^{-i \omega_s t }
 e^{i
 \frac{ 2 \pi s n}{N}
 }
@@ -150,7 +153,7 @@ e^{-i
 \frac{ 2 \pi s }{N}
 }
 }
-= \sum_s \epsilon_s e^{-i \omega_s t }
+\\ &= \sum_s \epsilon_s e^{-i \omega_s t }
 e^{i
 \frac{ 2 \pi s n}{N}
 }
@@ -163,7 +166,7 @@ e^{i
 }
 - 2
 }
-= \sum_s \epsilon_s e^{-i \omega_s t }
+\\ &= \sum_s \epsilon_s e^{-i \omega_s t }
 e^{i
 \frac{ 2 \pi s n}{N}
 }
@@ -174,17 +177,18 @@ e^{i
 \frac{ \pi s}{N}
 }
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 From this, we see that if
 %
-\begin{dmath}\label{eqn:condensedMatterLecture7Phonons:420}
+\begin{equation}\label{eqn:condensedMatterLecture7Phonons:420}
 \frac{m}{K}\omega_s^2 =
 4 \sin^2
 \lr{
 \frac{ \pi s}{N}
 },
-\end{dmath}
+\end{equation}
 %
 then our equation is solved.  This is just the frequency constraint of \eqnref{eqn:condensedMatterLecture7Phonons:360}.
 %

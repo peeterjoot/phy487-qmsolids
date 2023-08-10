@@ -46,7 +46,7 @@ The Fourier coefficient \index{Fourier coefficient} \(\rho_{h k l}\) can be reco
 
 Note that \(\rho(\Br)\) is large close to each nucleus.  Using the change of variables to atom centered bases, we find
 %
-\begin{dmath}\label{eqn:condensedMatterLecture7:60}
+\begin{equation}\label{eqn:condensedMatterLecture7:60}
 \rho_{h k l} \sim \inv{V_{\mathrm{cell}}} \sum_\alpha
 e^{i \BG_{h k l} \cdot \Br_\alpha}
 %\mathLabelBox
@@ -57,20 +57,20 @@ e^{i \BG_{h k l} \cdot \Br_\alpha}
 %{
 \int \rho_\alpha(\Br')
 e^{-i \BG_{h k l} \cdot \Br} d\Br',
-\end{dmath}
+\end{equation}
 where the 
 index \(\alpha\) is used to sum over all atoms in a primitive unit cell.  
 The integral portion is 
 the atomic scattering factor (which can be tabulated), and is designated
-\begin{dmath}\label{eqn:condensedMatterLecture7:180}
+\begin{equation}\label{eqn:condensedMatterLecture7:180}
 f_\alpha = 
 \int \rho_\alpha(\Br')
 e^{-i \BG_{h k l} \cdot \Br} d\Br'.
-\end{dmath}
+\end{equation}
 In terms of the scattering factor, \cref{eqn:condensedMatterLecture7:60} is
 %}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture7:80}
+\begin{equation}\label{eqn:condensedMatterLecture7:80}
 \rho_{h k l} \sim \inv{V_{\mathrm{cell}}}
 \mathLabelBox
 [
@@ -82,7 +82,7 @@ In terms of the scattering factor, \cref{eqn:condensedMatterLecture7:60} is
 e^{-i \BG_{h k l} \cdot \Br_\alpha}
 }
 {\(S_{h k l}\), the \textAndIndex{structure factor}}.
-\end{dmath}
+\end{equation}
 %
 Recall from \eqnref{eqn:condensedMatterLecture6:40b} that the intensity at \(\BK = \BG\) is proportional to \(\Abs{\rho_\BG}^2\).  Because of this and \eqnref{eqn:condensedMatterLecture7:80}, we can utilize the structure factor as a measure of intensity at a reciprocal lattice point
 %
@@ -96,15 +96,15 @@ I(\BK = \BG_{hkl}) \propto \Abs{S_{hkl}}^2.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL7Fig2}{Bcc.}{fig:qmSolidsL7:qmSolidsL7Fig2}{0.3}
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:condensedMatterLecture7:100}
+\begin{equation}\label{eqn:condensedMatterLecture7:100}
 \Br_1 =
 \begin{bmatrix}
 0 \\
 0 \\
 0
 \end{bmatrix}
-\end{dmath}
-\begin{dmath}\label{eqn:condensedMatterLecture7:120}
+\end{equation}
+\begin{equation}\label{eqn:condensedMatterLecture7:120}
 \Br_2 =
 \frac{a}{2}
 \begin{bmatrix}
@@ -112,14 +112,14 @@ I(\BK = \BG_{hkl}) \propto \Abs{S_{hkl}}^2.
 1 \\
 1
 \end{bmatrix}
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 \begin{equation}\label{eqn:condensedMatterLecture7:140}
 \BG_{h k l} \cdot \Br_n = 2 \pi m.
 \end{equation}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture7:160}
+\begin{equation}\label{eqn:condensedMatterLecture7:160}
 S_{h k l} = f (
 \mathLabelBox
 [
@@ -141,7 +141,7 @@ e^{-i
    }
   }
 ).
-\end{dmath}
+\end{equation}
 %
 A bcc lattice has same diffraction pattern as simple cubic, except all \(h + k + l = \text{odd}\) spots are missing.
 }

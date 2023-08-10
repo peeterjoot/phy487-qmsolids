@@ -121,32 +121,33 @@ for integer \(l\).
 
 Similarly for \(q_y\), \(q_z\) we have
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:180}
+\begin{equation}\label{eqn:condensedMatterLecture9:180}
 \Bq = l \frac{ 2 \pi }{L_x} \xcap
 + m \frac{ 2 \pi }{L_y} \ycap
 + o \frac{ 2 \pi }{L_z} \zcap.
-\end{dmath}
+\end{equation}
 %
 The volume per \(\Bq\) point is
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:200}
+\begin{equation}\label{eqn:condensedMatterLecture9:200}
 \frac{2 \pi}{L_x}
 \frac{2 \pi}{L_y}
 \frac{2 \pi}{L_z}
 = \frac{\lr{ 2 \pi }^3 }{V}.
-\end{dmath}
+\end{equation}
 %
 %\cref{fig:qmSolidsL9:qmSolidsL9Fig3}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL9Fig3}{constant energy surface.}{fig:qmSolidsL9:qmSolidsL9Fig3}{0.15}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:220}
+\begin{equation}\label{eqn:condensedMatterLecture9:220}
+\begin{aligned}
 \sum_\Bn
-=
+&=
 \sum_{n_x}
 \sum_{n_y}
 \sum_{n_z}
 \sim \int dn_x dn_y dn_z
-=
+\\ &=
 \int
 \frac{L_x}{2 \pi}
 dq_x
@@ -154,9 +155,10 @@ dq_x
 dq_y
 \frac{L_z}{2 \pi}
 dq_z
-=
+\\ &=
 \frac{V}{(2 \pi)^3} \int d^3\Bq.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 We group states of same \(\Hbar \omega_q\).  In \(d^3\Bq\) group same energy states
 
@@ -177,17 +179,19 @@ dq_\perp = \frac{d\omega}{\Abs{\spacegrad_\Bq \omega(\Bq) }},
 %
 or
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:280}
+\begin{equation}\label{eqn:condensedMatterLecture9:280}
+\begin{aligned}
 \frac{V}{(2\pi)^3 } \int d^3\Bq
-\rightarrow
+&\rightarrow
 \frac{V}{(2\pi)^3 } \int d f_\omega d q_\perp
-\rightarrow
+\\ &\rightarrow
 \frac{V}{(2\pi)^3 } \int
 %d f_\omega d q_\perp
 \frac{df_\omega}{\Abs{\spacegrad_\Bq \omega(\Bq) }} d \omega
-=
+\\ &=
 \int Z(\omega) d\omega.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 where \(Z(\omega)\) is the \textAndIndex{density of states}, the number of modes per unit energy.
 
@@ -228,7 +232,7 @@ same in all directions, so that the constant energy surfaces are spheres, as in 
 %
 at small \(q\), the frequency for this 1 atom basis is
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:340}
+\begin{equation}\label{eqn:condensedMatterLecture9:340}
 \omega =
 \left\{
 \begin{array}{l l}
@@ -236,15 +240,16 @@ C_{\txtL} q & \quad \mbox{longitudinal acoustic} \\
 C_{\txtT} q & \quad \mbox{transverse acoustic (two of these)}
 \end{array}
 \right.
-\end{dmath}
+\end{equation}
 %
 This gives
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:360}
+\begin{equation}\label{eqn:condensedMatterLecture9:360}
+\begin{aligned}
 \int Z(\omega) d\omega
-=
+&=
 \sum_{LA, TA} \frac{V}{(2\pi)^3} \int \frac{d f_\omega }{\Abs{ \spacegrad_\Bq \omega(\Bq)}} d\omega
-=
+\\ &=
 \frac{V}{(2\pi)^3}
 \int
 \sum_{LA, TA}
@@ -260,7 +265,7 @@ d f_\omega
 {\(q\) space surface area element}
 }{\frac{d\omega}{dq}}
 d\omega
-=
+\\ &=
 \int
 \frac{V}{(2\pi)^3}
 \lr{
@@ -276,21 +281,22 @@ d\omega
 }
 {\(= \int df_\omega\)}
 d\omega
-=
+\\ &=
 \int
 \frac{V}{2\pi^2}
 \lr{
 \frac{q^2}{C_{\txtL}} + \frac{2 q^2}{C_{\txtT}}
 }
 d \omega
-=
+\\ &=
 \int
 \frac{V}{2\pi^2}
 \lr{
 \frac{1}{C_{\txtL}^3} + \frac{2}{C_{\txtT}^3}
 }
 \omega^2 d \omega,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Here we sum over the two transverse and the single longitudinal state, and refer back to \eqnref{eqn:condensedMatterLecture9:340} introduce the \(C_{\txtL}\) and \(C_{\txtT}\) factors.
 
@@ -317,13 +323,15 @@ Define the Debye frequency \(\omega_{\txtD}\) \index{Debye frequency} by
 
 and pretend we can cut off in a way that applies to all \(q\).  We get
 %
-\begin{dmath}\label{eqn:condensedMatterLecture9:400}
+\begin{equation}\label{eqn:condensedMatterLecture9:400}
+\begin{aligned}
 3 r N
-=
+&=
 \frac{V}{ 2 \pi^2} \lr{ \inv{C_{\txtL}^3} + \frac{ 2}{C_{\txtT}^3} } \int_0^{\omega_{\txtD}} \omega^2 d\omega
-=
+\\ &=
 \frac{V}{ 2 \pi^2} \lr{ \inv{C_{\txtL}^3} + \frac{ 2}{C_{\txtT}^3} } \inv{3} \omega_{\txtD}^3,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 \boxedEquation{eqn:condensedMatterLecture9:440}{
