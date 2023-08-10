@@ -24,27 +24,29 @@ Consider an ionic arrangement as illustrated in \cref{fig:qmSolidsPs2P3a:qmSolid
 
 With \(r_{ij} = a p_{ij}\), with \(p_{ij}\) the difference in the enumeration indices, our Madelung constant for the ion at position zero is
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet1Problem3:20}
+\begin{equation}\label{eqn:condensedMatterProblemSet1Problem3:20}
+\begin{aligned}
 A_0
-= \sum_{i \ne 0} \frac{z_i}{\Abs{r_{0i}/a}}
-= \sum_{i \ne 0, i \,\text{odd}} \inv{i}
+&= \sum_{i \ne 0} \frac{z_i}{\Abs{r_{0i}/a}}
+\\ &= \sum_{i \ne 0, i \,\text{odd}} \inv{i}
 - \sum_{i \ne 0, i \,\text{odd}} \inv{i}
-=
+\\ &=
 2 \sum_{j = 0}^\infty \inv{2 j + 1}
 - 2 \sum_{j = 0}^\infty \inv{2 j + 2}
-= 2 \lr{ \inv{1} - \inv{2} + \inv{3} - \inv{4} + \cdots }
-= 2 \ln (1 + 1)
-\approx 1.39.
-\end{dmath}
+\\ &= 2 \lr{ \inv{1} - \inv{2} + \inv{3} - \inv{4} + \cdots }
+\\ &= 2 \ln (1 + 1)
+\\ &\approx 1.39.
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{condensedMatter:problemSet1:3b}
 Positioning the \ce{Cl-} ion in the center, we want to sum
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet1Problem3:40}
+\begin{equation}\label{eqn:condensedMatterProblemSet1Problem3:40}
 A
 = \sum_{i,j,k \in [-m,m], \{i, j, k\} \ne \{0,0,0\}}
 \frac{(-1)^{i + j + k + 1}}{\sqrt{i^2 + j^2 + k^2}}.
-\end{dmath}
+\end{equation}
 %
 For the spherical geometry this sum will be limited by an additional constraint on the sum of
 %

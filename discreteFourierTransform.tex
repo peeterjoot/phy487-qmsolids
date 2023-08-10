@@ -53,14 +53,16 @@ S_N(k'-k) = \sum_{n = 0}^{N-1} e^{2 \pi i (k' - k)n/N }.
 %
 With \(a = \exp( 2 \pi i (k' - k)/N)\) we have
 %
-\begin{dmath}\label{eqn:discreteFourierTransform:100}
+\begin{equation}\label{eqn:discreteFourierTransform:100}
+\begin{aligned}
 S_N(k'-k)
-= \sum_{n = 0}^{N-1} a^n
-= \frac{a^N - 1}{a - 1}
-= \frac{a^{N/2}}{a^{1/2}} \frac{a^{N/2} - a^{-N/2}}{a^{1/2} - a^{-1/2}}
-= e^{ \pi i (k' - k)(1 - 1/N)}
+&= \sum_{n = 0}^{N-1} a^n
+\\ &= \frac{a^N - 1}{a - 1}
+\\ &= \frac{a^{N/2}}{a^{1/2}} \frac{a^{N/2} - a^{-N/2}}{a^{1/2} - a^{-1/2}}
+\\ &= e^{ \pi i (k' - k)(1 - 1/N)}
 \frac{ \sin \pi (k'-k) }{\sin \pi (k' - k)/N}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Observe that \(k' - k \in [-N+1, N-1]\), and necessarily takes on just integer values.  We have terms of the form \(\sin \pi m\), for integer \(m\) in the numerator, always zero.  In the denominator, the sine argument is in the range
 %
@@ -74,11 +76,11 @@ We can visualize that range as all the points on a sine curve with the integer m
 
 Clearly the denominator is always non-zero when \(k \ne k'\).   This provides us with the desired inverse transformation relationship
 %
-\begin{dmath}\label{eqn:discreteFourierTransform:140}
+\begin{equation}\label{eqn:discreteFourierTransform:140}
 \sum_{n = 0}^{N-1} a_n e^{2 \pi i k' n/N }
-= N \sum_{k' = 0}^{N-1} A_k' \delta_{k, k'}
-= N A_k'.
-\end{dmath}
+&= N \sum_{k' = 0}^{N-1} A_k' \delta_{k, k'}
+\\ &= N A_k'.
+\end{equation}
 %
 \paragraph{Summary.}
 Now that we know the relationship between the discrete set of values \(a_n\) and this discrete transformation of those values, let's write the transform pair in a form that explicitly expresses this relationship.

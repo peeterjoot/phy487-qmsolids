@@ -11,10 +11,10 @@ Show the temperature dependence of the carrier density in this sample by drawing
 \makeanswer{condensedMatter:problemSet10:2}{
 In class we didn't carry the doping discussion far enough for this problem, but  our text treats the n-type semiconductor, arriving eventually at
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet10Problem2:20}
+\begin{equation}\label{eqn:condensedMatterProblemSet10Problem2:20}
 n \approx 2 N_{\txtD}
 \lr{ 1 + \sqrt{ 1 + 4 \frac{N_{\txtD}}{N_{\mathrm{eff}}^{\txtC}} e^{E_{\txtd}/\kB T}} }^{-1},
-\end{dmath}
+\end{equation}
 %
 For this problem, noting that \(\kB \sim 0.086 \Unitfrac{eV}{K}\), we have
 %
@@ -24,11 +24,13 @@ For this problem, noting that \(\kB \sim 0.086 \Unitfrac{eV}{K}\), we have
 %
 so the exponential is large for small temperatures.  How about the ratio \(N_{\txtD}/N_{\mathrm{eff}}^{\txtC}\)?  For \ce{Ge}, \S 12.3 says we have \(m_n^\conj \sim 0.13 m_e\), so
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet10Problem2:60}
+\begin{equation}\label{eqn:condensedMatterProblemSet10Problem2:60}
+\begin{aligned}
 N_{\mathrm{eff}}^{\txtC}
-\sim 2 \lr{ \frac{2 \pi \times 0.13 m_{\txte} \times \kB T}{h^2} }^{3/2}
-\sim 4 \times 10^3 T^{3/2} \Unit{m^{-3}}.
-\end{dmath}
+&\sim 2 \lr{ \frac{2 \pi \times 0.13 m_{\txte} \times \kB T}{h^2} }^{3/2}
+\\ &\sim 4 \times 10^3 T^{3/2} \Unit{m^{-3}}.
+\end{aligned}
+\end{equation}
 %
 \paragraph{FIXME: Grading remark:}
 Review the \nbref{ps10plots.nb} numerical calculation (stated above).  Correct answer is supposed to be \(\sim 4 \times 10^{20}\).  The failure of UnitSimplify is likely related to that large difference.
@@ -39,10 +41,10 @@ This is plotted in \cref{fig:ps10p2:ps10p2Fig2}.
 
 Combining the exponential and power dependent terms, using non-dimensionalized temperature \(t = t/(1 \Unit{K})\), we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet10Problem2:80}
+\begin{equation}\label{eqn:condensedMatterProblemSet10Problem2:80}
 4 \frac{N_{\txtD}}{N_{\mathrm{eff}}^{\txtC}} e^{E_{\txtd}/\kB T}
 \sim \frac{9 \times 10^{18}}{t^{3/2}} e^{147/t} \Unit{m^{-3}}.
-\end{dmath}
+\end{equation}
 %
 In the \(T \in [1, 293]\) interval, this ranges from \(10^{83}\) down to \(10^{15}\) as plotted in \cref{fig:ps10p2:ps10p2Fig3}.
 %
@@ -52,12 +54,13 @@ In the \(T \in [1, 293]\) interval, this ranges from \(10^{83}\) down to \(10^{1
 %
 This justifies a \(4 \frac{N_{\txtD}}{N_{\mathrm{eff}}^{\txtC}} e^{E_{\txtd}/\kB T} \gg 1\) approximation of \eqnref{eqn:condensedMatterProblemSet10Problem2:20}
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet10Problem2:100}
+\begin{equation}\label{eqn:condensedMatterProblemSet10Problem2:100}
+\begin{aligned}
 n
-\approx
+&\approx
 2 N_{\txtD}
 \lr{ 1 + \sqrt{4 \frac{N_{\txtD}}{N_{\mathrm{eff}}^{\txtC}} e^{E_{\txtd}/\kB T}} }^{-1}
-\approx
+\\ &\approx
 \frac{
 2 N_{\txtD}
 }
@@ -69,7 +72,7 @@ n
 }
 e^{E_{\txtd}/2 \kB T}
 }
-=
+\\ &=
 \sqrt{
 \frac{
 N_{\txtD}
@@ -79,19 +82,22 @@ N_{\mathrm{eff}}^{\txtC}
 }
 }
 e^{-E_{\txtd}/2 \kB T}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Taking logarithms we have
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet10Problem2:120}
+\begin{equation}\label{eqn:condensedMatterProblemSet10Problem2:120}
+\begin{aligned}
 \ln n
-\sim \inv{2} \ln N_{\txtD} + \inv{2} \ln N_{\mathrm{eff}}^{\txtC} - \frac{E_{\txtd}}{2 \kB T}.
-\sim 11 \ln 10 + \inv{2} \ln 4 + \frac{3}{2} \ln 10
+&\sim \inv{2} \ln N_{\txtD} + \inv{2} \ln N_{\mathrm{eff}}^{\txtC} - \frac{E_{\txtd}}{2 \kB T}.
+\\ &\sim 11 \ln 10 + \inv{2} \ln 4 + \frac{3}{2} \ln 10
 - \frac{3}{4} \ln \inv{T} - 73 \inv{T}
-\approx
+\\ &\approx
 29
 - \frac{3}{4} \ln \inv{T} - 73 \inv{T}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is plotted for \(T^{-1} \in [1/293, 1]\) in \cref{fig:ps10p2:ps10p2Fig1}, along the nearly linear asymptote (with slope \(-E_{\txtd}/2\kB\)).  The lowest temperature range in this plot is the \dquoteAndIndex{freeze out} range where a large number of the donors still retain their electrons.
 %

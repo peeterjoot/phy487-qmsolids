@@ -31,7 +31,7 @@ The lattice and the primitive lattice vectors are sketched in \cref{fig:qmSolids
 To demonstrate that we can get to each lattice point, we first invert a matrix
 of the lattice vectors
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet3Problem2:180}
+\begin{equation}\label{eqn:condensedMatterProblemSet3Problem2:180}
 {
 \begin{bmatrix}
 1 & 1 & 0 \\
@@ -46,12 +46,12 @@ of the lattice vectors
 1 & -1 & 1 \\
 -1 & 1 & 1
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 %
 This allows us to read off the corners of the cube in terms of the primitive lattice vectors (which perhaps could have been done by inspection)
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:condensedMatterProblemSet3Problem2:200}
+\begin{equation}\label{eqn:condensedMatterProblemSet3Problem2:200}
 \Ba_1 + \Ba_2 - \Ba_3
 =
 \begin{bmatrix}
@@ -59,8 +59,8 @@ a \\
 0 \\
 0
 \end{bmatrix}
-\end{dmath}
-\begin{dmath}\label{eqn:condensedMatterProblemSet3Problem2:220}
+\end{equation}
+\begin{equation}\label{eqn:condensedMatterProblemSet3Problem2:220}
 \Ba_1 + \Ba_3 - \Ba_2
 =
 \begin{bmatrix}
@@ -68,8 +68,8 @@ a \\
 a \\
 0
 \end{bmatrix}
-\end{dmath}
-\begin{dmath}\label{eqn:condensedMatterProblemSet3Problem2:240}
+\end{equation}
+\begin{equation}\label{eqn:condensedMatterProblemSet3Problem2:240}
 \Ba_2 + \Ba_3 - \Ba_1
 =
 \begin{bmatrix}
@@ -77,7 +77,7 @@ a \\
 0 \\
 a
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 Our lattice points, in terms of the primitive vectors are
@@ -153,10 +153,10 @@ Computing the three sets of cross products we have
 \end{subequations}
 %
 Our triplet product is
-\begin{dmath}\label{eqn:condensedMatterProblemSet3Problem2:80}
+\begin{equation}\label{eqn:condensedMatterProblemSet3Problem2:80}
 \Ba_1 \cdot \lr{ \Ba_2 \cross \Ba_3 } =
 \lr{\frac{a}{2}}^3 \lr{ -2 }.
-\end{dmath}
+\end{equation}
 %
 Putting these together we have
 \begin{subequations}
@@ -192,18 +192,19 @@ Putting these together we have
 %
 Note that we can also compute all the reciprocal basis vectors more directly by inversion
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet3Problem2:160}
+\begin{equation}\label{eqn:condensedMatterProblemSet3Problem2:160}
+\begin{aligned}
 \begin{bmatrix}
 \Bg_1 & \Bg_2 & \Bg_3
 \end{bmatrix}
-=
+&=
 2 \pi
 \begin{bmatrix}
 \Ba_1^\T \\
 \Ba_2^\T \\
 \Ba_3^\T
 \end{bmatrix}
-=
+\\ &=
 2 \pi
 \frac{2}{a}
 {
@@ -214,28 +215,29 @@ Note that we can also compute all the reciprocal basis vectors more directly by 
 \end{bmatrix}
 }
 ^{-1}
-=
+\\ &=
 \frac{2 \pi}{a}
 \begin{bmatrix}
 1 & 1 & -1 \\
 1 & -1 & 1 \\
 -1 & 1 & 1
 \end{bmatrix},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 consistent with the cross product calculation of \eqnref{eqn:condensedMatterProblemSet3Problem2:100a}.
 \makeSubAnswer{}{condensedMatter:problemSet3:2b}
 We've already computed the (signed) volume element in \eqnref{eqn:condensedMatterProblemSet3Problem2:80}.  The absolute value of this is the volume of the primitive unit cell
 %
-\begin{dmath}\label{eqn:condensedMatterProblemSet3Problem2:260}
+\begin{equation}\label{eqn:condensedMatterProblemSet3Problem2:260}
 V_{\mathrm{primitive}}
-=
+&=
 \Abs{
 \Ba_1 \cdot \lr{ \Ba_2 \cross \Ba_3 }
 }
-=
+\\ &=
 \inv{4} a^3,
-\end{dmath}
+\end{equation}
 %
 which is \(1/4\) of the conventional cell volume.
 

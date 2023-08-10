@@ -34,12 +34,12 @@ We talk about branches of the (LA, TA, ...) of the dispersion \(\omega(\Bq)\) at
 
 The thermal occupancy is given by the \textAndIndex{Boltzman distribution}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture10:20}
+\begin{equation}\label{eqn:condensedMatterLecture10:20}
 P_n =
 \frac
 { e^{-E_n/\kB T} }
 { \sum_{n = 0}^\infty e^{-E_n/\kB T} },
-\end{dmath}
+\end{equation}
 %
 where the denominator
 %
@@ -60,48 +60,52 @@ E_n = \lr{ n + \inv{2} } \Hbar \omega,
 \end{equation}
 %
 so that
-\begin{dmath}\label{eqn:condensedMatterLecture10:100}
+\begin{equation}\label{eqn:condensedMatterLecture10:100}
+\begin{aligned}
 Z
-= \sum_{n = 0}^\infty e^{-\lr{ n + \inv{2}} \Hbar \omega /\kB T},
-= e^{- \Hbar \omega /2 \kB T}
+&= \sum_{n = 0}^\infty e^{-\lr{ n + \inv{2}} \Hbar \omega /\kB T} \\
+&= e^{- \Hbar \omega /2 \kB T}
 \sum_{n = 0}^\infty
-\lr{ e^{- \Hbar \omega /\kB T} }^n
-=
+\lr{ e^{- \Hbar \omega /\kB T} }^n \\
+&=
 \frac
 { e^{ - \inv{2} \Hbar \omega / \kB T } }
 { 1 - e^{ - \Hbar \omega / \kB T } }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The average thermal energy
 %
-\begin{dmath}\label{eqn:condensedMatterLecture10:120}
+\begin{equation}\label{eqn:condensedMatterLecture10:120}
+\begin{aligned}
 \calE(\omega_q T)
-= \expectation{ E_n }
-= \sum_n E_n P_n
-= \frac
+&= \expectation{ E_n } \\
+&= \sum_n E_n P_n \\
+&= \frac
 { \sum_n E_n e^{-E_n/\kB T} }
-{ \sum_n e^{-E_n/\kB T} }
-= \inv{Z} \lr{ - \frac{d}{d(1/\kB T)} Z }
-= - \frac{d}{d(1/\kB T)} \ln Z
-= - \frac{d}{d(1/\kB T)}
+{ \sum_n e^{-E_n/\kB T} } \\
+&= \inv{Z} \lr{ - \frac{d}{d(1/\kB T)} Z } \\
+&= - \frac{d}{d(1/\kB T)} \ln Z \\
+&= - \frac{d}{d(1/\kB T)}
 \lr{
 \ln \lr{ e^{ - \inv{2} \Hbar \omega / \kB T } }
 -
 \ln \lr{ 1- e^{ - \Hbar \omega / \kB T } }
-}
-= \frac{d}{d(1/\kB T)}
+} \\
+&= \frac{d}{d(1/\kB T)}
 \lr{
 \inv{2} \Hbar \omega / \kB T
 +
 \ln \lr{ 1- e^{ - \Hbar \omega / \kB T } }
-}
-=
+} \\
+&=
 \inv{2} \Hbar \omega + \inv{
 1- e^{ - \Hbar \omega / \kB T }
 }
 \lr{ -e^{ - \Hbar \omega / \kB T } }
 \lr{ -\Hbar \omega},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 \boxedEquation{eqn:condensedMatterLecture10:140}{
@@ -115,18 +119,19 @@ e^{ \Hbar \omega / \kB T } - 1}
 
 Here
 %
-\begin{dmath}\label{eqn:condensedMatterLecture10:440}
+\begin{equation}\label{eqn:condensedMatterLecture10:440}
 \inv{
 e^{ \Hbar \omega / \kB T } - 1} = \expectation{n}_T,
-\end{dmath}
+\end{equation}
 %
 the \textAndIndex{Bose distribution}.  In the \(\kB T \gg \Hbar \omega\) we have
 %
-\begin{dmath}\label{eqn:condensedMatterLecture10:160}
+\begin{equation}\label{eqn:condensedMatterLecture10:160}
+\begin{aligned}
 \calE(\omega_q T)
-\approx
-\frac{\Hbar \omega}{2} + \frac{\Hbar \omega}{ \cancel{1} + \Hbar \omega/\kB T - \cancel{1} }
-\approx
+&\approx
+\frac{\Hbar \omega}{2} + \frac{\Hbar \omega}{ \cancel{1} + \Hbar \omega/\kB T - \cancel{1} } \\
+&\approx
 \mathLabelBox
 [
    labelstyle={below of=m\themathLableNode, below of=m\themathLableNode}
@@ -135,17 +140,18 @@ the \textAndIndex{Bose distribution}.  In the \(\kB T \gg \Hbar \omega\) we have
 \cancel{\frac{\Hbar \omega}{2}}
 }{small}
 + \kB T.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Our \(\Hbar\) is ``gone''.  This is the classical limit.  This is called the equipartition where we have \(\inv{2} \kB T\) of kinetic energy and \(\inv{2} \kB T\) of potential energy.
 
 On the other hand in the \(\kB T \ll \Hbar \omega\) we have
 %
-\begin{dmath}\label{eqn:condensedMatterLecture10:180}
+\begin{equation}\label{eqn:condensedMatterLecture10:180}
 \calE(\omega_q T)
 \approx
 \frac{\Hbar \omega}{2} + \Hbar \omega e^{-\Hbar \omega/\kB T}.
-\end{dmath}
+\end{equation}
 %
 These limits are plotted in \cref{fig:qmSolidsL10:qmSolidsL10Fig1}, and \cref{fig:qmSolidsL10:qmSolidsL10Fig2}.
 \imageFigure{../figures/phy487-qmsolids/qmSolidsL10Fig1}{Average energy vs temperature.}{fig:qmSolidsL10:qmSolidsL10Fig1}{0.3}
@@ -153,11 +159,8 @@ These limits are plotted in \cref{fig:qmSolidsL10:qmSolidsL10Fig1}, and \cref{fi
 %
 \section{Lattice specific heat capacity.}
 \index{specific heat}
-
 \reading \citep{ashcroft1976solid} \textchapref{22,23}.
-
 Define \(\CV(T)\) or \(\CP(T)\) \index{specific heat} as the change in the energy \(U(T)\) per unit change in \(T\).
-
 \begin{itemize}
 \item
 \(\CV(T)\), is a measure at constant volume (easy to calculate).
@@ -176,7 +179,7 @@ U(T) = \sum_q \calE(\omega_q, T) = \inv{V} \int_0^\infty Z(\omega) \calE(\omega_
 In the Debye model we found in \eqnref{eqn:condensedMatterLecture9:360} and \eqnref{eqn:condensedMatterLecture9:440} that
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:condensedMatterLecture10:460}
+\begin{equation}\label{eqn:condensedMatterLecture10:460}
 Z(\omega) d\omega
 =
 \frac{V}{2\pi^2}
@@ -184,7 +187,7 @@ Z(\omega) d\omega
 \frac{1}{C_{\txtL}^3} + \frac{2}{C_{\txtT}^3}
 }
 \omega^2 d \omega,
-\end{dmath}
+\end{equation}
 \begin{equation}\label{eqn:condensedMatterLecture10:500}
 \frac{V}{ 2 \pi^2} \lr{ \inv{C_{\txtL}^3} + \frac{ 2}{C_{\txtT}^3} } \omega_{\txtD}^3 = 9 r N.
 \end{equation}
@@ -192,51 +195,49 @@ Z(\omega) d\omega
 %
 so the specific heat for the Debye model is
 %
-\begin{dmath}\label{eqn:condensedMatterLecture10:240}
+\begin{equation}\label{eqn:condensedMatterLecture10:240}
+\begin{aligned}
 \CV(T)
-=
+&=
 \frac{d}{dT}
  \int_0^{\omega_{\txtD}}
 \calE(\omega, T)
 Z(\omega)
-d\omega
-= \inv{2 \pi^2} \lr{
+d\omega \\
+&= \inv{2 \pi^2} \lr{
 \inv{C_{\txtL}^3} + \frac{2}{C_{\txtT}^3}
 }
- \int_0^{\omega_{\txtD}} \omega^2 \frac{d}{dT} \calE(\omega, T) d\omega
-=
+ \int_0^{\omega_{\txtD}} \omega^2 \frac{d}{dT} \calE(\omega, T) d\omega \\
+&=
 \frac{ 9 r N}{V}
 \inv{\omega_{\txtD}^3}
 \frac{d}{dT}
 \int_0^{\omega_{\txtD}}
 {\Hbar \omega^3}
 \lr{
-\inv{2}
-+
-\inv
-{
-e^{\Hbar \omega/\kB T} - 1
-}
+\inv{2} + \inv { e^{\Hbar \omega/\kB T} - 1 }
 }
 d\omega.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 where \(r\) is the number of atoms in the unit cell.  In the limit \(\kB T \gg \Hbar \omega_{\txtD}\), we have
 %
-\begin{dmath}\label{eqn:condensedMatterLecture10:480}
+\begin{equation}\label{eqn:condensedMatterLecture10:480}
+\begin{aligned}
 \CV(T)
-=
+&=
 \frac{ 9 r N}{V}
 \inv{\omega_{\txtD}^3}
 \frac{d}{dT}
 \int_0^{\omega_{\txtD}}
-\cancel{\Hbar} \omega^3 \frac{ \kB T}{ \cancel{\Hbar} \omega} d\omega
-=
+\cancel{\Hbar} \omega^3 \frac{ \kB T}{ \cancel{\Hbar} \omega} d\omega \\
+&=
 \frac{ 9 r N}{V}
 \inv{\omega_{\txtD}^3}
 \frac{d}{dT}
-\inv{3} \kB T \omega_{\txtD}^3
-=
+\inv{3} \kB T \omega_{\txtD}^3 \\
+&=
 \mathLabelBox
 [
    labelstyle={xshift=2cm},
@@ -245,10 +246,11 @@ where \(r\) is the number of atoms in the unit cell.  In the limit \(\kB T \gg \
 {
 \frac{ 3 r N }{V}
 }{number of dynamical degrees of freedom per unit volume}
-\kB
-=
+\kB \\
+&=
 \kB \,\mbox{per degree of freedom},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so that
 %
@@ -260,8 +262,10 @@ This is called the \underlineAndIndex{Dulong-Petit law}.
 %
 \paragraph{More generally.}
 %
-\begin{dmath}\label{eqn:condensedMatterLecture10:280}
-\CV(T) =
+\begin{equation}\label{eqn:condensedMatterLecture10:280}
+\begin{aligned}
+\CV(T) 
+&=
 \lr{
    \frac{ 9 r N }{V} \inv{\omega_{\txtD}^3}
 }
@@ -274,8 +278,8 @@ This is called the \underlineAndIndex{Dulong-Petit law}.
 e^{\Hbar \omega/\kB T} - 1
 }
 }
-d\omega
-=
+d\omega \\
+&=
 \lr{ \frac{ 9 r N }{V} \inv{\omega_{\txtD}^3} }
 \int_0^{\omega_{\txtD}}
 -\Hbar \omega^3
@@ -285,7 +289,8 @@ d\omega
 }
 e^{\Hbar \omega/\kB T} \lr{ -\frac{\Hbar \omega}{\kB T^2} }
 d\omega.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Make substitutions
 \begin{subequations}
@@ -310,9 +315,10 @@ y(\omega_{\txtD}) = \frac{\Hbar \omega_{\txtD}}{ \kB T} = \frac{\kB \Theta}{\kB 
 %
 so the specific heat is
 %
-\begin{dmath}\label{eqn:condensedMatterLecture10:360}
+\begin{equation}\label{eqn:condensedMatterLecture10:360}
+\begin{aligned}
 \CV(T)
-=
+&=
 \lr{ \frac{ 9 r N }{V} \inv{\omega_{\txtD}^3} }
 \int_0^{\Theta/T}
 \frac{ \lr{ \kB T y}^3 }{\Hbar^2}
@@ -333,7 +339,7 @@ e^{y}
 %\frac{e^y}{ (e^y - 1)^2 }
 %\lr{ -\frac{\Hbar}{\kB T^2} }
 %\frac{\kB T}{\Hbar} dy
-=
+\\ &=
 \lr{
 \frac{ 9 r N }{V}
 \inv{\omega_{\txtD}^3}
@@ -342,7 +348,8 @@ e^{y}
 \int_0^{\Theta/T}
 \frac{y^4 e^y}{ \lr{ e^y - 1}^2 }
 dy.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is an exact result for the Debye model.
 
@@ -356,20 +363,22 @@ Modes are \textunderline{frozen out}.
 
 In the \(T \ll \Hbar \omega_{\txtD}/\kB\) limit, we have
 %
-\begin{dmath}\label{eqn:condensedMatterLecture10:400}
+\begin{equation}\label{eqn:condensedMatterLecture10:400}
+\begin{aligned}
 \CV(T)
-=
+&=
 \frac{ 9 r N }{V}
 \frac{\kB^4 T^3}{\kB^3 \Theta^3}
 \int_0^{\infty} \frac{y^4 e^y}{ \lr{ e^y - 1}^2 } dy
-=
+\\ &=
 \frac{ 9 r N }{V}
 \frac{\kB^4 T^3}{\kB^3 \Theta^3}
 \frac{4 \pi^2}{15}
-=
+\\ &=
 \frac{ 3 r N }{V}
 \frac{4 \pi^2 \kB }{5} \frac{T^3}{\Theta^3}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The \(T^3\) dependence here is \textunderline{very important}.  This comes from
 

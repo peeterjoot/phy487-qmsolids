@@ -133,55 +133,59 @@ A \Bepsilon = \omega^2 \Bepsilon = \lambda \Bepsilon.
 %
 Neglecting the specifics of the matrix at hand, consider a generic two by two matrix
 %
-\begin{dmath}\label{eqn:oneAtomBasisPhonon:140}
+\begin{equation}\label{eqn:oneAtomBasisPhonon:140}
 A =
 \begin{bmatrix}
 a & b \\
 c & d
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 for which the characteristic equation is
 %
-\begin{dmath}\label{eqn:oneAtomBasisPhonon:160}
-0 =
+\begin{equation}\label{eqn:oneAtomBasisPhonon:160}
+\begin{aligned}
+0 &=
 \begin{vmatrix}
 \lambda - a & - b \\
 -c & \lambda -d
 \end{vmatrix}
-=
+\\ &=
 (\lambda - a)(\lambda - d) - b c
-=
+\\ &=
 \lambda^2 - (a + d) \lambda + a d - b c
-=
+\\ &=
 \lambda^2 - (Tr A) \lambda + \Abs{A}
-=
+\\ &=
 \lr{\lambda - \frac{Tr A}{2}}^2
 -
 \lr{\frac{Tr A}{2}}^2
  + \Abs{A}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 So our angular frequencies are given by
 %
-\begin{dmath}\label{eqn:oneAtomBasisPhonon:180}
+\begin{equation}\label{eqn:oneAtomBasisPhonon:180}
 \omega^2 =
 \inv{2}
 \lr{ Tr A \pm \sqrt{ \left(Tr A\right)^2 - 4 \Abs{A} }}.
-\end{dmath}
+\end{equation}
 %
 The square root can be simplified slightly
 %
-\begin{dmath}\label{eqn:oneAtomBasisPhonon:480}
+\begin{equation}\label{eqn:oneAtomBasisPhonon:480}
+\begin{aligned}
 \lr{Tr A}^2
 - 4 \Abs{A}
-=
+&=
 (a + d)^2 -4 (a d - b c)
-=
+\\ &=
 a^2 + d^2 + 2 a d - 4 a d + 4 b c
-=
+\\ &=
 (a - d)^2 + 4 b c,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so that, finally, the dispersion relation is
 \boxedEquation{eqn:oneAtomBasisPhonon:640}{
@@ -203,13 +207,13 @@ or
 %
 So, our eigenvectors, the vectoral components of our atomic displacements, are
 %
-\begin{dmath}\label{eqn:oneAtomBasisPhonon:240}
+\begin{equation}\label{eqn:oneAtomBasisPhonon:240}
 \Bepsilon \propto
 \begin{bmatrix}
 b \\
 \omega^2 - a
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 or
 \boxedEquation{eqn:oneAtomBasisPhonon:500}{
@@ -313,14 +317,14 @@ S_4 &= \sin^2
 %
 Our matrix is
 %
-\begin{dmath}\label{eqn:oneAtomBasisPhonon:460}
+\begin{equation}\label{eqn:oneAtomBasisPhonon:460}
 A =
 \frac{2}{m}
 \begin{bmatrix}
 2 K_1 S_1 + K_3 S_3 + K_4 S_4 & K_3 S_3 - K_4 S_4 \\
 K_3 S_3 - K_4 S_4 & 2 K_2 S_2 + K_3 S_3 + K_4 S_4
 \end{bmatrix},
-\end{dmath}
+\end{equation}
 %
 where, specifically, the squared sines for this geometry are
 %
@@ -365,13 +369,13 @@ Using \eqnref{eqn:oneAtomBasisPhonon:240}, the dispersion relation and eigenvect
 }
 %\end{aligned}
 \end{equation}
-\begin{dmath}\label{eqn:oneAtomBasisPhonon:540}
+\begin{equation}\label{eqn:oneAtomBasisPhonon:540}
 \Bepsilon \propto
 \begin{bmatrix}
 K_3 S_3 - K_4 S_4 \\
 K_2 S_2 - K_1 S_1 \pm \sqrt{ (K_2 S_2 - K_1 S_1)^2 + (K_3 S_3 - K_4 S_4)^2 }
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 This calculation is confirmed in \nbref{oneAtomBasisPhononSquareLatticeEigensystem.nb} .  Mathematica calculates an alternate form (equivalent to using a zero dot product for the second row), of
@@ -391,12 +395,12 @@ Either way, we see that \(K_3 S_3 - K_4 S_4 = 0\) leads to only horizontal or ve
 In the specific case that we had on the exam where \(K_1 = K_2\) and \(K_3 = K_4\), these are
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:oneAtomBasisPhonon:560}
+\begin{equation}\label{eqn:oneAtomBasisPhonon:560}
 \omega^2 =
 \frac{2}{m}
 \lr{ K_1 (S_1 + S_2) + K_3(S_3 + S_4) \pm \sqrt{ K_1^2 (S_2 - S_1)^2 + K_3^2 (S_3 - S_4)^2 } }
-\end{dmath}
-\begin{dmath}\label{eqn:oneAtomBasisPhonon:580}
+\end{equation}
+\begin{equation}\label{eqn:oneAtomBasisPhonon:580}
 \Bepsilon \propto
 \begin{bmatrix}
 K_3
@@ -404,7 +408,7 @@ K_3
 K_1
 \lr{ (S_1 - S_2) \pm \sqrt{ (S_2 - S_1)^2 + \left( \frac{K_3}{K_1} \right)^2 (S_3 - S_4)^2 } }
 \end{bmatrix}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 For horizontal and vertical motion we need \(S_3 = S_4\), or for a \(2 \pi \times \text{integer}\) difference in the absolute values of the sine arguments

@@ -55,13 +55,13 @@ as sketched in \cref{fig:fourierReciprocalUnitCell:fourierReciprocalUnitCellFig1
 %
 \imageFigure{../figures/phy487-qmsolids/fourierReciprocalUnitCellFig1}{Unit cell.}{fig:fourierReciprocalUnitCell:fourierReciprocalUnitCellFig1}{0.3}
 %
-\begin{dmath}\label{eqn:fourierReciprocal:140}
+\begin{equation}\label{eqn:fourierReciprocal:140}
 \Br = \inv{2 \pi} \lr{
 \lr{ \Br \cdot \Bg_1} \Ba_1
 + \lr{ \Br \cdot \Bg_2} \Ba_2
 + \lr{ \Br \cdot \Bg_3} \Ba_3
 },
-\end{dmath}
+\end{equation}
 %
 or
 \begin{equation}\label{eqn:fourierReciprocal:160}
@@ -74,7 +74,7 @@ w(\Br) &= \inv{2 \pi} \Br \cdot \Bg_3.
 %
 Let's suppose that \(\BV(\Br)\) is period in the unit cell spanned by \(\Br = u \Ba_1 + v \Ba_2 + w \Ba_3\) with \(u, v, w \in [0, 1]\), and integrate over the unit cube for that parameterization to compute \(V_\BG\)
 %
-\begin{dmath}\label{eqn:fourierReciprocal:180}
+\begin{equation}\label{eqn:fourierReciprocal:180}
 \int_0^1 du
 \int_0^1 dv
 \int_0^1 dw
@@ -88,7 +88,7 @@ V_{\BG_{r s t}}
 \int_0^1 dw
 e^{-i \BG' \cdot \Br }
 e^{i \BG \cdot \Br }.
-\end{dmath}
+\end{equation}
 %
 Let's write
 \begin{equation}\label{eqn:fourierReciprocal:200}
@@ -106,28 +106,31 @@ r' \Bg_1
 %
 so that
 %
-\begin{dmath}\label{eqn:fourierReciprocal:220}
+\begin{equation}\label{eqn:fourierReciprocal:220}
 e^{-i \BG' \cdot \Br } e^{i \BG \cdot \Br }
 =
 e^{ 2 \pi i (r - r') u }
 e^{ 2 \pi i (s - s') u }
 e^{ 2 \pi i (t - t') u }.
-\end{dmath}
+\end{equation}
 %
 Picking the \(u\) integral of this integrand as representative, we have when \(r = r'\)
 %
-\begin{dmath}\label{eqn:fourierReciprocal:240}
+\begin{equation}\label{eqn:fourierReciprocal:240}
+\begin{aligned}
 \int_0^1 du e^{ 2 \pi i (r - r') u }
-=
+&=
 \int_0^1 du
-= 1,
-\end{dmath}
+\\& = 1,
+\end{aligned}
+\end{equation}
 %
 and when \(r \ne r'\)
 %
-\begin{dmath}\label{eqn:fourierReciprocal:260}
+\begin{equation}\label{eqn:fourierReciprocal:260}
+\begin{aligned}
 \int_0^1 du e^{ 2 \pi i (r - r') u }
-=
+&=
 \evalrange{
    \frac{
    e^{ 2 \pi i (r - r') u }
@@ -136,11 +139,12 @@ and when \(r \ne r'\)
    2 \pi i (r - r')
    }
 }{u = 0}{1}
-=
+\\ &=
 \inv{2 \pi i (r - r') } \lr{
    e^{ 2 \pi i (r - r') } - 1
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is just zero since \(r - r'\) is an integer, so we have
 %
@@ -150,7 +154,8 @@ This is just zero since \(r - r'\) is an integer, so we have
 %
 This gives us
 %
-\begin{dmath}\label{eqn:fourierReciprocal:300}
+\begin{equation}\label{eqn:fourierReciprocal:300}
+\begin{aligned}
 \int_0^1 du
 \int_0^1 dv
 \int_0^1 dw
@@ -158,17 +163,18 @@ V( u \Ba_1 + v \Ba_2 + w \Ba_3 )
 e^{ -2 \pi i r' u }
 e^{ -2 \pi i s' v }
 e^{ -2 \pi i t' w }
-=
+&=
 \sum_{r s t}
 V_{\BG_{r s t}}
 \delta_{r s t, r' s' t'}
-=
+\\ &=
 V_{\BG_{r' s' t'}}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is our \textAndIndex{Fourier coefficient}.  The \textAndIndex{Fourier series} written out in gory but explicit detail is
 %
-\begin{dmath}\label{eqn:fourierReciprocal:320}
+\begin{equation}\label{eqn:fourierReciprocal:320}
 V( u \Ba_1 + v \Ba_2 + w \Ba_3 ) = \sum_{r s t}
 \lr{
 \int_0^1 du'
@@ -178,7 +184,7 @@ V( u' \Ba_1 + v' \Ba_2 + w' \Ba_3 )
 e^{ -2 \pi i (r u' + s v' + t w') }
 }
 e^{ 2 \pi i (r u + s v + t w) }.
-\end{dmath}
+\end{equation}
 %
 Also observe the unfortunate detail that we require integrability of the potential in the unit cell for the Fourier integrals to converge.  This prohibits the use of the most obvious potential for numerical experimentation, the inverse radial \(V(\Br) = -1/\Abs{\Br}\).
 

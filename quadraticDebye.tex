@@ -61,23 +61,25 @@ Find the specific heat for \(\kB T \gg \Hbar \omega_{\txtD}\).
 \makeSubAnswer{}{pr:quadraticDebye:1:a}
 Working straight from the definition
 %
-\begin{dmath}\label{eqn:quadraticDebye:30}
+\begin{equation}\label{eqn:quadraticDebye:30}
+\begin{aligned}
 Z(\omega)
-= \frac{V}{(2 \pi)^3 } \sum_{L, T} \int \frac{df_\omega}{ \Abs{ \spacegrad_\Bq \omega } }
-= \frac{V}{(2 \pi)^3 }
+&= \frac{V}{(2 \pi)^3 } \sum_{L, T} \int \frac{df_\omega}{ \Abs{ \spacegrad_\Bq \omega } }
+\\ &= \frac{V}{(2 \pi)^3 }
 \lr{ \evalbar{\frac{4 \pi q^2}{2 b_{\txtL} q} }{\txtL} + \evalbar{\frac{2 \times 4 \pi q^2}{2 b_{\txtT} q} }{\txtT} }
-= \frac{V}{4 \pi^2 }
+\\ &= \frac{V}{4 \pi^2 }
 \lr{ \frac{q_{\txtL}}{b_{\txtL}} + \frac{2 q_{\txtT}}{b_{\txtT}} }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With \(q_{\txtL} = \sqrt{\omega/b_{\txtL}}\) and \(q_{\txtT} = \sqrt{\omega/b_{\txtT}}\), this is
 %
-\begin{dmath}\label{eqn:quadraticDebye:50}
+\begin{equation}\label{eqn:quadraticDebye:50}
 Z(\omega)
 = \frac{V}{4 \pi^2 }
 \lr{ \frac{1}{b_{\txtL}^{3/2}} + \frac{2}{b_{\txtT}^{3/2}} }
 \sqrt{\omega}.
-\end{dmath}
+\end{equation}
 %
 \makeSubAnswer{}{pr:quadraticDebye:1:b}
 The Debye frequency was given implicitly by
@@ -88,36 +90,40 @@ The Debye frequency was given implicitly by
 %
 which gives
 %
-\begin{dmath}\label{eqn:quadraticDebye:90}
+\begin{equation}\label{eqn:quadraticDebye:90}
+\begin{aligned}
 3 r N
-=
+&=
 \frac{2}{3} \frac{V}{4 \pi^2 }
 \lr{ \frac{1}{b_{\txtL}^{3/2}} + \frac{2}{b_{\txtT}^{3/2}} }
 \omega_{\txtD}^{3/2}
-=
+\\ &=
 \frac{V}{6 \pi^2 }
 \lr{ \frac{1}{b_{\txtL}^{3/2}} + \frac{2}{b_{\txtT}^{3/2}} }
 \omega_{\txtD}^{3/2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{pr:quadraticDebye:1:c}
 Assuming a Bose distribution and ignoring the zero point energy, which has no temperature dependence, the specific heat, the temperature derivative of the energy density, is
 %
-\begin{dmath}\label{eqn:quadraticDebye:110}
+\begin{equation}\label{eqn:quadraticDebye:110}
+\begin{aligned}
 \CV
-= \frac{d}{d T} \inv{V} \int Z(\omega) \frac{\Hbar \omega}{ e^{\Hbar \omega/ \kB T } - 1} d\omega
-= \inv{V} \frac{d}{d T} \int Z(\omega) \frac{\Hbar \omega}{ \Hbar \omega/ \kB T + \inv{2}( \Hbar \omega/\kB T)^2 + \cdots } d\omega
+&= \frac{d}{d T} \inv{V} \int Z(\omega) \frac{\Hbar \omega}{ e^{\Hbar \omega/ \kB T } - 1} d\omega
+\\ &= \inv{V} \frac{d}{d T} \int Z(\omega) \frac{\Hbar \omega}{ \Hbar \omega/ \kB T + \inv{2}( \Hbar \omega/\kB T)^2 + \cdots } d\omega
 \approx \inv{V} \frac{d}{d T} \int Z(\omega) \kB T d\omega
-= \inv{V} \kB 3 r N.
-\end{dmath}
+\\ &= \inv{V} \kB 3 r N.
+\end{aligned}
+\end{equation}
 %
 \makeSubAnswer{}{pr:quadraticDebye:1:d}
 First note that the density of states can be written
 %
-\begin{dmath}\label{eqn:quadraticDebye:130}
+\begin{equation}\label{eqn:quadraticDebye:130}
 Z(\omega) =
 \frac{9 r N}{ 2 \omega_{\txtD}^{3/2} } \omega^{1/2},
-\end{dmath}
+\end{equation}
 %
 for a specific heat of
 %
