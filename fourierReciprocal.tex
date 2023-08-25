@@ -75,12 +75,13 @@ w(\Br) &= \inv{2 \pi} \Br \cdot \Bg_3.
 Let's suppose that \(\BV(\Br)\) is period in the unit cell spanned by \(\Br = u \Ba_1 + v \Ba_2 + w \Ba_3\) with \(u, v, w \in [0, 1]\), and integrate over the unit cube for that parameterization to compute \(V_\BG\)
 %
 \begin{equation}\label{eqn:fourierReciprocal:180}
-\int_0^1 du
+\begin{aligned}
+\int_0^1 &du
 \int_0^1 dv
 \int_0^1 dw
 V( u \Ba_1 + v \Ba_2 + w \Ba_3 )
-e^{-i \BG' \cdot \Br }
-=
+e^{-i \BG' \cdot \Br } \\
+&=
 \sum_{r s t}
 V_{\BG_{r s t}}
 \int_0^1 du
@@ -88,6 +89,7 @@ V_{\BG_{r s t}}
 \int_0^1 dw
 e^{-i \BG' \cdot \Br }
 e^{i \BG \cdot \Br }.
+\end{aligned}
 \end{equation}
 %
 Let's write
@@ -184,7 +186,7 @@ This is our \textAndIndex{Fourier coefficient}.  The \textAndIndex{Fourier serie
 \int_0^1 dw'
 V( u' \Ba_1 + v' \Ba_2 + w' \Ba_3 )
 e^{ -2 \pi i (r u' + s v' + t w') }
-}
+} \times \\&\quad
 e^{ 2 \pi i (r u + s v + t w) }.
 \end{aligned}
 \end{equation}
