@@ -269,16 +269,17 @@ Integrating this to find the fraction of the probability density along each radi
 %
 \begin{equation}\label{eqn:condensedMatterProblemSet1Problem2:180}
 \begin{aligned}
-\frac{{\cal N}^2}{3}
+&\frac{{\cal N}^2}{3}
 \int_0^\infty
 r^2 dr
 e^{-2 \rho} \lr
 {
 (1 - \rho)^2 + 2 \rho^2 \sin^2 \theta \cos^2 \phi
 + 2 \sqrt{2} \rho (1 - \rho) \sin\theta \cos\phi
-}
+} \\
 &=
-\frac{{\cal N}^2}{3} \lr{ \frac{2 a_\circ}{Z} }^3
+\frac{{\cal N}^2}{3} \lr{ \frac{2 a_\circ}{Z} }^3 \\
+&\quad
 \int_0^\infty
 \rho^2 d\rho
 e^{-2 \rho} \lr
@@ -290,8 +291,9 @@ e^{-2 \rho} \lr
 \inv{ 3 \pi}
 \int_0^\infty
 \inv{8} x^2 dx
-e^{-x} \lr
-{
+e^{-x} \times \\
+&\qquad
+\lr{
 \lr{1 - \frac{x}{2}}^2 + 2 \lr{\frac{x}{2}}^2 \sin^2 \theta \cos^2 \phi
 + 2 \sqrt{2} \frac{x}{2} \lr{1 - \frac{x}{2}} \sin\theta \cos\phi
 }

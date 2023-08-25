@@ -453,16 +453,19 @@ z_i'' = \lambda_i z_i.
 This is \(N\) equations, each decoupled and solvable by inspection.  Suppose we group the eigenvalues into sets \(\{ \lambda_n < 0, \lambda_p > 0, \lambda_z = 0 \}\).  Our solution is then
 %
 \begin{equation}\label{eqn:threeSpringLoop:660}
+\begin{aligned}
 \Bz
-=
+&=
 \sum_{ \lambda_n < 0, \lambda_p > 0, \lambda_z = 0}
 \lr{
 a_n \cos \sqrt{-\lambda_n} \tau
 +
 b_n \sin \sqrt{-\lambda_n} \tau
 }
-\Be_n
+\Be_n \\
+&\quad
 +
+\sum_{ \lambda_n < 0, \lambda_p > 0, \lambda_z = 0}
 \lr{
 a_p \cosh \sqrt{\lambda_p} \tau
 +
@@ -473,21 +476,24 @@ b_p \sinh \sqrt{\lambda_p} \tau
 \lr{
 a_z + b_z \tau
 } \Be_z.
+\end{aligned}
 \end{equation}
 %
 Transforming back to lattice coordinates using \(\Bu = U \Bz\), we have
 %
 \begin{equation}\label{eqn:threeSpringLoop:740}
+\begin{aligned}
 \Bu
-=
+&=
 \sum_{ \lambda_n < 0, \lambda_p > 0, \lambda_z = 0}
 \lr{
 a_n \cos \sqrt{-\lambda_n} \tau
 +
 b_n \sin \sqrt{-\lambda_n} \tau
 }
-U \Be_n
-+
+U \Be_n \\
+&\quad+
+\sum_{ \lambda_n < 0, \lambda_p > 0, \lambda_z = 0}
 \lr{
 a_p \cosh \sqrt{\lambda_p} \tau
 +
@@ -498,6 +504,7 @@ U \Be_p
 \lr{
 a_z + b_z \tau
 } U \Be_z.
+\end{aligned}
 \end{equation}
 %
 We see that the zero eigenvalues integration terms have no contribution to the lattice coordinates, since \(U \Be_z = \lambda_z \Be_z = 0\), for all \(\lambda_z = 0\).
@@ -505,8 +512,9 @@ We see that the zero eigenvalues integration terms have no contribution to the l
 If \(U = [ \Be_i ]\) are a set of not necessarily orthonormal eigenvectors for \(B\), then the vectors \(\Bf_i\), where \(\Be_i \cdot \Bf_j = \delta_{ij}\) are the reciprocal frame vectors.  These can be extracted from \(U^{-1} = [ \Bf_i ]^\T\) (i.e., the rows of \(U^{-1}\)).  Taking dot products between \(\Bf_i\) with \(\Bu(0) = \Bu_\nought\) and \(\Bu'(0) = \Bu'_\nought\), provides us with the unknown coefficients \(a_n, b_n\)
 %
 \begin{equation}\label{eqn:threeSpringLoop:680}
+\begin{aligned}
 \Bu(\tau)
-=
+&=
 \sum_{ \lambda_n < 0, \lambda_p > 0 }
 \lr{
 (\Bu_\nought \cdot \Bf_n)
@@ -515,8 +523,9 @@ If \(U = [ \Be_i ]\) are a set of not necessarily orthonormal eigenvectors for \
 \frac{\Bu_\nought' \cdot \Bf_n}{\sqrt{-\lambda_n} }
 \sin \sqrt{-\lambda_n} \tau
 }
-\Be_n
-+
+\Be_n \\
+&\quad+
+\sum_{ \lambda_n < 0, \lambda_p > 0 }
 \lr{
 (\Bu_\nought \cdot \Bf_p)
 \cosh \sqrt{\lambda_p} \tau
@@ -525,6 +534,7 @@ If \(U = [ \Be_i ]\) are a set of not necessarily orthonormal eigenvectors for \
 \sinh \sqrt{\lambda_p} \tau
 }
 \Be_p.
+\end{aligned}
 \end{equation}
 %
 Supposing that we constrain ourself to looking at just the oscillatory solutions (i.e. the lattice does not shake itself to pieces), then we have
@@ -977,7 +987,7 @@ u_1(t) - u_2(t)
 %
 \begin{equation}\label{eqn:threeSpringLoop:1360}
 \begin{aligned}
-m_1 \ddot{u}_1(t) + \kappa (u_1(t) - u_2(t) )
+m_1 &\ddot{u}_1(t) + \kappa (u_1(t) - u_2(t) ) \\
 &=
 -m_1 m_2 \omega_\nought^2
 \lr{

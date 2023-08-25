@@ -423,8 +423,8 @@ At the equilibrium positions \(\Ba_1, \Ba_2\), the first order derivatives are a
 %
 \begin{equation}\label{eqn:twoMassHarmonic:660}
 \begin{aligned}
-\PD{r_{1j}}{}
-\PD{r_{1i}}{\phi}
+&\PD{r_{1j}}{}
+\PD{r_{1i}}{\phi} \\
 &=
 K
 \delta_{i j}
@@ -962,8 +962,10 @@ Regrouping, and using the matrix form \(\Proj_\ucap = \ucap \ucap^\T\) for the p
 %
 \begin{subequations}
 \begin{equation}\label{eqn:twoMassHarmonic:1220}
-\lr{
-\omega^2 - \frac{2}{m_1}
+\begin{aligned}
+&\Biglr{
+\omega^2 - \\
+&\quad \frac{2}{m_1} 
 \lr{
 K_1 \xcap \xcap^T
 + K_2 \ycap \ycap^T
@@ -971,8 +973,8 @@ K_1 \xcap \xcap^T
 + 2 K_4 \scap \scap^T \sin^2 (\Bs \cdot \Bq/2)
 }
 }
-\Bepsilon_1
-=
+\Bepsilon_1 \\
+&=
 -\lr{
    K_1
    \rcap \rcap^\T
@@ -991,6 +993,7 @@ K_1 \xcap \xcap^T
    }
 }
 \frac{\Bepsilon_2}{\sqrt{ m_1 m_2 }}
+\end{aligned}
 \end{equation}
 %\begin{equation}\label{eqn:twoMassHarmonic:1240}
 %\begin{aligned}
@@ -1033,8 +1036,10 @@ K_1 \xcap \xcap^T
 %\end{aligned}.
 %\end{equation}
 \begin{equation}\label{eqn:twoMassHarmonic:1260}
-\lr{
-\omega^2 - \frac{2}{m_2}
+\begin{aligned}
+&\Biglr{
+\omega^2 \\
+&\quad - \frac{2}{m_2}
 \lr{
 K_1 \xcap \xcap^T
 + K_2 \ycap \ycap^T
@@ -1042,8 +1047,8 @@ K_1 \xcap \xcap^T
 + 2 K_4 \scap \scap^T \sin^2 (\Bs \cdot \Bq/2)
 }
 }
-\Bepsilon_2
-=
+\Bepsilon_2 \\
+&=
 -\lr{
    K_1
    \rcap \rcap^\T
@@ -1062,6 +1067,7 @@ K_1 \xcap \xcap^T
    }
 }
 \frac{\Bepsilon_1}{\sqrt{ m_1 m_2 }}.
+\end{aligned}
 \end{equation}
 \end{subequations}
 %

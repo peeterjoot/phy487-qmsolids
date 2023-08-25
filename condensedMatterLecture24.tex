@@ -77,15 +77,16 @@ V_{\mathrm{eff}} = \frac{
 \end{equation}
 %
 \begin{equation}\label{eqn:condensedMatterPhysicsLecture24:100}
-\lr{
+\begin{aligned}
+&\lr{
 -\frac{\Hbar^2}{2m} \lr{
 \spacegrad_1^2 +
 \spacegrad_2^2
 }
 + V(\Br_1, \Br_2)
 }
-\sum_k g(\Bk) e^{ i \Bk \cdot (\Br_1 - \Br_2 ) }
-=
+\sum_k g(\Bk) e^{ i \Bk \cdot (\Br_1 - \Br_2 ) } \\
+&\quad=
 \mathLabelBox
 {
 (2 \EF + \calE)
@@ -94,22 +95,25 @@ V_{\mathrm{eff}} = \frac{
 \(E \ket{\Psi}\)
 }
 \sum_k g(\Bk) e^{ i \Bk \cdot (\Br_1 - \Br_2 ) }.
+\end{aligned}
 \end{equation}
 %
 Operating with \(\int d\Br_1 d\Br_2 e^{-i \Bk' \cdot (\Br_1 - \Br_2) }\), we have
 %
 \begin{equation}\label{eqn:condensedMatterPhysicsLecture24:120}
-\int d\Br_1 d\Br_2 e^{-i \Bk' \cdot (\Br_1 - \Br_2) }
+\begin{aligned}
+&\int d\Br_1 d\Br_2 e^{-i \Bk' \cdot (\Br_1 - \Br_2) }
 \lr{
 \bcE_\Bk +
 \bcE_{-\Bk}
 + V
 }
-\sum_k g(\Bk) e^{ i \Bk \cdot (\Br_1 - \Br_2 ) }
-=
+\sum_k g(\Bk) e^{ i \Bk \cdot (\Br_1 - \Br_2 ) } \\
+&\quad=
 \int d\Br_1 d\Br_2 e^{-i \Bk' \cdot (\Br_1 - \Br_2) }
 (2 \EF + \calE)
 \sum_k g(\Bk) e^{ i \Bk \cdot (\Br_1 - \Br_2 ) }.
+\end{aligned}
 \end{equation}
 %
 This is
