@@ -11,7 +11,7 @@ Should you wish to actively contribute typo fixes (or even more significant chan
 git clone git@github.com:peeterjoot/latex-notes-compilations.git peeterjoot
 cd peeterjoot
 
-submods="figures/phy487-qmsolids phy487-qmsolids mathematica latex"
+submods="figures/phy487-qmsolids figures/phy452-basicstatmech phy487-qmsolids mathematica latex"
 for i in $submods ; do
    git submodule update --init $i
    (cd $i && git checkout master)
